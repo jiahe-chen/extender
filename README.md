@@ -31,26 +31,7 @@ Extender treats extensibility as an observable experiment:
 
 ## Multi-Agent Workflow
 
-```mermaid
-flowchart LR
-    A[Code under review] --> M[Manager]
-    M -->|SRP request| E1[Engineer]
-    M -->|OCP request| E2[Engineer]
-    M -->|LSP request| E3[Engineer]
-    M -->|ISP request| E4[Engineer]
-    M -->|DIP request| E5[Engineer]
-    E1 --> N1[Diff + Analyst verdict]
-    E2 --> N2[Diff + Analyst verdict]
-    E3 --> N3[Diff + Analyst verdict]
-    E4 --> N4[Diff + Analyst verdict]
-    E5 --> N5[Diff + Analyst verdict]
-    N1 --> R[Ranker]
-    N2 --> R
-    N3 --> R
-    N4 --> R
-    N5 --> R
-    R --> O[Top-k violations and evidence]
-```
+![Extender multi-agent workflow](deliverables/ase2026/figures/extender_workflow.png)
 
 ### Agent roles
 
