@@ -1,6 +1,7 @@
 # Extender
 
-**This is a open source codebase for AgenticDev 2026 accept paper**
+**This is a open source codebase for AgenticDev 2026 accept paper:**
+
 **_Extender: A Multi-Agent System for Code Extensibility Review_**
 
 Extender detects violations of the SOLID design principles by testing how code responds to change. Instead of judging only the current source snapshot, it creates principle-specific extension requests, asks AI agents to implement them on isolated copies, and analyzes the resulting diffs for evidence of latent design flaws.
