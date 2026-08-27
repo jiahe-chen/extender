@@ -1,0 +1,3 @@
+Model,Total Examples,Overall Accuracy (%),SRP Acc (%),OCP Acc (%),LSP Acc (%),ISP Acc (%),DIP Acc (%),Mean ChrF
+DeepSeek V3,240,80.0,91.67,75.0,56.25,100.0,77.08,45.05
+Doubao 1.5 Pro,240,85.0,91.67,100.0,60.42,100.0,72.92,27.51

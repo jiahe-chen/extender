@@ -1,0 +1,11 @@
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {3.1}{\ignorespaces Principle-specific scenarios and diff signals used in Stage~1 of Diff Eval.}}{9}{table.caption.11}%
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {4.1}{\ignorespaces Overall performance comparison across three workflows on 240 examples (Qwen3.5 9B).}}{13}{table.caption.12}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces Top-2 accuracy by SOLID principle (48 examples each).}}{14}{table.caption.14}%
+\contentsline {table}{\numberline {4.3}{\ignorespaces Accuracy by difficulty level (80 examples each). Difficulty is determined by the number of lines of code.}}{15}{table.caption.16}%
+\contentsline {table}{\numberline {4.4}{\ignorespaces Qwen3.5 9B workflows vs.\ Qwen3.5 Plus (cloud). Diff Eval closes $\sim $70\% of the performance gap through workflow design alone.}}{16}{table.caption.18}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }

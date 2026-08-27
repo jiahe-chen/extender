@@ -1,0 +1,171 @@
+Loading datasets...
+
+================================================================================
+COMPREHENSIVE ANALYSIS: QWEN3-8B PERFORMANCE COMPARISON
+================================================================================
+
+1. OVERALL PERFORMANCE METRICS
+--------------------------------------------------------------------------------
+              System  Total Examples  Overall Accuracy  Avg Time (s)  Median Time (s)  Max Time (s)
+Context-Managed Diff             240          0.666667    132.545583          103.505       1015.84
+                Diff             240          0.466667    135.951958          111.995        667.27
+            LLM-Only             240          0.733333      1.793125            1.660          4.62
+
+Relative Performance:
+  Context-Managed vs Diff:
+    Accuracy: +42.9%
+    Speed: +2.5%
+  Context-Managed vs LLM-Only:
+    Accuracy: -9.1%
+    Speed: -7291.9%
+
+
+2. ACCURACY BY VIOLATION TYPE
+--------------------------------------------------------------------------------
+Violation Context-Managed  Diff LLM-Only CM vs Diff CM vs LLM
+      DIP           89.6% 47.9%    25.0%     +41.7%    +64.6%
+      ISP           66.7% 77.1%   100.0%     -10.4%    -33.3%
+      LSP           79.2%  6.2%    60.4%     +72.9%    +18.8%
+      OCP           37.5% 54.2%    97.9%     -16.7%    -60.4%
+      SRP           60.4% 47.9%    83.3%     +12.5%    -22.9%
+
+
+3. ACCURACY BY DIFFICULTY LEVEL
+--------------------------------------------------------------------------------
+   Level Context-Managed  Diff LLM-Only CM vs Diff CM vs LLM
+    EASY           73.8% 73.8%    78.8%      +0.0%     -5.0%
+MODERATE           65.0% 47.5%    72.5%     +17.5%     -7.5%
+    HARD           61.3% 18.8%    68.8%     +42.5%     -7.5%
+
+
+4. ACCURACY BY LANGUAGE
+--------------------------------------------------------------------------------
+Language  Count Context-Managed  Diff LLM-Only CM vs Diff
+  CSHARP     60           68.3% 46.7%    78.3%     +21.7%
+    JAVA     60           70.0% 48.3%    78.3%     +21.7%
+  KOTLIN     60           70.0% 43.3%    70.0%     +26.7%
+  PYTHON     60           58.3% 48.3%    66.7%     +10.0%
+
+
+5. PROCESSING TIME ANALYSIS
+--------------------------------------------------------------------------------
+         System    Mean  Median Std Dev    Min      Max     P95
+Context-Managed 132.55s 103.50s 119.46s 23.30s 1015.84s 278.16s
+           Diff 135.95s 112.00s 104.13s 21.69s  667.27s 298.23s
+       LLM-Only   1.79s   1.66s   0.57s  0.69s    4.62s   2.81s
+
+Processing Time by Difficulty:
+  EASY    : CM=44.72s, Diff=38.77s, LLM= 1.31s
+  MODERATE: CM=115.81s, Diff=129.28s, LLM= 1.73s
+  HARD    : CM=237.11s, Diff=239.81s, LLM= 2.34s
+
+
+6. ERROR ANALYSIS
+--------------------------------------------------------------------------------
+
+Context-Managed Diff:
+  Total Errors: 80 / 240 (33.3%)
+  Errors by Violation Type:
+    DIP: 5/48 (10.4%)
+    ISP: 16/48 (33.3%)
+    LSP: 10/48 (20.8%)
+    OCP: 30/48 (62.5%)
+    SRP: 19/48 (39.6%)
+  Errors by Difficulty:
+    EASY: 21/80 (26.2%)
+    MODERATE: 28/80 (35.0%)
+    HARD: 31/80 (38.8%)
+  Top Misclassifications:
+    OCP ¡ú DIP: 19 times
+    SRP ¡ú DIP: 16 times
+    ISP ¡ú LSP: 15 times
+    OCP ¡ú SRP: 10 times
+    LSP ¡ú DIP: 6 times
+
+Diff:
+  Total Errors: 128 / 240 (53.3%)
+  Errors by Violation Type:
+    DIP: 25/48 (52.1%)
+    ISP: 11/48 (22.9%)
+    LSP: 45/48 (93.8%)
+    OCP: 22/48 (45.8%)
+    SRP: 25/48 (52.1%)
+  Errors by Difficulty:
+    EASY: 21/80 (26.2%)
+    MODERATE: 42/80 (52.5%)
+    HARD: 65/80 (81.2%)
+  Top Misclassifications:
+    LSP ¡ú ISP: 34 times
+    SRP ¡ú DIP: 16 times
+    DIP ¡ú ISP: 13 times
+    OCP ¡ú DIP: 12 times
+    ISP ¡ú DIP: 9 times
+
+LLM-Only:
+  Total Errors: 64 / 240 (26.7%)
+  Errors by Violation Type:
+    DIP: 36/48 (75.0%)
+    ISP: 0/48 (0.0%)
+    LSP: 19/48 (39.6%)
+    OCP: 1/48 (2.1%)
+    SRP: 8/48 (16.7%)
+  Errors by Difficulty:
+    EASY: 17/80 (21.2%)
+    MODERATE: 22/80 (27.5%)
+    HARD: 25/80 (31.2%)
+  Top Misclassifications:
+    DIP ¡ú SRP: 26 times
+    DIP ¡ú OCP: 8 times
+    LSP ¡ú OCP: 6 times
+    LSP ¡ú ISP: 5 times
+    LSP ¡ú SRP: 5 times
+
+
+7. STRUCTURAL ANALYSIS (Context-Managed Diff Only)
+--------------------------------------------------------------------------------
+Examples with structural checks: 239 / 240
+
+Structural Check Statistics:
+  Total structural skips: 451
+  Average skips per example: 1.9
+  False negatives (missed violations): 13
+
+  Most frequently skipped violations:
+    ISP: 180 times
+    LSP: 160 times
+    DIP: 62 times
+    OCP: 28 times
+    SRP: 21 times
+
+  False negatives by violation type:
+    DIP: 1
+    LSP: 9
+    SRP: 3
+
+
+8. KEY FINDINGS AND RECOMMENDATIONS
+================================================================================
+
+A. Performance Summary:
+   1. Context-Managed Diff: 66.7% accuracy, 132.55s avg time
+   2. Diff: 46.7% accuracy, 135.95s avg time
+   3. LLM-Only: 73.3% accuracy, 1.79s avg time
+
+B. Best System by Metric:
+   Accuracy: LLM-Only (73.3%)
+   Speed: LLM-Only (1.79s)
+
+C. Strengths and Weaknesses:
+   Context-Managed Diff:
+     + Strong at DIP: 89.6% vs 47.9%
+     - Weak at ISP: 66.7% vs 77.1%
+     + Strong at LSP: 79.2% vs 6.2%
+     - Weak at OCP: 37.5% vs 54.2%
+     + Strong at SRP: 60.4% vs 47.9%
+
+D. Recommendations:
+   ¡ú Use Context-Managed Diff: Better accuracy with acceptable speed
+
+================================================================================
+Analysis complete!
+================================================================================

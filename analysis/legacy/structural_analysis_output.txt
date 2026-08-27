@@ -1,0 +1,130 @@
+================================================================================
+STRUCTURAL ANALYSIS DEEP DIVE
+================================================================================
+
+Total examples with structural checks: 239
+
+================================================================================
+1. STRUCTURAL CHECK ACCURACY BY VIOLATION TYPE
+================================================================================
+
+Structural Check Performance by Violation Type:
+Violation  Total    TP     FN     Recall     FP     TN     Precision 
+--------------------------------------------------------------------------------
+           0        0      0      0.0%       1      0      0.0%      
+DIP        48       47     1      97.9%      128    62     26.9%     
+ISP        48       48     0      100.0%     11     180    81.4%     
+LSP        47       38     9      80.9%      32     160    54.3%     
+OCP        48       48     0      100.0%     163    28     22.7%     
+SRP        48       45     3      93.8%      170    21     20.9%     
+
+================================================================================
+2. IMPACT OF STRUCTURAL CHECKS ON FINAL ACCURACY
+================================================================================
+
+Structural False Negative Recovery:
+  False negatives recovered by LLM: 0
+  False negatives NOT recovered: 13
+  Recovery rate: 0.0%
+
+================================================================================
+3. STRUCTURAL CHECK PATTERNS
+================================================================================
+
+Most Common Skip Patterns (violations skipped together):
+  ISP, LSP: 115 times
+  DIP, ISP, LSP: 17 times
+  DIP, ISP: 8 times
+  ISP, LSP, SRP: 8 times
+  DIP, OCP: 7 times
+  DIP, LSP: 7 times
+  ISP, OCP: 5 times
+  DIP, ISP, LSP, SRP: 3 times
+  DIP, ISP, OCP: 3 times
+  DIP, ISP, OCP, SRP: 3 times
+
+================================================================================
+4. STRUCTURAL CHECK ACCURACY BY DIFFICULTY
+================================================================================
+
+Structural Check Recall by Difficulty:
+Level        Total    TP     FN     Recall    
+------------------------------------------------------------
+EASY         80       71     9      88.8%     
+MODERATE     80       77     3      96.2%     
+HARD         79       78     1      98.7%     
+
+================================================================================
+5. STRUCTURAL CHECK ACCURACY BY LANGUAGE
+================================================================================
+
+Structural Check Recall by Language:
+Language     Total    TP     FN     Recall    
+------------------------------------------------------------
+C#           23       22     1      95.7%     
+CSHARP       36       36     0      100.0%    
+JAVA         60       56     4      93.3%     
+KOTLIN       60       58     2      96.7%     
+PYTHON       60       54     6      90.0%     
+
+================================================================================
+6. DETAILED FALSE NEGATIVE ANALYSIS
+================================================================================
+
+Total False Negatives: 13
+
+False Negatives by Violation Type:
+
+DIP: 1 false negatives (0 recovered by LLM)
+  - DIP_26 (EASY, PYTHON) [NOT RECOVERED]
+    Reason: No dependency relationships found between classes. DIP does not apply.
+
+LSP: 9 false negatives (0 recovered by LLM)
+  - LSP_14 (EASY, PYTHON) [NOT RECOVERED]
+    Reason: There is no LSP violation in the original code. The original code defines a base class PaymentProces
+  - LSP_17 (MODERATE, JAVA) [NOT RECOVERED]
+    Reason: The original code does not contain any LSP violations. All subclasses of PaymentProcessor correctly 
+  - LSP_18 (MODERATE, PYTHON) [NOT RECOVERED]
+    Reason: The original code does not contain any LSP violations. All subclasses of PaymentProcessor correctly 
+
+SRP: 3 false negatives (0 recovered by LLM)
+  - SRP_1 (EASY, JAVA) [NOT RECOVERED]
+    Reason: The User class in the original code does not violate SRP. It has a single responsibility of represen
+  - SRP_13 (EASY, PYTHON) [NOT RECOVERED]
+    Reason: The User class in the original code does not violate SRP. The class has a single responsibility: rep
+  - SRP_14 (EASY, PYTHON) [NOT RECOVERED]
+    Reason: The original code does not violate SRP. The Employee class has a single responsibility of representi
+
+================================================================================
+7. STRUCTURAL CHECK EFFICIENCY ANALYSIS
+================================================================================
+
+Total structural checks performed: 1195
+Total skips (said no violation): 464
+Correct skips: 451
+Incorrect skips (false negatives): 13
+
+Skip accuracy: 97.2%
+Efficiency gain: 38.8% of checks skipped
+
+================================================================================
+8. RECOMMENDATIONS FOR STRUCTURAL CHECK IMPROVEMENT
+================================================================================
+
+Based on the analysis:
+
+1. KEEP structural checks for:
+   - DIP: 97.9% recall (excellent)
+   - ISP: 100.0% recall (excellent)
+   - OCP: 100.0% recall (excellent)
+   - SRP: 93.8% recall (excellent)
+
+2. IMPROVE structural checks for:
+   - LSP: 80.9% recall (needs improvement)
+
+3. DISABLE or REDESIGN structural checks for:
+   - : 0.0% recall (too many false negatives)
+
+================================================================================
+Analysis complete!
+================================================================================

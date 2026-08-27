@@ -1,0 +1,122 @@
+
+================================================================================
+SINGLE AGENT WORKFLOW - SOLID VIOLATION DETECTION
+================================================================================
+Timestamp: 2026-03-07T15:30:30.422001
+Example ID: SRP_1
+Code length: 409 characters
+================================================================================
+
+ORIGINAL CODE:
+--------------------------------------------------------------------------------
+public class User {
+    private String name;
+    private String email;
+    
+    public User(String name, String email) {
+        this.name = name;
+        this.email = email;
+    }
+    
+    public void saveToDatabase() {
+        System.out.println("Saving user " + name + " to database");
+    }
+    
+    public void sendWelcomeEmail() {
+        System.out.println("Sending welcome email to " + email);
+    }
+}
+--------------------------------------------------------------------------------
+
+
+[Stage 1/3] Prompt Generation
+    Prompt length: 2067 characters
+
+    PROMPT:
+    ----------------------------------------------------------------------------
+    Analyze this code:
+    public class User {
+        private String name;
+        private String email;
+        
+        public User(String name, String email) {
+            this.name = name;
+            this.email = email;
+        }
+        
+        public void saveToDatabase() {
+            System.out.println("Saving user " + name + " to database");
+        }
+        
+        public void sendWelcomeEmail() {
+            System.out.println("Sending welcome email to " + email);
+        }
+    }
+    
+    You are a specialized SOLID principle violation detector.
+    
+    Your role:
+    
+    ... (1567 more characters)
+    ----------------------------------------------------------------------------
+
+================================================================================
+SINGLE AGENT WORKFLOW - SOLID VIOLATION DETECTION
+================================================================================
+Timestamp: 2026-03-07T15:34:10.506879
+Example ID: SRP_1
+Code length: 409 characters
+================================================================================
+
+ORIGINAL CODE:
+--------------------------------------------------------------------------------
+public class User {
+    private String name;
+    private String email;
+    
+    public User(String name, String email) {
+        this.name = name;
+        this.email = email;
+    }
+    
+    public void saveToDatabase() {
+        System.out.println("Saving user " + name + " to database");
+    }
+    
+    public void sendWelcomeEmail() {
+        System.out.println("Sending welcome email to " + email);
+    }
+}
+--------------------------------------------------------------------------------
+
+
+[Stage 1/3] Prompt Generation
+    Prompt length: 2067 characters
+
+    PROMPT:
+    ----------------------------------------------------------------------------
+    Analyze this code:
+    public class User {
+        private String name;
+        private String email;
+        
+        public User(String name, String email) {
+            this.name = name;
+            this.email = email;
+        }
+        
+        public void saveToDatabase() {
+            System.out.println("Saving user " + name + " to database");
+        }
+        
+        public void sendWelcomeEmail() {
+            System.out.println("Sending welcome email to " + email);
+        }
+    }
+    
+    You are a specialized SOLID principle violation detector.
+    
+    Your role:
+    
+    ... (1567 more characters)
+    ----------------------------------------------------------------------------

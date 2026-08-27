@@ -1,0 +1,300 @@
+%%% -*-BibTeX-*-
+%%% Do NOT edit. File created by BibTeX with style
+%%% ACM-Reference-Format-Journals [18-Jan-2012].
+
+\begin{thebibliography}{29}
+
+%%% ====================================================================
+%%% NOTE TO THE USER: you can override these defaults by providing
+%%% customized versions of any of these macros before the \bibliography
+%%% command.  Each of them MUST provide its own final punctuation,
+%%% except for \shownote{} and \showURL{}.  The latter two
+%%% do not use final punctuation, in order to avoid confusing it with
+%%% the Web address.
+%%%
+%%% To suppress output of a particular field, define its macro to expand
+%%% to an empty string, or better, \unskip, like this:
+%%%
+%%% \newcommand{\showURL}[1]{\unskip}   % LaTeX syntax
+%%%
+%%% \def \showURL #1{\unskip}           % plain TeX syntax
+%%%
+%%% ====================================================================
+
+\ifx \showCODEN    \undefined \def \showCODEN     #1{\unskip}     \fi
+\ifx \showISBNx    \undefined \def \showISBNx     #1{\unskip}     \fi
+\ifx \showISBNxiii \undefined \def \showISBNxiii  #1{\unskip}     \fi
+\ifx \showISSN     \undefined \def \showISSN      #1{\unskip}     \fi
+\ifx \showLCCN     \undefined \def \showLCCN      #1{\unskip}     \fi
+\ifx \shownote     \undefined \def \shownote      #1{#1}          \fi
+\ifx \showarticletitle \undefined \def \showarticletitle #1{#1}   \fi
+\ifx \showURL      \undefined \def \showURL       {\relax}        \fi
+% The following commands are used for tagged output and should be
+% invisible to TeX
+\providecommand\bibfield[2]{#2}
+\providecommand\bibinfo[2]{#2}
+\providecommand\natexlab[1]{#1}
+\providecommand\showeprint[2][]{arXiv:#2}
+
+\bibitem[Aljedaani et~al\mbox{.}(2021)]%
+        {Aljedaani2021}
+\bibfield{author}{\bibinfo{person}{Wajdi Aljedaani}, \bibinfo{person}{Anthony Peruma}, \bibinfo{person}{Ahmed Aljohani}, \bibinfo{person}{Mazen Alotaibi}, \bibinfo{person}{Mohamed~Wiem Mkaouer}, \bibinfo{person}{Ali Ouni}, \bibinfo{person}{Christian~D. Newman}, \bibinfo{person}{Abdullatif Ghallab}, {and} \bibinfo{person}{Stephanie Ludi}.} \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{Test Smell Detection Tools: {A} Systematic Mapping Study}. In \bibinfo{booktitle}{\emph{{EASE} 2021: Evaluation and Assessment in Software Engineering, Trondheim, Norway, June 21-24, 2021}}, \bibfield{editor}{\bibinfo{person}{Ruzanna Chitchyan}, \bibinfo{person}{Jingyue Li}, \bibinfo{person}{Barbara Weber}, {and} \bibinfo{person}{Tao Yue}} (Eds.). \bibinfo{publisher}{{ACM}}, \bibinfo{pages}{170--180}.
+\newblock
+\href{https://doi.org/10.1145/3463274.3463335}{doi:\nolinkurl{10.1145/3463274.3463335}}
+
+
+\bibitem[Ampatzoglou et~al\mbox{.}(2019)]%
+        {Ampatzoglou2019}
+\bibfield{author}{\bibinfo{person}{Apostolos Ampatzoglou}, \bibinfo{person}{Angeliki{-}Agathi Tsintzira}, \bibinfo{person}{Elvira{-}Maria Arvanitou}, \bibinfo{person}{Alexander Chatzigeorgiou}, \bibinfo{person}{Ioannis Stamelos}, \bibinfo{person}{Alexandru Moga}, \bibinfo{person}{Robert Heb}, \bibinfo{person}{Oliviu Matei}, \bibinfo{person}{Nikolaos Tsiridis}, {and} \bibinfo{person}{Dionisis~D. Kehagias}.} \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{Applying the Single Responsibility Principle in Industry: Modularity Benefits and Trade-offs}. In \bibinfo{booktitle}{\emph{Proceedings of the Evaluation and Assessment on Software Engineering, {EASE} 2019, Copenhagen, Denmark, April 15-17, 2019}}, \bibfield{editor}{\bibinfo{person}{Shaukat Ali} {and} \bibinfo{person}{Vahid Garousi}} (Eds.). \bibinfo{publisher}{{ACM}}, \bibinfo{pages}{347--352}.
+\newblock
+\href{https://doi.org/10.1145/3319008.3320125}{doi:\nolinkurl{10.1145/3319008.3320125}}
+
+
+\bibitem[Chebanyuk and Markov(2016)]%
+        {Chebanyuk2016}
+\bibfield{author}{\bibinfo{person}{Elena Chebanyuk} {and} \bibinfo{person}{Krassimir Markov}.} \bibinfo{year}{2016}\natexlab{}.
+\newblock \showarticletitle{An Approach to Class Diagrams Verification According to {SOLID} Design Principles}. In \bibinfo{booktitle}{\emph{{MODELSWARD} 2016 - Proceedings of the 4rd International Conference on Model-Driven Engineering and Software Development, Rome, Italy, 19-21 February, 2016}}, \bibfield{editor}{\bibinfo{person}{Slimane Hammoudi}, \bibinfo{person}{Lu{\'{\i}}s~Ferreira Pires}, \bibinfo{person}{Bran Selic}, {and} \bibinfo{person}{Philippe Desfray}} (Eds.). \bibinfo{publisher}{SciTePress}, \bibinfo{pages}{435--441}.
+\newblock
+\href{https://doi.org/10.5220/0005830104350441}{doi:\nolinkurl{10.5220/0005830104350441}}
+
+
+\bibitem[Chen et~al\mbox{.}(2021)]%
+        {Chen2021}
+\bibfield{author}{\bibinfo{person}{Mark Chen}, \bibinfo{person}{Jerry Tworek}, \bibinfo{person}{Heewoo Jun}, \bibinfo{person}{Qiming Yuan}, \bibinfo{person}{Henrique~Pond{\'{e}} de Oliveira~Pinto}, \bibinfo{person}{Jared Kaplan}, \bibinfo{person}{Harri Edwards}, \bibinfo{person}{Yuri Burda}, \bibinfo{person}{Nicholas Joseph}, \bibinfo{person}{Greg Brockman}, \bibinfo{person}{Alex Ray}, \bibinfo{person}{Raul Puri}, \bibinfo{person}{Gretchen Krueger}, \bibinfo{person}{Michael Petrov}, \bibinfo{person}{Heidy Khlaaf}, \bibinfo{person}{Girish Sastry}, \bibinfo{person}{Pamela Mishkin}, \bibinfo{person}{Brooke Chan}, \bibinfo{person}{Scott Gray}, \bibinfo{person}{Nick Ryder}, \bibinfo{person}{Mikhail Pavlov}, \bibinfo{person}{Alethea Power}, \bibinfo{person}{Lukasz Kaiser}, \bibinfo{person}{Mohammad Bavarian}, \bibinfo{person}{Clemens Winter}, \bibinfo{person}{Philippe Tillet}, \bibinfo{person}{Felipe~Petroski Such}, \bibinfo{person}{Dave Cummings}, \bibinfo{person}{Matthias Plappert}, \bibinfo{person}{Fotios Chantzis}, \bibinfo{person}{Elizabeth Barnes}, \bibinfo{person}{Ariel Herbert{-}Voss}, \bibinfo{person}{William~Hebgen Guss}, \bibinfo{person}{Alex Nichol}, \bibinfo{person}{Alex Paino}, \bibinfo{person}{Nikolas Tezak}, \bibinfo{person}{Jie Tang}, \bibinfo{person}{Igor Babuschkin}, \bibinfo{person}{Suchir Balaji}, \bibinfo{person}{Shantanu Jain}, \bibinfo{person}{William Saunders}, \bibinfo{person}{Christopher Hesse}, \bibinfo{person}{Andrew~N. Carr}, \bibinfo{person}{Jan Leike}, \bibinfo{person}{Joshua Achiam}, \bibinfo{person}{Vedant Misra}, \bibinfo{person}{Evan Morikawa}, \bibinfo{person}{Alec Radford}, \bibinfo{person}{Matthew Knight}, \bibinfo{person}{Miles Brundage}, \bibinfo{person}{Mira Murati}, \bibinfo{person}{Katie Mayer}, \bibinfo{person}{Peter Welinder}, \bibinfo{person}{Bob McGrew}, \bibinfo{person}{Dario Amodei}, \bibinfo{person}{Sam McCandlish}, \bibinfo{person}{Ilya Sutskever}, {and} \bibinfo{person}{Wojciech Zaremba}.} \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{Evaluating Large Language Models Trained on Code}.
+\newblock \bibinfo{journal}{\emph{CoRR}}  \bibinfo{volume}{abs/2107.03374} (\bibinfo{year}{2021}).
+\newblock
+\showeprint[arXiv]{2107.03374}
+\urldef\tempurl%
+\url{https://arxiv.org/abs/2107.03374}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Fan et~al\mbox{.}(2023)]%
+        {Fan2023}
+\bibfield{author}{\bibinfo{person}{Angela Fan}, \bibinfo{person}{Beliz Gokkaya}, \bibinfo{person}{Mark Harman}, \bibinfo{person}{Mitya Lyubarskiy}, \bibinfo{person}{Shubho Sengupta}, \bibinfo{person}{Shin Yoo}, {and} \bibinfo{person}{Jie~M. Zhang}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{Large Language Models for Software Engineering: Survey and Open Problems}. In \bibinfo{booktitle}{\emph{{IEEE/ACM} International Conference on Software Engineering: Future of Software Engineering, ICSE-FoSE 2023, Melbourne, Australia, May 14-20, 2023}}. \bibinfo{publisher}{{IEEE}}, \bibinfo{pages}{31--53}.
+\newblock
+\href{https://doi.org/10.1109/ICSE-FOSE59343.2023.00008}{doi:\nolinkurl{10.1109/ICSE-FOSE59343.2023.00008}}
+
+
+\bibitem[Guo et~al\mbox{.}(2024)]%
+        {Guo2024}
+\bibfield{author}{\bibinfo{person}{Daya Guo}, \bibinfo{person}{Qihao Zhu}, \bibinfo{person}{Dejian Yang}, \bibinfo{person}{Zhenda Xie}, \bibinfo{person}{Kai Dong}, \bibinfo{person}{Wentao Zhang}, \bibinfo{person}{Guanting Chen}, \bibinfo{person}{Xiao Bi}, \bibinfo{person}{Y. Wu}, \bibinfo{person}{Y.~K. Li}, \bibinfo{person}{Fuli Luo}, \bibinfo{person}{Yingfei Xiong}, {and} \bibinfo{person}{Wenfeng Liang}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{DeepSeek-Coder: When the Large Language Model Meets Programming - The Rise of Code Intelligence}.
+\newblock \bibinfo{journal}{\emph{CoRR}}  \bibinfo{volume}{abs/2401.14196} (\bibinfo{year}{2024}).
+\newblock
+\href{https://doi.org/10.48550/ARXIV.2401.14196}{doi:\nolinkurl{10.48550/ARXIV.2401.14196}}
+\showeprint[arXiv]{2401.14196}
+
+
+\bibitem[Lambiase et~al\mbox{.}(2020)]%
+        {Lambiase2020}
+\bibfield{author}{\bibinfo{person}{Stefano Lambiase}, \bibinfo{person}{Andrea Cupito}, \bibinfo{person}{Fabiano Pecorelli}, \bibinfo{person}{Andrea~De Lucia}, {and} \bibinfo{person}{Fabio Palomba}.} \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{Just-In-Time Test Smell Detection and Refactoring: The {DARTS} Project}. In \bibinfo{booktitle}{\emph{{ICPC} '20: 28th International Conference on Program Comprehension, Seoul, Republic of Korea, July 13-15, 2020}}. \bibinfo{publisher}{{ACM}}, \bibinfo{pages}{441--445}.
+\newblock
+\href{https://doi.org/10.1145/3387904.3389296}{doi:\nolinkurl{10.1145/3387904.3389296}}
+
+
+\bibitem[{LangChain Team}(2024)]%
+        {LangGraph2024}
+\bibfield{author}{\bibinfo{person}{{LangChain Team}}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \bibinfo{title}{{LangGraph}: Building Stateful, Multi-Actor Applications with {LLMs}}.
+\newblock
+\urldef\tempurl%
+\url{https://github.com/langchain-ai/langgraph}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Levy et~al\mbox{.}(2024)]%
+        {Levy2024SameTask}
+\bibfield{author}{\bibinfo{person}{Mosh Levy}, \bibinfo{person}{Alon Jacoby}, {and} \bibinfo{person}{Yoav Goldberg}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Same Task, More Tokens: the Impact of Input Length on the Reasoning Performance of Large Language Models}. In \bibinfo{booktitle}{\emph{Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers), {ACL} 2024, Bangkok, Thailand, August 11-16, 2024}}, \bibfield{editor}{\bibinfo{person}{Lun{-}Wei Ku}, \bibinfo{person}{Andre Martins}, {and} \bibinfo{person}{Vivek Srikumar}} (Eds.). \bibinfo{publisher}{Association for Computational Linguistics}, \bibinfo{pages}{15339--15353}.
+\newblock
+\href{https://doi.org/10.18653/V1/2024.ACL-LONG.818}{doi:\nolinkurl{10.18653/V1/2024.ACL-LONG.818}}
+
+
+\bibitem[Lucas et~al\mbox{.}(2024)]%
+        {Lucas2024}
+\bibfield{author}{\bibinfo{person}{Keila Lucas}, \bibinfo{person}{Rohit Gheyi}, \bibinfo{person}{Elvys Soares}, \bibinfo{person}{M{\'{a}}rcio Ribeiro}, {and} \bibinfo{person}{Ivan Machado}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Evaluating Large Language Models in Detecting Test Smells}. In \bibinfo{booktitle}{\emph{Proceedings of the 38th Brazilian Symposium on Software Engineering, {SBES} 2024, Curitiba, Brazil, September 30 - October 4, 2024}}, \bibfield{editor}{\bibinfo{person}{Igor Steinmacher}, \bibinfo{person}{Sabrina Marczak}, \bibinfo{person}{Thelma~Elita Colanzi}, \bibinfo{person}{Davi Viana}, \bibinfo{person}{Leopoldo Teixeira}, \bibinfo{person}{Silvia~R. Vergilio}, \bibinfo{person}{Monalessa Barcellos}, \bibinfo{person}{Ivan Machado}, {and} \bibinfo{person}{Johnny Marques}} (Eds.). \bibinfo{publisher}{{SBC}}, \bibinfo{pages}{672--678}.
+\newblock
+\href{https://doi.org/10.5753/SBES.2024.3642}{doi:\nolinkurl{10.5753/SBES.2024.3642}}
+
+
+\bibitem[Martin(2000)]%
+        {Martin2000}
+\bibfield{author}{\bibinfo{person}{Robert~C Martin}.} \bibinfo{year}{2000}\natexlab{}.
+\newblock \showarticletitle{Design principles and design patterns}.
+\newblock \bibinfo{journal}{\emph{Object Mentor}} \bibinfo{volume}{1}, \bibinfo{number}{34} (\bibinfo{year}{2000}), \bibinfo{pages}{597}.
+\newblock
+
+
+\bibitem[Martin(2017)]%
+        {Martin2017}
+\bibfield{author}{\bibinfo{person}{Robert~C Martin}.} \bibinfo{year}{2017}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{Clean architecture: a craftsman's guide to software structure and design}}.
+\newblock \bibinfo{publisher}{Prentice Hall Press}.
+\newblock
+
+
+\bibitem[Martins et~al\mbox{.}(2024)]%
+        {Martins2024}
+\bibfield{author}{\bibinfo{person}{Gustavo~F. Martins}, \bibinfo{person}{Emiliandro C.~M. Firmino}, {and} \bibinfo{person}{Vinicius P.~De Mello}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{The Use of Large Language Model in Code Review Automation: An Examination of Enforcing {SOLID} Principles}. In \bibinfo{booktitle}{\emph{Artificial Intelligence in {HCI} - 5th International Conference, {AI-HCI} 2024, Held as Part of the 26th {HCI} International Conference, {HCII} 2024, Washington, DC, USA, June 29 - July 4, 2024, Proceedings, Part {III}}}, \bibfield{editor}{\bibinfo{person}{Helmut Degen} {and} \bibinfo{person}{Stavroula Ntoa}} (Eds.), Vol.~\bibinfo{volume}{14736}. \bibinfo{publisher}{Springer}, \bibinfo{pages}{86--97}.
+\newblock
+\href{https://doi.org/10.1007/978-3-031-60615-1\_6}{doi:\nolinkurl{10.1007/978-3-031-60615-1\_6}}
+
+
+\bibitem[Melo et~al\mbox{.}(2025)]%
+        {Melo2025}
+\bibfield{author}{\bibinfo{person}{Rian Melo}, \bibinfo{person}{Pedro Sim{\~{o}}es}, \bibinfo{person}{Rohit Gheyi}, \bibinfo{person}{Marcelo d'Amorim}, \bibinfo{person}{M{\'{a}}rcio Ribeiro}, \bibinfo{person}{Gustavo Soares}, \bibinfo{person}{Eduardo Almeida}, {and} \bibinfo{person}{Elvys Soares}.} \bibinfo{year}{2025}\natexlab{}.
+\newblock \showarticletitle{Agentic LMs: Hunting Down Test Smells}.
+\newblock \bibinfo{journal}{\emph{CoRR}}  \bibinfo{volume}{abs/2504.07277} (\bibinfo{year}{2025}).
+\newblock
+\href{https://doi.org/10.48550/ARXIV.2504.07277}{doi:\nolinkurl{10.48550/ARXIV.2504.07277}}
+\showeprint[arXiv]{2504.07277}
+
+
+\bibitem[Oktafiani and Hendradjaya(2018)]%
+        {Oktafiani2018}
+\bibfield{author}{\bibinfo{person}{Intan Oktafiani} {and} \bibinfo{person}{Bayu Hendradjaya}.} \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{Software Metrics Proposal for Conformity Checking of Class Diagram to SOLID Design Principles}. In \bibinfo{booktitle}{\emph{2018 5th International Conference on Data and Software Engineering (ICoDSE)}}. IEEE, \bibinfo{pages}{1--6}.
+\newblock
+
+
+\bibitem[{Ollama Team}(2024)]%
+        {Ollama2024}
+\bibfield{author}{\bibinfo{person}{{Ollama Team}}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \bibinfo{title}{Ollama: Run Large Language Models Locally}.
+\newblock
+\urldef\tempurl%
+\url{https://ollama.com}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Palomba et~al\mbox{.}(2018)]%
+        {Palomba2015}
+\bibfield{author}{\bibinfo{person}{Fabio Palomba}, \bibinfo{person}{Gabriele Bavota}, \bibinfo{person}{Massimiliano~Di Penta}, \bibinfo{person}{Fausto Fasano}, \bibinfo{person}{Rocco Oliveto}, {and} \bibinfo{person}{Andrea~De Lucia}.} \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{On the Diffuseness and the Impact on Maintainability of Code Smells: A Large Scale Empirical Investigation}.
+\newblock \bibinfo{journal}{\emph{Empir. Softw. Eng.}} \bibinfo{volume}{23}, \bibinfo{number}{3} (\bibinfo{year}{2018}), \bibinfo{pages}{1188--1221}.
+\newblock
+\href{https://doi.org/10.1007/S10664-017-9535-Z}{doi:\nolinkurl{10.1007/S10664-017-9535-Z}}
+
+
+\bibitem[Pehlivan et~al\mbox{.}(2025)]%
+        {Pehlivan2025}
+\bibfield{author}{\bibinfo{person}{Fatih Pehlivan}, \bibinfo{person}{Ar{\c{c}}in~{\"{U}}lk{\"{u}} Erg{\"{u}}zen}, \bibinfo{person}{Sahand~Moslemi Yengejeh}, \bibinfo{person}{Mayasah Lami}, {and} \bibinfo{person}{Anil Koyuncu}.} \bibinfo{year}{2025}\natexlab{}.
+\newblock \showarticletitle{Are We {SOLID} Yet? An Empirical Study on Prompting LLMs to Detect Design Principle Violations}. In \bibinfo{booktitle}{\emph{40th {IEEE/ACM} International Conference on Automated Software Engineering, {ASE} 2025, Seoul, Korea, Republic of, November 16-20, 2025}}. \bibinfo{publisher}{{IEEE}}, \bibinfo{pages}{3958--3962}.
+\newblock
+\href{https://doi.org/10.1109/ASE63991.2025.00350}{doi:\nolinkurl{10.1109/ASE63991.2025.00350}}
+
+
+\bibitem[Pontillo et~al\mbox{.}(2022)]%
+        {Pontillo2024}
+\bibfield{author}{\bibinfo{person}{Valeria Pontillo}, \bibinfo{person}{Dario~Amoroso d'Aragona}, \bibinfo{person}{Fabiano Pecorelli}, \bibinfo{person}{Dario~Di Nucci}, \bibinfo{person}{Filomena Ferrucci}, {and} \bibinfo{person}{Fabio Palomba}.} \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{Machine Learning-Based Test Smell Detection}.
+\newblock \bibinfo{journal}{\emph{CoRR}}  \bibinfo{volume}{abs/2208.07574} (\bibinfo{year}{2022}).
+\newblock
+\href{https://doi.org/10.48550/ARXIV.2208.07574}{doi:\nolinkurl{10.48550/ARXIV.2208.07574}}
+\showeprint[arXiv]{2208.07574}
+
+
+\bibitem[{Qwen Team}(2026)]%
+        {Qwen2025}
+\bibfield{author}{\bibinfo{person}{{Qwen Team}}.} \bibinfo{year}{2026}\natexlab{}.
+\newblock \bibinfo{title}{{Qwen3.5}: Towards Native Multimodal Agents}.
+\newblock
+\urldef\tempurl%
+\url{https://qwen.ai/blog?id=qwen3.5}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Roy et~al\mbox{.}(2024)]%
+        {Roy2024}
+\bibfield{author}{\bibinfo{person}{Gifty Roy}, \bibinfo{person}{M Manohar}, {and} \bibinfo{person}{Benjamin~A Jacob}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Automated Verification of Open/Closed Principle: A Code Analysis Approach}. In \bibinfo{booktitle}{\emph{2024 5th International Conference for Emerging Technology (INCET)}}. IEEE, \bibinfo{pages}{1--7}.
+\newblock
+
+
+\bibitem[Rozi{\`{e}}re et~al\mbox{.}(2023)]%
+        {Roziere2024}
+\bibfield{author}{\bibinfo{person}{Baptiste Rozi{\`{e}}re}, \bibinfo{person}{Jonas Gehring}, \bibinfo{person}{Fabian Gloeckle}, \bibinfo{person}{Sten Sootla}, \bibinfo{person}{Itai Gat}, \bibinfo{person}{Xiaoqing~Ellen Tan}, \bibinfo{person}{Yossi Adi}, \bibinfo{person}{Jingyu Liu}, \bibinfo{person}{Tal Remez}, \bibinfo{person}{J{\'{e}}r{\'{e}}my Rapin}, \bibinfo{person}{Artyom Kozhevnikov}, \bibinfo{person}{Ivan Evtimov}, \bibinfo{person}{Joanna Bitton}, \bibinfo{person}{Manish Bhatt}, \bibinfo{person}{Cristian Canton{-}Ferrer}, \bibinfo{person}{Aaron Grattafiori}, \bibinfo{person}{Wenhan Xiong}, \bibinfo{person}{Alexandre D{\'{e}}fossez}, \bibinfo{person}{Jade Copet}, \bibinfo{person}{Faisal Azhar}, \bibinfo{person}{Hugo Touvron}, \bibinfo{person}{Louis Martin}, \bibinfo{person}{Nicolas Usunier}, \bibinfo{person}{Thomas Scialom}, {and} \bibinfo{person}{Gabriel Synnaeve}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{Code Llama: Open Foundation Models for Code}.
+\newblock \bibinfo{journal}{\emph{CoRR}}  \bibinfo{volume}{abs/2308.12950} (\bibinfo{year}{2023}).
+\newblock
+\href{https://doi.org/10.48550/ARXIV.2308.12950}{doi:\nolinkurl{10.48550/ARXIV.2308.12950}}
+\showeprint[arXiv]{2308.12950}
+
+
+\bibitem[Schindler and Rausch(2025)]%
+        {AzimHassan2024}
+\bibfield{author}{\bibinfo{person}{Christian Schindler} {and} \bibinfo{person}{Andreas Rausch}.} \bibinfo{year}{2025}\natexlab{}.
+\newblock \showarticletitle{LLM-Based Design Pattern Detection}.
+\newblock \bibinfo{journal}{\emph{CoRR}}  \bibinfo{volume}{abs/2502.18458} (\bibinfo{year}{2025}).
+\newblock
+\href{https://doi.org/10.48550/ARXIV.2502.18458}{doi:\nolinkurl{10.48550/ARXIV.2502.18458}}
+\showeprint[arXiv]{2502.18458}
+
+
+\bibitem[Sharma and Spinellis(2018)]%
+        {Sharma2018}
+\bibfield{author}{\bibinfo{person}{Tushar Sharma} {and} \bibinfo{person}{Diomidis Spinellis}.} \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{A Survey on Software Smells}.
+\newblock \bibinfo{journal}{\emph{J. Syst. Softw.}}  \bibinfo{volume}{138} (\bibinfo{year}{2018}), \bibinfo{pages}{158--173}.
+\newblock
+\href{https://doi.org/10.1016/J.JSS.2017.12.034}{doi:\nolinkurl{10.1016/J.JSS.2017.12.034}}
+
+
+\bibitem[Turan and Tanr{\i}{\"o}ver(2018)]%
+        {Turan2018}
+\bibfield{author}{\bibinfo{person}{Osman Turan} {and} \bibinfo{person}{{\"O}mer~{\"O}zg{\"u}r Tanr{\i}{\"o}ver}.} \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{An experimental evaluation of the effect of solid principles to microsoft vs code metrics}.
+\newblock \bibinfo{journal}{\emph{AJIT-e: Academic Journal of Information Technology}} \bibinfo{volume}{9}, \bibinfo{number}{34} (\bibinfo{year}{2018}), \bibinfo{pages}{7--24}.
+\newblock
+
+
+\bibitem[Wang et~al\mbox{.}(2024)]%
+        {Wang2024}
+\bibfield{author}{\bibinfo{person}{Lei Wang}, \bibinfo{person}{Chen Ma}, \bibinfo{person}{Xueyang Feng}, \bibinfo{person}{Zeyu Zhang}, \bibinfo{person}{Hao Yang}, \bibinfo{person}{Jingsen Zhang}, \bibinfo{person}{Zhiyuan Chen}, \bibinfo{person}{Jiakai Tang}, \bibinfo{person}{Xu Chen}, \bibinfo{person}{Yankai Lin}, \bibinfo{person}{Wayne~Xin Zhao}, \bibinfo{person}{Zhewei Wei}, {and} \bibinfo{person}{Jirong Wen}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{A survey on large language model based autonomous agents}.
+\newblock \bibinfo{journal}{\emph{Frontiers Comput. Sci.}} \bibinfo{volume}{18}, \bibinfo{number}{6} (\bibinfo{year}{2024}), \bibinfo{pages}{186345}.
+\newblock
+\href{https://doi.org/10.1007/S11704-024-40231-1}{doi:\nolinkurl{10.1007/S11704-024-40231-1}}
+
+
+\bibitem[Wang et~al\mbox{.}(2021)]%
+        {Wang2021}
+\bibfield{author}{\bibinfo{person}{Tongjie Wang}, \bibinfo{person}{Yaroslav Golubev}, \bibinfo{person}{Oleg Smirnov}, \bibinfo{person}{Jiawei Li}, \bibinfo{person}{Timofey Bryksin}, {and} \bibinfo{person}{Iftekhar Ahmed}.} \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{PyNose: {A} Test Smell Detector For Python}. In \bibinfo{booktitle}{\emph{36th {IEEE/ACM} International Conference on Automated Software Engineering, {ASE} 2021, Melbourne, Australia, November 15-19, 2021}}. \bibinfo{publisher}{{IEEE}}, \bibinfo{pages}{593--605}.
+\newblock
+\href{https://doi.org/10.1109/ASE51524.2021.9678615}{doi:\nolinkurl{10.1109/ASE51524.2021.9678615}}
+
+
+\bibitem[Yanakiev et~al\mbox{.}(2025)]%
+        {Yanakiev2025}
+\bibfield{author}{\bibinfo{person}{Ivan Yanakiev}, \bibinfo{person}{Bogdan{-}Mihai Lazar}, {and} \bibinfo{person}{Andrea Capiluppi}.} \bibinfo{year}{2025}\natexlab{}.
+\newblock \showarticletitle{Applying {SOLID} Principles for the Refactoring of Legacy Code: An Experience Report}.
+\newblock \bibinfo{journal}{\emph{J. Syst. Softw.}}  \bibinfo{volume}{220} (\bibinfo{year}{2025}), \bibinfo{pages}{112254}.
+\newblock
+\href{https://doi.org/10.1016/J.JSS.2024.112254}{doi:\nolinkurl{10.1016/J.JSS.2024.112254}}
+
+
+\bibitem[Yao et~al\mbox{.}(2023)]%
+        {Yao2023}
+\bibfield{author}{\bibinfo{person}{Shunyu Yao}, \bibinfo{person}{Jeffrey Zhao}, \bibinfo{person}{Dian Yu}, \bibinfo{person}{Nan Du}, \bibinfo{person}{Izhak Shafran}, \bibinfo{person}{Karthik~R. Narasimhan}, {and} \bibinfo{person}{Yuan Cao}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{ReAct: Synergizing Reasoning and Acting in Language Models}. In \bibinfo{booktitle}{\emph{The Eleventh International Conference on Learning Representations, {ICLR} 2023, Kigali, Rwanda, May 1-5, 2023}}. \bibinfo{publisher}{OpenReview.net}.
+\newblock
+\urldef\tempurl%
+\url{https://openreview.net/forum?id=WE\_vluYUL-X}
+\showURL{%
+\tempurl}
+
+
+\end{thebibliography}

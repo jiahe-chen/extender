@@ -1,0 +1,94 @@
+================================================================================
+SOLID BENCHMARK: DIFF EVAL (deepseek-r1-8b) ANALYSIS REPORT
+================================================================================
+
+## OVERALL SUMMARY
+----------------------------------------
+Total Examples: 226
+Overall Accuracy: 40.71%
+Correct Detections: 92
+Incorrect Detections: 134
+Mean Processing Time: 198.30s
+Median Processing Time: 124.80s
+Total Processing Time: 44814.74s
+
+## ACCURACY BY VIOLATION TYPE
+----------------------------------------
+Violation   Correct    Total   Accuracy
+----------------------------------------
+DIP              21       34     61.76%
+ISP              27       48     56.25%
+LSP               0       48      0.00%
+OCP              41       48     85.42%
+SRP               3       48      6.25%
+
+## ACCURACY BY DIFFICULTY LEVEL
+----------------------------------------
+Level         Correct    Total   Accuracy
+----------------------------------------
+EASY               44       76     57.89%
+HARD               17       74     22.97%
+MODERATE           31       76     40.79%
+
+## ACCURACY BY PROGRAMMING LANGUAGE
+----------------------------------------
+Language      Correct    Total   Accuracy
+----------------------------------------
+C#                  5       20     25.00%
+CSHARP             17       36     47.22%
+JAVA               19       57     33.33%
+KOTLIN             26       56     46.43%
+PYTHON             25       57     43.86%
+
+## RUNTIME STATISTICS
+----------------------------------------
+Overall:
+  Mean:   198.30s
+  Median: 124.80s
+  Std:    261.38s
+  Min:    18.39s
+  Max:    1841.13s
+
+By Violation Type:
+  DIP: 121.59s
+  ISP: 183.50s
+  LSP: 159.17s
+  OCP: 296.67s
+  SRP: 208.16s
+
+## MISCLASSIFICATION PATTERNS
+----------------------------------------
+Actual     Detected      Count
+----------------------------------------
+SRP        OCP              22
+LSP        ISP              22
+LSP        OCP              20
+ISP        OCP              17
+SRP        DIP              14
+DIP        OCP              10
+SRP        ISP               6
+LSP        DIP               6
+DIP        SRP               2
+DIP        ISP               1
+
+## FALSE NEGATIVES (No Detection)
+----------------------------------------
+Violation     Count
+----------------------------------------
+ISP               3
+OCP               6
+SRP               3
+Total            12
+
+## KEY FINDINGS
+----------------------------------------
+- Best performing violation: OCP (85.42%)
+- Worst performing violation: LSP (0.00%)
+- Best performing level: EASY (57.89%)
+- Worst performing level: HARD (22.97%)
+- Best performing language: CSHARP (47.22%)
+- Worst performing language: C# (25.00%)
+
+================================================================================
+END OF REPORT
+================================================================================

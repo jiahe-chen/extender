@@ -1,0 +1,106 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global/global}
+    \entry{Axler2020}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=71493eec7caacea528ad39dbfb52773a}{%
+           family={Axler},
+           familyi={A\bibinitperiod},
+           given={Sheldon},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{71493eec7caacea528ad39dbfb52773a}
+      \strng{fullhash}{71493eec7caacea528ad39dbfb52773a}
+      \strng{fullhashraw}{71493eec7caacea528ad39dbfb52773a}
+      \strng{bibnamehash}{71493eec7caacea528ad39dbfb52773a}
+      \strng{authorbibnamehash}{71493eec7caacea528ad39dbfb52773a}
+      \strng{authornamehash}{71493eec7caacea528ad39dbfb52773a}
+      \strng{authorfullhash}{71493eec7caacea528ad39dbfb52773a}
+      \strng{authorfullhashraw}{71493eec7caacea528ad39dbfb52773a}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Measure, Integration \& Real Analysis}
+      \field{year}{2020}
+      \verb{doi}
+      \verb 10.1007/978-3-030-33143-6
+      \endverb
+    \endentry
+    \entry{Zhang2021}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=e29e2cdbaa50d58d413b689667ace7db}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Han},
+           giveni={H\bibinitperiod}}}%
+        {{hash=a1c60bf1096b2319092d75de748095c6}{%
+           family={Fan},
+           familyi={F\bibinitperiod},
+           given={Huawei},
+           giveni={H\bibinitperiod}}}%
+        {{hash=cce05cab2c437e9c128f853684ee3137}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Liang},
+           giveni={L\bibinitperiod}}}%
+        {{hash=13f130cc9092f464777eeb08a8dd109a}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Xingang},
+           giveni={X\bibinitperiod}}}%
+      }
+      \strng{namehash}{435720fb71fff6bd0bc5be7059a41b43}
+      \strng{fullhash}{45aefca207201a722bf2cf3f9de43880}
+      \strng{fullhashraw}{45aefca207201a722bf2cf3f9de43880}
+      \strng{bibnamehash}{435720fb71fff6bd0bc5be7059a41b43}
+      \strng{authorbibnamehash}{435720fb71fff6bd0bc5be7059a41b43}
+      \strng{authornamehash}{435720fb71fff6bd0bc5be7059a41b43}
+      \strng{authorfullhash}{45aefca207201a722bf2cf3f9de43880}
+      \strng{authorfullhashraw}{45aefca207201a722bf2cf3f9de43880}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{2}
+      \field{journaltitle}{Phys. Rev. E}
+      \field{title}{Learning {H}amiltonian dynamics with reservoir computing}
+      \field{volume}{104}
+      \field{year}{2021}
+      \field{pages}{024205}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevE.104.024205
+      \endverb
+      \verb{urlraw}
+      \verb https://link.aps.org/doi/10.1103/PhysRevE.104.024205
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRevE.104.024205
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

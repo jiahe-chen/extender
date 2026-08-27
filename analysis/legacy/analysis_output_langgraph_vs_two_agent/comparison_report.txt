@@ -1,0 +1,61 @@
+================================================================================
+SOLID BENCHMARK: LANGGRAPH SINGLE-AGENT vs TWO-AGENT COMPARISON REPORT
+================================================================================
+
+## OVERALL SUMMARY
+----------------------------------------
+Langgraph Single-Agent:
+  - Total Examples: 1200
+  - Models: 5 (deepseek-r1-8b, gemma3-4b, llama3-1-8b, llama3-2-3b, qwen3-8b)
+  - Overall Accuracy: 55.08%
+  - Mean Runtime: 1.54s
+
+Two-Agent:
+  - Total Examples: 1200
+  - Models: 5 (deepseek-r1-8b, gemma3-4b, llama3-1-8b, llama3-2-3b, qwen3-8b)
+  - Overall Accuracy: 49.58%
+  - Mean Runtime: 8.75s
+
+DIFFERENCE (Two-Agent - Langgraph Single-Agent):
+  - Accuracy: -5.50%
+  - Runtime: +7.21s
+
+## ACCURACY BY MODEL
+----------------------------------------
+Model                   Langgraph    Two-Agent       Diff
+--------------------------------------------------------
+deepseek-r1-8b             67.92%       63.33%     -4.58%
+gemma3-4b                  34.17%       34.17%     +0.00%
+llama3-1-8b                52.50%       51.67%     -0.83%
+llama3-2-3b                47.50%       40.00%     -7.50%
+qwen3-8b                   73.33%       58.75%    -14.58%
+
+## ACCURACY BY VIOLATION TYPE
+----------------------------------------
+Violation     Langgraph    Two-Agent       Diff
+----------------------------------------------
+SRP              72.50%       89.17%    +16.67%
+OCP              93.75%       59.58%    -34.17%
+LSP              31.25%       18.75%    -12.50%
+ISP              47.92%       38.75%     -9.17%
+DIP              30.00%       41.67%    +11.67%
+
+## RUNTIME BY MODEL
+----------------------------------------
+Model                   Langgraph    Two-Agent       Diff
+--------------------------------------------------------
+deepseek-r1-8b              1.67s        7.27s     +5.60s
+gemma3-4b                   1.46s        9.17s     +7.72s
+llama3-1-8b                 1.85s       16.15s    +14.30s
+llama3-2-3b                 0.93s        5.69s     +4.76s
+qwen3-8b                    1.79s        5.45s     +3.66s
+
+## KEY FINDINGS
+----------------------------------------
+- Langgraph Single-Agent approach shows HIGHER accuracy (55.08% vs 49.58%)
+- Two-Agent approach is SLOWER (8.75s vs 1.54s)
+- Worst regression with Two-Agent: qwen3-8b (-14.58%)
+
+================================================================================
+END OF REPORT
+================================================================================

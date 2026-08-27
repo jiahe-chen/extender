@@ -1,0 +1,68 @@
+================================================================================
+SOLID BENCHMARK: LANGGRAPH vs LEGACY SINGLE-AGENT COMPARISON REPORT
+================================================================================
+
+## OVERALL SUMMARY
+----------------------------------------
+Langgraph Single-Agent:
+  - Total Examples: 1200
+  - Models: 5 (deepseek-r1-8b, gemma3-4b, llama3-1-8b, llama3-2-3b, qwen3-8b)
+  - Overall Accuracy: 55.08%
+  - Mean Runtime: 1.54s
+
+Legacy Single-Agent:
+  - Total Examples: 1440
+  - Models: 6 (deepseek-r1-8b, gemma3-4b, llama3-1-8b, llama3-2-3b, qwen3-4b, qwen3-8b)
+  - Overall Accuracy: 40.56%
+  - Mean Runtime: 1.63s
+
+DIFFERENCE (Langgraph - Legacy):
+  - Accuracy: +14.53%
+  - Runtime: -0.09s
+
+## ACCURACY BY MODEL
+----------------------------------------
+Model                   Langgraph       Legacy       Diff
+--------------------------------------------------------
+deepseek-r1-8b             67.92%       48.75%    +19.17%
+gemma3-4b                  34.17%       13.75%    +20.42%
+llama3-1-8b                52.50%       46.67%     +5.83%
+llama3-2-3b                47.50%       33.33%    +14.17%
+qwen3-4b                      N/A       47.50%        N/A
+qwen3-8b                   73.33%       53.33%    +20.00%
+
+## ACCURACY BY VIOLATION TYPE
+----------------------------------------
+Violation     Langgraph       Legacy       Diff
+----------------------------------------------
+SRP              72.50%       68.75%     +3.75%
+OCP              93.75%       36.46%    +57.29%
+LSP              31.25%       39.24%     -7.99%
+ISP              47.92%       45.49%     +2.43%
+DIP              30.00%       12.85%    +17.15%
+
+## RUNTIME BY MODEL
+----------------------------------------
+Model                   Langgraph       Legacy       Diff
+--------------------------------------------------------
+deepseek-r1-8b              1.67s        1.93s     -0.27s
+gemma3-4b                   1.46s        1.49s     -0.04s
+llama3-1-8b                 1.85s        1.90s     -0.05s
+llama3-2-3b                 0.93s        0.99s     -0.06s
+qwen3-4b                      N/A        1.56s        N/A
+qwen3-8b                    1.79s        1.87s     -0.08s
+
+## KEY FINDINGS
+----------------------------------------
+- Langgraph approach shows HIGHER accuracy (55.08% vs 40.56%)
+- Langgraph approach is FASTER (1.54s vs 1.63s)
+- Best improvement with Langgraph: gemma3-4b (+20.42%)
+
+## VIOLATION TYPE INSIGHTS
+----------------------------------------
+- Best improvement: OCP (+57.29%)
+- Worst regression: LSP (-7.99%)
+
+================================================================================
+END OF REPORT
+================================================================================

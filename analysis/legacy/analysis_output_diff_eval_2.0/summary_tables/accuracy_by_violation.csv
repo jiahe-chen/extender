@@ -1,0 +1,6 @@
+Violation Type,Context-Managed (%),Diff v10 (%),LLM-Only (%),Best System,Best Accuracy (%),CM vs Diff,CM vs LLM
+DIP,89.58,47.92,25.00,Context-Managed,89.58,+41.67,+64.58
+ISP,66.67,77.08,100.00,LLM-Only,100.00,-10.42,-33.33
+LSP,79.17,6.25,60.42,Context-Managed,79.17,+72.92,+18.75
+OCP,37.50,54.17,97.92,LLM-Only,97.92,-16.67,-60.42
+SRP,60.42,47.92,83.33,LLM-Only,83.33,+12.50,-22.92

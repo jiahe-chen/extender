@@ -1,0 +1,6 @@
+Actual Violation,Total Examples,Correct Detections,Accuracy (%),Errors,Most Common Error,Error Count
+DIP,48,43,89.58,5,SRP,5
+ISP,48,32,66.67,16,LSP,15
+LSP,48,38,79.17,10,DIP,6
+OCP,48,18,37.50,30,DIP,19
+SRP,48,29,60.42,19,DIP,16

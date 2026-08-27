@@ -1,0 +1,1201 @@
+agent_type,model,violation_type,example_id,level,language,detection_success,detected_violation_type,actual_violation_type,processing_time,api_call_success
+two_agent,deepseek-r1-8b,SRP,SRP_1,EASY,JAVA,True,SRP,SRP,2.82,True
+two_agent,deepseek-r1-8b,SRP,SRP_2,EASY,JAVA,True,SRP,SRP,2.66,True
+two_agent,deepseek-r1-8b,SRP,SRP_3,EASY,JAVA,True,SRP,SRP,3.04,True
+two_agent,deepseek-r1-8b,SRP,SRP_4,EASY,JAVA,True,SRP,SRP,2.66,True
+two_agent,deepseek-r1-8b,SRP,SRP_5,MODERATE,JAVA,True,SRP,SRP,3.63,True
+two_agent,deepseek-r1-8b,SRP,SRP_6,MODERATE,JAVA,True,SRP,SRP,4.61,True
+two_agent,deepseek-r1-8b,SRP,SRP_7,MODERATE,JAVA,True,SRP,SRP,4.33,True
+two_agent,deepseek-r1-8b,SRP,SRP_8,MODERATE,JAVA,True,SRP,SRP,4.03,True
+two_agent,deepseek-r1-8b,SRP,SRP_9,HARD,JAVA,True,SRP,SRP,5.53,True
+two_agent,deepseek-r1-8b,SRP,SRP_10,HARD,JAVA,True,SRP,SRP,5.97,True
+two_agent,deepseek-r1-8b,SRP,SRP_11,HARD,JAVA,True,SRP,SRP,6.52,True
+two_agent,deepseek-r1-8b,SRP,SRP_12,HARD,JAVA,True,SRP,SRP,25.61,True
+two_agent,deepseek-r1-8b,SRP,SRP_13,EASY,PYTHON,True,SRP,SRP,2.75,True
+two_agent,deepseek-r1-8b,SRP,SRP_14,EASY,PYTHON,True,SRP,SRP,2.95,True
+two_agent,deepseek-r1-8b,SRP,SRP_15,EASY,PYTHON,True,SRP,SRP,2.85,True
+two_agent,deepseek-r1-8b,SRP,SRP_16,EASY,PYTHON,True,SRP,SRP,2.54,True
+two_agent,deepseek-r1-8b,SRP,SRP_17,MODERATE,PYTHON,True,SRP,SRP,3.53,True
+two_agent,deepseek-r1-8b,SRP,SRP_18,MODERATE,PYTHON,True,SRP,SRP,4.99,True
+two_agent,deepseek-r1-8b,SRP,SRP_19,MODERATE,PYTHON,True,SRP,SRP,4.46,True
+two_agent,deepseek-r1-8b,SRP,SRP_20,MODERATE,PYTHON,True,SRP,SRP,4.36,True
+two_agent,deepseek-r1-8b,SRP,SRP_21,HARD,PYTHON,True,SRP,SRP,4.82,True
+two_agent,deepseek-r1-8b,SRP,SRP_22,HARD,PYTHON,True,SRP,SRP,6.16,True
+two_agent,deepseek-r1-8b,SRP,SRP_23,HARD,PYTHON,True,SRP,SRP,5.83,True
+two_agent,deepseek-r1-8b,SRP,SRP_24,HARD,PYTHON,True,SRP,SRP,5.94,True
+two_agent,deepseek-r1-8b,SRP,SRP_25,EASY,KOTLIN,True,SRP,SRP,2.53,True
+two_agent,deepseek-r1-8b,SRP,SRP_26,EASY,KOTLIN,True,SRP,SRP,2.76,True
+two_agent,deepseek-r1-8b,SRP,SRP_27,EASY,KOTLIN,True,SRP,SRP,2.86,True
+two_agent,deepseek-r1-8b,SRP,SRP_28,EASY,KOTLIN,True,SRP,SRP,3.28,True
+two_agent,deepseek-r1-8b,SRP,SRP_29,MODERATE,KOTLIN,True,SRP,SRP,3.57,True
+two_agent,deepseek-r1-8b,SRP,SRP_30,MODERATE,KOTLIN,True,SRP,SRP,4.48,True
+two_agent,deepseek-r1-8b,SRP,SRP_31,MODERATE,KOTLIN,True,SRP,SRP,4.86,True
+two_agent,deepseek-r1-8b,SRP,SRP_32,MODERATE,KOTLIN,True,SRP,SRP,4.02,True
+two_agent,deepseek-r1-8b,SRP,SRP_33,HARD,KOTLIN,True,SRP,SRP,4.85,True
+two_agent,deepseek-r1-8b,SRP,SRP_34,HARD,KOTLIN,True,SRP,SRP,5.51,True
+two_agent,deepseek-r1-8b,SRP,SRP_35,HARD,KOTLIN,True,SRP,SRP,5.56,True
+two_agent,deepseek-r1-8b,SRP,SRP_36,HARD,KOTLIN,True,SRP,SRP,5.74,True
+two_agent,deepseek-r1-8b,SRP,SRP_37,EASY,CSHARP,True,SRP,SRP,3.12,True
+two_agent,deepseek-r1-8b,SRP,SRP_38,EASY,CSHARP,True,SRP,SRP,2.93,True
+two_agent,deepseek-r1-8b,SRP,SRP_39,EASY,CSHARP,True,SRP,SRP,2.97,True
+two_agent,deepseek-r1-8b,SRP,SRP_40,EASY,CSHARP,True,SRP,SRP,2.76,True
+two_agent,deepseek-r1-8b,SRP,SRP_41,MODERATE,CSHARP,True,SRP,SRP,3.68,True
+two_agent,deepseek-r1-8b,SRP,SRP_42,MODERATE,CSHARP,True,SRP,SRP,4.56,True
+two_agent,deepseek-r1-8b,SRP,SRP_43,MODERATE,CSHARP,True,SRP,SRP,4.92,True
+two_agent,deepseek-r1-8b,SRP,SRP_44,MODERATE,CSHARP,True,SRP,SRP,4.4,True
+two_agent,deepseek-r1-8b,SRP,SRP_45,HARD,CSHARP,True,SRP,SRP,4.95,True
+two_agent,deepseek-r1-8b,SRP,SRP_46,HARD,CSHARP,True,SRP,SRP,6.04,True
+two_agent,deepseek-r1-8b,SRP,SRP_47,HARD,CSHARP,True,SRP,SRP,5.9,True
+two_agent,deepseek-r1-8b,SRP,SRP_48,HARD,CSHARP,True,SRP,SRP,6.62,True
+two_agent,deepseek-r1-8b,OCP,OCP_1,EASY,CSHARP,True,OCP,OCP,3.71,True
+two_agent,deepseek-r1-8b,OCP,OCP_2,EASY,CSHARP,True,OCP,OCP,4.28,True
+two_agent,deepseek-r1-8b,OCP,OCP_3,EASY,CSHARP,True,OCP,OCP,3.54,True
+two_agent,deepseek-r1-8b,OCP,OCP_4,EASY,CSHARP,True,OCP,OCP,3.7,True
+two_agent,deepseek-r1-8b,OCP,OCP_5,HARD,CSHARP,True,OCP,OCP,7.42,True
+two_agent,deepseek-r1-8b,OCP,OCP_6,HARD,CSHARP,True,OCP,OCP,6.35,True
+two_agent,deepseek-r1-8b,OCP,OCP_7,HARD,CSHARP,False,,OCP,192.97,True
+two_agent,deepseek-r1-8b,OCP,OCP_8,HARD,CSHARP,False,Multiple Design Smells,OCP,48.84,True
+two_agent,deepseek-r1-8b,OCP,OCP_9,MODERATE,CSHARP,True,OCP,OCP,5.55,True
+two_agent,deepseek-r1-8b,OCP,OCP_10,MODERATE,CSHARP,True,OCP,OCP,5.16,True
+two_agent,deepseek-r1-8b,OCP,OCP_11,MODERATE,CSHARP,True,OCP,OCP,6.84,True
+two_agent,deepseek-r1-8b,OCP,OCP_12,MODERATE,CSHARP,True,OCP,OCP,5.45,True
+two_agent,deepseek-r1-8b,OCP,OCP_13,EASY,JAVA,True,OCP,OCP,4.0,True
+two_agent,deepseek-r1-8b,OCP,OCP_14,EASY,JAVA,True,OCP,OCP,3.99,True
+two_agent,deepseek-r1-8b,OCP,OCP_15,EASY,JAVA,True,OCP,OCP,4.22,True
+two_agent,deepseek-r1-8b,OCP,OCP_16,EASY,JAVA,True,OCP,OCP,3.12,True
+two_agent,deepseek-r1-8b,OCP,OCP_17,HARD,JAVA,True,OCP,OCP,8.11,True
+two_agent,deepseek-r1-8b,OCP,OCP_18,HARD,JAVA,True,OCP,OCP,5.78,True
+two_agent,deepseek-r1-8b,OCP,OCP_19,HARD,JAVA,True,OCP,OCP,38.32,True
+two_agent,deepseek-r1-8b,OCP,OCP_20,HARD,JAVA,True,OCP,OCP,7.7,True
+two_agent,deepseek-r1-8b,OCP,OCP_21,MODERATE,JAVA,True,OCP,OCP,4.35,True
+two_agent,deepseek-r1-8b,OCP,OCP_22,MODERATE,JAVA,True,OCP,OCP,4.35,True
+two_agent,deepseek-r1-8b,OCP,OCP_23,MODERATE,JAVA,True,OCP,OCP,5.36,True
+two_agent,deepseek-r1-8b,OCP,OCP_24,MODERATE,JAVA,True,OCP,OCP,6.79,True
+two_agent,deepseek-r1-8b,OCP,OCP_25,EASY,KOTLIN,True,OCP,OCP,4.73,True
+two_agent,deepseek-r1-8b,OCP,OCP_26,EASY,KOTLIN,True,OCP,OCP,3.81,True
+two_agent,deepseek-r1-8b,OCP,OCP_27,EASY,KOTLIN,True,OCP,OCP,3.69,True
+two_agent,deepseek-r1-8b,OCP,OCP_28,EASY,KOTLIN,True,OCP,OCP,4.08,True
+two_agent,deepseek-r1-8b,OCP,OCP_29,HARD,KOTLIN,True,OCP,OCP,6.19,True
+two_agent,deepseek-r1-8b,OCP,OCP_30,HARD,KOTLIN,True,OCP,OCP,6.86,True
+two_agent,deepseek-r1-8b,OCP,OCP_31,HARD,KOTLIN,True,OCP,OCP,22.72,True
+two_agent,deepseek-r1-8b,OCP,OCP_32,HARD,KOTLIN,True,OCP,OCP,7.16,True
+two_agent,deepseek-r1-8b,OCP,OCP_33,MODERATE,KOTLIN,True,OCP,OCP,5.51,True
+two_agent,deepseek-r1-8b,OCP,OCP_34,MODERATE,KOTLIN,True,OCP,OCP,4.13,True
+two_agent,deepseek-r1-8b,OCP,OCP_35,MODERATE,KOTLIN,True,OCP,OCP,5.36,True
+two_agent,deepseek-r1-8b,OCP,OCP_36,MODERATE,KOTLIN,True,OCP,OCP,5.89,True
+two_agent,deepseek-r1-8b,OCP,OCP_37,EASY,PYTHON,True,OCP,OCP,3.72,True
+two_agent,deepseek-r1-8b,OCP,OCP_38,EASY,PYTHON,True,OCP,OCP,3.97,True
+two_agent,deepseek-r1-8b,OCP,OCP_39,EASY,PYTHON,True,OCP,OCP,4.36,True
+two_agent,deepseek-r1-8b,OCP,OCP_40,EASY,PYTHON,True,OCP,OCP,4.06,True
+two_agent,deepseek-r1-8b,OCP,OCP_41,HARD,PYTHON,True,OCP,OCP,6.66,True
+two_agent,deepseek-r1-8b,OCP,OCP_42,HARD,PYTHON,True,OCP,OCP,5.7,True
+two_agent,deepseek-r1-8b,OCP,OCP_43,HARD,PYTHON,True,OCP,OCP,6.79,True
+two_agent,deepseek-r1-8b,OCP,OCP_44,HARD,PYTHON,True,OCP,OCP,7.08,True
+two_agent,deepseek-r1-8b,OCP,OCP_45,MODERATE,PYTHON,True,OCP,OCP,5.13,True
+two_agent,deepseek-r1-8b,OCP,OCP_46,MODERATE,PYTHON,True,OCP,OCP,4.37,True
+two_agent,deepseek-r1-8b,OCP,OCP_47,MODERATE,PYTHON,True,OCP,OCP,5.95,True
+two_agent,deepseek-r1-8b,OCP,OCP_48,MODERATE,PYTHON,True,OCP,OCP,6.56,True
+two_agent,deepseek-r1-8b,LSP,LSP_1,EASY,JAVA,True,LSP,LSP,3.78,True
+two_agent,deepseek-r1-8b,LSP,LSP_2,EASY,PYTHON,True,LSP,LSP,3.3,True
+two_agent,deepseek-r1-8b,LSP,LSP_3,EASY,KOTLIN,True,LSP,LSP,3.82,True
+two_agent,deepseek-r1-8b,LSP,LSP_4,EASY,C#,True,LSP,LSP,3.86,True
+two_agent,deepseek-r1-8b,LSP,LSP_5,MODERATE,JAVA,True,LSP,LSP,4.17,True
+two_agent,deepseek-r1-8b,LSP,LSP_6,MODERATE,PYTHON,True,LSP,LSP,3.93,True
+two_agent,deepseek-r1-8b,LSP,LSP_7,MODERATE,KOTLIN,True,LSP,LSP,4.39,True
+two_agent,deepseek-r1-8b,LSP,LSP_8,MODERATE,C#,True,LSP,LSP,4.71,True
+two_agent,deepseek-r1-8b,LSP,LSP_9,HARD,JAVA,True,LSP,LSP,5.79,True
+two_agent,deepseek-r1-8b,LSP,LSP_10,HARD,PYTHON,False,OCP,LSP,5.97,True
+two_agent,deepseek-r1-8b,LSP,LSP_11,HARD,KOTLIN,True,LSP,LSP,7.98,True
+two_agent,deepseek-r1-8b,LSP,LSP_12,HARD,C#,True,LSP,LSP,17.28,True
+two_agent,deepseek-r1-8b,LSP,LSP_13,EASY,JAVA,True,LSP,LSP,4.31,True
+two_agent,deepseek-r1-8b,LSP,LSP_14,EASY,PYTHON,True,LSP,LSP,4.06,True
+two_agent,deepseek-r1-8b,LSP,LSP_15,EASY,KOTLIN,False,SRP,LSP,13.52,True
+two_agent,deepseek-r1-8b,LSP,LSP_16,EASY,C#,True,LSP,LSP,14.15,True
+two_agent,deepseek-r1-8b,LSP,LSP_17,MODERATE,JAVA,False,SRP,LSP,13.17,True
+two_agent,deepseek-r1-8b,LSP,LSP_18,MODERATE,PYTHON,False,SRP,LSP,22.0,True
+two_agent,deepseek-r1-8b,LSP,LSP_19,MODERATE,KOTLIN,False,OCP,LSP,12.76,True
+two_agent,deepseek-r1-8b,LSP,LSP_20,MODERATE,C#,False,OCP,LSP,4.66,True
+two_agent,deepseek-r1-8b,LSP,LSP_21,HARD,JAVA,False,OCP,LSP,5.47,True
+two_agent,deepseek-r1-8b,LSP,LSP_22,HARD,PYTHON,False,OCP,LSP,5.35,True
+two_agent,deepseek-r1-8b,LSP,LSP_23,HARD,KOTLIN,False,SRP,LSP,13.92,True
+two_agent,deepseek-r1-8b,LSP,LSP_24,HARD,C#,False,SRP,LSP,16.49,True
+two_agent,deepseek-r1-8b,LSP,LSP_25,EASY,JAVA,False,ISP,LSP,4.1,True
+two_agent,deepseek-r1-8b,LSP,LSP_26,EASY,PYTHON,False,SRP,LSP,3.24,True
+two_agent,deepseek-r1-8b,LSP,LSP_27,EASY,KOTLIN,False,OCP,LSP,3.77,True
+two_agent,deepseek-r1-8b,LSP,LSP_28,EASY,C#,False,DIP,LSP,12.45,True
+two_agent,deepseek-r1-8b,LSP,LSP_29,MODERATE,JAVA,False,"ISP, DIP",LSP,11.86,True
+two_agent,deepseek-r1-8b,LSP,LSP_30,MODERATE,PYTHON,False,OCP,LSP,4.67,True
+two_agent,deepseek-r1-8b,LSP,LSP_31,MODERATE,KOTLIN,False,OCP,LSP,5.27,True
+two_agent,deepseek-r1-8b,LSP,LSP_32,MODERATE,C#,False,OCP,LSP,5.89,True
+two_agent,deepseek-r1-8b,LSP,LSP_33,HARD,JAVA,False,SRP,LSP,16.23,True
+two_agent,deepseek-r1-8b,LSP,LSP_34,HARD,PYTHON,False,OCP,LSP,6.81,True
+two_agent,deepseek-r1-8b,LSP,LSP_35,HARD,KOTLIN,False,OCP,LSP,17.4,True
+two_agent,deepseek-r1-8b,LSP,LSP_36,HARD,C#,False,SRP,LSP,31.48,True
+two_agent,deepseek-r1-8b,LSP,LSP_37,EASY,JAVA,True,LSP,LSP,4.08,True
+two_agent,deepseek-r1-8b,LSP,LSP_38,EASY,PYTHON,True,LSP,LSP,4.05,True
+two_agent,deepseek-r1-8b,LSP,LSP_39,EASY,KOTLIN,False,OCP,LSP,4.03,True
+two_agent,deepseek-r1-8b,LSP,LSP_40,EASY,C#,True,LSP,LSP,3.8,True
+two_agent,deepseek-r1-8b,LSP,LSP_41,MODERATE,JAVA,True,LSP,LSP,5.34,True
+two_agent,deepseek-r1-8b,LSP,LSP_42,MODERATE,PYTHON,True,LSP,LSP,4.11,True
+two_agent,deepseek-r1-8b,LSP,LSP_43,MODERATE,KOTLIN,True,LSP,LSP,4.75,True
+two_agent,deepseek-r1-8b,LSP,LSP_44,MODERATE,C#,False,SRP,LSP,5.31,True
+two_agent,deepseek-r1-8b,LSP,LSP_45,HARD,JAVA,False,SRP,LSP,19.27,True
+two_agent,deepseek-r1-8b,LSP,LSP_46,HARD,PYTHON,False,OCP,LSP,6.34,True
+two_agent,deepseek-r1-8b,LSP,LSP_47,HARD,KOTLIN,False,OCP,LSP,5.77,True
+two_agent,deepseek-r1-8b,LSP,LSP_48,HARD,C#,False,SRP,LSP,16.28,True
+two_agent,deepseek-r1-8b,ISP,ISP_1,EASY,CSHARP,True,ISP,ISP,3.67,True
+two_agent,deepseek-r1-8b,ISP,ISP_2,EASY,CSHARP,False,LSP,ISP,5.02,True
+two_agent,deepseek-r1-8b,ISP,ISP_3,EASY,CSHARP,False,LSP,ISP,4.36,True
+two_agent,deepseek-r1-8b,ISP,ISP_4,EASY,CSHARP,False,LSP,ISP,4.17,True
+two_agent,deepseek-r1-8b,ISP,ISP_5,HARD,CSHARP,False,OCP,ISP,7.29,True
+two_agent,deepseek-r1-8b,ISP,ISP_6,HARD,CSHARP,False,LSP,ISP,6.42,True
+two_agent,deepseek-r1-8b,ISP,ISP_7,HARD,CSHARP,False,SRP,ISP,8.79,True
+two_agent,deepseek-r1-8b,ISP,ISP_8,HARD,CSHARP,True,ISP,ISP,7.98,True
+two_agent,deepseek-r1-8b,ISP,ISP_9,MODERATE,CSHARP,False,"SRP, LSP",ISP,24.49,True
+two_agent,deepseek-r1-8b,ISP,ISP_10,MODERATE,CSHARP,False,LSP,ISP,7.05,True
+two_agent,deepseek-r1-8b,ISP,ISP_11,MODERATE,CSHARP,True,ISP,ISP,4.63,True
+two_agent,deepseek-r1-8b,ISP,ISP_12,MODERATE,CSHARP,True,ISP,ISP,5.34,True
+two_agent,deepseek-r1-8b,ISP,ISP_13,EASY,JAVA,False,LSP,ISP,5.69,True
+two_agent,deepseek-r1-8b,ISP,ISP_14,EASY,JAVA,False,LSP,ISP,4.24,True
+two_agent,deepseek-r1-8b,ISP,ISP_15,EASY,JAVA,False,LSP,ISP,4.57,True
+two_agent,deepseek-r1-8b,ISP,ISP_16,EASY,JAVA,False,LSP,ISP,4.75,True
+two_agent,deepseek-r1-8b,ISP,ISP_17,HARD,JAVA,False,LSP,ISP,18.46,True
+two_agent,deepseek-r1-8b,ISP,ISP_18,HARD,JAVA,False,LSP,ISP,6.67,True
+two_agent,deepseek-r1-8b,ISP,ISP_19,HARD,JAVA,False,SRP,ISP,11.51,True
+two_agent,deepseek-r1-8b,ISP,ISP_20,HARD,JAVA,True,ISP,ISP,6.43,True
+two_agent,deepseek-r1-8b,ISP,ISP_21,MODERATE,JAVA,True,ISP,ISP,13.64,True
+two_agent,deepseek-r1-8b,ISP,ISP_22,MODERATE,JAVA,False,LSP,ISP,5.57,True
+two_agent,deepseek-r1-8b,ISP,ISP_23,MODERATE,JAVA,True,ISP,ISP,3.95,True
+two_agent,deepseek-r1-8b,ISP,ISP_24,MODERATE,JAVA,True,ISP,ISP,5.25,True
+two_agent,deepseek-r1-8b,ISP,ISP_25,EASY,KOTLIN,True,ISP,ISP,4.71,True
+two_agent,deepseek-r1-8b,ISP,ISP_26,EASY,KOTLIN,False,LSP,ISP,4.44,True
+two_agent,deepseek-r1-8b,ISP,ISP_27,EASY,KOTLIN,False,LSP,ISP,4.86,True
+two_agent,deepseek-r1-8b,ISP,ISP_28,EASY,KOTLIN,False,LSP,ISP,4.21,True
+two_agent,deepseek-r1-8b,ISP,ISP_29,HARD,KOTLIN,False,LSP,ISP,15.77,True
+two_agent,deepseek-r1-8b,ISP,ISP_30,HARD,KOTLIN,False,LSP,ISP,7.21,True
+two_agent,deepseek-r1-8b,ISP,ISP_31,HARD,KOTLIN,False,SRP,ISP,8.11,True
+two_agent,deepseek-r1-8b,ISP,ISP_32,HARD,KOTLIN,False,SRP,ISP,24.76,True
+two_agent,deepseek-r1-8b,ISP,ISP_33,MODERATE,KOTLIN,True,ISP,ISP,5.02,True
+two_agent,deepseek-r1-8b,ISP,ISP_34,MODERATE,KOTLIN,False,LSP,ISP,6.07,True
+two_agent,deepseek-r1-8b,ISP,ISP_35,MODERATE,KOTLIN,True,ISP,ISP,4.39,True
+two_agent,deepseek-r1-8b,ISP,ISP_36,MODERATE,KOTLIN,True,ISP,ISP,4.62,True
+two_agent,deepseek-r1-8b,ISP,ISP_37,EASY,PYTHON,True,ISP,ISP,4.04,True
+two_agent,deepseek-r1-8b,ISP,ISP_38,EASY,PYTHON,True,ISP,ISP,3.72,True
+two_agent,deepseek-r1-8b,ISP,ISP_39,EASY,PYTHON,True,ISP,ISP,4.58,True
+two_agent,deepseek-r1-8b,ISP,ISP_40,EASY,PYTHON,True,ISP,ISP,3.03,True
+two_agent,deepseek-r1-8b,ISP,ISP_41,HARD,PYTHON,True,ISP,ISP,7.63,True
+two_agent,deepseek-r1-8b,ISP,ISP_42,HARD,PYTHON,False,LSP,ISP,7.27,True
+two_agent,deepseek-r1-8b,ISP,ISP_43,HARD,PYTHON,False,SRP,ISP,8.0,True
+two_agent,deepseek-r1-8b,ISP,ISP_44,HARD,PYTHON,True,ISP,ISP,6.78,True
+two_agent,deepseek-r1-8b,ISP,ISP_45,MODERATE,PYTHON,True,ISP,ISP,6.39,True
+two_agent,deepseek-r1-8b,ISP,ISP_46,MODERATE,PYTHON,True,ISP,ISP,18.59,True
+two_agent,deepseek-r1-8b,ISP,ISP_47,MODERATE,PYTHON,True,ISP,ISP,4.74,True
+two_agent,deepseek-r1-8b,ISP,ISP_48,MODERATE,PYTHON,False,OCP,ISP,4.97,True
+two_agent,deepseek-r1-8b,DIP,DIP_1,EASY,JAVA,True,DIP,DIP,3.77,True
+two_agent,deepseek-r1-8b,DIP,DIP_2,EASY,PYTHON,True,DIP,DIP,3.99,True
+two_agent,deepseek-r1-8b,DIP,DIP_3,EASY,KOTLIN,True,DIP,DIP,4.62,True
+two_agent,deepseek-r1-8b,DIP,DIP_4,EASY,C#,True,DIP,DIP,4.34,True
+two_agent,deepseek-r1-8b,DIP,DIP_5,MODERATE,JAVA,False,SRP,DIP,3.84,True
+two_agent,deepseek-r1-8b,DIP,DIP_6,MODERATE,PYTHON,True,DIP,DIP,4.48,True
+two_agent,deepseek-r1-8b,DIP,DIP_7,MODERATE,KOTLIN,True,DIP,DIP,4.6,True
+two_agent,deepseek-r1-8b,DIP,DIP_8,MODERATE,C#,False,SRP,DIP,3.91,True
+two_agent,deepseek-r1-8b,DIP,DIP_9,HARD,JAVA,False,SRP,DIP,4.58,True
+two_agent,deepseek-r1-8b,DIP,DIP_10,HARD,PYTHON,False,SRP,DIP,5.0,True
+two_agent,deepseek-r1-8b,DIP,DIP_11,HARD,KOTLIN,False,SRP,DIP,4.35,True
+two_agent,deepseek-r1-8b,DIP,DIP_12,HARD,C#,False,SRP,DIP,4.75,True
+two_agent,deepseek-r1-8b,DIP,DIP_13,EASY,JAVA,True,DIP,DIP,3.79,True
+two_agent,deepseek-r1-8b,DIP,DIP_14,EASY,PYTHON,True,DIP,DIP,4.06,True
+two_agent,deepseek-r1-8b,DIP,DIP_15,EASY,KOTLIN,True,DIP,DIP,4.17,True
+two_agent,deepseek-r1-8b,DIP,DIP_16,EASY,C#,True,DIP,DIP,4.14,True
+two_agent,deepseek-r1-8b,DIP,DIP_17,MODERATE,JAVA,False,OCP,DIP,4.22,True
+two_agent,deepseek-r1-8b,DIP,DIP_18,MODERATE,PYTHON,False,OCP,DIP,4.74,True
+two_agent,deepseek-r1-8b,DIP,DIP_19,MODERATE,KOTLIN,False,OCP,DIP,4.23,True
+two_agent,deepseek-r1-8b,DIP,DIP_20,MODERATE,C#,False,OCP,DIP,4.39,True
+two_agent,deepseek-r1-8b,DIP,DIP_21,HARD,JAVA,False,OCP,DIP,5.48,True
+two_agent,deepseek-r1-8b,DIP,DIP_22,HARD,PYTHON,False,OCP,DIP,5.07,True
+two_agent,deepseek-r1-8b,DIP,DIP_23,HARD,KOTLIN,True,"OCP, DIP",DIP,13.42,True
+two_agent,deepseek-r1-8b,DIP,DIP_24,HARD,C#,False,OCP,DIP,5.13,True
+two_agent,deepseek-r1-8b,DIP,DIP_25,EASY,JAVA,False,SRP,DIP,3.06,True
+two_agent,deepseek-r1-8b,DIP,DIP_26,EASY,PYTHON,False,SRP,DIP,3.78,True
+two_agent,deepseek-r1-8b,DIP,DIP_27,EASY,KOTLIN,False,SRP,DIP,3.25,True
+two_agent,deepseek-r1-8b,DIP,DIP_28,EASY,C#,False,SRP,DIP,2.91,True
+two_agent,deepseek-r1-8b,DIP,DIP_29,MODERATE,JAVA,False,SRP,DIP,3.37,True
+two_agent,deepseek-r1-8b,DIP,DIP_30,MODERATE,PYTHON,False,SRP,DIP,3.35,True
+two_agent,deepseek-r1-8b,DIP,DIP_31,MODERATE,KOTLIN,False,SRP,DIP,3.32,True
+two_agent,deepseek-r1-8b,DIP,DIP_32,MODERATE,C#,False,SRP,DIP,3.38,True
+two_agent,deepseek-r1-8b,DIP,DIP_33,HARD,JAVA,False,SRP,DIP,4.15,True
+two_agent,deepseek-r1-8b,DIP,DIP_34,HARD,PYTHON,False,SRP,DIP,4.44,True
+two_agent,deepseek-r1-8b,DIP,DIP_35,HARD,KOTLIN,False,SRP,DIP,4.96,True
+two_agent,deepseek-r1-8b,DIP,DIP_36,HARD,C#,False,SRP,DIP,5.28,True
+two_agent,deepseek-r1-8b,DIP,DIP_37,EASY,JAVA,True,DIP,DIP,3.8,True
+two_agent,deepseek-r1-8b,DIP,DIP_38,EASY,PYTHON,True,DIP,DIP,3.7,True
+two_agent,deepseek-r1-8b,DIP,DIP_39,EASY,KOTLIN,True,DIP,DIP,3.76,True
+two_agent,deepseek-r1-8b,DIP,DIP_40,EASY,C#,True,DIP,DIP,4.56,True
+two_agent,deepseek-r1-8b,DIP,DIP_41,MODERATE,JAVA,False,SRP,DIP,3.96,True
+two_agent,deepseek-r1-8b,DIP,DIP_42,MODERATE,PYTHON,True,DIP,DIP,3.94,True
+two_agent,deepseek-r1-8b,DIP,DIP_43,MODERATE,KOTLIN,False,SRP,DIP,4.05,True
+two_agent,deepseek-r1-8b,DIP,DIP_44,MODERATE,C#,True,DIP,DIP,4.1,True
+two_agent,deepseek-r1-8b,DIP,DIP_45,HARD,JAVA,False,SRP,DIP,4.47,True
+two_agent,deepseek-r1-8b,DIP,DIP_46,HARD,PYTHON,False,SRP,DIP,5.07,True
+two_agent,deepseek-r1-8b,DIP,DIP_47,HARD,KOTLIN,False,SRP,DIP,18.85,True
+two_agent,deepseek-r1-8b,DIP,DIP_48,HARD,C#,False,SRP,DIP,4.6,True
+two_agent,gemma3-4b,SRP,SRP_1,EASY,JAVA,True,SRP,SRP,4.27,True
+two_agent,gemma3-4b,SRP,SRP_2,EASY,JAVA,True,SRP,SRP,2.17,True
+two_agent,gemma3-4b,SRP,SRP_3,EASY,JAVA,True,SRP,SRP,2.53,True
+two_agent,gemma3-4b,SRP,SRP_4,EASY,JAVA,True,SRP,SRP,2.14,True
+two_agent,gemma3-4b,SRP,SRP_5,MODERATE,JAVA,True,"SRP, DIP",SRP,3.18,True
+two_agent,gemma3-4b,SRP,SRP_6,MODERATE,JAVA,True,"SRP, DIP",SRP,5.17,True
+two_agent,gemma3-4b,SRP,SRP_7,MODERATE,JAVA,True,"SRP, DIP",SRP,4.99,True
+two_agent,gemma3-4b,SRP,SRP_8,MODERATE,JAVA,False,DIP,SRP,3.8,True
+two_agent,gemma3-4b,SRP,SRP_9,HARD,JAVA,True,"SRP, DIP, OCP",SRP,6.24,True
+two_agent,gemma3-4b,SRP,SRP_10,HARD,JAVA,True,"SRP, DIP",SRP,10.76,True
+two_agent,gemma3-4b,SRP,SRP_11,HARD,JAVA,True,"SRP, DIP",SRP,10.63,True
+two_agent,gemma3-4b,SRP,SRP_12,HARD,JAVA,False,,SRP,77.9,True
+two_agent,gemma3-4b,SRP,SRP_13,EASY,PYTHON,True,SRP,SRP,2.43,True
+two_agent,gemma3-4b,SRP,SRP_14,EASY,PYTHON,True,SRP,SRP,3.06,True
+two_agent,gemma3-4b,SRP,SRP_15,EASY,PYTHON,True,SRP,SRP,2.78,True
+two_agent,gemma3-4b,SRP,SRP_16,EASY,PYTHON,True,SRP,SRP,2.4,True
+two_agent,gemma3-4b,SRP,SRP_17,MODERATE,PYTHON,True,"SRP, DIP",SRP,5.2,True
+two_agent,gemma3-4b,SRP,SRP_18,MODERATE,PYTHON,True,"SRP, DIP",SRP,13.19,True
+two_agent,gemma3-4b,SRP,SRP_19,MODERATE,PYTHON,True,"SRP, DIP",SRP,5.4,True
+two_agent,gemma3-4b,SRP,SRP_20,MODERATE,PYTHON,True,"SRP, DIP",SRP,19.27,True
+two_agent,gemma3-4b,SRP,SRP_21,HARD,PYTHON,False,DIP,SRP,6.08,True
+two_agent,gemma3-4b,SRP,SRP_22,HARD,PYTHON,False,DIP,SRP,13.78,True
+two_agent,gemma3-4b,SRP,SRP_23,HARD,PYTHON,True,"OCP, SRP, DIP",SRP,29.69,True
+two_agent,gemma3-4b,SRP,SRP_24,HARD,PYTHON,False,,SRP,44.55,True
+two_agent,gemma3-4b,SRP,SRP_25,EASY,KOTLIN,True,SRP,SRP,2.43,True
+two_agent,gemma3-4b,SRP,SRP_26,EASY,KOTLIN,True,SRP,SRP,2.52,True
+two_agent,gemma3-4b,SRP,SRP_27,EASY,KOTLIN,True,SRP,SRP,2.46,True
+two_agent,gemma3-4b,SRP,SRP_28,EASY,KOTLIN,True,SRP,SRP,2.41,True
+two_agent,gemma3-4b,SRP,SRP_29,MODERATE,KOTLIN,True,"SRP, DIP",SRP,4.3,True
+two_agent,gemma3-4b,SRP,SRP_30,MODERATE,KOTLIN,True,"SRP, DIP",SRP,5.13,True
+two_agent,gemma3-4b,SRP,SRP_31,MODERATE,KOTLIN,True,"SRP, DIP, OCP, LSKOV, ISP",SRP,26.19,True
+two_agent,gemma3-4b,SRP,SRP_32,MODERATE,KOTLIN,True,"SRP, DIP",SRP,4.9,True
+two_agent,gemma3-4b,SRP,SRP_33,HARD,KOTLIN,True,"SRP, DIP",SRP,5.38,True
+two_agent,gemma3-4b,SRP,SRP_34,HARD,KOTLIN,False,DIP,SRP,5.72,True
+two_agent,gemma3-4b,SRP,SRP_35,HARD,KOTLIN,False,DIP,SRP,5.2,True
+two_agent,gemma3-4b,SRP,SRP_36,HARD,KOTLIN,False,,SRP,50.85,True
+two_agent,gemma3-4b,SRP,SRP_37,EASY,CSHARP,True,SRP,SRP,2.55,True
+two_agent,gemma3-4b,SRP,SRP_38,EASY,CSHARP,True,SRP,SRP,2.06,True
+two_agent,gemma3-4b,SRP,SRP_39,EASY,CSHARP,True,SRP,SRP,2.6,True
+two_agent,gemma3-4b,SRP,SRP_40,EASY,CSHARP,True,SRP,SRP,2.4,True
+two_agent,gemma3-4b,SRP,SRP_41,MODERATE,CSHARP,False,DIP,SRP,2.84,True
+two_agent,gemma3-4b,SRP,SRP_42,MODERATE,CSHARP,False,DIP,SRP,4.77,True
+two_agent,gemma3-4b,SRP,SRP_43,MODERATE,CSHARP,False,DIP,SRP,4.01,True
+two_agent,gemma3-4b,SRP,SRP_44,MODERATE,CSHARP,False,DIP,SRP,4.16,True
+two_agent,gemma3-4b,SRP,SRP_45,HARD,CSHARP,True,"DIP, SRP",SRP,6.15,True
+two_agent,gemma3-4b,SRP,SRP_46,HARD,CSHARP,True,"DIP, SRP",SRP,13.73,True
+two_agent,gemma3-4b,SRP,SRP_47,HARD,CSHARP,False,DIP,SRP,5.83,True
+two_agent,gemma3-4b,SRP,SRP_48,HARD,CSHARP,False,,SRP,12.15,True
+two_agent,gemma3-4b,OCP,OCP_1,EASY,CSHARP,False,"SRP, DIP",OCP,3.25,True
+two_agent,gemma3-4b,OCP,OCP_2,EASY,CSHARP,False,"SRP, DIP",OCP,4.05,True
+two_agent,gemma3-4b,OCP,OCP_3,EASY,CSHARP,False,SRP,OCP,2.34,True
+two_agent,gemma3-4b,OCP,OCP_4,EASY,CSHARP,False,"SRP, DIP",OCP,3.76,True
+two_agent,gemma3-4b,OCP,OCP_5,HARD,CSHARP,False,,OCP,44.42,True
+two_agent,gemma3-4b,OCP,OCP_6,HARD,CSHARP,False,DIP,OCP,5.66,True
+two_agent,gemma3-4b,OCP,OCP_7,HARD,CSHARP,False,,OCP,67.24,True
+two_agent,gemma3-4b,OCP,OCP_8,HARD,CSHARP,False,,OCP,52.72,True
+two_agent,gemma3-4b,OCP,OCP_9,MODERATE,CSHARP,False,"DIP, SRP",OCP,6.23,True
+two_agent,gemma3-4b,OCP,OCP_10,MODERATE,CSHARP,True,"SRP, OCP",OCP,11.96,True
+two_agent,gemma3-4b,OCP,OCP_11,MODERATE,CSHARP,False,DIP,OCP,5.85,True
+two_agent,gemma3-4b,OCP,OCP_12,MODERATE,CSHARP,True,"SRP, DIP, OCP",OCP,6.56,True
+two_agent,gemma3-4b,OCP,OCP_13,EASY,JAVA,True,"DIP, OCP",OCP,3.12,True
+two_agent,gemma3-4b,OCP,OCP_14,EASY,JAVA,False,SRP,OCP,3.15,True
+two_agent,gemma3-4b,OCP,OCP_15,EASY,JAVA,False,SRP,OCP,2.78,True
+two_agent,gemma3-4b,OCP,OCP_16,EASY,JAVA,False,"SRP, DIP",OCP,4.14,True
+two_agent,gemma3-4b,OCP,OCP_17,HARD,JAVA,False,,OCP,34.2,True
+two_agent,gemma3-4b,OCP,OCP_18,HARD,JAVA,False,DIP,OCP,6.11,True
+two_agent,gemma3-4b,OCP,OCP_19,HARD,JAVA,False,,OCP,68.73,True
+two_agent,gemma3-4b,OCP,OCP_20,HARD,JAVA,False,,OCP,60.16,True
+two_agent,gemma3-4b,OCP,OCP_21,MODERATE,JAVA,False,DIP,OCP,3.67,True
+two_agent,gemma3-4b,OCP,OCP_22,MODERATE,JAVA,False,"SRP, DIP",OCP,10.15,True
+two_agent,gemma3-4b,OCP,OCP_23,MODERATE,JAVA,False,"SRP, DIP",OCP,5.82,True
+two_agent,gemma3-4b,OCP,OCP_24,MODERATE,JAVA,False,DIP,OCP,5.99,True
+two_agent,gemma3-4b,OCP,OCP_25,EASY,KOTLIN,True,"SRP, OCP",OCP,18.22,True
+two_agent,gemma3-4b,OCP,OCP_26,EASY,KOTLIN,True,"SRP, OCP",OCP,2.89,True
+two_agent,gemma3-4b,OCP,OCP_27,EASY,KOTLIN,False,SRP,OCP,2.39,True
+two_agent,gemma3-4b,OCP,OCP_28,EASY,KOTLIN,False,SRP,OCP,2.82,True
+two_agent,gemma3-4b,OCP,OCP_29,HARD,KOTLIN,True,"DIP, OCP",OCP,6.73,True
+two_agent,gemma3-4b,OCP,OCP_30,HARD,KOTLIN,False,DIP,OCP,6.37,True
+two_agent,gemma3-4b,OCP,OCP_31,HARD,KOTLIN,False,DIP,OCP,3.13,True
+two_agent,gemma3-4b,OCP,OCP_32,HARD,KOTLIN,True,"DIP, SRP, OCP",OCP,7.1,True
+two_agent,gemma3-4b,OCP,OCP_33,MODERATE,KOTLIN,False,DIP,OCP,3.51,True
+two_agent,gemma3-4b,OCP,OCP_34,MODERATE,KOTLIN,True,"SRP, OCP",OCP,13.21,True
+two_agent,gemma3-4b,OCP,OCP_35,MODERATE,KOTLIN,False,"SRP, DIP",OCP,5.16,True
+two_agent,gemma3-4b,OCP,OCP_36,MODERATE,KOTLIN,False,"SRP, DIP",OCP,5.03,True
+two_agent,gemma3-4b,OCP,OCP_37,EASY,PYTHON,False,"SRP, DIP",OCP,3.02,True
+two_agent,gemma3-4b,OCP,OCP_38,EASY,PYTHON,False,"SRP, DIP",OCP,4.54,True
+two_agent,gemma3-4b,OCP,OCP_39,EASY,PYTHON,False,"SRP, DIP",OCP,3.26,True
+two_agent,gemma3-4b,OCP,OCP_40,EASY,PYTHON,False,"DIP, SRP",OCP,10.6,True
+two_agent,gemma3-4b,OCP,OCP_41,HARD,PYTHON,True,"SRP, DIP, OCP",OCP,4.52,True
+two_agent,gemma3-4b,OCP,OCP_42,HARD,PYTHON,False,DIP,OCP,6.15,True
+two_agent,gemma3-4b,OCP,OCP_43,HARD,PYTHON,False,DIP,OCP,3.04,True
+two_agent,gemma3-4b,OCP,OCP_44,HARD,PYTHON,False,"SRP, DIP",OCP,5.29,True
+two_agent,gemma3-4b,OCP,OCP_45,MODERATE,PYTHON,False,"SRP, DIP",OCP,4.81,True
+two_agent,gemma3-4b,OCP,OCP_46,MODERATE,PYTHON,False,DIP,OCP,5.7,True
+two_agent,gemma3-4b,OCP,OCP_47,MODERATE,PYTHON,False,DIP,OCP,5.95,True
+two_agent,gemma3-4b,OCP,OCP_48,MODERATE,PYTHON,False,DIP,OCP,6.9,True
+two_agent,gemma3-4b,LSP,LSP_1,EASY,JAVA,False,"SRP, DIP",LSP,9.15,True
+two_agent,gemma3-4b,LSP,LSP_2,EASY,PYTHON,False,"SRP, DIP",LSP,3.02,True
+two_agent,gemma3-4b,LSP,LSP_3,EASY,KOTLIN,False,"SRP, OCP, DIP",LSP,9.36,True
+two_agent,gemma3-4b,LSP,LSP_4,EASY,C#,False,"SRP, DIP",LSP,8.57,True
+two_agent,gemma3-4b,LSP,LSP_5,MODERATE,JAVA,False,"SRP, OCP, DIP",LSP,23.37,True
+two_agent,gemma3-4b,LSP,LSP_6,MODERATE,PYTHON,False,"SRP, OCP",LSP,4.9,True
+two_agent,gemma3-4b,LSP,LSP_7,MODERATE,KOTLIN,False,"SRP, DIP",LSP,11.83,True
+two_agent,gemma3-4b,LSP,LSP_8,MODERATE,C#,False,"SRP, OCP, DIP",LSP,22.33,True
+two_agent,gemma3-4b,LSP,LSP_9,HARD,JAVA,False,"SRP, DIP",LSP,6.06,True
+two_agent,gemma3-4b,LSP,LSP_10,HARD,PYTHON,False,DIP,LSP,5.85,True
+two_agent,gemma3-4b,LSP,LSP_11,HARD,KOTLIN,False,DIP,LSP,5.29,True
+two_agent,gemma3-4b,LSP,LSP_12,HARD,C#,False,"SRP, DIP",LSP,6.84,True
+two_agent,gemma3-4b,LSP,LSP_13,EASY,JAVA,False,SRP,LSP,2.65,True
+two_agent,gemma3-4b,LSP,LSP_14,EASY,PYTHON,False,"SRP, DIP",LSP,2.58,True
+two_agent,gemma3-4b,LSP,LSP_15,EASY,KOTLIN,False,SRP,LSP,2.68,True
+two_agent,gemma3-4b,LSP,LSP_16,EASY,C#,False,"SRP, OCP",LSP,14.68,True
+two_agent,gemma3-4b,LSP,LSP_17,MODERATE,JAVA,False,"SRP, OCP, DIP",LSP,21.36,True
+two_agent,gemma3-4b,LSP,LSP_18,MODERATE,PYTHON,False,"SRP, OCP, DIP",LSP,22.54,True
+two_agent,gemma3-4b,LSP,LSP_19,MODERATE,KOTLIN,False,"SRP, OCP, DIP",LSP,24.03,True
+two_agent,gemma3-4b,LSP,LSP_20,MODERATE,C#,False,SRP,LSP,11.42,True
+two_agent,gemma3-4b,LSP,LSP_21,HARD,JAVA,False,"SRP, OCP, DIP",LSP,6.74,True
+two_agent,gemma3-4b,LSP,LSP_22,HARD,PYTHON,False,"SRP, DIP",LSP,5.92,True
+two_agent,gemma3-4b,LSP,LSP_23,HARD,KOTLIN,False,"SRP, OCP, DIP",LSP,6.13,True
+two_agent,gemma3-4b,LSP,LSP_24,HARD,C#,False,"DIP, SRP",LSP,6.11,True
+two_agent,gemma3-4b,LSP,LSP_25,EASY,JAVA,False,DIP,LSP,3.03,True
+two_agent,gemma3-4b,LSP,LSP_26,EASY,PYTHON,False,DIP,LSP,3.42,True
+two_agent,gemma3-4b,LSP,LSP_27,EASY,KOTLIN,False,SRP,LSP,3.03,True
+two_agent,gemma3-4b,LSP,LSP_28,EASY,C#,False,SRP,LSP,2.87,True
+two_agent,gemma3-4b,LSP,LSP_29,MODERATE,JAVA,False,DIP,LSP,4.15,True
+two_agent,gemma3-4b,LSP,LSP_30,MODERATE,PYTHON,False,DIP,LSP,5.3,True
+two_agent,gemma3-4b,LSP,LSP_31,MODERATE,KOTLIN,False,"SRP, OCP",LSP,4.71,True
+two_agent,gemma3-4b,LSP,LSP_32,MODERATE,C#,False,"SRP, DIP",LSP,4.8,True
+two_agent,gemma3-4b,LSP,LSP_33,HARD,JAVA,False,DIP,LSP,6.25,True
+two_agent,gemma3-4b,LSP,LSP_34,HARD,PYTHON,False,DIP,LSP,6.39,True
+two_agent,gemma3-4b,LSP,LSP_35,HARD,KOTLIN,False,DIP,LSP,5.98,True
+two_agent,gemma3-4b,LSP,LSP_36,HARD,C#,False,DIP,LSP,6.18,True
+two_agent,gemma3-4b,LSP,LSP_37,EASY,JAVA,False,SRP,LSP,2.87,True
+two_agent,gemma3-4b,LSP,LSP_38,EASY,PYTHON,False,"SRP, DIP",LSP,3.29,True
+two_agent,gemma3-4b,LSP,LSP_39,EASY,KOTLIN,False,SRP,LSP,2.83,True
+two_agent,gemma3-4b,LSP,LSP_40,EASY,C#,False,SRP,LSP,2.65,True
+two_agent,gemma3-4b,LSP,LSP_41,MODERATE,JAVA,False,"SRP, OCP",LSP,4.1,True
+two_agent,gemma3-4b,LSP,LSP_42,MODERATE,PYTHON,False,"SRP, OCP, DIP",LSP,22.39,True
+two_agent,gemma3-4b,LSP,LSP_43,MODERATE,KOTLIN,False,"SRP, OCP",LSP,19.1,True
+two_agent,gemma3-4b,LSP,LSP_44,MODERATE,C#,False,"SRP, OCP",LSP,11.33,True
+two_agent,gemma3-4b,LSP,LSP_45,HARD,JAVA,False,"SRP, OCP, DIP",LSP,17.95,True
+two_agent,gemma3-4b,LSP,LSP_46,HARD,PYTHON,False,DIP,LSP,5.04,True
+two_agent,gemma3-4b,LSP,LSP_47,HARD,KOTLIN,False,"SRP, DIP",LSP,5.12,True
+two_agent,gemma3-4b,LSP,LSP_48,HARD,C#,False,DIP,LSP,5.24,True
+two_agent,gemma3-4b,ISP,ISP_1,EASY,CSHARP,False,"SRP, OCP",ISP,3.2,True
+two_agent,gemma3-4b,ISP,ISP_2,EASY,CSHARP,False,"SRP, OCP",ISP,2.81,True
+two_agent,gemma3-4b,ISP,ISP_3,EASY,CSHARP,False,SRP,ISP,2.59,True
+two_agent,gemma3-4b,ISP,ISP_4,EASY,CSHARP,False,SRP,ISP,3.31,True
+two_agent,gemma3-4b,ISP,ISP_5,HARD,CSHARP,False,"SRP, OCP, DIP",ISP,9.06,True
+two_agent,gemma3-4b,ISP,ISP_6,HARD,CSHARP,False,"SRP, DIP",ISP,15.8,True
+two_agent,gemma3-4b,ISP,ISP_7,HARD,CSHARP,False,,ISP,63.77,True
+two_agent,gemma3-4b,ISP,ISP_8,HARD,CSHARP,False,"SRP, DIP",ISP,6.4,True
+two_agent,gemma3-4b,ISP,ISP_9,MODERATE,CSHARP,False,"SRP, DIP",ISP,22.77,True
+two_agent,gemma3-4b,ISP,ISP_10,MODERATE,CSHARP,False,"SRP, DIP",ISP,6.19,True
+two_agent,gemma3-4b,ISP,ISP_11,MODERATE,CSHARP,False,"SRP, DIP",ISP,12.34,True
+two_agent,gemma3-4b,ISP,ISP_12,MODERATE,CSHARP,False,"SRP, DIP",ISP,5.05,True
+two_agent,gemma3-4b,ISP,ISP_13,EASY,JAVA,False,"SRP, OCP",ISP,2.96,True
+two_agent,gemma3-4b,ISP,ISP_14,EASY,JAVA,False,"SRP, OCP",ISP,3.17,True
+two_agent,gemma3-4b,ISP,ISP_15,EASY,JAVA,False,SRP,ISP,2.7,True
+two_agent,gemma3-4b,ISP,ISP_16,EASY,JAVA,False,SRP,ISP,2.95,True
+two_agent,gemma3-4b,ISP,ISP_17,HARD,JAVA,False,"SRP, OCP, DIP",ISP,19.25,True
+two_agent,gemma3-4b,ISP,ISP_18,HARD,JAVA,False,DIP,ISP,6.47,True
+two_agent,gemma3-4b,ISP,ISP_19,HARD,JAVA,False,,ISP,69.85,True
+two_agent,gemma3-4b,ISP,ISP_20,HARD,JAVA,False,"SRP, DIP",ISP,26.31,True
+two_agent,gemma3-4b,ISP,ISP_21,MODERATE,JAVA,False,"SRP, OCP",ISP,23.21,True
+two_agent,gemma3-4b,ISP,ISP_22,MODERATE,JAVA,False,"SRP, DIP",ISP,5.9,True
+two_agent,gemma3-4b,ISP,ISP_23,MODERATE,JAVA,False,"SRP, DIP",ISP,5.08,True
+two_agent,gemma3-4b,ISP,ISP_24,MODERATE,JAVA,False,"SRP, DIP",ISP,5.01,True
+two_agent,gemma3-4b,ISP,ISP_25,EASY,KOTLIN,False,"SRP, DIP",ISP,3.63,True
+two_agent,gemma3-4b,ISP,ISP_26,EASY,KOTLIN,False,"SRP, DIP",ISP,2.97,True
+two_agent,gemma3-4b,ISP,ISP_27,EASY,KOTLIN,False,SRP,ISP,2.77,True
+two_agent,gemma3-4b,ISP,ISP_28,EASY,KOTLIN,False,SRP,ISP,3.02,True
+two_agent,gemma3-4b,ISP,ISP_29,HARD,KOTLIN,False,"DIP, SRP",ISP,5.26,True
+two_agent,gemma3-4b,ISP,ISP_30,HARD,KOTLIN,True,"SRP, DIP, ISP",ISP,32.94,True
+two_agent,gemma3-4b,ISP,ISP_31,HARD,KOTLIN,True,"SRP, DIP, LSP, ISP",ISP,7.0,True
+two_agent,gemma3-4b,ISP,ISP_32,HARD,KOTLIN,False,"SRP, DIP",ISP,5.59,True
+two_agent,gemma3-4b,ISP,ISP_33,MODERATE,KOTLIN,False,"SRP, DIP",ISP,4.9,True
+two_agent,gemma3-4b,ISP,ISP_34,MODERATE,KOTLIN,False,DIP,ISP,3.63,True
+two_agent,gemma3-4b,ISP,ISP_35,MODERATE,KOTLIN,False,"SRP, OCP, DIP",ISP,21.16,True
+two_agent,gemma3-4b,ISP,ISP_36,MODERATE,KOTLIN,False,"SRP, DIP",ISP,3.35,True
+two_agent,gemma3-4b,ISP,ISP_37,EASY,PYTHON,False,"SRP, OCP",ISP,3.12,True
+two_agent,gemma3-4b,ISP,ISP_38,EASY,PYTHON,False,"SRP, OCP",ISP,2.75,True
+two_agent,gemma3-4b,ISP,ISP_39,EASY,PYTHON,False,SRP,ISP,7.72,True
+two_agent,gemma3-4b,ISP,ISP_40,EASY,PYTHON,False,"SRP, OCP",ISP,2.76,True
+two_agent,gemma3-4b,ISP,ISP_41,HARD,PYTHON,False,"SRP, DIP",ISP,5.75,True
+two_agent,gemma3-4b,ISP,ISP_42,HARD,PYTHON,False,"SRP, OCP, DIP",ISP,7.25,True
+two_agent,gemma3-4b,ISP,ISP_43,HARD,PYTHON,False,"SRP, DIP, OCP",ISP,6.63,True
+two_agent,gemma3-4b,ISP,ISP_44,HARD,PYTHON,False,DIP,ISP,4.91,True
+two_agent,gemma3-4b,ISP,ISP_45,MODERATE,PYTHON,False,"SRP, OCP",ISP,10.3,True
+two_agent,gemma3-4b,ISP,ISP_46,MODERATE,PYTHON,False,"SRP, DIP",ISP,4.88,True
+two_agent,gemma3-4b,ISP,ISP_47,MODERATE,PYTHON,False,"SRP, OCP, DIP",ISP,20.82,True
+two_agent,gemma3-4b,ISP,ISP_48,MODERATE,PYTHON,False,"SRP, DIP",ISP,4.61,True
+two_agent,gemma3-4b,DIP,DIP_1,EASY,JAVA,False,SRP,DIP,2.28,True
+two_agent,gemma3-4b,DIP,DIP_2,EASY,PYTHON,True,"SRP, DIP",DIP,2.89,True
+two_agent,gemma3-4b,DIP,DIP_3,EASY,KOTLIN,True,"SRP, DIP",DIP,2.64,True
+two_agent,gemma3-4b,DIP,DIP_4,EASY,C#,True,"SRP, DIP",DIP,2.55,True
+two_agent,gemma3-4b,DIP,DIP_5,MODERATE,JAVA,True,"SRP, DIP",DIP,4.04,True
+two_agent,gemma3-4b,DIP,DIP_6,MODERATE,PYTHON,True,"SRP, DIP",DIP,3.74,True
+two_agent,gemma3-4b,DIP,DIP_7,MODERATE,KOTLIN,True,"SRP, DIP",DIP,3.78,True
+two_agent,gemma3-4b,DIP,DIP_8,MODERATE,C#,True,"SRP, DIP",DIP,4.26,True
+two_agent,gemma3-4b,DIP,DIP_9,HARD,JAVA,True,"SRP, DIP",DIP,4.87,True
+two_agent,gemma3-4b,DIP,DIP_10,HARD,PYTHON,True,"DIP, SRP",DIP,5.52,True
+two_agent,gemma3-4b,DIP,DIP_11,HARD,KOTLIN,True,"SRP, DIP",DIP,4.78,True
+two_agent,gemma3-4b,DIP,DIP_12,HARD,C#,True,DIP,DIP,12.62,True
+two_agent,gemma3-4b,DIP,DIP_13,EASY,JAVA,False,SRP,DIP,2.45,True
+two_agent,gemma3-4b,DIP,DIP_14,EASY,PYTHON,False,SRP,DIP,2.68,True
+two_agent,gemma3-4b,DIP,DIP_15,EASY,KOTLIN,True,"SRP, DIP",DIP,3.05,True
+two_agent,gemma3-4b,DIP,DIP_16,EASY,C#,False,SRP,DIP,2.39,True
+two_agent,gemma3-4b,DIP,DIP_17,MODERATE,JAVA,True,"SRP, DIP",DIP,3.99,True
+two_agent,gemma3-4b,DIP,DIP_18,MODERATE,PYTHON,True,"SRP, DIP",DIP,4.64,True
+two_agent,gemma3-4b,DIP,DIP_19,MODERATE,KOTLIN,True,"SRP, DIP",DIP,3.28,True
+two_agent,gemma3-4b,DIP,DIP_20,MODERATE,C#,True,"SRP, DIP",DIP,10.49,True
+two_agent,gemma3-4b,DIP,DIP_21,HARD,JAVA,True,"DIP, SRP",DIP,5.38,True
+two_agent,gemma3-4b,DIP,DIP_22,HARD,PYTHON,True,DIP,DIP,3.55,True
+two_agent,gemma3-4b,DIP,DIP_23,HARD,KOTLIN,True,DIP,DIP,3.26,True
+two_agent,gemma3-4b,DIP,DIP_24,HARD,C#,True,DIP,DIP,5.01,True
+two_agent,gemma3-4b,DIP,DIP_25,EASY,JAVA,False,SRP,DIP,2.71,True
+two_agent,gemma3-4b,DIP,DIP_26,EASY,PYTHON,True,"SRP, DIP",DIP,3.03,True
+two_agent,gemma3-4b,DIP,DIP_27,EASY,KOTLIN,False,SRP,DIP,2.91,True
+two_agent,gemma3-4b,DIP,DIP_28,EASY,C#,False,SRP,DIP,2.86,True
+two_agent,gemma3-4b,DIP,DIP_29,MODERATE,JAVA,True,"SRP, DIP",DIP,4.7,True
+two_agent,gemma3-4b,DIP,DIP_30,MODERATE,PYTHON,True,"SRP, OCP, DIP",DIP,12.08,True
+two_agent,gemma3-4b,DIP,DIP_31,MODERATE,KOTLIN,True,"SRP, OCP, DIP",DIP,21.12,True
+two_agent,gemma3-4b,DIP,DIP_32,MODERATE,C#,True,"SRP, DIP",DIP,18.72,True
+two_agent,gemma3-4b,DIP,DIP_33,HARD,JAVA,True,DIP,DIP,5.41,True
+two_agent,gemma3-4b,DIP,DIP_34,HARD,PYTHON,True,DIP,DIP,5.7,True
+two_agent,gemma3-4b,DIP,DIP_35,HARD,KOTLIN,True,DIP,DIP,4.56,True
+two_agent,gemma3-4b,DIP,DIP_36,HARD,C#,True,DIP,DIP,5.94,True
+two_agent,gemma3-4b,DIP,DIP_37,EASY,JAVA,False,SRP,DIP,2.54,True
+two_agent,gemma3-4b,DIP,DIP_38,EASY,PYTHON,False,SRP,DIP,2.21,True
+two_agent,gemma3-4b,DIP,DIP_39,EASY,KOTLIN,False,SRP,DIP,2.22,True
+two_agent,gemma3-4b,DIP,DIP_40,EASY,C#,False,SRP,DIP,2.48,True
+two_agent,gemma3-4b,DIP,DIP_41,MODERATE,JAVA,True,"SRP, DIP",DIP,3.1,True
+two_agent,gemma3-4b,DIP,DIP_42,MODERATE,PYTHON,True,"SRP, DIP",DIP,3.2,True
+two_agent,gemma3-4b,DIP,DIP_43,MODERATE,KOTLIN,True,"DIP, SRP",DIP,3.68,True
+two_agent,gemma3-4b,DIP,DIP_44,MODERATE,C#,True,"SRP, OCP, DIP",DIP,20.55,True
+two_agent,gemma3-4b,DIP,DIP_45,HARD,JAVA,True,"SRP, DIP",DIP,4.76,True
+two_agent,gemma3-4b,DIP,DIP_46,HARD,PYTHON,True,"SRP, OCP, DIP",DIP,23.34,True
+two_agent,gemma3-4b,DIP,DIP_47,HARD,KOTLIN,True,"DIP, SRP",DIP,4.3,True
+two_agent,gemma3-4b,DIP,DIP_48,HARD,C#,True,DIP,DIP,4.96,True
+two_agent,llama3-1-8b,SRP,SRP_1,EASY,JAVA,True,SRP,SRP,7.29,True
+two_agent,llama3-1-8b,SRP,SRP_2,EASY,JAVA,True,SRP,SRP,9.48,True
+two_agent,llama3-1-8b,SRP,SRP_3,EASY,JAVA,True,SRP,SRP,13.11,True
+two_agent,llama3-1-8b,SRP,SRP_4,EASY,JAVA,True,SRP,SRP,13.35,True
+two_agent,llama3-1-8b,SRP,SRP_5,MODERATE,JAVA,True,SRP,SRP,17.42,True
+two_agent,llama3-1-8b,SRP,SRP_6,MODERATE,JAVA,True,SRP,SRP,18.65,True
+two_agent,llama3-1-8b,SRP,SRP_7,MODERATE,JAVA,False,ISP,SRP,19.58,True
+two_agent,llama3-1-8b,SRP,SRP_8,MODERATE,JAVA,True,SRP,SRP,17.67,True
+two_agent,llama3-1-8b,SRP,SRP_9,HARD,JAVA,True,SRP,SRP,26.06,True
+two_agent,llama3-1-8b,SRP,SRP_10,HARD,JAVA,True,SRP,SRP,28.45,True
+two_agent,llama3-1-8b,SRP,SRP_11,HARD,JAVA,True,SRP,SRP,27.94,True
+two_agent,llama3-1-8b,SRP,SRP_12,HARD,JAVA,True,SRP,SRP,33.43,True
+two_agent,llama3-1-8b,SRP,SRP_13,EASY,PYTHON,True,SRP,SRP,6.12,True
+two_agent,llama3-1-8b,SRP,SRP_14,EASY,PYTHON,True,SRP,SRP,13.58,True
+two_agent,llama3-1-8b,SRP,SRP_15,EASY,PYTHON,True,SRP,SRP,7.01,True
+two_agent,llama3-1-8b,SRP,SRP_16,EASY,PYTHON,True,SRP,SRP,10.75,True
+two_agent,llama3-1-8b,SRP,SRP_17,MODERATE,PYTHON,True,SRP,SRP,17.26,True
+two_agent,llama3-1-8b,SRP,SRP_18,MODERATE,PYTHON,False,ISP,SRP,19.05,True
+two_agent,llama3-1-8b,SRP,SRP_19,MODERATE,PYTHON,True,SRP,SRP,20.68,True
+two_agent,llama3-1-8b,SRP,SRP_20,MODERATE,PYTHON,True,SRP,SRP,15.56,True
+two_agent,llama3-1-8b,SRP,SRP_21,HARD,PYTHON,True,SRP,SRP,25.07,True
+two_agent,llama3-1-8b,SRP,SRP_22,HARD,PYTHON,True,SRP,SRP,27.12,True
+two_agent,llama3-1-8b,SRP,SRP_23,HARD,PYTHON,True,SRP,SRP,25.64,True
+two_agent,llama3-1-8b,SRP,SRP_24,HARD,PYTHON,True,SRP,SRP,23.54,True
+two_agent,llama3-1-8b,SRP,SRP_25,EASY,KOTLIN,True,SRP,SRP,2.29,True
+two_agent,llama3-1-8b,SRP,SRP_26,EASY,KOTLIN,True,SRP,SRP,11.58,True
+two_agent,llama3-1-8b,SRP,SRP_27,EASY,KOTLIN,True,SRP,SRP,2.54,True
+two_agent,llama3-1-8b,SRP,SRP_28,EASY,KOTLIN,True,SRP,SRP,8.68,True
+two_agent,llama3-1-8b,SRP,SRP_29,MODERATE,KOTLIN,False,DIP,SRP,16.07,True
+two_agent,llama3-1-8b,SRP,SRP_30,MODERATE,KOTLIN,True,SRP,SRP,17.39,True
+two_agent,llama3-1-8b,SRP,SRP_31,MODERATE,KOTLIN,True,SRP,SRP,17.51,True
+two_agent,llama3-1-8b,SRP,SRP_32,MODERATE,KOTLIN,True,SRP,SRP,18.43,True
+two_agent,llama3-1-8b,SRP,SRP_33,HARD,KOTLIN,True,SRP,SRP,23.14,True
+two_agent,llama3-1-8b,SRP,SRP_34,HARD,KOTLIN,True,SRP,SRP,22.25,True
+two_agent,llama3-1-8b,SRP,SRP_35,HARD,KOTLIN,True,SRP,SRP,25.06,True
+two_agent,llama3-1-8b,SRP,SRP_36,HARD,KOTLIN,True,SRP,SRP,26.43,True
+two_agent,llama3-1-8b,SRP,SRP_37,EASY,CSHARP,False,,SRP,4.28,True
+two_agent,llama3-1-8b,SRP,SRP_38,EASY,CSHARP,False,OCP,SRP,11.78,True
+two_agent,llama3-1-8b,SRP,SRP_39,EASY,CSHARP,True,SRP,SRP,12.0,True
+two_agent,llama3-1-8b,SRP,SRP_40,EASY,CSHARP,True,SRP,SRP,9.99,True
+two_agent,llama3-1-8b,SRP,SRP_41,MODERATE,CSHARP,True,SRP,SRP,16.87,True
+two_agent,llama3-1-8b,SRP,SRP_42,MODERATE,CSHARP,True,"SRP, DIP",SRP,18.43,True
+two_agent,llama3-1-8b,SRP,SRP_43,MODERATE,CSHARP,True,SRP,SRP,21.99,True
+two_agent,llama3-1-8b,SRP,SRP_44,MODERATE,CSHARP,True,SRP,SRP,17.1,True
+two_agent,llama3-1-8b,SRP,SRP_45,HARD,CSHARP,True,SRP,SRP,24.85,True
+two_agent,llama3-1-8b,SRP,SRP_46,HARD,CSHARP,False,DIP,SRP,25.57,True
+two_agent,llama3-1-8b,SRP,SRP_47,HARD,CSHARP,True,SRP,SRP,26.81,True
+two_agent,llama3-1-8b,SRP,SRP_48,HARD,CSHARP,True,"SRP, DIP",SRP,31.67,True
+two_agent,llama3-1-8b,OCP,OCP_1,EASY,CSHARP,True,OCP,OCP,13.52,True
+two_agent,llama3-1-8b,OCP,OCP_2,EASY,CSHARP,True,OCP,OCP,13.2,True
+two_agent,llama3-1-8b,OCP,OCP_3,EASY,CSHARP,True,OCP,OCP,14.05,True
+two_agent,llama3-1-8b,OCP,OCP_4,EASY,CSHARP,True,OCP,OCP,2.72,True
+two_agent,llama3-1-8b,OCP,OCP_5,HARD,CSHARP,True,OCP,OCP,8.24,True
+two_agent,llama3-1-8b,OCP,OCP_6,HARD,CSHARP,True,OCP,OCP,5.99,True
+two_agent,llama3-1-8b,OCP,OCP_7,HARD,CSHARP,False,,OCP,59.12,True
+two_agent,llama3-1-8b,OCP,OCP_8,HARD,CSHARP,True,OCP,OCP,10.2,True
+two_agent,llama3-1-8b,OCP,OCP_9,MODERATE,CSHARP,True,OCP,OCP,4.51,True
+two_agent,llama3-1-8b,OCP,OCP_10,MODERATE,CSHARP,True,OCP,OCP,14.45,True
+two_agent,llama3-1-8b,OCP,OCP_11,MODERATE,CSHARP,True,"SRP, OCP",OCP,27.35,True
+two_agent,llama3-1-8b,OCP,OCP_12,MODERATE,CSHARP,True,OCP,OCP,23.95,True
+two_agent,llama3-1-8b,OCP,OCP_13,EASY,JAVA,True,OCP,OCP,12.57,True
+two_agent,llama3-1-8b,OCP,OCP_14,EASY,JAVA,True,OCP,OCP,7.95,True
+two_agent,llama3-1-8b,OCP,OCP_15,EASY,JAVA,True,OCP,OCP,13.74,True
+two_agent,llama3-1-8b,OCP,OCP_16,EASY,JAVA,True,OCP,OCP,6.57,True
+two_agent,llama3-1-8b,OCP,OCP_17,HARD,JAVA,True,OCP,OCP,7.27,True
+two_agent,llama3-1-8b,OCP,OCP_18,HARD,JAVA,True,OCP,OCP,22.68,True
+two_agent,llama3-1-8b,OCP,OCP_19,HARD,JAVA,False,SRP,OCP,33.23,True
+two_agent,llama3-1-8b,OCP,OCP_20,HARD,JAVA,True,"OCP, SRP",OCP,30.9,True
+two_agent,llama3-1-8b,OCP,OCP_21,MODERATE,JAVA,False,SRP,OCP,16.64,True
+two_agent,llama3-1-8b,OCP,OCP_22,MODERATE,JAVA,True,OCP,OCP,16.48,True
+two_agent,llama3-1-8b,OCP,OCP_23,MODERATE,JAVA,False,SRP,OCP,24.53,True
+two_agent,llama3-1-8b,OCP,OCP_24,MODERATE,JAVA,True,OCP,OCP,25.31,True
+two_agent,llama3-1-8b,OCP,OCP_25,EASY,KOTLIN,True,OCP,OCP,11.76,True
+two_agent,llama3-1-8b,OCP,OCP_26,EASY,KOTLIN,True,OCP,OCP,7.66,True
+two_agent,llama3-1-8b,OCP,OCP_27,EASY,KOTLIN,True,OCP,OCP,12.77,True
+two_agent,llama3-1-8b,OCP,OCP_28,EASY,KOTLIN,True,OCP,OCP,10.91,True
+two_agent,llama3-1-8b,OCP,OCP_29,HARD,KOTLIN,True,OCP,OCP,30.1,True
+two_agent,llama3-1-8b,OCP,OCP_30,HARD,KOTLIN,False,SRP,OCP,22.98,True
+two_agent,llama3-1-8b,OCP,OCP_31,HARD,KOTLIN,True,OCP,OCP,27.27,True
+two_agent,llama3-1-8b,OCP,OCP_32,HARD,KOTLIN,True,OCP,OCP,25.77,True
+two_agent,llama3-1-8b,OCP,OCP_33,MODERATE,KOTLIN,True,OCP,OCP,14.73,True
+two_agent,llama3-1-8b,OCP,OCP_34,MODERATE,KOTLIN,True,"SRP, OCP",OCP,14.88,True
+two_agent,llama3-1-8b,OCP,OCP_35,MODERATE,KOTLIN,False,SRP,OCP,20.56,True
+two_agent,llama3-1-8b,OCP,OCP_36,MODERATE,KOTLIN,True,OCP,OCP,20.17,True
+two_agent,llama3-1-8b,OCP,OCP_37,EASY,PYTHON,False,SRP,OCP,12.72,True
+two_agent,llama3-1-8b,OCP,OCP_38,EASY,PYTHON,True,OCP,OCP,13.42,True
+two_agent,llama3-1-8b,OCP,OCP_39,EASY,PYTHON,True,OCP,OCP,13.67,True
+two_agent,llama3-1-8b,OCP,OCP_40,EASY,PYTHON,True,OCP,OCP,8.0,True
+two_agent,llama3-1-8b,OCP,OCP_41,HARD,PYTHON,True,OCP,OCP,7.27,True
+two_agent,llama3-1-8b,OCP,OCP_42,HARD,PYTHON,False,SRP,OCP,23.99,True
+two_agent,llama3-1-8b,OCP,OCP_43,HARD,PYTHON,False,SRP,OCP,26.72,True
+two_agent,llama3-1-8b,OCP,OCP_44,HARD,PYTHON,True,OCP,OCP,7.32,True
+two_agent,llama3-1-8b,OCP,OCP_45,MODERATE,PYTHON,True,OCP,OCP,16.87,True
+two_agent,llama3-1-8b,OCP,OCP_46,MODERATE,PYTHON,True,OCP,OCP,16.75,True
+two_agent,llama3-1-8b,OCP,OCP_47,MODERATE,PYTHON,False,SRP,OCP,21.28,True
+two_agent,llama3-1-8b,OCP,OCP_48,MODERATE,PYTHON,True,OCP,OCP,21.57,True
+two_agent,llama3-1-8b,LSP,LSP_1,EASY,JAVA,True,LSP,LSP,3.19,True
+two_agent,llama3-1-8b,LSP,LSP_2,EASY,PYTHON,True,LSP,LSP,2.29,True
+two_agent,llama3-1-8b,LSP,LSP_3,EASY,KOTLIN,True,LSP,LSP,2.26,True
+two_agent,llama3-1-8b,LSP,LSP_4,EASY,C#,True,LSP,LSP,2.17,True
+two_agent,llama3-1-8b,LSP,LSP_5,MODERATE,JAVA,False,SRP,LSP,14.09,True
+two_agent,llama3-1-8b,LSP,LSP_6,MODERATE,PYTHON,False,OCP,LSP,15.92,True
+two_agent,llama3-1-8b,LSP,LSP_7,MODERATE,KOTLIN,False,SRP,LSP,13.32,True
+two_agent,llama3-1-8b,LSP,LSP_8,MODERATE,C#,False,SRP,LSP,16.47,True
+two_agent,llama3-1-8b,LSP,LSP_9,HARD,JAVA,False,ISP,LSP,24.76,True
+two_agent,llama3-1-8b,LSP,LSP_10,HARD,PYTHON,False,,LSP,21.1,True
+two_agent,llama3-1-8b,LSP,LSP_11,HARD,KOTLIN,False,SRP,LSP,18.08,True
+two_agent,llama3-1-8b,LSP,LSP_12,HARD,C#,False,SRP,LSP,21.4,True
+two_agent,llama3-1-8b,LSP,LSP_13,EASY,JAVA,True,LSP,LSP,13.96,True
+two_agent,llama3-1-8b,LSP,LSP_14,EASY,PYTHON,True,LSP,LSP,13.96,True
+two_agent,llama3-1-8b,LSP,LSP_15,EASY,KOTLIN,False,SRP,LSP,12.47,True
+two_agent,llama3-1-8b,LSP,LSP_16,EASY,C#,False,OCP,LSP,2.8,True
+two_agent,llama3-1-8b,LSP,LSP_17,MODERATE,JAVA,True,"OCP, LSP",LSP,18.18,True
+two_agent,llama3-1-8b,LSP,LSP_18,MODERATE,PYTHON,False,SRP,LSP,17.67,True
+two_agent,llama3-1-8b,LSP,LSP_19,MODERATE,KOTLIN,True,"SRP, LSP",LSP,13.97,True
+two_agent,llama3-1-8b,LSP,LSP_20,MODERATE,C#,False,SRP,LSP,19.19,True
+two_agent,llama3-1-8b,LSP,LSP_21,HARD,JAVA,False,"SRP, OCP",LSP,21.79,True
+two_agent,llama3-1-8b,LSP,LSP_22,HARD,PYTHON,False,SRP,LSP,18.96,True
+two_agent,llama3-1-8b,LSP,LSP_23,HARD,KOTLIN,False,SRP,LSP,21.33,True
+two_agent,llama3-1-8b,LSP,LSP_24,HARD,C#,False,SRP,LSP,23.61,True
+two_agent,llama3-1-8b,LSP,LSP_25,EASY,JAVA,False,"SRP, ISP",LSP,13.97,True
+two_agent,llama3-1-8b,LSP,LSP_26,EASY,PYTHON,False,SRP,LSP,11.97,True
+two_agent,llama3-1-8b,LSP,LSP_27,EASY,KOTLIN,False,OCP,LSP,16.06,True
+two_agent,llama3-1-8b,LSP,LSP_28,EASY,C#,False,OCP,LSP,13.32,True
+two_agent,llama3-1-8b,LSP,LSP_29,MODERATE,JAVA,False,SRP,LSP,17.61,True
+two_agent,llama3-1-8b,LSP,LSP_30,MODERATE,PYTHON,False,OCP,LSP,17.22,True
+two_agent,llama3-1-8b,LSP,LSP_31,MODERATE,KOTLIN,False,"OCP, SRP",LSP,19.94,True
+two_agent,llama3-1-8b,LSP,LSP_32,MODERATE,C#,False,OCP,LSP,18.49,True
+two_agent,llama3-1-8b,LSP,LSP_33,HARD,JAVA,False,SRP,LSP,20.51,True
+two_agent,llama3-1-8b,LSP,LSP_34,HARD,PYTHON,False,DIP,LSP,22.99,True
+two_agent,llama3-1-8b,LSP,LSP_35,HARD,KOTLIN,False,SRP,LSP,22.42,True
+two_agent,llama3-1-8b,LSP,LSP_36,HARD,C#,False,,LSP,20.78,True
+two_agent,llama3-1-8b,LSP,LSP_37,EASY,JAVA,True,LSP,LSP,2.35,True
+two_agent,llama3-1-8b,LSP,LSP_38,EASY,PYTHON,True,LSP,LSP,3.13,True
+two_agent,llama3-1-8b,LSP,LSP_39,EASY,KOTLIN,True,LSP,LSP,2.33,True
+two_agent,llama3-1-8b,LSP,LSP_40,EASY,C#,True,LSP,LSP,2.36,True
+two_agent,llama3-1-8b,LSP,LSP_41,MODERATE,JAVA,False,SRP,LSP,16.46,True
+two_agent,llama3-1-8b,LSP,LSP_42,MODERATE,PYTHON,False,SRP,LSP,15.35,True
+two_agent,llama3-1-8b,LSP,LSP_43,MODERATE,KOTLIN,False,SRP,LSP,14.96,True
+two_agent,llama3-1-8b,LSP,LSP_44,MODERATE,C#,False,SRP,LSP,15.49,True
+two_agent,llama3-1-8b,LSP,LSP_45,HARD,JAVA,False,SRP,LSP,22.14,True
+two_agent,llama3-1-8b,LSP,LSP_46,HARD,PYTHON,False,"SRP, OCP",LSP,22.43,True
+two_agent,llama3-1-8b,LSP,LSP_47,HARD,KOTLIN,False,SRP,LSP,21.01,True
+two_agent,llama3-1-8b,LSP,LSP_48,HARD,C#,False,SRP,LSP,21.98,True
+two_agent,llama3-1-8b,ISP,ISP_1,EASY,CSHARP,False,OCP,ISP,14.33,True
+two_agent,llama3-1-8b,ISP,ISP_2,EASY,CSHARP,True,ISP,ISP,16.95,True
+two_agent,llama3-1-8b,ISP,ISP_3,EASY,CSHARP,False,SRP,ISP,10.93,True
+two_agent,llama3-1-8b,ISP,ISP_4,EASY,CSHARP,False,LSP,ISP,13.84,True
+two_agent,llama3-1-8b,ISP,ISP_5,HARD,CSHARP,True,ISP,ISP,23.45,True
+two_agent,llama3-1-8b,ISP,ISP_6,HARD,CSHARP,True,ISP,ISP,22.48,True
+two_agent,llama3-1-8b,ISP,ISP_7,HARD,CSHARP,False,SRP,ISP,27.69,True
+two_agent,llama3-1-8b,ISP,ISP_8,HARD,CSHARP,False,OCP,ISP,21.13,True
+two_agent,llama3-1-8b,ISP,ISP_9,MODERATE,CSHARP,False,OCP,ISP,18.19,True
+two_agent,llama3-1-8b,ISP,ISP_10,MODERATE,CSHARP,False,"SRP, OCP, DIP",ISP,22.91,True
+two_agent,llama3-1-8b,ISP,ISP_11,MODERATE,CSHARP,False,SRP,ISP,14.17,True
+two_agent,llama3-1-8b,ISP,ISP_12,MODERATE,CSHARP,False,SRP,ISP,19.5,True
+two_agent,llama3-1-8b,ISP,ISP_13,EASY,JAVA,False,OCP,ISP,16.84,True
+two_agent,llama3-1-8b,ISP,ISP_14,EASY,JAVA,True,"SRP, ISP",ISP,16.01,True
+two_agent,llama3-1-8b,ISP,ISP_15,EASY,JAVA,True,ISP,ISP,13.88,True
+two_agent,llama3-1-8b,ISP,ISP_16,EASY,JAVA,False,LSP,ISP,13.68,True
+two_agent,llama3-1-8b,ISP,ISP_17,HARD,JAVA,False,OCP,ISP,6.57,True
+two_agent,llama3-1-8b,ISP,ISP_18,HARD,JAVA,True,ISP,ISP,24.12,True
+two_agent,llama3-1-8b,ISP,ISP_19,HARD,JAVA,True,ISP,ISP,26.98,True
+two_agent,llama3-1-8b,ISP,ISP_20,HARD,JAVA,False,SRP,ISP,20.19,True
+two_agent,llama3-1-8b,ISP,ISP_21,MODERATE,JAVA,False,SRP,ISP,18.96,True
+two_agent,llama3-1-8b,ISP,ISP_22,MODERATE,JAVA,True,ISP,ISP,21.42,True
+two_agent,llama3-1-8b,ISP,ISP_23,MODERATE,JAVA,True,ISP,ISP,15.2,True
+two_agent,llama3-1-8b,ISP,ISP_24,MODERATE,JAVA,False,SRP,ISP,17.42,True
+two_agent,llama3-1-8b,ISP,ISP_25,EASY,KOTLIN,False,SRP,ISP,11.87,True
+two_agent,llama3-1-8b,ISP,ISP_26,EASY,KOTLIN,True,ISP,ISP,15.11,True
+two_agent,llama3-1-8b,ISP,ISP_27,EASY,KOTLIN,True,ISP,ISP,12.22,True
+two_agent,llama3-1-8b,ISP,ISP_28,EASY,KOTLIN,False,OCP,ISP,2.78,True
+two_agent,llama3-1-8b,ISP,ISP_29,HARD,KOTLIN,False,SRP,ISP,21.36,True
+two_agent,llama3-1-8b,ISP,ISP_30,HARD,KOTLIN,True,"SRP, ISP",ISP,26.01,True
+two_agent,llama3-1-8b,ISP,ISP_31,HARD,KOTLIN,False,SRP,ISP,27.95,True
+two_agent,llama3-1-8b,ISP,ISP_32,HARD,KOTLIN,False,SRP,ISP,21.41,True
+two_agent,llama3-1-8b,ISP,ISP_33,MODERATE,KOTLIN,False,OCP,ISP,5.0,True
+two_agent,llama3-1-8b,ISP,ISP_34,MODERATE,KOTLIN,True,ISP,ISP,11.57,True
+two_agent,llama3-1-8b,ISP,ISP_35,MODERATE,KOTLIN,False,SRP,ISP,17.74,True
+two_agent,llama3-1-8b,ISP,ISP_36,MODERATE,KOTLIN,False,"LSP, OCP",ISP,19.33,True
+two_agent,llama3-1-8b,ISP,ISP_37,EASY,PYTHON,False,SRP,ISP,12.63,True
+two_agent,llama3-1-8b,ISP,ISP_38,EASY,PYTHON,False,LSP,ISP,14.9,True
+two_agent,llama3-1-8b,ISP,ISP_39,EASY,PYTHON,True,ISP,ISP,13.53,True
+two_agent,llama3-1-8b,ISP,ISP_40,EASY,PYTHON,False,LSP,ISP,11.13,True
+two_agent,llama3-1-8b,ISP,ISP_41,HARD,PYTHON,False,SRP,ISP,22.93,True
+two_agent,llama3-1-8b,ISP,ISP_42,HARD,PYTHON,True,ISP,ISP,23.26,True
+two_agent,llama3-1-8b,ISP,ISP_43,HARD,PYTHON,False,SRP,ISP,27.4,True
+two_agent,llama3-1-8b,ISP,ISP_44,HARD,PYTHON,False,SRP,ISP,22.49,True
+two_agent,llama3-1-8b,ISP,ISP_45,MODERATE,PYTHON,False,OCP,ISP,21.32,True
+two_agent,llama3-1-8b,ISP,ISP_46,MODERATE,PYTHON,True,ISP,ISP,19.2,True
+two_agent,llama3-1-8b,ISP,ISP_47,MODERATE,PYTHON,False,SRP,ISP,17.4,True
+two_agent,llama3-1-8b,ISP,ISP_48,MODERATE,PYTHON,False,SRP,ISP,16.4,True
+two_agent,llama3-1-8b,DIP,DIP_1,EASY,JAVA,True,"SRP, DIP",DIP,3.06,True
+two_agent,llama3-1-8b,DIP,DIP_2,EASY,PYTHON,False,,DIP,11.58,True
+two_agent,llama3-1-8b,DIP,DIP_3,EASY,KOTLIN,True,"SRP, DIP",DIP,2.99,True
+two_agent,llama3-1-8b,DIP,DIP_4,EASY,C#,True,"SRP, DIP",DIP,6.25,True
+two_agent,llama3-1-8b,DIP,DIP_5,MODERATE,JAVA,True,DIP,DIP,15.05,True
+two_agent,llama3-1-8b,DIP,DIP_6,MODERATE,PYTHON,False,SRP,DIP,13.3,True
+two_agent,llama3-1-8b,DIP,DIP_7,MODERATE,KOTLIN,True,DIP,DIP,13.53,True
+two_agent,llama3-1-8b,DIP,DIP_8,MODERATE,C#,False,SRP,DIP,14.78,True
+two_agent,llama3-1-8b,DIP,DIP_9,HARD,JAVA,False,SRP,DIP,19.92,True
+two_agent,llama3-1-8b,DIP,DIP_10,HARD,PYTHON,False,SRP,DIP,18.72,True
+two_agent,llama3-1-8b,DIP,DIP_11,HARD,KOTLIN,True,"SRP, DIP",DIP,19.8,True
+two_agent,llama3-1-8b,DIP,DIP_12,HARD,C#,False,SRP,DIP,20.44,True
+two_agent,llama3-1-8b,DIP,DIP_13,EASY,JAVA,True,DIP,DIP,6.7,True
+two_agent,llama3-1-8b,DIP,DIP_14,EASY,PYTHON,True,"DIP, tightly coupled classes",DIP,6.27,True
+two_agent,llama3-1-8b,DIP,DIP_15,EASY,KOTLIN,True,DIP,DIP,5.92,True
+two_agent,llama3-1-8b,DIP,DIP_16,EASY,C#,True,DIP,DIP,7.15,True
+two_agent,llama3-1-8b,DIP,DIP_17,MODERATE,JAVA,False,SRP,DIP,17.39,True
+two_agent,llama3-1-8b,DIP,DIP_18,MODERATE,PYTHON,False,OCP,DIP,19.78,True
+two_agent,llama3-1-8b,DIP,DIP_19,MODERATE,KOTLIN,False,SRP,DIP,12.66,True
+two_agent,llama3-1-8b,DIP,DIP_20,MODERATE,C#,False,SRP,DIP,14.34,True
+two_agent,llama3-1-8b,DIP,DIP_21,HARD,JAVA,True,"SRP, DIP",DIP,23.78,True
+two_agent,llama3-1-8b,DIP,DIP_22,HARD,PYTHON,False,SRP,DIP,19.43,True
+two_agent,llama3-1-8b,DIP,DIP_23,HARD,KOTLIN,False,SRP,DIP,18.48,True
+two_agent,llama3-1-8b,DIP,DIP_24,HARD,C#,False,SRP,DIP,17.95,True
+two_agent,llama3-1-8b,DIP,DIP_25,EASY,JAVA,False,SRP,DIP,9.15,True
+two_agent,llama3-1-8b,DIP,DIP_26,EASY,PYTHON,False,SRP,DIP,10.72,True
+two_agent,llama3-1-8b,DIP,DIP_27,EASY,KOTLIN,False,SRP,DIP,2.28,True
+two_agent,llama3-1-8b,DIP,DIP_28,EASY,C#,False,SRP,DIP,2.29,True
+two_agent,llama3-1-8b,DIP,DIP_29,MODERATE,JAVA,False,SRP,DIP,15.31,True
+two_agent,llama3-1-8b,DIP,DIP_30,MODERATE,PYTHON,False,SRP,DIP,13.03,True
+two_agent,llama3-1-8b,DIP,DIP_31,MODERATE,KOTLIN,False,SRP,DIP,14.3,True
+two_agent,llama3-1-8b,DIP,DIP_32,MODERATE,C#,False,SRP,DIP,7.15,True
+two_agent,llama3-1-8b,DIP,DIP_33,HARD,JAVA,False,SRP,DIP,16.11,True
+two_agent,llama3-1-8b,DIP,DIP_34,HARD,PYTHON,False,SRP,DIP,9.1,True
+two_agent,llama3-1-8b,DIP,DIP_35,HARD,KOTLIN,True,DIP,DIP,19.2,True
+two_agent,llama3-1-8b,DIP,DIP_36,HARD,C#,False,SRP,DIP,20.66,True
+two_agent,llama3-1-8b,DIP,DIP_37,EASY,JAVA,True,DIP,DIP,2.1,True
+two_agent,llama3-1-8b,DIP,DIP_38,EASY,PYTHON,True,DIP,DIP,2.68,True
+two_agent,llama3-1-8b,DIP,DIP_39,EASY,KOTLIN,False,SRP,DIP,6.61,True
+two_agent,llama3-1-8b,DIP,DIP_40,EASY,C#,False,SRP,DIP,10.17,True
+two_agent,llama3-1-8b,DIP,DIP_41,MODERATE,JAVA,False,SRP,DIP,14.18,True
+two_agent,llama3-1-8b,DIP,DIP_42,MODERATE,PYTHON,False,SRP,DIP,14.32,True
+two_agent,llama3-1-8b,DIP,DIP_43,MODERATE,KOTLIN,False,SRP,DIP,15.07,True
+two_agent,llama3-1-8b,DIP,DIP_44,MODERATE,C#,True,"SRP, DIP",DIP,14.86,True
+two_agent,llama3-1-8b,DIP,DIP_45,HARD,JAVA,True,DIP,DIP,17.57,True
+two_agent,llama3-1-8b,DIP,DIP_46,HARD,PYTHON,False,SRP,DIP,16.3,True
+two_agent,llama3-1-8b,DIP,DIP_47,HARD,KOTLIN,False,SRP,DIP,16.31,True
+two_agent,llama3-1-8b,DIP,DIP_48,HARD,C#,False,SRP,DIP,16.58,True
+two_agent,llama3-2-3b,ISP,ISP_1,EASY,CSHARP,False,,ISP,6.95,True
+two_agent,llama3-2-3b,ISP,ISP_2,EASY,CSHARP,False,SRP,ISP,6.02,True
+two_agent,llama3-2-3b,ISP,ISP_3,EASY,CSHARP,True,"SRP, ISP",ISP,2.85,True
+two_agent,llama3-2-3b,ISP,ISP_4,EASY,CSHARP,False,SRP,ISP,5.09,True
+two_agent,llama3-2-3b,ISP,ISP_5,HARD,CSHARP,True,"SRP, ISP",ISP,11.94,True
+two_agent,llama3-2-3b,ISP,ISP_6,HARD,CSHARP,True,ISP,ISP,8.83,True
+two_agent,llama3-2-3b,ISP,ISP_7,HARD,CSHARP,False,SRP,ISP,14.78,True
+two_agent,llama3-2-3b,ISP,ISP_8,HARD,CSHARP,False,SRP,ISP,7.59,True
+two_agent,llama3-2-3b,ISP,ISP_9,MODERATE,CSHARP,True,"SRP, ISP",ISP,2.24,True
+two_agent,llama3-2-3b,ISP,ISP_10,MODERATE,CSHARP,True,"SRP, ISP",ISP,2.98,True
+two_agent,llama3-2-3b,ISP,ISP_11,MODERATE,CSHARP,True,"SRP, ISP",ISP,7.52,True
+two_agent,llama3-2-3b,ISP,ISP_12,MODERATE,CSHARP,True,ISP,ISP,8.57,True
+two_agent,llama3-2-3b,ISP,ISP_13,EASY,JAVA,True,"SRP, ISP",ISP,7.21,True
+two_agent,llama3-2-3b,ISP,ISP_14,EASY,JAVA,False,"SRP, DIP",ISP,2.49,True
+two_agent,llama3-2-3b,ISP,ISP_15,EASY,JAVA,True,ISP,ISP,3.71,True
+two_agent,llama3-2-3b,ISP,ISP_16,EASY,JAVA,False,SRP,ISP,2.16,True
+two_agent,llama3-2-3b,ISP,ISP_17,HARD,JAVA,True,"SRP, ISP",ISP,12.41,True
+two_agent,llama3-2-3b,ISP,ISP_18,HARD,JAVA,False,"SRP, DIP",ISP,8.87,True
+two_agent,llama3-2-3b,ISP,ISP_19,HARD,JAVA,True,"SRP, ISP",ISP,4.75,True
+two_agent,llama3-2-3b,ISP,ISP_20,HARD,JAVA,True,"SRP, ISP, DIP",ISP,11.34,True
+two_agent,llama3-2-3b,ISP,ISP_21,MODERATE,JAVA,True,"SRP, ISP",ISP,2.07,True
+two_agent,llama3-2-3b,ISP,ISP_22,MODERATE,JAVA,True,"SRP, ISP",ISP,5.77,True
+two_agent,llama3-2-3b,ISP,ISP_23,MODERATE,JAVA,True,ISP,ISP,7.21,True
+two_agent,llama3-2-3b,ISP,ISP_24,MODERATE,JAVA,True,"SRP, ISP",ISP,6.31,True
+two_agent,llama3-2-3b,ISP,ISP_25,EASY,KOTLIN,False,"SRP, DIP",ISP,2.53,True
+two_agent,llama3-2-3b,ISP,ISP_26,EASY,KOTLIN,False,SRP,ISP,4.07,True
+two_agent,llama3-2-3b,ISP,ISP_27,EASY,KOTLIN,True,"ISP, SRP",ISP,4.62,True
+two_agent,llama3-2-3b,ISP,ISP_28,EASY,KOTLIN,False,SRP,ISP,1.67,True
+two_agent,llama3-2-3b,ISP,ISP_29,HARD,KOTLIN,True,"SRP, ISP",ISP,3.33,True
+two_agent,llama3-2-3b,ISP,ISP_30,HARD,KOTLIN,False,SRP,ISP,10.81,True
+two_agent,llama3-2-3b,ISP,ISP_31,HARD,KOTLIN,False,"DIP, SRP",ISP,15.33,True
+two_agent,llama3-2-3b,ISP,ISP_32,HARD,KOTLIN,True,"SRP, ISP",ISP,4.16,True
+two_agent,llama3-2-3b,ISP,ISP_33,MODERATE,KOTLIN,False,SRP,ISP,5.16,True
+two_agent,llama3-2-3b,ISP,ISP_34,MODERATE,KOTLIN,False,"SRP, DIP",ISP,3.28,True
+two_agent,llama3-2-3b,ISP,ISP_35,MODERATE,KOTLIN,False,SRP,ISP,4.47,True
+two_agent,llama3-2-3b,ISP,ISP_36,MODERATE,KOTLIN,True,"SRP, ISP",ISP,8.11,True
+two_agent,llama3-2-3b,ISP,ISP_37,EASY,PYTHON,False,"SRP, DIP",ISP,5.08,True
+two_agent,llama3-2-3b,ISP,ISP_38,EASY,PYTHON,False,"SRP, DIP",ISP,2.58,True
+two_agent,llama3-2-3b,ISP,ISP_39,EASY,PYTHON,False,"SRP, DIP",ISP,2.24,True
+two_agent,llama3-2-3b,ISP,ISP_40,EASY,PYTHON,True,"SRP, ISP",ISP,3.61,True
+two_agent,llama3-2-3b,ISP,ISP_41,HARD,PYTHON,True,"SRP, ISP",ISP,11.17,True
+two_agent,llama3-2-3b,ISP,ISP_42,HARD,PYTHON,True,"SRP, ISP",ISP,12.79,True
+two_agent,llama3-2-3b,ISP,ISP_43,HARD,PYTHON,True,"SRP, ISP",ISP,10.13,True
+two_agent,llama3-2-3b,ISP,ISP_44,HARD,PYTHON,False,SRP,ISP,9.64,True
+two_agent,llama3-2-3b,ISP,ISP_45,MODERATE,PYTHON,False,DIP,ISP,4.66,True
+two_agent,llama3-2-3b,ISP,ISP_46,MODERATE,PYTHON,False,"SRP, DIP",ISP,3.29,True
+two_agent,llama3-2-3b,ISP,ISP_47,MODERATE,PYTHON,False,"SRP, DIP",ISP,8.32,True
+two_agent,llama3-2-3b,ISP,ISP_48,MODERATE,PYTHON,True,"SRP, ISP",ISP,2.58,True
+two_agent,llama3-2-3b,SRP,SRP_1,EASY,JAVA,True,SRP,SRP,3.91,True
+two_agent,llama3-2-3b,SRP,SRP_2,EASY,JAVA,False,,SRP,2.37,True
+two_agent,llama3-2-3b,SRP,SRP_3,EASY,JAVA,True,"SRP, DIP",SRP,2.75,True
+two_agent,llama3-2-3b,SRP,SRP_4,EASY,JAVA,True,SRP,SRP,1.82,True
+two_agent,llama3-2-3b,SRP,SRP_5,MODERATE,JAVA,True,SRP,SRP,4.72,True
+two_agent,llama3-2-3b,SRP,SRP_6,MODERATE,JAVA,True,SRP,SRP,6.76,True
+two_agent,llama3-2-3b,SRP,SRP_7,MODERATE,JAVA,True,"SRP, DIP",SRP,3.76,True
+two_agent,llama3-2-3b,SRP,SRP_8,MODERATE,JAVA,True,SRP,SRP,7.6,True
+two_agent,llama3-2-3b,SRP,SRP_9,HARD,JAVA,True,"SRP, ISP",SRP,12.91,True
+two_agent,llama3-2-3b,SRP,SRP_10,HARD,JAVA,True,"SRP, ISP",SRP,5.06,True
+two_agent,llama3-2-3b,SRP,SRP_11,HARD,JAVA,True,"SRP, ISP",SRP,8.59,True
+two_agent,llama3-2-3b,SRP,SRP_12,HARD,JAVA,True,"SRP, DIP",SRP,14.17,True
+two_agent,llama3-2-3b,SRP,SRP_13,EASY,PYTHON,True,"SRP, DIP",SRP,1.9,True
+two_agent,llama3-2-3b,SRP,SRP_14,EASY,PYTHON,True,SRP,SRP,3.45,True
+two_agent,llama3-2-3b,SRP,SRP_15,EASY,PYTHON,True,SRP,SRP,3.42,True
+two_agent,llama3-2-3b,SRP,SRP_16,EASY,PYTHON,True,"SRP, DIP",SRP,4.07,True
+two_agent,llama3-2-3b,SRP,SRP_17,MODERATE,PYTHON,False,,SRP,4.03,True
+two_agent,llama3-2-3b,SRP,SRP_18,MODERATE,PYTHON,True,"SRP, DIP",SRP,3.89,True
+two_agent,llama3-2-3b,SRP,SRP_19,MODERATE,PYTHON,False,DIP,SRP,8.06,True
+two_agent,llama3-2-3b,SRP,SRP_20,MODERATE,PYTHON,True,"SRP, ISP",SRP,2.46,True
+two_agent,llama3-2-3b,SRP,SRP_21,HARD,PYTHON,True,SRP,SRP,3.53,True
+two_agent,llama3-2-3b,SRP,SRP_22,HARD,PYTHON,True,SRP,SRP,12.93,True
+two_agent,llama3-2-3b,SRP,SRP_23,HARD,PYTHON,True,SRP,SRP,8.78,True
+two_agent,llama3-2-3b,SRP,SRP_24,HARD,PYTHON,True,SRP,SRP,9.08,True
+two_agent,llama3-2-3b,SRP,SRP_25,EASY,KOTLIN,False,,SRP,2.77,True
+two_agent,llama3-2-3b,SRP,SRP_26,EASY,KOTLIN,True,SRP,SRP,1.84,True
+two_agent,llama3-2-3b,SRP,SRP_27,EASY,KOTLIN,True,SRP,SRP,2.12,True
+two_agent,llama3-2-3b,SRP,SRP_28,EASY,KOTLIN,True,SRP,SRP,1.67,True
+two_agent,llama3-2-3b,SRP,SRP_29,MODERATE,KOTLIN,True,"SRP, DIP",SRP,5.64,True
+two_agent,llama3-2-3b,SRP,SRP_30,MODERATE,KOTLIN,True,"SRP, DIP",SRP,3.61,True
+two_agent,llama3-2-3b,SRP,SRP_31,MODERATE,KOTLIN,True,SRP,SRP,6.57,True
+two_agent,llama3-2-3b,SRP,SRP_32,MODERATE,KOTLIN,True,"SRP, ISP",SRP,2.42,True
+two_agent,llama3-2-3b,SRP,SRP_33,HARD,KOTLIN,False,ISP,SRP,11.88,True
+two_agent,llama3-2-3b,SRP,SRP_34,HARD,KOTLIN,True,"SRP, ISP",SRP,12.48,True
+two_agent,llama3-2-3b,SRP,SRP_35,HARD,KOTLIN,True,"SRP, ISP",SRP,11.48,True
+two_agent,llama3-2-3b,SRP,SRP_36,HARD,KOTLIN,True,SRP,SRP,9.42,True
+two_agent,llama3-2-3b,SRP,SRP_37,EASY,CSHARP,True,SRP,SRP,1.91,True
+two_agent,llama3-2-3b,SRP,SRP_38,EASY,CSHARP,True,SRP,SRP,5.46,True
+two_agent,llama3-2-3b,SRP,SRP_39,EASY,CSHARP,True,"SRP, DIP",SRP,1.86,True
+two_agent,llama3-2-3b,SRP,SRP_40,EASY,CSHARP,True,SRP,SRP,1.59,True
+two_agent,llama3-2-3b,SRP,SRP_41,MODERATE,CSHARP,True,"SRP, DIP",SRP,2.68,True
+two_agent,llama3-2-3b,SRP,SRP_42,MODERATE,CSHARP,True,SRP,SRP,9.31,True
+two_agent,llama3-2-3b,SRP,SRP_43,MODERATE,CSHARP,True,"SRP, DIP",SRP,3.72,True
+two_agent,llama3-2-3b,SRP,SRP_44,MODERATE,CSHARP,True,SRP,SRP,5.64,True
+two_agent,llama3-2-3b,SRP,SRP_45,HARD,CSHARP,True,SRP,SRP,12.13,True
+two_agent,llama3-2-3b,SRP,SRP_46,HARD,CSHARP,True,"SRP,DIP",SRP,13.23,True
+two_agent,llama3-2-3b,SRP,SRP_47,HARD,CSHARP,True,"SRP, ISP",SRP,4.85,True
+two_agent,llama3-2-3b,SRP,SRP_48,HARD,CSHARP,True,"SRP, ISP",SRP,15.47,True
+two_agent,llama3-2-3b,OCP,OCP_1,EASY,CSHARP,False,"SRP, DIP",OCP,2.29,True
+two_agent,llama3-2-3b,OCP,OCP_2,EASY,CSHARP,False,"SRP, DIP",OCP,2.73,True
+two_agent,llama3-2-3b,OCP,OCP_3,EASY,CSHARP,False,,OCP,2.52,True
+two_agent,llama3-2-3b,OCP,OCP_4,EASY,CSHARP,False,DIP,OCP,3.73,True
+two_agent,llama3-2-3b,OCP,OCP_5,HARD,CSHARP,True,OCP,OCP,13.88,True
+two_agent,llama3-2-3b,OCP,OCP_6,HARD,CSHARP,False,SRP,OCP,10.6,True
+two_agent,llama3-2-3b,OCP,OCP_7,HARD,CSHARP,False,,OCP,27.43,True
+two_agent,llama3-2-3b,OCP,OCP_8,HARD,CSHARP,False,"SRP, DIP",OCP,9.09,True
+two_agent,llama3-2-3b,OCP,OCP_9,MODERATE,CSHARP,False,"DIP, ISP",OCP,7.96,True
+two_agent,llama3-2-3b,OCP,OCP_10,MODERATE,CSHARP,False,"SRP, DIP",OCP,2.55,True
+two_agent,llama3-2-3b,OCP,OCP_11,MODERATE,CSHARP,False,SRP,OCP,6.53,True
+two_agent,llama3-2-3b,OCP,OCP_12,MODERATE,CSHARP,True,"OCP, SRP",OCP,11.27,True
+two_agent,llama3-2-3b,OCP,OCP_13,EASY,JAVA,False,DIP,OCP,3.34,True
+two_agent,llama3-2-3b,OCP,OCP_14,EASY,JAVA,False,DIP,OCP,3.81,True
+two_agent,llama3-2-3b,OCP,OCP_15,EASY,JAVA,False,SRP,OCP,3.95,True
+two_agent,llama3-2-3b,OCP,OCP_16,EASY,JAVA,False,SRP,OCP,5.3,True
+two_agent,llama3-2-3b,OCP,OCP_17,HARD,JAVA,True,OCP,OCP,8.5,True
+two_agent,llama3-2-3b,OCP,OCP_18,HARD,JAVA,False,SRP,OCP,3.02,True
+two_agent,llama3-2-3b,OCP,OCP_19,HARD,JAVA,False,,OCP,14.28,True
+two_agent,llama3-2-3b,OCP,OCP_20,HARD,JAVA,False,"SRP, DIP",OCP,10.19,True
+two_agent,llama3-2-3b,OCP,OCP_21,MODERATE,JAVA,False,"SRP, DIP",OCP,2.45,True
+two_agent,llama3-2-3b,OCP,OCP_22,MODERATE,JAVA,False,SRP,OCP,4.83,True
+two_agent,llama3-2-3b,OCP,OCP_23,MODERATE,JAVA,False,SRP,OCP,9.92,True
+two_agent,llama3-2-3b,OCP,OCP_24,MODERATE,JAVA,False,SRP,OCP,3.74,True
+two_agent,llama3-2-3b,OCP,OCP_25,EASY,KOTLIN,False,SRP,OCP,3.39,True
+two_agent,llama3-2-3b,OCP,OCP_26,EASY,KOTLIN,False,,OCP,3.9,True
+two_agent,llama3-2-3b,OCP,OCP_27,EASY,KOTLIN,False,"SRP, DIP",OCP,2.38,True
+two_agent,llama3-2-3b,OCP,OCP_28,EASY,KOTLIN,False,ISP,OCP,5.18,True
+two_agent,llama3-2-3b,OCP,OCP_29,HARD,KOTLIN,True,OCP,OCP,3.84,True
+two_agent,llama3-2-3b,OCP,OCP_30,HARD,KOTLIN,False,SRP,OCP,3.34,True
+two_agent,llama3-2-3b,OCP,OCP_31,HARD,KOTLIN,False,ISP,OCP,14.98,True
+two_agent,llama3-2-3b,OCP,OCP_32,HARD,KOTLIN,False,DIP,OCP,11.95,True
+two_agent,llama3-2-3b,OCP,OCP_33,MODERATE,KOTLIN,False,SRP,OCP,7.77,True
+two_agent,llama3-2-3b,OCP,OCP_34,MODERATE,KOTLIN,False,"SRP, DIP",OCP,1.55,True
+two_agent,llama3-2-3b,OCP,OCP_35,MODERATE,KOTLIN,False,"SRP, DIP",OCP,3.65,True
+two_agent,llama3-2-3b,OCP,OCP_36,MODERATE,KOTLIN,False,SRP,OCP,5.51,True
+two_agent,llama3-2-3b,OCP,OCP_37,EASY,PYTHON,False,SRP,OCP,6.16,True
+two_agent,llama3-2-3b,OCP,OCP_38,EASY,PYTHON,False,DIP,OCP,5.32,True
+two_agent,llama3-2-3b,OCP,OCP_39,EASY,PYTHON,False,"SRP, DIP",OCP,1.31,True
+two_agent,llama3-2-3b,OCP,OCP_40,EASY,PYTHON,False,DIP,OCP,3.71,True
+two_agent,llama3-2-3b,OCP,OCP_41,HARD,PYTHON,False,,OCP,10.57,True
+two_agent,llama3-2-3b,OCP,OCP_42,HARD,PYTHON,False,SRP,OCP,3.75,True
+two_agent,llama3-2-3b,OCP,OCP_43,HARD,PYTHON,False,DIP,OCP,8.14,True
+two_agent,llama3-2-3b,OCP,OCP_44,HARD,PYTHON,False,SRP,OCP,12.54,True
+two_agent,llama3-2-3b,OCP,OCP_45,MODERATE,PYTHON,False,ISP,OCP,4.6,True
+two_agent,llama3-2-3b,OCP,OCP_46,MODERATE,PYTHON,False,,OCP,3.64,True
+two_agent,llama3-2-3b,OCP,OCP_47,MODERATE,PYTHON,False,"SRP, ISP",OCP,10.35,True
+two_agent,llama3-2-3b,OCP,OCP_48,MODERATE,PYTHON,False,,OCP,8.6,True
+two_agent,llama3-2-3b,LSP,LSP_1,EASY,JAVA,False,DIP,LSP,5.98,True
+two_agent,llama3-2-3b,LSP,LSP_2,EASY,PYTHON,False,"SRP, DIP",LSP,2.17,True
+two_agent,llama3-2-3b,LSP,LSP_3,EASY,KOTLIN,False,"SRP, DIP",LSP,1.99,True
+two_agent,llama3-2-3b,LSP,LSP_4,EASY,C#,True,LSP,LSP,3.57,True
+two_agent,llama3-2-3b,LSP,LSP_5,MODERATE,JAVA,False,DIP,LSP,6.97,True
+two_agent,llama3-2-3b,LSP,LSP_6,MODERATE,PYTHON,False,SRP,LSP,6.81,True
+two_agent,llama3-2-3b,LSP,LSP_7,MODERATE,KOTLIN,False,SRP,LSP,2.2,True
+two_agent,llama3-2-3b,LSP,LSP_8,MODERATE,C#,False,SRP,LSP,7.75,True
+two_agent,llama3-2-3b,LSP,LSP_9,HARD,JAVA,False,"SRP, ISP",LSP,2.86,True
+two_agent,llama3-2-3b,LSP,LSP_10,HARD,PYTHON,False,"SRP, ISP",LSP,11.0,True
+two_agent,llama3-2-3b,LSP,LSP_11,HARD,KOTLIN,False,"SRP, ISP",LSP,4.14,True
+two_agent,llama3-2-3b,LSP,LSP_12,HARD,C#,False,"SRP, DIP",LSP,4.0,True
+two_agent,llama3-2-3b,LSP,LSP_13,EASY,JAVA,False,DIP,LSP,3.6,True
+two_agent,llama3-2-3b,LSP,LSP_14,EASY,PYTHON,False,"SRP, DIP",LSP,1.91,True
+two_agent,llama3-2-3b,LSP,LSP_15,EASY,KOTLIN,False,,LSP,2.93,True
+two_agent,llama3-2-3b,LSP,LSP_16,EASY,C#,False,,LSP,3.39,True
+two_agent,llama3-2-3b,LSP,LSP_17,MODERATE,JAVA,False,"SRP, DIP",LSP,1.91,True
+two_agent,llama3-2-3b,LSP,LSP_18,MODERATE,PYTHON,False,DIP,LSP,4.39,True
+two_agent,llama3-2-3b,LSP,LSP_19,MODERATE,KOTLIN,False,DIP,LSP,4.55,True
+two_agent,llama3-2-3b,LSP,LSP_20,MODERATE,C#,False,SRP,LSP,3.45,True
+two_agent,llama3-2-3b,LSP,LSP_21,HARD,JAVA,False,SRP,LSP,7.37,True
+two_agent,llama3-2-3b,LSP,LSP_22,HARD,PYTHON,False,"SRP, DIP",LSP,3.48,True
+two_agent,llama3-2-3b,LSP,LSP_23,HARD,KOTLIN,False,"SRP, DIP",LSP,3.93,True
+two_agent,llama3-2-3b,LSP,LSP_24,HARD,C#,False,"SRP, DIP",LSP,4.02,True
+two_agent,llama3-2-3b,LSP,LSP_25,EASY,JAVA,False,ISP,LSP,6.51,True
+two_agent,llama3-2-3b,LSP,LSP_26,EASY,PYTHON,False,,LSP,3.35,True
+two_agent,llama3-2-3b,LSP,LSP_27,EASY,KOTLIN,False,"SRP, ISP",LSP,6.91,True
+two_agent,llama3-2-3b,LSP,LSP_28,EASY,C#,False,"SRP, ISP",LSP,5.72,True
+two_agent,llama3-2-3b,LSP,LSP_29,MODERATE,JAVA,False,SRP,LSP,5.59,True
+two_agent,llama3-2-3b,LSP,LSP_30,MODERATE,PYTHON,False,,LSP,3.56,True
+two_agent,llama3-2-3b,LSP,LSP_31,MODERATE,KOTLIN,False,"SRP, ISP",LSP,8.04,True
+two_agent,llama3-2-3b,LSP,LSP_32,MODERATE,C#,False,SRP,LSP,6.02,True
+two_agent,llama3-2-3b,LSP,LSP_33,HARD,JAVA,False,SRP,LSP,9.78,True
+two_agent,llama3-2-3b,LSP,LSP_34,HARD,PYTHON,False,SRP,LSP,11.02,True
+two_agent,llama3-2-3b,LSP,LSP_35,HARD,KOTLIN,False,SRP,LSP,8.53,True
+two_agent,llama3-2-3b,LSP,LSP_36,HARD,C#,False,SRP,LSP,11.69,True
+two_agent,llama3-2-3b,LSP,LSP_37,EASY,JAVA,False,SRP,LSP,3.17,True
+two_agent,llama3-2-3b,LSP,LSP_38,EASY,PYTHON,False,"SRP, DIP",LSP,2.0,True
+two_agent,llama3-2-3b,LSP,LSP_39,EASY,KOTLIN,False,"SRP, DIP",LSP,1.82,True
+two_agent,llama3-2-3b,LSP,LSP_40,EASY,C#,False,,LSP,3.22,True
+two_agent,llama3-2-3b,LSP,LSP_41,MODERATE,JAVA,False,SRP,LSP,4.84,True
+two_agent,llama3-2-3b,LSP,LSP_42,MODERATE,PYTHON,False,,LSP,4.31,True
+two_agent,llama3-2-3b,LSP,LSP_43,MODERATE,KOTLIN,False,SRP,LSP,5.89,True
+two_agent,llama3-2-3b,LSP,LSP_44,MODERATE,C#,False,DIP,LSP,4.28,True
+two_agent,llama3-2-3b,LSP,LSP_45,HARD,JAVA,False,"SRP, DIP",LSP,3.66,True
+two_agent,llama3-2-3b,LSP,LSP_46,HARD,PYTHON,False,"SRP, DIP",LSP,3.17,True
+two_agent,llama3-2-3b,LSP,LSP_47,HARD,KOTLIN,False,SRP,LSP,7.77,True
+two_agent,llama3-2-3b,LSP,LSP_48,HARD,C#,False,SRP,LSP,6.91,True
+two_agent,llama3-2-3b,DIP,DIP_1,EASY,JAVA,False,,DIP,3.14,True
+two_agent,llama3-2-3b,DIP,DIP_2,EASY,PYTHON,False,SRP,DIP,3.71,True
+two_agent,llama3-2-3b,DIP,DIP_3,EASY,KOTLIN,False,SRP,DIP,3.66,True
+two_agent,llama3-2-3b,DIP,DIP_4,EASY,C#,False,SRP,DIP,5.89,True
+two_agent,llama3-2-3b,DIP,DIP_5,MODERATE,JAVA,True,"SRP, DIP",DIP,6.75,True
+two_agent,llama3-2-3b,DIP,DIP_6,MODERATE,PYTHON,False,SRP,DIP,3.7,True
+two_agent,llama3-2-3b,DIP,DIP_7,MODERATE,KOTLIN,True,"SRP, DIP",DIP,1.95,True
+two_agent,llama3-2-3b,DIP,DIP_8,MODERATE,C#,True,"SRP, DIP",DIP,2.54,True
+two_agent,llama3-2-3b,DIP,DIP_9,HARD,JAVA,True,"SRP, DIP",DIP,2.32,True
+two_agent,llama3-2-3b,DIP,DIP_10,HARD,PYTHON,False,SRP,DIP,6.2,True
+two_agent,llama3-2-3b,DIP,DIP_11,HARD,KOTLIN,True,"SRP, DIP",DIP,2.89,True
+two_agent,llama3-2-3b,DIP,DIP_12,HARD,C#,True,"SRP, DIP",DIP,6.33,True
+two_agent,llama3-2-3b,DIP,DIP_13,EASY,JAVA,False,,DIP,3.04,True
+two_agent,llama3-2-3b,DIP,DIP_14,EASY,PYTHON,False,SRP,DIP,1.68,True
+two_agent,llama3-2-3b,DIP,DIP_15,EASY,KOTLIN,True,DIP,DIP,3.24,True
+two_agent,llama3-2-3b,DIP,DIP_16,EASY,C#,True,DIP,DIP,3.46,True
+two_agent,llama3-2-3b,DIP,DIP_17,MODERATE,JAVA,True,"SRP, DIP",DIP,2.26,True
+two_agent,llama3-2-3b,DIP,DIP_18,MODERATE,PYTHON,True,"SRP, DIP",DIP,2.63,True
+two_agent,llama3-2-3b,DIP,DIP_19,MODERATE,KOTLIN,True,DIP,DIP,4.33,True
+two_agent,llama3-2-3b,DIP,DIP_20,MODERATE,C#,False,SRP,DIP,6.5,True
+two_agent,llama3-2-3b,DIP,DIP_21,HARD,JAVA,True,"SRP, DIP",DIP,9.74,True
+two_agent,llama3-2-3b,DIP,DIP_22,HARD,PYTHON,False,"SRP, ISP",DIP,10.8,True
+two_agent,llama3-2-3b,DIP,DIP_23,HARD,KOTLIN,False,ISP,DIP,6.4,True
+two_agent,llama3-2-3b,DIP,DIP_24,HARD,C#,True,"SRP, DIP",DIP,9.85,True
+two_agent,llama3-2-3b,DIP,DIP_25,EASY,JAVA,True,"SRP, DIP",DIP,1.78,True
+two_agent,llama3-2-3b,DIP,DIP_26,EASY,PYTHON,False,SRP,DIP,1.67,True
+two_agent,llama3-2-3b,DIP,DIP_27,EASY,KOTLIN,False,SRP,DIP,3.91,True
+two_agent,llama3-2-3b,DIP,DIP_28,EASY,C#,False,,DIP,2.56,True
+two_agent,llama3-2-3b,DIP,DIP_29,MODERATE,JAVA,True,"SRP, DIP",DIP,2.7,True
+two_agent,llama3-2-3b,DIP,DIP_30,MODERATE,PYTHON,True,"SRP, DIP",DIP,2.56,True
+two_agent,llama3-2-3b,DIP,DIP_31,MODERATE,KOTLIN,False,SRP,DIP,4.45,True
+two_agent,llama3-2-3b,DIP,DIP_32,MODERATE,C#,False,SRP,DIP,4.57,True
+two_agent,llama3-2-3b,DIP,DIP_33,HARD,JAVA,False,SRP,DIP,5.72,True
+two_agent,llama3-2-3b,DIP,DIP_34,HARD,PYTHON,True,"SRP, DIP",DIP,2.69,True
+two_agent,llama3-2-3b,DIP,DIP_35,HARD,KOTLIN,True,"SRP,DIP",DIP,6.87,True
+two_agent,llama3-2-3b,DIP,DIP_36,HARD,C#,False,SRP,DIP,6.52,True
+two_agent,llama3-2-3b,DIP,DIP_37,EASY,JAVA,False,SRP,DIP,1.54,True
+two_agent,llama3-2-3b,DIP,DIP_38,EASY,PYTHON,False,SRP,DIP,1.92,True
+two_agent,llama3-2-3b,DIP,DIP_39,EASY,KOTLIN,False,SRP,DIP,3.13,True
+two_agent,llama3-2-3b,DIP,DIP_40,EASY,C#,False,SRP,DIP,1.97,True
+two_agent,llama3-2-3b,DIP,DIP_41,MODERATE,JAVA,True,DIP,DIP,6.06,True
+two_agent,llama3-2-3b,DIP,DIP_42,MODERATE,PYTHON,True,"SRP, DIP",DIP,2.55,True
+two_agent,llama3-2-3b,DIP,DIP_43,MODERATE,KOTLIN,False,SRP,DIP,6.16,True
+two_agent,llama3-2-3b,DIP,DIP_44,MODERATE,C#,False,SRP,DIP,7.03,True
+two_agent,llama3-2-3b,DIP,DIP_45,HARD,JAVA,True,"SRP,DIP",DIP,7.41,True
+two_agent,llama3-2-3b,DIP,DIP_46,HARD,PYTHON,True,"SRP, DIP",DIP,2.68,True
+two_agent,llama3-2-3b,DIP,DIP_47,HARD,KOTLIN,False,SRP,DIP,5.89,True
+two_agent,llama3-2-3b,DIP,DIP_48,HARD,C#,True,DIP,DIP,5.29,True
+two_agent,qwen3-8b,SRP,SRP_1,EASY,JAVA,True,SRP,SRP,9.63,True
+two_agent,qwen3-8b,SRP,SRP_2,EASY,JAVA,True,SRP,SRP,2.47,True
+two_agent,qwen3-8b,SRP,SRP_3,EASY,JAVA,True,SRP,SRP,2.56,True
+two_agent,qwen3-8b,SRP,SRP_4,EASY,JAVA,True,"SRP, OCP, LSP, ISP, DIP",SRP,2.52,True
+two_agent,qwen3-8b,SRP,SRP_5,MODERATE,JAVA,True,SRP,SRP,3.63,True
+two_agent,qwen3-8b,SRP,SRP_6,MODERATE,JAVA,True,SRP,SRP,4.44,True
+two_agent,qwen3-8b,SRP,SRP_7,MODERATE,JAVA,True,SRP,SRP,4.3,True
+two_agent,qwen3-8b,SRP,SRP_8,MODERATE,JAVA,True,SRP,SRP,3.63,True
+two_agent,qwen3-8b,SRP,SRP_9,HARD,JAVA,True,SRP,SRP,5.35,True
+two_agent,qwen3-8b,SRP,SRP_10,HARD,JAVA,True,SRP,SRP,5.17,True
+two_agent,qwen3-8b,SRP,SRP_11,HARD,JAVA,True,SRP,SRP,5.83,True
+two_agent,qwen3-8b,SRP,SRP_12,HARD,JAVA,False,,SRP,26.05,True
+two_agent,qwen3-8b,SRP,SRP_13,EASY,PYTHON,True,SRP,SRP,2.23,True
+two_agent,qwen3-8b,SRP,SRP_14,EASY,PYTHON,True,SRP,SRP,2.56,True
+two_agent,qwen3-8b,SRP,SRP_15,EASY,PYTHON,True,SRP,SRP,2.65,True
+two_agent,qwen3-8b,SRP,SRP_16,EASY,PYTHON,True,SRP,SRP,2.45,True
+two_agent,qwen3-8b,SRP,SRP_17,MODERATE,PYTHON,True,SRP,SRP,3.75,True
+two_agent,qwen3-8b,SRP,SRP_18,MODERATE,PYTHON,True,SRP,SRP,4.07,True
+two_agent,qwen3-8b,SRP,SRP_19,MODERATE,PYTHON,True,SRP,SRP,4.16,True
+two_agent,qwen3-8b,SRP,SRP_20,MODERATE,PYTHON,True,SRP,SRP,3.32,True
+two_agent,qwen3-8b,SRP,SRP_21,HARD,PYTHON,True,SRP,SRP,4.82,True
+two_agent,qwen3-8b,SRP,SRP_22,HARD,PYTHON,True,SRP,SRP,5.94,True
+two_agent,qwen3-8b,SRP,SRP_23,HARD,PYTHON,True,SRP,SRP,5.13,True
+two_agent,qwen3-8b,SRP,SRP_24,HARD,PYTHON,True,SRP,SRP,5.91,True
+two_agent,qwen3-8b,SRP,SRP_25,EASY,KOTLIN,True,SRP,SRP,2.5,True
+two_agent,qwen3-8b,SRP,SRP_26,EASY,KOTLIN,True,SRP,SRP,2.12,True
+two_agent,qwen3-8b,SRP,SRP_27,EASY,KOTLIN,True,"SRP, OCP, LSP, ISP, DIP",SRP,2.59,True
+two_agent,qwen3-8b,SRP,SRP_28,EASY,KOTLIN,True,SRP,SRP,2.26,True
+two_agent,qwen3-8b,SRP,SRP_29,MODERATE,KOTLIN,True,SRP,SRP,3.36,True
+two_agent,qwen3-8b,SRP,SRP_30,MODERATE,KOTLIN,True,SRP,SRP,4.49,True
+two_agent,qwen3-8b,SRP,SRP_31,MODERATE,KOTLIN,True,SRP,SRP,4.05,True
+two_agent,qwen3-8b,SRP,SRP_32,MODERATE,KOTLIN,True,SRP,SRP,3.73,True
+two_agent,qwen3-8b,SRP,SRP_33,HARD,KOTLIN,True,SRP,SRP,5.32,True
+two_agent,qwen3-8b,SRP,SRP_34,HARD,KOTLIN,True,SRP,SRP,5.01,True
+two_agent,qwen3-8b,SRP,SRP_35,HARD,KOTLIN,True,SRP,SRP,5.34,True
+two_agent,qwen3-8b,SRP,SRP_36,HARD,KOTLIN,True,SRP,SRP,6.41,True
+two_agent,qwen3-8b,SRP,SRP_37,EASY,CSHARP,True,SRP,SRP,2.49,True
+two_agent,qwen3-8b,SRP,SRP_38,EASY,CSHARP,True,SRP,SRP,2.16,True
+two_agent,qwen3-8b,SRP,SRP_39,EASY,CSHARP,True,SRP,SRP,2.55,True
+two_agent,qwen3-8b,SRP,SRP_40,EASY,CSHARP,True,SRP,SRP,2.21,True
+two_agent,qwen3-8b,SRP,SRP_41,MODERATE,CSHARP,True,SRP,SRP,3.7,True
+two_agent,qwen3-8b,SRP,SRP_42,MODERATE,CSHARP,True,SRP,SRP,4.37,True
+two_agent,qwen3-8b,SRP,SRP_43,MODERATE,CSHARP,True,SRP,SRP,4.29,True
+two_agent,qwen3-8b,SRP,SRP_44,MODERATE,CSHARP,True,SRP,SRP,3.6,True
+two_agent,qwen3-8b,SRP,SRP_45,HARD,CSHARP,True,SRP,SRP,5.1,True
+two_agent,qwen3-8b,SRP,SRP_46,HARD,CSHARP,True,SRP,SRP,5.41,True
+two_agent,qwen3-8b,SRP,SRP_47,HARD,CSHARP,True,SRP,SRP,5.95,True
+two_agent,qwen3-8b,SRP,SRP_48,HARD,CSHARP,True,SRP,SRP,6.34,True
+two_agent,qwen3-8b,OCP,OCP_1,EASY,CSHARP,True,OCP,OCP,2.79,True
+two_agent,qwen3-8b,OCP,OCP_2,EASY,CSHARP,True,OCP,OCP,3.32,True
+two_agent,qwen3-8b,OCP,OCP_3,EASY,CSHARP,True,OCP,OCP,3.54,True
+two_agent,qwen3-8b,OCP,OCP_4,EASY,CSHARP,True,OCP,OCP,3.19,True
+two_agent,qwen3-8b,OCP,OCP_5,HARD,CSHARP,True,OCP,OCP,6.48,True
+two_agent,qwen3-8b,OCP,OCP_6,HARD,CSHARP,True,OCP,OCP,6.19,True
+two_agent,qwen3-8b,OCP,OCP_7,HARD,CSHARP,True,"SRP, OCP, LSP",OCP,56.5,True
+two_agent,qwen3-8b,OCP,OCP_8,HARD,CSHARP,False,,OCP,24.05,True
+two_agent,qwen3-8b,OCP,OCP_9,MODERATE,CSHARP,True,OCP,OCP,4.07,True
+two_agent,qwen3-8b,OCP,OCP_10,MODERATE,CSHARP,True,OCP,OCP,3.37,True
+two_agent,qwen3-8b,OCP,OCP_11,MODERATE,CSHARP,True,OCP,OCP,5.67,True
+two_agent,qwen3-8b,OCP,OCP_12,MODERATE,CSHARP,True,OCP,OCP,5.11,True
+two_agent,qwen3-8b,OCP,OCP_13,EASY,JAVA,True,OCP,OCP,3.11,True
+two_agent,qwen3-8b,OCP,OCP_14,EASY,JAVA,True,OCP,OCP,3.3,True
+two_agent,qwen3-8b,OCP,OCP_15,EASY,JAVA,True,OCP,OCP,2.74,True
+two_agent,qwen3-8b,OCP,OCP_16,EASY,JAVA,True,OCP,OCP,3.23,True
+two_agent,qwen3-8b,OCP,OCP_17,HARD,JAVA,True,OCP,OCP,6.96,True
+two_agent,qwen3-8b,OCP,OCP_18,HARD,JAVA,True,OCP,OCP,5.74,True
+two_agent,qwen3-8b,OCP,OCP_19,HARD,JAVA,True,OCP,OCP,8.21,True
+two_agent,qwen3-8b,OCP,OCP_20,HARD,JAVA,True,OCP,OCP,6.31,True
+two_agent,qwen3-8b,OCP,OCP_21,MODERATE,JAVA,True,OCP,OCP,3.69,True
+two_agent,qwen3-8b,OCP,OCP_22,MODERATE,JAVA,True,OCP,OCP,3.5,True
+two_agent,qwen3-8b,OCP,OCP_23,MODERATE,JAVA,True,OCP,OCP,5.9,True
+two_agent,qwen3-8b,OCP,OCP_24,MODERATE,JAVA,True,OCP,OCP,4.82,True
+two_agent,qwen3-8b,OCP,OCP_25,EASY,KOTLIN,True,OCP,OCP,2.59,True
+two_agent,qwen3-8b,OCP,OCP_26,EASY,KOTLIN,True,OCP,OCP,2.6,True
+two_agent,qwen3-8b,OCP,OCP_27,EASY,KOTLIN,True,OCP,OCP,2.81,True
+two_agent,qwen3-8b,OCP,OCP_28,EASY,KOTLIN,True,OCP,OCP,3.21,True
+two_agent,qwen3-8b,OCP,OCP_29,HARD,KOTLIN,True,OCP,OCP,6.27,True
+two_agent,qwen3-8b,OCP,OCP_30,HARD,KOTLIN,True,OCP,OCP,12.34,True
+two_agent,qwen3-8b,OCP,OCP_31,HARD,KOTLIN,True,OCP,OCP,8.42,True
+two_agent,qwen3-8b,OCP,OCP_32,HARD,KOTLIN,True,OCP,OCP,5.85,True
+two_agent,qwen3-8b,OCP,OCP_33,MODERATE,KOTLIN,True,OCP,OCP,3.61,True
+two_agent,qwen3-8b,OCP,OCP_34,MODERATE,KOTLIN,True,OCP,OCP,3.33,True
+two_agent,qwen3-8b,OCP,OCP_35,MODERATE,KOTLIN,True,OCP,OCP,5.36,True
+two_agent,qwen3-8b,OCP,OCP_36,MODERATE,KOTLIN,False,SRP,OCP,4.44,True
+two_agent,qwen3-8b,OCP,OCP_37,EASY,PYTHON,True,OCP,OCP,2.98,True
+two_agent,qwen3-8b,OCP,OCP_38,EASY,PYTHON,True,OCP,OCP,2.76,True
+two_agent,qwen3-8b,OCP,OCP_39,EASY,PYTHON,True,OCP,OCP,3.69,True
+two_agent,qwen3-8b,OCP,OCP_40,EASY,PYTHON,True,OCP,OCP,3.45,True
+two_agent,qwen3-8b,OCP,OCP_41,HARD,PYTHON,True,OCP,OCP,6.31,True
+two_agent,qwen3-8b,OCP,OCP_42,HARD,PYTHON,True,OCP,OCP,6.53,True
+two_agent,qwen3-8b,OCP,OCP_43,HARD,PYTHON,True,OCP,OCP,6.9,True
+two_agent,qwen3-8b,OCP,OCP_44,HARD,PYTHON,True,OCP,OCP,5.94,True
+two_agent,qwen3-8b,OCP,OCP_45,MODERATE,PYTHON,True,OCP,OCP,4.19,True
+two_agent,qwen3-8b,OCP,OCP_46,MODERATE,PYTHON,True,OCP,OCP,3.81,True
+two_agent,qwen3-8b,OCP,OCP_47,MODERATE,PYTHON,True,OCP,OCP,5.94,True
+two_agent,qwen3-8b,OCP,OCP_48,MODERATE,PYTHON,True,OCP,OCP,4.77,True
+two_agent,qwen3-8b,LSP,LSP_1,EASY,JAVA,True,"SRP, OCP, LSP, ISP, DIP",LSP,3.32,True
+two_agent,qwen3-8b,LSP,LSP_2,EASY,PYTHON,True,LSP,LSP,15.61,True
+two_agent,qwen3-8b,LSP,LSP_3,EASY,KOTLIN,False,SRP,LSP,2.3,True
+two_agent,qwen3-8b,LSP,LSP_4,EASY,C#,True,LSP,LSP,3.2,True
+two_agent,qwen3-8b,LSP,LSP_5,MODERATE,JAVA,True,LSP,LSP,15.0,True
+two_agent,qwen3-8b,LSP,LSP_6,MODERATE,PYTHON,False,OCP,LSP,11.83,True
+two_agent,qwen3-8b,LSP,LSP_7,MODERATE,KOTLIN,False,SRP,LSP,14.6,True
+two_agent,qwen3-8b,LSP,LSP_8,MODERATE,C#,False,SRP,LSP,17.58,True
+two_agent,qwen3-8b,LSP,LSP_9,HARD,JAVA,False,SRP,LSP,21.13,True
+two_agent,qwen3-8b,LSP,LSP_10,HARD,PYTHON,True,LSP,LSP,5.12,True
+two_agent,qwen3-8b,LSP,LSP_11,HARD,KOTLIN,True,LSP,LSP,4.65,True
+two_agent,qwen3-8b,LSP,LSP_12,HARD,C#,False,DIP,LSP,11.37,True
+two_agent,qwen3-8b,LSP,LSP_13,EASY,JAVA,True,LSP,LSP,2.87,True
+two_agent,qwen3-8b,LSP,LSP_14,EASY,PYTHON,True,LSP,LSP,3.55,True
+two_agent,qwen3-8b,LSP,LSP_15,EASY,KOTLIN,False,OCP,LSP,14.57,True
+two_agent,qwen3-8b,LSP,LSP_16,EASY,C#,True,LSP,LSP,7.13,True
+two_agent,qwen3-8b,LSP,LSP_17,MODERATE,JAVA,False,SRP,LSP,9.92,True
+two_agent,qwen3-8b,LSP,LSP_18,MODERATE,PYTHON,False,OCP,LSP,3.81,True
+two_agent,qwen3-8b,LSP,LSP_19,MODERATE,KOTLIN,False,SRP,LSP,3.58,True
+two_agent,qwen3-8b,LSP,LSP_20,MODERATE,C#,False,SRP,LSP,3.76,True
+two_agent,qwen3-8b,LSP,LSP_21,HARD,JAVA,False,SRP,LSP,4.54,True
+two_agent,qwen3-8b,LSP,LSP_22,HARD,PYTHON,False,SRP,LSP,4.24,True
+two_agent,qwen3-8b,LSP,LSP_23,HARD,KOTLIN,False,SRP,LSP,4.46,True
+two_agent,qwen3-8b,LSP,LSP_24,HARD,C#,False,SRP,LSP,4.61,True
+two_agent,qwen3-8b,LSP,LSP_25,EASY,JAVA,False,SRP,LSP,2.52,True
+two_agent,qwen3-8b,LSP,LSP_26,EASY,PYTHON,False,SRP,LSP,2.61,True
+two_agent,qwen3-8b,LSP,LSP_27,EASY,KOTLIN,False,OCP,LSP,3.21,True
+two_agent,qwen3-8b,LSP,LSP_28,EASY,C#,False,"SRP, OCP",LSP,3.09,True
+two_agent,qwen3-8b,LSP,LSP_29,MODERATE,JAVA,False,SRP,LSP,9.44,True
+two_agent,qwen3-8b,LSP,LSP_30,MODERATE,PYTHON,False,OCP,LSP,4.09,True
+two_agent,qwen3-8b,LSP,LSP_31,MODERATE,KOTLIN,False,OCP,LSP,3.79,True
+two_agent,qwen3-8b,LSP,LSP_32,MODERATE,C#,False,OCP,LSP,4.33,True
+two_agent,qwen3-8b,LSP,LSP_33,HARD,JAVA,False,SRP,LSP,4.34,True
+two_agent,qwen3-8b,LSP,LSP_34,HARD,PYTHON,False,SRP,LSP,5.37,True
+two_agent,qwen3-8b,LSP,LSP_35,HARD,KOTLIN,False,DIP,LSP,14.94,True
+two_agent,qwen3-8b,LSP,LSP_36,HARD,C#,False,SRP,LSP,5.96,True
+two_agent,qwen3-8b,LSP,LSP_37,EASY,JAVA,True,LSP,LSP,6.88,True
+two_agent,qwen3-8b,LSP,LSP_38,EASY,PYTHON,True,"SRP, OCP, LSP, ISP, DIP",LSP,2.91,True
+two_agent,qwen3-8b,LSP,LSP_39,EASY,KOTLIN,False,OCP,LSP,13.8,True
+two_agent,qwen3-8b,LSP,LSP_40,EASY,C#,True,"SRP, OCP, LSP, ISP, DIP",LSP,6.86,True
+two_agent,qwen3-8b,LSP,LSP_41,MODERATE,JAVA,False,ISP,LSP,8.96,True
+two_agent,qwen3-8b,LSP,LSP_42,MODERATE,PYTHON,False,OCP,LSP,3.34,True
+two_agent,qwen3-8b,LSP,LSP_43,MODERATE,KOTLIN,False,OCP,LSP,15.93,True
+two_agent,qwen3-8b,LSP,LSP_44,MODERATE,C#,False,SRP,LSP,8.75,True
+two_agent,qwen3-8b,LSP,LSP_45,HARD,JAVA,False,OCP,LSP,12.5,True
+two_agent,qwen3-8b,LSP,LSP_46,HARD,PYTHON,False,OCP,LSP,5.5,True
+two_agent,qwen3-8b,LSP,LSP_47,HARD,KOTLIN,False,OCP,LSP,4.81,True
+two_agent,qwen3-8b,LSP,LSP_48,HARD,C#,False,SRP,LSP,13.68,True
+two_agent,qwen3-8b,ISP,ISP_1,EASY,CSHARP,True,ISP,ISP,3.83,True
+two_agent,qwen3-8b,ISP,ISP_2,EASY,CSHARP,False,LSP,ISP,3.83,True
+two_agent,qwen3-8b,ISP,ISP_3,EASY,CSHARP,True,ISP,ISP,3.31,True
+two_agent,qwen3-8b,ISP,ISP_4,EASY,CSHARP,True,ISP,ISP,2.55,True
+two_agent,qwen3-8b,ISP,ISP_5,HARD,CSHARP,False,OCP,ISP,5.62,True
+two_agent,qwen3-8b,ISP,ISP_6,HARD,CSHARP,True,ISP,ISP,5.37,True
+two_agent,qwen3-8b,ISP,ISP_7,HARD,CSHARP,False,SRP,ISP,6.26,True
+two_agent,qwen3-8b,ISP,ISP_8,HARD,CSHARP,False,SRP,ISP,5.64,True
+two_agent,qwen3-8b,ISP,ISP_9,MODERATE,CSHARP,True,"ISP,LSP",ISP,11.85,True
+two_agent,qwen3-8b,ISP,ISP_10,MODERATE,CSHARP,False,OCP,ISP,4.65,True
+two_agent,qwen3-8b,ISP,ISP_11,MODERATE,CSHARP,True,ISP,ISP,3.81,True
+two_agent,qwen3-8b,ISP,ISP_12,MODERATE,CSHARP,True,ISP,ISP,4.08,True
+two_agent,qwen3-8b,ISP,ISP_13,EASY,JAVA,True,ISP,ISP,3.18,True
+two_agent,qwen3-8b,ISP,ISP_14,EASY,JAVA,False,OCP,ISP,3.99,True
+two_agent,qwen3-8b,ISP,ISP_15,EASY,JAVA,True,ISP,ISP,3.17,True
+two_agent,qwen3-8b,ISP,ISP_16,EASY,JAVA,True,ISP,ISP,2.71,True
+two_agent,qwen3-8b,ISP,ISP_17,HARD,JAVA,True,ISP,ISP,6.2,True
+two_agent,qwen3-8b,ISP,ISP_18,HARD,JAVA,True,ISP,ISP,6.24,True
+two_agent,qwen3-8b,ISP,ISP_19,HARD,JAVA,False,SRP,ISP,5.94,True
+two_agent,qwen3-8b,ISP,ISP_20,HARD,JAVA,False,OCP,ISP,5.58,True
+two_agent,qwen3-8b,ISP,ISP_21,MODERATE,JAVA,False,OCP,ISP,4.51,True
+two_agent,qwen3-8b,ISP,ISP_22,MODERATE,JAVA,True,ISP,ISP,4.38,True
+two_agent,qwen3-8b,ISP,ISP_23,MODERATE,JAVA,True,ISP,ISP,3.8,True
+two_agent,qwen3-8b,ISP,ISP_24,MODERATE,JAVA,True,ISP,ISP,4.24,True
+two_agent,qwen3-8b,ISP,ISP_25,EASY,KOTLIN,True,ISP,ISP,3.23,True
+two_agent,qwen3-8b,ISP,ISP_26,EASY,KOTLIN,False,OCP,ISP,3.18,True
+two_agent,qwen3-8b,ISP,ISP_27,EASY,KOTLIN,True,ISP,ISP,3.14,True
+two_agent,qwen3-8b,ISP,ISP_28,EASY,KOTLIN,True,ISP,ISP,2.65,True
+two_agent,qwen3-8b,ISP,ISP_29,HARD,KOTLIN,False,OCP,ISP,5.35,True
+two_agent,qwen3-8b,ISP,ISP_30,HARD,KOTLIN,True,ISP,ISP,5.0,True
+two_agent,qwen3-8b,ISP,ISP_31,HARD,KOTLIN,False,SRP,ISP,6.48,True
+two_agent,qwen3-8b,ISP,ISP_32,HARD,KOTLIN,False,OCP,ISP,5.03,True
+two_agent,qwen3-8b,ISP,ISP_33,MODERATE,KOTLIN,False,OCP,ISP,4.81,True
+two_agent,qwen3-8b,ISP,ISP_34,MODERATE,KOTLIN,True,ISP,ISP,4.77,True
+two_agent,qwen3-8b,ISP,ISP_35,MODERATE,KOTLIN,True,ISP,ISP,3.83,True
+two_agent,qwen3-8b,ISP,ISP_36,MODERATE,KOTLIN,True,"ISP, SRP",ISP,10.23,True
+two_agent,qwen3-8b,ISP,ISP_37,EASY,PYTHON,False,OCP,ISP,9.1,True
+two_agent,qwen3-8b,ISP,ISP_38,EASY,PYTHON,True,ISP,ISP,2.91,True
+two_agent,qwen3-8b,ISP,ISP_39,EASY,PYTHON,True,ISP,ISP,3.03,True
+two_agent,qwen3-8b,ISP,ISP_40,EASY,PYTHON,True,ISP,ISP,2.6,True
+two_agent,qwen3-8b,ISP,ISP_41,HARD,PYTHON,False,OCP,ISP,12.56,True
+two_agent,qwen3-8b,ISP,ISP_42,HARD,PYTHON,True,ISP,ISP,5.39,True
+two_agent,qwen3-8b,ISP,ISP_43,HARD,PYTHON,False,SRP,ISP,6.69,True
+two_agent,qwen3-8b,ISP,ISP_44,HARD,PYTHON,False,SRP,ISP,5.26,True
+two_agent,qwen3-8b,ISP,ISP_45,MODERATE,PYTHON,False,OCP,ISP,11.26,True
+two_agent,qwen3-8b,ISP,ISP_46,MODERATE,PYTHON,True,ISP,ISP,3.93,True
+two_agent,qwen3-8b,ISP,ISP_47,MODERATE,PYTHON,True,ISP,ISP,4.15,True
+two_agent,qwen3-8b,ISP,ISP_48,MODERATE,PYTHON,True,ISP,ISP,3.42,True
+two_agent,qwen3-8b,DIP,DIP_1,EASY,JAVA,False,SRP,DIP,2.5,True
+two_agent,qwen3-8b,DIP,DIP_2,EASY,PYTHON,False,SRP,DIP,2.59,True
+two_agent,qwen3-8b,DIP,DIP_3,EASY,KOTLIN,False,SRP,DIP,2.45,True
+two_agent,qwen3-8b,DIP,DIP_4,EASY,C#,True,DIP,DIP,3.06,True
+two_agent,qwen3-8b,DIP,DIP_5,MODERATE,JAVA,False,SRP,DIP,2.77,True
+two_agent,qwen3-8b,DIP,DIP_6,MODERATE,PYTHON,False,SRP,DIP,2.66,True
+two_agent,qwen3-8b,DIP,DIP_7,MODERATE,KOTLIN,False,SRP,DIP,2.92,True
+two_agent,qwen3-8b,DIP,DIP_8,MODERATE,C#,False,SRP,DIP,2.85,True
+two_agent,qwen3-8b,DIP,DIP_9,HARD,JAVA,False,SRP,DIP,4.19,True
+two_agent,qwen3-8b,DIP,DIP_10,HARD,PYTHON,False,SRP,DIP,3.89,True
+two_agent,qwen3-8b,DIP,DIP_11,HARD,KOTLIN,False,SRP,DIP,3.98,True
+two_agent,qwen3-8b,DIP,DIP_12,HARD,C#,False,SRP,DIP,4.25,True
+two_agent,qwen3-8b,DIP,DIP_13,EASY,JAVA,True,"SRP, DIP",DIP,3.1,True
+two_agent,qwen3-8b,DIP,DIP_14,EASY,PYTHON,True,"SRP, OCP, LSP, ISP, DIP",DIP,3.0,True
+two_agent,qwen3-8b,DIP,DIP_15,EASY,KOTLIN,False,SRP,DIP,2.68,True
+two_agent,qwen3-8b,DIP,DIP_16,EASY,C#,True,"SRP, OCP, LSP, ISP, DIP",DIP,3.15,True
+two_agent,qwen3-8b,DIP,DIP_17,MODERATE,JAVA,False,OCP,DIP,2.98,True
+two_agent,qwen3-8b,DIP,DIP_18,MODERATE,PYTHON,False,OCP,DIP,3.21,True
+two_agent,qwen3-8b,DIP,DIP_19,MODERATE,KOTLIN,False,OCP,DIP,3.41,True
+two_agent,qwen3-8b,DIP,DIP_20,MODERATE,C#,False,OCP,DIP,3.08,True
+two_agent,qwen3-8b,DIP,DIP_21,HARD,JAVA,False,OCP,DIP,4.73,True
+two_agent,qwen3-8b,DIP,DIP_22,HARD,PYTHON,False,OCP,DIP,4.27,True
+two_agent,qwen3-8b,DIP,DIP_23,HARD,KOTLIN,False,OCP,DIP,4.41,True
+two_agent,qwen3-8b,DIP,DIP_24,HARD,C#,False,OCP,DIP,4.53,True
+two_agent,qwen3-8b,DIP,DIP_25,EASY,JAVA,True,"SRP, OCP, LSP, ISP, DIP",DIP,2.51,True
+two_agent,qwen3-8b,DIP,DIP_26,EASY,PYTHON,False,SRP,DIP,2.23,True
+two_agent,qwen3-8b,DIP,DIP_27,EASY,KOTLIN,False,SRP,DIP,2.5,True
+two_agent,qwen3-8b,DIP,DIP_28,EASY,C#,False,SRP,DIP,2.49,True
+two_agent,qwen3-8b,DIP,DIP_29,MODERATE,JAVA,False,SRP,DIP,2.95,True
+two_agent,qwen3-8b,DIP,DIP_30,MODERATE,PYTHON,False,SRP,DIP,2.95,True
+two_agent,qwen3-8b,DIP,DIP_31,MODERATE,KOTLIN,False,SRP,DIP,2.92,True
+two_agent,qwen3-8b,DIP,DIP_32,MODERATE,C#,False,SRP,DIP,3.17,True
+two_agent,qwen3-8b,DIP,DIP_33,HARD,JAVA,False,SRP,DIP,3.77,True
+two_agent,qwen3-8b,DIP,DIP_34,HARD,PYTHON,False,SRP,DIP,4.04,True
+two_agent,qwen3-8b,DIP,DIP_35,HARD,KOTLIN,False,SRP,DIP,4.21,True
+two_agent,qwen3-8b,DIP,DIP_36,HARD,C#,False,SRP,DIP,4.65,True
+two_agent,qwen3-8b,DIP,DIP_37,EASY,JAVA,False,SRP,DIP,2.9,True
+two_agent,qwen3-8b,DIP,DIP_38,EASY,PYTHON,True,"SRP, DIP",DIP,2.74,True
+two_agent,qwen3-8b,DIP,DIP_39,EASY,KOTLIN,False,SRP,DIP,2.73,True
+two_agent,qwen3-8b,DIP,DIP_40,EASY,C#,False,SRP,DIP,2.9,True
+two_agent,qwen3-8b,DIP,DIP_41,MODERATE,JAVA,True,DIP,DIP,12.89,True
+two_agent,qwen3-8b,DIP,DIP_42,MODERATE,PYTHON,False,SRP,DIP,2.68,True
+two_agent,qwen3-8b,DIP,DIP_43,MODERATE,KOTLIN,False,SRP,DIP,12.47,True
+two_agent,qwen3-8b,DIP,DIP_44,MODERATE,C#,False,SRP,DIP,13.6,True
+two_agent,qwen3-8b,DIP,DIP_45,HARD,JAVA,False,SRP,DIP,3.94,True
+two_agent,qwen3-8b,DIP,DIP_46,HARD,PYTHON,False,SRP,DIP,3.78,True
+two_agent,qwen3-8b,DIP,DIP_47,HARD,KOTLIN,False,SRP,DIP,3.53,True
+two_agent,qwen3-8b,DIP,DIP_48,HARD,C#,False,SRP,DIP,3.55,True

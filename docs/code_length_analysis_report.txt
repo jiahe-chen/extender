@@ -1,0 +1,233 @@
+================================================================================
+CODE LENGTH ANALYSIS REPORT
+================================================================================
+Generated: 2026-01-24 16:49:25
+Total examples analyzed: 242
+
+================================================================================
+1. OVERALL CODE LENGTH STATISTICS
+================================================================================
+Total examples: 242
+Min length: 229 characters
+Max length: 17,075 characters
+Average length: 5,090.7 characters
+Median length: 3,859 characters
+
+================================================================================
+2. DISTRIBUTION BY LENGTH RANGE
+================================================================================
+Range                             Count   Percentage
+--------------------------------------------------------------------------------
+0-500 chars (Very Short)             30        12.4%
+500-1K chars (Short)                 31        12.8%
+1K-2K chars (Medium-Short)           30        12.4%
+2K-3K chars (Medium)                 25        10.3%
+3K-5K chars (Medium-Long)            20         8.3%
+5K-10K chars (Long)                  63        26.0%
+10K-15K chars (Very Long)            34        14.0%
+15K+ chars (Extremely Long)           9         3.7%
+
+================================================================================
+3. STATISTICS BY VIOLATION TYPE
+================================================================================
+Type      Count        Min        Max        Avg     Median
+--------------------------------------------------------------------------------
+DIP          48        331     10,242    3,100.6      1,890
+ISP          48        571     17,075    5,890.9      5,450
+LSP          48        309     14,758    4,110.5      2,684
+OCP          48        561     16,149    6,337.1      5,979
+SRP          50        229     16,985    5,977.5      4,707
+
+Key Findings:
+  - OCP has the longest average code length (6,337.1 chars)
+  - DIP has the shortest average code length (3,100.6 chars)
+
+================================================================================
+4. TOP 30 LONGEST CODE EXAMPLES
+================================================================================
+Rank   Example ID           Type       Length Date         V5   
+--------------------------------------------------------------------------------
+1      ISP_7                ISP        17,075 2026-01-11   No   
+2      SRP_12               SRP        16,985 2026-01-11   No   
+3      SRP_48               SRP        16,946 2026-01-11   No   
+4      OCP_7                OCP        16,149 2026-01-11   No   
+5      OCP_8                OCP        15,864 2026-01-11   No   
+6      OCP_5                OCP        15,744 2026-01-11   No   
+7      ISP_19               ISP        15,667 2026-01-11   No   
+8      OCP_17               OCP        15,628 2026-01-11   No   
+9      OCP_20               OCP        15,513 2026-01-11   No   
+10     OCP_19               OCP        14,950 2026-01-11   No   
+11     LSP_36               LSP        14,758 2026-01-11   No   
+12     SRP_36               SRP        14,620 2026-01-11   No   
+13     SRP_24               SRP        14,413 2026-01-11   No   
+14     ISP_31               ISP        13,948 2026-01-11   No   
+15     SRP_47               SRP        13,890 2026-01-11   No   
+16     ISP_43               ISP        13,827 2026-01-11   No   
+17     SRP_10               SRP        13,357 2026-01-11   No   
+18     SRP_46               SRP        13,000 2026-01-11   No   
+19     SRP_22               SRP        12,992 2026-01-11   No   
+20     LSP_35               LSP        12,785 2026-01-11   No   
+21     SRP_9                SRP        12,738 2026-01-11   No   
+22     SRP_11               SRP        12,494 2026-01-11   No   
+23     LSP_34               LSP        12,199 2026-01-11   No   
+24     SRP_45               SRP        12,158 2026-01-11   No   
+25     OCP_41               OCP        11,987 2026-01-11   No   
+26     ISP_18               ISP        11,756 2026-01-11   No   
+27     OCP_32               OCP        11,644 2026-01-11   No   
+28     ISP_5                ISP        11,621 2026-01-11   No   
+29     OCP_44               OCP        11,552 2026-01-11   No   
+30     ISP_17               ISP        11,445 2026-01-11   No   
+
+================================================================================
+5. LONGEST EXAMPLES BY VIOLATION TYPE (Top 10 Each)
+================================================================================
+
+DIP Violations:
+Rank   Example ID               Length Date        
+------------------------------------------------------------
+1      DIP_36                   10,242 2026-01-11  
+2      DIP_35                    8,715 2026-01-11  
+3      DIP_24                    8,702 2026-01-11  
+4      DIP_9                     8,620 2026-01-11  
+5      DIP_12                    8,372 2026-01-11  
+6      DIP_21                    8,107 2026-01-11  
+7      DIP_10                    6,938 2026-01-11  
+8      DIP_22                    6,645 2026-01-11  
+9      DIP_33                    6,576 2026-01-11  
+10     DIP_23                    6,261 2026-01-11  
+
+ISP Violations:
+Rank   Example ID               Length Date        
+------------------------------------------------------------
+1      ISP_7                    17,075 2026-01-11  
+2      ISP_19                   15,667 2026-01-11  
+3      ISP_31                   13,948 2026-01-11  
+4      ISP_43                   13,827 2026-01-11  
+5      ISP_18                   11,756 2026-01-11  
+6      ISP_5                    11,621 2026-01-11  
+7      ISP_17                   11,445 2026-01-11  
+8      ISP_6                    10,993 2026-01-11  
+9      ISP_8                    10,539 2026-01-11  
+10     ISP_42                   10,176 2026-01-11  
+
+LSP Violations:
+Rank   Example ID               Length Date        
+------------------------------------------------------------
+1      LSP_36                   14,758 2026-01-11  
+2      LSP_35                   12,785 2026-01-11  
+3      LSP_34                   12,199 2026-01-11  
+4      LSP_33                    9,959 2026-01-11  
+5      LSP_24                    9,455 2026-01-11  
+6      LSP_48                    8,682 2026-01-11  
+7      LSP_45                    8,668 2026-01-11  
+8      LSP_21                    8,552 2026-01-11  
+9      LSP_23                    8,058 2026-01-11  
+10     LSP_9                     7,879 2026-01-11  
+
+OCP Violations:
+Rank   Example ID               Length Date        
+------------------------------------------------------------
+1      OCP_7                    16,149 2026-01-11  
+2      OCP_8                    15,864 2026-01-11  
+3      OCP_5                    15,744 2026-01-11  
+4      OCP_17                   15,628 2026-01-11  
+5      OCP_20                   15,513 2026-01-11  
+6      OCP_19                   14,950 2026-01-11  
+7      OCP_41                   11,987 2026-01-11  
+8      OCP_32                   11,644 2026-01-11  
+9      OCP_44                   11,552 2026-01-11  
+10     OCP_31                   11,420 2026-01-11  
+
+SRP Violations:
+Rank   Example ID               Length Date        
+------------------------------------------------------------
+1      SRP_12                   16,985 2026-01-11  
+2      SRP_48                   16,946 2026-01-11  
+3      SRP_36                   14,620 2026-01-11  
+4      SRP_24                   14,413 2026-01-11  
+5      SRP_47                   13,890 2026-01-11  
+6      SRP_10                   13,357 2026-01-11  
+7      SRP_46                   13,000 2026-01-11  
+8      SRP_22                   12,992 2026-01-11  
+9      SRP_9                    12,738 2026-01-11  
+10     SRP_11                   12,494 2026-01-11  
+
+================================================================================
+6. WORKFLOW VERSION ANALYSIS
+================================================================================
+New workflow (v5): 0 examples (0.0%)
+Old workflow: 242 examples (100.0%)
+
+V5 workflow usage by code length:
+  0-500 chars (Very Short)       0/30 examples
+  500-1K chars (Short)           0/31 examples
+  1K-2K chars (Medium-Short)     0/30 examples
+  2K-3K chars (Medium)           0/25 examples
+  3K-5K chars (Medium-Long)      0/20 examples
+  5K-10K chars (Long)            0/63 examples
+  10K-15K chars (Very Long)      0/34 examples
+  15K+ chars (Extremely Long)    0/9 examples
+
+================================================================================
+7. DETAILED ANALYSIS: LONG CODE (10K+ characters)
+================================================================================
+Total long examples: 43 (17.8%)
+
+Long examples by type:
+  DIP: 1 examples
+  ISP: 11 examples
+  LSP: 3 examples
+  OCP: 13 examples
+  SRP: 15 examples
+
+Status of long examples:
+  - Processed with v5: 0/43
+  - Workflow completed: 0/43
+
+================================================================================
+8. KEY FINDINGS & RECOMMENDATIONS
+================================================================================
+
+KEY FINDINGS:
+
+1. Code Length Distribution:
+   - 43 examples (17.8%) are 10K+ characters
+   - 9 examples (3.7%) are 15K+ characters (extremely long)
+   - Longest example: ISP_7 with 17,075 characters
+
+2. Violation Type Patterns:
+   - OCP violations have the longest average code (6,337 chars)
+   - DIP violations have the shortest average code (3,101 chars)
+   - This suggests OCP violations occur in more complex codebases
+
+3. Workflow Version Status:
+   - Only 0 examples have been processed with new v5 workflow
+   - 242 examples still use old workflow format
+   - NONE of the 10K+ examples have been tested with v5
+
+4. Testing Gap:
+   - All logs from 2026-01-11 are old format (236 files)
+   - Only 6 logs from 2026-01-20 (today), all short examples
+   - Long code examples (10K+) have NOT been tested with unified verification
+
+RECOMMENDATIONS:
+
+1. IMMEDIATE: Test new workflow with long code examples
+   - Start with medium-long examples (5K-10K)
+   - Progress to very long examples (10K-15K)
+   - Monitor for memory/timeout issues
+
+2. Clean up old logs:
+   - Archive or delete logs from 2026-01-11
+   - Re-run benchmark to generate fresh v5 logs
+
+3. Monitor LLM performance with long code:
+   - Long prompts may cause timeout issues
+   - May need to adjust timeout settings
+   - Consider chunking strategy for extremely long code (15K+)
+
+4. Priority testing order:
+   a. Short examples (< 1K): ✓ Already tested
+   b. Medium examples (1K-5K): Partially tested
+   c. Long examples (5K-10K): NOT tested
+   d. Very long examples (10K+): NOT tested ← HIGH PRIORITY

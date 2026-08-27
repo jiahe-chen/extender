@@ -1,0 +1,1237 @@
+{
+  "configuration": {
+    "model": "qwen3:8b",
+    "workflow": "diff_eval",
+    "temperature": 0.0,
+    "max_examples_per_violation": 5
+  },
+  "total_examples": 25,
+  "by_violation_type": {
+    "SRP": {
+      "results": [
+        {
+          "is_detected": true,
+          "violation_type": "DIP",
+          "explanation": "DIP: User class directly depends on concrete implementations for database and email operations, violating the Dependency Inversion Principle.",
+          "all_checks": [
+            {
+              "violation_type": "SRP",
+              "is_detected": false,
+              "detailed_explanation": "The User class in the original code does not violate SRP. It has a single responsibility of representing a user with name and email properties, and it provides methods for saving to a database and sending a welcome email. These methods are closely related to the user's data and its interactions, and they do not mix responsibilities from different layers (e.g., persistence, notification, UI)."
+            },
+            {
+              "violation_type": "OCP",
+              "is_detected": true,
+              "detailed_explanation": "The User class violates OCP because the saveToDatabase() method is tightly coupled to a specific database implementation. If a new database type (like CloudDatabase) is introduced, the User class would need to be modified to support it, which violates the Open/Closed Principle. The original code does not provide an extension point for different database types, forcing changes to the User class itself."
+            },
+            {
+              "violation_type": "LSP",
+              "is_detected": false,
+              "detailed_explanation": "The original code does not contain any inheritance or subtype relationships, so the LSP does not apply. The User class does not have any subclasses in the original code, and there are no polymorphic calls that could potentially break the contract. Therefore, there is no LSP violation in the original code."
+            },
+            {
+              "violation_type": "ISP",
+              "is_detected": false,
+              "detailed_explanation": "The original code does not contain an interface or abstract class with multiple methods that force implementations to have dummy methods. The User class in the original code has two methods, saveToDatabase() and sendWelcomeEmail(), but these are not part of an interface. Therefore, there is no fat interface in the original code that violates the Interface Segregation Principle."
+            },
+            {
+              "violation_type": "DIP",
+              "is_detected": true,
+              "detailed_explanation": "The User class violates the Dependency Inversion Principle because it directly depends on concrete implementations for saving data to the console and sending emails. The saveToDatabase() method is tightly coupled to console output, and the sendWelcomeEmail() method is tightly coupled to console output as well. These methods should depend on abstractions, not concrete implementations, to allow for easier modification and decoupling."
+            }
+          ],
+          "example_id": "SRP_1",
+          "description": "User database email operations",
+          "level": "EASY",
+          "language": "JAVA",
+          "input": "public class User {\n    private String name;\n    private String email;\n    \n    public User(String name, String email) {\n        this.name = name;\n        this.email = email;\n    }\n    \n    public void saveToDatabase() {\n        System.out.println(\"Saving user \" + name + \" to database\");\n    }\n    \n    public void sendWelcomeEmail() {\n        System.out.println(\"Sending welcome email to \" + email);\n    }\n}",
+          "detected_violation_type": "DIP",
+          "detection_success": false,
+          "ground_truth": "SRP",
+          "api_call_success": true,
+          "errors": [],
+          "processing_time_seconds": 53.8,
+          "status": "completed",
+          "workflow": "diff_eval_v7_without_structural",
+          "total_iterations": 5,
+          "selection_method": "ranking_llm",
+          "structural_analysis_enabled": false
+        },
+        {
+          "is_detected": true,
+          "violation_type": "SRP",
+          "explanation": "SRP: The Employee class handles both salary calculation and print pay slip functionality, which are separate responsibilities.",
+          "all_checks": [
+            {
+              "violation_type": "SRP",
+              "is_detected": true,
+              "detailed_explanation": "The Employee class violates SRP because it handles both salary calculation and print pay slip functionality. The calculateSalary() method is responsible for business logic, while the printPaySlip() method handles output formatting and user interface concerns. These responsibilities should be separated into different classes."
+            },
+            {
+              "violation_type": "OCP",
+              "is_detected": true,
+              "detailed_explanation": "The Employee class violates OCP because the calculateSalary() method is used by both the Employee and Contractor classes. The original code does not provide a mechanism to extend salary calculation logic without modifying the existing calculateSalary() method. Adding a new type like Contractor requires overriding calculateSalary(), which is not a clean extension point in the original code."
+            },
+            {
+              "violation_type": "LSP",
+              "is_detected": false,
+              "detailed_explanation": "The original code does not contain any inheritance or subtype relationships, so the LSP does not apply. The Employee class is not extended by any subclass in the original code, and there are no polymorphic calls that could potentially break the contract. Therefore, there is no LSP violation in the original code."
+            },
+            {
+              "violation_type": "ISP",
+              "is_detected": true,
+              "detailed_explanation": "The Employee class in the original code violates the Interface Segregation Principle because it implements a method (printPaySlip()) that is not used by the Manager class. The original code does not show an interface, but if the Employee class were to be part of an interface with multiple methods, it would force implementations to provide all methods, even if some are not needed. The original code does not have an interface, but the scenario implies that the Employee class would be part of a broader interface with unnecessary methods."
+            },
+            {
+              "violation_type": "DIP",
+              "is_detected": false,
+              "detailed_explanation": "The original code does not demonstrate a DIP violation because there are no dependency relationships between classes. The Employee class is a single class with no external dependencies, and the calculateSalary() method is tightly coupled to the internal logic of the class. Since there are no high-level and low-level classes with dependency relationships, the DIP violation is not applicable."
+            }
+          ],
+          "example_id": "SRP_2",
+          "description": "Employee salary payslip system",
+          "level": "EASY",
+          "language": "JAVA",
+          "input": "public class Employee {\n    private String name;\n    private double baseSalary;\n    private int yearsOfService;\n    \n    public Employee(String name, double baseSalary, int yearsOfService) {\n        this.name = name;\n        this.baseSalary = baseSalary;\n        this.yearsOfService = yearsOfService;\n    }\n    \n    public double calculateSalary() {\n        return baseSalary + (yearsOfService * 1000);\n    }\n    \n    public void printPaySlip() {\n        System.out.println(\"Pay slip for \" + name + \": $\" + calculateSalary());\n    }\n}",
+          "detected_violation_type": "SRP",
+          "detection_success": true,
+          "ground_truth": "SRP",
+          "api_call_success": true,
+          "errors": [],
+          "processing_time_seconds": 59.01,
+          "status": "completed",
+          "workflow": "diff_eval_v7_without_structural",
+          "total_iterations": 5,
+          "selection_method": "ranking_llm",
+          "structural_analysis_enabled": false
+        },
+        {
+          "is_detected": true,
+          "violation_type": "DIP",
+          "explanation": "DIP: Direct dependency on concrete System.out class, violating the Dependency Inversion Principle",
+          "all_checks": [
+            {
+              "violation_type": "SRP",
+              "is_detected": true,
+              "detailed_explanation": "The Book class violates SRP because the saveToFile() method handles both the persistence logic and the formatting of the output. This method is responsible for saving data to a file and also includes formatting information, which mixes responsibilities. The method should be separated into distinct responsibilities, such as handling file saving and formatting, which belong to different layers or classes."
+            },
+            {
+              "violation_type": "OCP",
+              "is_detected": true,
+              "detailed_explanation": "The Book class violates OCP because the printBook() method is modified to accommodate new print formats by introducing a new parameter and relying on a new interface. In the original code, the printBook() method was a fixed implementation that printed to the console in a specific format. The modification introduces a new extension point (PrintFormat interface) but alters the existing printBook() method, which is a violation of OCP as it changes existing logic to support new variants."
+            },
+            {
+              "violation_type": "LSP",
+              "is_detected": false,
+              "detailed_explanation": "The original code does not contain any inheritance or subtype relationships, so the LSP does not apply. The Book class is not extended by any subclass in the original code, and there are no polymorphic calls that could potentially violate the LSP."
+            },
+            {
+              "violation_type": "ISP",
+              "is_detected": false,
+              "detailed_explanation": "The original code does not contain an interface or abstract class with multiple methods that force implementations to have dummy methods. The Book class in the original code has two methods, printBook() and saveToFile(), but there is no interface that requires these methods to be implemented by other classes. Therefore, there is no violation of the Interface Segregation Principle in the original code."
+            },
+            {
+              "violation_type": "DIP",
+              "is_detected": true,
+              "detailed_explanation": "The Book class violates the Dependency Inversion Principle in the original code because it directly uses System.out.println for output, which is a concrete implementation of the printing functionality. The printBook() and saveToFile() methods are tightly coupled to the concrete System.out class, making them dependent on low-level details rather than abstractions. This direct usage of System.out.println prevents the Book class from being decoupled from the output mechanism, which is a clear violation of DIP."
+            }
+          ],
+          "example_id": "SRP_3",
+          "description": "Book printing file saving",
+          "level": "EASY",
+          "language": "JAVA",
+          "input": "public class Book {\n    private String title;\n    private String author;\n    private String content;\n    \n    public Book(String title, String author, String content) {\n        this.title = title;\n        this.author = author;\n        this.content = content;\n    }\n    \n    public void printBook() {\n        System.out.println(\"Title: \" + title);\n        System.out.println(\"Author: \" + author);\n        System.out.println(\"Content: \" + content);\n    }\n    \n    public void saveToFile(String filename) {\n        System.out.println(\"Saving book to \" + filename);\n    }\n}",
+          "detected_violation_type": "DIP",
+          "detection_success": false,
+          "ground_truth": "SRP",
+          "api_call_success": true,
+          "errors": [],
+          "processing_time_seconds": 59.2,
+          "status": "completed",
+          "workflow": "diff_eval_v7_without_structural",
+          "total_iterations": 5,
+          "selection_method": "ranking_llm",
+          "structural_analysis_enabled": false
+        },
+        {
+          "is_detected": true,
+          "violation_type": "SRP",
+          "explanation": "SRP: The Product class handles both data representation and display formatting, mixing responsibilities.",
+          "all_checks": [
+            {
+              "violation_type": "SRP",
+              "is_detected": true,
+              "detailed_explanation": "The Product class violates SRP because it handles both data representation and display formatting. The displayProduct() method is responsible for outputting the product information, which is a presentation concern, while the class itself is meant to represent product data. This mixing of responsibilities violates the Single Responsibility Principle by combining domain data handling with UI formatting logic."
+            },
+            {
+              "violation_type": "OCP",
+              "is_detected": false,
+              "detailed_explanation": "The original code does not violate OCP because the Product class is designed in a way that allows for extension without modifying existing code. The applyDiscount method is open for extension, and the displayProduct method is also open for customization through inheritance. There is no existing code that is altered to accommodate the new case, so the original code adheres to the Open/Closed Principle."
+            },
+            {
+              "violation_type": "LSP",
+              "is_detected": false,
+              "detailed_explanation": "The original code does not contain any inheritance or subtype relationships, so the LSP does not apply. The original Product class does not have any subclasses or overridden methods, and there are no polymorphic calls that could potentially break the contract. Therefore, there is no LSP violation in the original code."
+            },
+            {
+              "violation_type": "ISP",
+              "is_detected": false,
+              "detailed_explanation": "The original code does not contain any interfaces or abstract classes that force implementations to have dummy methods. The Product class is a concrete class with no interface, and all its methods are used directly. There is no fat interface in the original code that would lead to a violation of the Interface Segregation Principle."
+            },
+            {
+              "violation_type": "DIP",
+              "is_detected": true,
+              "detailed_explanation": "The Product class violates the Dependency Inversion Principle because it directly uses the price calculation logic within the applyDiscount() method. The method is tightly coupled to the price field and does not depend on an abstraction for discount calculation. This makes the class dependent on concrete implementation details rather than abstract interfaces or classes, which is a violation of DIP."
+            }
+          ],
+          "example_id": "SRP_4",
+          "description": "Product discount display system",
+          "level": "EASY",
+          "language": "JAVA",
+          "input": "public class Product {\n    private String name;\n    private double price;\n    \n    public Product(String name, double price) {\n        this.name = name;\n        this.price = price;\n    }\n    \n    public double applyDiscount(double percentage) {\n        return price * (1 - percentage / 100);\n    }\n    \n    public void displayProduct() {\n        System.out.println(\"Product: \" + name + \", Price: $\" + price);\n    }\n}",
+          "detected_violation_type": "SRP",
+          "detection_success": true,
+          "ground_truth": "SRP",
+          "api_call_success": true,
+          "errors": [],
+          "processing_time_seconds": 51.92,
+          "status": "completed",
+          "workflow": "diff_eval_v7_without_structural",
+          "total_iterations": 5,
+          "selection_method": "ranking_llm",
+          "structural_analysis_enabled": false
+        },
+        {
+          "is_detected": true,
+          "violation_type": "DIP",
+          "explanation": "DIP: User class directly depends on concrete DatabaseHelper and EmailHelper implementations, making it tightly coupled and violating the Dependency Inversion Principle.",
+          "all_checks": [
+            {
+              "violation_type": "SRP",
+              "is_detected": true,
+              "detailed_explanation": "The User class violates SRP because it handles multiple responsibilities: password validation, password hashing, and account management. These responsibilities should be separated into different classes or layers."
+            },
+            {
+              "violation_type": "OCP",
+              "is_detected": true,
+              "detailed_explanation": "The User class violates OCP because the sendWelcomeEmail() method directly constructs the welcome message string, making it hard to extend with new email templates without modifying the existing method."
+            },
+            {
+              "violation_type": "LSP",
+              "is_detected": false,
+              "detailed_explanation": "The original code does not contain any LSP violations. The User class is not extended or implemented by any subclass in the original code, and there are no polymorphic calls that would trigger an LSP violation."
+            },
+            {
+              "violation_type": "ISP",
+              "is_detected": true,
+              "detailed_explanation": "The EmailHelper class in the original code violates the Interface Segregation Principle because it defines a single method sendEmail(String recipient, String subject, String body) that is used by the User class. However, the Notification interface introduced in the modified code includes additional methods (sendNotification() and sendSMS()) that are not used by the User class."
+            },
+            {
+              "violation_type": "DIP",
+              "is_detected": true,
+              "detailed_explanation": "The User class violates the Dependency Inversion Principle because it directly depends on concrete implementations of DatabaseHelper and EmailHelper. Specifically, the User class initializes these helpers with hardcoded connection strings and SMTP server details, making it tightly coupled to these implementations."
+            }
+          ],
+          "example_id": "SRP_5",
+          "description": "User database email operations",
+          "level": "MODERATE",
+          "language": "JAVA",
+          "input": "class DatabaseHelper {\n    private String connectionString;\n    \n    public DatabaseHelper(String connectionString) {\n        this.connectionString = connectionString;\n    }\n    \n    public void saveUser(String userData) {\n        System.out.println(\"Saving user to database: \" + userData);\n    }\n    \n    public void updateUser(String userId, String data) {\n        System.out.println(\"Updating user \" + userId + \": \" + data);\n    }\n}\n\nclass EmailHelper {\n    private String smtpServer;\n    \n    public EmailHelper(String smtpServer) {\n        this.smtpServer = smtpServer;\n    }\n    \n    public void sendEmail(String recipient, String subject, String body) {\n        System.out.println(\"Sending email to: \" + recipient + \", Subject: \" + subject);\n    }\n}\n\npublic class User {\n    private String name;\n    private String email;\n    private String password;\n    private boolean isActive;\n    private String role;\n    private java.util.Date lastLogin;\n    private int loginAttempts;\n    \n    private DatabaseHelper database;\n    private EmailHelper emailHelper;\n    \n    public User(String name, String email) {\n        this.name = name;\n        this.email = email;\n        this.isActive = true;\n        this.role = \"USER\";\n        this.loginAttempts = 0;\n        this.database = new DatabaseHelper(\"jdbc:mysql://localhost:3306/users\");\n        this.emailHelper = new EmailHelper(\"smtp.company.com\");\n    }\n    \n    public void saveToDatabase() {\n        String userData = \"User: \" + name + \", Email: \" + email + \", Role: \" + role;\n        database.saveUser(userData);\n        System.out.println(\"Saving user \" + name + \" to database\");\n    }\n    \n    public void sendWelcomeEmail() {\n        emailHelper.sendEmail(email, \"Welcome\", \"Welcome \" + name + \"!\");\n        System.out.println(\"Sending welcome email to \" + email);\n    }\n    \n    public boolean validateEmail(String email) {\n        if (email == null || email.isEmpty()) {\n            return false;\n        }\n        return email.contains(\"@\") && email.contains(\".\");\n    }\n    \n    public boolean validatePassword(String password) {\n        if (password == null || password.length() < 8) {\n            return false;\n        }\n        boolean hasUpper = false;\n        boolean hasLower = false;\n        boolean hasDigit = false;\n        \n        for (char c : password.toCharArray()) {\n            if (Character.isUpperCase(c)) hasUpper = true;\n            if (Character.isLowerCase(c)) hasLower = true;\n            if (Character.isDigit(c)) hasDigit = true;\n        }\n        \n        return hasUpper && hasLower && hasDigit;\n    }\n    \n    public String hashPassword(String password) {\n        int hash = 0;\n        for (char c : password.toCharArray()) {\n            hash = hash * 31 + c;\n        }\n        return String.valueOf(Math.abs(hash));\n    }\n    \n    public boolean authenticate(String password) {\n        if (loginAttempts >= 5) {\n            System.out.println(\"Account locked due to too many failed attempts\");\n            return false;\n        }\n        \n        if (this.password != null && this.password.equals(hashPassword(password))) {\n            loginAttempts = 0;\n            lastLogin = new java.util.Date();\n            database.updateUser(email, \"Last login: \" + lastLogin);\n            return true;\n        }\n        \n        loginAttempts++;\n        return false;\n    }\n    \n    public void lockAccount() {\n        this.isActive = false;\n        database.updateUser(email, \"Account locked\");\n        emailHelper.sendEmail(email, \"Account Locked\", \"Your account has been locked\");\n        System.out.println(\"Account locked for user: \" + name);\n    }\n    \n    public void unlockAccount() {\n        this.isActive = true;\n        this.loginAttempts = 0;\n        database.updateUser(email, \"Account unlocked\");\n        System.out.println(\"Account unlocked for user: \" + name);\n    }\n    \n    public String getName() {\n        return name;\n    }\n    \n    public void setName(String name) {\n        this.name = name;\n    }\n    \n    public String getEmail() {\n        return email;\n    }\n    \n    public void setEmail(String email) {\n        this.email = email;\n    }\n    \n    public String getPassword() {\n        return password;\n    }\n    \n    public void setPassword(String password) {\n        this.password = hashPassword(password);\n    }\n    \n    public boolean isActive() {\n        return isActive;\n    }\n    \n    public String getRole() {\n        return role;\n    }\n    \n    public void setRole(String role) {\n        this.role = role;\n    }\n    \n    public java.util.Date getLastLogin() {\n        return lastLogin;\n    }\n    \n    public int getLoginAttempts() {\n        return loginAttempts;\n    }\n}",
+          "detected_violation_type": "DIP",
+          "detection_success": false,
+          "ground_truth": "SRP",
+          "api_call_success": true,
+          "errors": [],
+          "processing_time_seconds": 146.82,
+          "status": "completed",
+          "workflow": "diff_eval_v7_without_structural",
+          "total_iterations": 5,
+          "selection_method": "ranking_llm",
+          "structural_analysis_enabled": false
+        }
+      ],
+      "count": 5
+    },
+    "OCP": {
+      "results": [
+        {
+          "is_detected": true,
+          "violation_type": "OCP",
+          "explanation": "OCP: The AreaCalculator class violates the Open/Closed Principle because it uses conditional logic based on the type name to calculate areas, making it impossible to extend without modifying existing code.",
+          "all_checks": [
+            {
+              "violation_type": "SRP",
+              "is_detected": true,
+              "detailed_explanation": "The AreaCalculator class violates SRP because it is responsible for both calculating areas based on shape types and the actual area computation logic."
+            },
+            {
+              "violation_type": "OCP",
+              "is_detected": true,
+              "detailed_explanation": "The AreaCalculator class violates the Open/Closed Principle because it uses conditional logic based on the type name to calculate areas. Adding a new shape type like Triangle requires modifying the CalculateArea method, which violates the OCP."
+            },
+            {
+              "violation_type": "LSP",
+              "is_detected": true,
+              "detailed_explanation": "The AreaCalculator class violates the Liskov Substitution Principle because it uses a type check on the Shape object to determine the area calculation method, preventing uniform treatment of all Shape objects."
+            },
+            {
+              "violation_type": "ISP",
+              "is_detected": true,
+              "detailed_explanation": "The Shape class in the original code violates the Interface Segregation Principle because it contains a private field 'type' and a method 'GetTypeName()', which are not relevant to all subclasses."
+            },
+            {
+              "violation_type": "DIP",
+              "is_detected": true,
+              "detailed_explanation": "The AreaCalculator class violates the Dependency Inversion Principle in the original code. It directly depends on concrete classes Rectangle and Circle, rather than depending on abstractions."
+            }
+          ],
+          "example_id": "OCP_1",
+          "description": "",
+          "level": "EASY",
+          "language": "CSHARP",
+          "input": "using System;\n\nclass Shape\n{\n    private string type;\n\n    public Shape(string type)\n    {\n        this.type = type;\n    }\n\n    public string GetTypeName()\n    {\n        return type;\n    }\n}\n\nclass Rectangle : Shape\n{\n    private double width;\n    private double height;\n\n    public Rectangle(double width, double height) : base(\"rectangle\")\n    {\n        this.width = width;\n        this.height = height;\n    }\n\n    public double GetWidth()\n    {\n        return width;\n    }\n\n    public double GetHeight()\n    {\n        return height;\n    }\n}\n\nclass Circle : Shape\n{\n    private double radius;\n\n    public Circle(double radius) : base(\"circle\")\n    {\n        this.radius = radius;\n    }\n\n    public double GetRadius()\n    {\n        return radius;\n    }\n}\n\nclass AreaCalculator\n{\n    public double CalculateArea(Shape shape)\n    {\n        if (shape.GetTypeName().Equals(\"rectangle\"))\n        {\n            Rectangle rectangle = (Rectangle)shape;\n            return rectangle.GetWidth() * rectangle.GetHeight();\n        }\n        else if (shape.GetTypeName().Equals(\"circle\"))\n        {\n            Circle circle = (Circle)shape;\n            return Math.PI * circle.GetRadius() * circle.GetRadius();\n        }\n        return 0;\n    }\n}\n",
+          "detected_violation_type": "OCP",
+          "detection_success": true,
+          "ground_truth": "OCP",
+          "api_call_success": true,
+          "errors": [],
+          "processing_time_seconds": 73.82,
+          "status": "completed",
+          "workflow": "diff_eval_v7_without_structural",
+          "total_iterations": 5,
+          "selection_method": "ranking_llm",
+          "structural_analysis_enabled": false
+        },
+        {
+          "is_detected": true,
+          "violation_type": "OCP",
+          "explanation": "OCP: The DamageCalculator class violates the Open/Closed Principle because adding a new character type requires modifying the existing switch statement, making it closed for modification but not open for extension.",
+          "all_checks": [
+            {
+              "violation_type": "SRP",
+              "is_detected": true,
+              "detailed_explanation": "The DamageCalculator class violates SRP because it is responsible for both calculating damage and formatting the output. In the original code, the CalculateDamage method handles damage calculation logic, but the modified code introduces formatting responsibilities in the DisplayDamage method, which is part of the Program class. However, the original code's DamageCalculator class was already handling both damage calculation and formatting, which is a violation of SRP."
+            },
+            {
+              "violation_type": "OCP",
+              "is_detected": true,
+              "detailed_explanation": "The DamageCalculator class violates the Open/Closed Principle in the original code. The CalculateDamage method uses a switch statement to handle different CharacterType cases, which means adding a new character type like ROGUE requires modifying the existing switch logic. This violates OCP because the class is not open for extension but closed for modification."
+            },
+            {
+              "violation_type": "LSP",
+              "is_detected": false,
+              "detailed_explanation": "The original code does not violate the LSP because there are no subclasses or polymorphic relationships in the original code. The LSP violation would only be relevant if there were subclasses of GameCharacter that altered the behavior of CalculateDamage() in a way that broke the contract. Since the original code does not include any subclasses, the LSP is not applicable."
+            },
+            {
+              "violation_type": "ISP",
+              "is_detected": true,
+              "detailed_explanation": "The DamageCalculator class in the original code violates the Interface Segregation Principle because it defines a single method CalculateDamage() that handles damage calculation for all character types. This forces any implementation to handle all character types, even though the Archer class only needs to handle its own type. The original code does not have a specific interface for Archer, and the method is not properly segregated for different character types."
+            },
+            {
+              "violation_type": "DIP",
+              "is_detected": true,
+              "detailed_explanation": "The DamageCalculator class violates the Dependency Inversion Principle in the original code. It directly depends on the concrete GameCharacter class, rather than depending on abstractions. The CalculateDamage method uses the GameCharacter class's GetCharacterType and GetBaseAttack methods, which makes it tightly coupled to the concrete implementation. This direct dependency on a concrete class violates the DIP, as high-level modules should depend on abstractions, not on concrete implementations."
+            }
+          ],
+          "example_id": "OCP_2",
+          "description": "",
+          "level": "EASY",
+          "language": "CSHARP",
+          "input": "using System;\nusing System.Collections.Generic;\n\nenum CharacterType\n{\n    WARRIOR,\n    MAGE,\n    ARCHER\n}\n\nclass GameCharacter\n{\n    private readonly string name;\n    private readonly CharacterType type;\n    private readonly int baseAttack;\n\n    public GameCharacter(string name, CharacterType type, int baseAttack)\n    {\n        this.name = name;\n        this.type = type;\n        this.baseAttack = baseAttack;\n    }\n\n    public string GetName() { return name; }\n    public CharacterType GetCharacterType() { return type; }\n    public int GetBaseAttack() { return baseAttack; }\n}\n\nclass DamageCalculator\n{\n    private static readonly Random random = new Random();\n\n    public int CalculateDamage(GameCharacter character)\n    {\n        switch (character.GetCharacterType())\n        {\n            case CharacterType.WARRIOR:\n                return (int)(character.GetBaseAttack() * 1.5);\n            case CharacterType.MAGE:\n                return character.GetBaseAttack() + 20;\n            case CharacterType.ARCHER:\n                bool crit = random.Next(2) == 0;\n                return crit ? character.GetBaseAttack() * 2 : character.GetBaseAttack();\n            default:\n                throw new ArgumentException(\"Unknown character type: \" + character.GetCharacterType());\n        }\n    }\n}\n\n",
+          "detected_violation_type": "OCP",
+          "detection_success": true,
+          "ground_truth": "OCP",
+          "api_call_success": true,
+          "errors": [],
+          "processing_time_seconds": 84.51,
+          "status": "completed",
+          "workflow": "diff_eval_v7_without_structural",
+          "total_iterations": 5,
+          "selection_method": "ranking_llm",
+          "structural_analysis_enabled": false
+        },
+        {
+          "is_detected": true,
+          "violation_type": "DIP",
+          "explanation": "DIP: PriceCalculator directly depends on the concrete FoodItem class rather than an abstraction, violating the Dependency Inversion Principle.",
+          "all_checks": [
+            {
+              "violation_type": "SRP",
+              "is_detected": true,
+              "detailed_explanation": "The PriceCalculator class violates SRP because it is responsible for both calculating prices based on food types and encapsulating pricing logic. The CalculatePrice method directly maps food types to fixed prices, which is a business rule. This responsibility should be separated from the PriceCalculator class, as it mixes pricing logic with the calculation of prices. Additionally, the Order class should not be involved in pricing logic, as it is responsible for managing items in an order, not for determining their prices."
+            },
+            {
+              "violation_type": "OCP",
+              "is_detected": true,
+              "detailed_explanation": "The PriceCalculator class in the original code violates the Open/Closed Principle because it uses a switch statement to handle different FoodType cases. Adding a new food type like 'SALAD' would require modifying the CalculatePrice method, which is not closed for modification. The original code does not provide an extension point for new food types, making it necessary to alter existing logic rather than extending the system with new classes."
+            },
+            {
+              "violation_type": "LSP",
+              "is_detected": false,
+              "detailed_explanation": "There is no LSP violation in the original code. The original code does not contain any inheritance relationships or polymorphic calls that would trigger the LSP violation detection. The original code defines a FoodItem class and a PriceCalculator class that uses it, but there are no subclasses or overridden methods that could break the contract."
+            },
+            {
+              "violation_type": "ISP",
+              "is_detected": false,
+              "detailed_explanation": "The original code does not contain any interfaces or abstract classes that force implementations to have dummy methods. The PriceCalculator class implements a single method, CalculatePrice, and there are no interfaces with multiple methods that require unnecessary implementations. Therefore, there is no ISP violation in the original code."
+            },
+            {
+              "violation_type": "DIP",
+              "is_detected": true,
+              "detailed_explanation": "The PriceCalculator class violates the Dependency Inversion Principle in the original code. It directly depends on the FoodItem class to determine pricing, rather than depending on abstractions. The CalculatePrice method uses the FoodItem's GetFoodType method to switch on concrete types, which creates a tight coupling between the PriceCalculator and the FoodItem class. This makes the PriceCalculator dependent on the concrete implementation of FoodItem, rather than an abstraction, which is a clear violation of DIP."
+            }
+          ],
+          "example_id": "OCP_3",
+          "description": "",
+          "level": "EASY",
+          "language": "CSHARP",
+          "input": "using System;\nusing System.Collections.Generic;\n\nenum FoodType\n{\n    BURGER,\n    FRIES,\n    PIZZA,\n    DRINK\n}\n\nclass FoodItem\n{\n    private readonly string name;\n    private readonly FoodType type;\n\n    public FoodItem(string name, FoodType type)\n    {\n        this.name = name;\n        this.type = type;\n    }\n\n    public string GetName() { return name; }\n    public FoodType GetFoodType() { return type; }\n}\n\nclass PriceCalculator\n{\n    public double CalculatePrice(FoodItem item)\n    {\n        switch (item.GetFoodType())\n        {\n            case FoodType.BURGER: return 5.99;\n            case FoodType.FRIES: return 2.49;\n            case FoodType.PIZZA: return 7.99;\n            case FoodType.DRINK: return 1.50;\n            default: throw new ArgumentException(\"Unknown type\");\n        }\n    }\n}\n\nclass Order\n{\n    private readonly List<FoodItem> items = new List<FoodItem>();\n\n    public void AddItem(FoodItem item) { items.Add(item); }\n    public List<FoodItem> GetItems() { return items; }\n}\n",
+          "detected_violation_type": "DIP",
+          "detection_success": false,
+          "ground_truth": "OCP",
+          "api_call_success": true,
+          "errors": [],
+          "processing_time_seconds": 79.89,
+          "status": "completed",
+          "workflow": "diff_eval_v7_without_structural",
+          "total_iterations": 5,
+          "selection_method": "ranking_llm",
+          "structural_analysis_enabled": false
+        },
+        {
+          "is_detected": true,
+          "violation_type": "OCP",
+          "explanation": "OCP: The SmartHomeController class uses switch statements to handle different device types, making it hard to add new device types without modifying existing code.",
+          "all_checks": [
+            {
+              "violation_type": "SRP",
+              "is_detected": true,
+              "detailed_explanation": "The SmartHomeController class violates SRP because it handles both device control logic and output formatting. The TurnOn method contains business logic for turning on devices, while the EnergyUsageKwh method calculates energy usage. Additionally, the code directly interacts with the console for output, which is a presentation concern. These responsibilities should be separated into distinct classes, such as a UI class for output and a separate controller for device operations."
+            },
+            {
+              "violation_type": "OCP",
+              "is_detected": true,
+              "detailed_explanation": "The SmartHomeController class violates the Open/Closed Principle because it uses a switch statement to handle different device types in both the TurnOn and EnergyUsageKwh methods. Adding a new device type, such as SMART_PLUG, requires modifying these existing switch statements, which violates the principle of being open for extension but closed for modification. The original code does not provide a dedicated extension point or polymorphic mechanism to handle new device types without altering existing logic."
+            },
+            {
+              "violation_type": "LSP",
+              "is_detected": true,
+              "detailed_explanation": "The SmartHomeController class violates the LSP because the TurnOn() method expects specific behavior based on the DeviceType enum, which is not properly encapsulated in the SmartDevice class. The original code uses a switch statement on the DeviceType to determine the behavior, which violates the LSP because subclasses (like Light, Thermostat, and DoorLock) are not allowed to override or extend the behavior in a way that is consistent with the parent class. The original code does not have the necessary polymorphic behavior to support the subclasses, making the LSP violation evident."
+            },
+            {
+              "violation_type": "ISP",
+              "is_detected": true,
+              "detailed_explanation": "The SmartHomeController class in the original code violates the Interface Segregation Principle because it uses a switch statement based on the DeviceType enum to handle different behaviors for each device type. This approach forces all device types to implement methods that may not be relevant to them. For example, the DoorLock device does not need the EnergyUsageKwh method, yet it is forced to implement it, leading to unnecessary complexity and potential misuse of the method. The original code does not have an explicit interface, but the implicit behavior of the SmartHomeController class suggests a fat interface that is not properly segregated."
+            },
+            {
+              "violation_type": "DIP",
+              "is_detected": true,
+              "detailed_explanation": "The SmartHomeController class violates the Dependency Inversion Principle because it directly depends on concrete device types (LIGHT, THERMOSTAT, DOOR_LOCK) through conditional logic in the TurnOn() and EnergyUsageKwh() methods. Instead of depending on abstractions, it uses a switch statement to handle different device types, which makes it tightly coupled to the specific implementations. This direct handling of device behavior in a high-level class violates the DIP by not inverting the dependency to an abstract interface or base class."
+            }
+          ],
+          "example_id": "OCP_4",
+          "description": "",
+          "level": "EASY",
+          "language": "CSHARP",
+          "input": "using System;\nusing System.Collections.Generic;\n\nenum DeviceType { LIGHT, THERMOSTAT, DOOR_LOCK }\n\nclass SmartDevice\n{\n    private readonly string id;\n    private readonly DeviceType type;\n\n    public SmartDevice(string id, DeviceType type)\n    {\n        this.id = id;\n        this.type = type;\n    }\n\n    public string GetId() { return id; }\n    public DeviceType GetDeviceType() { return type; }\n}\n\nclass SmartHomeController\n{\n    public void TurnOn(SmartDevice d)\n    {\n        switch (d.GetDeviceType())\n        {\n            case DeviceType.LIGHT:\n                Console.WriteLine(\"Light \" + d.GetId() + \" is ON\");\n                break;\n            case DeviceType.THERMOSTAT:\n                Console.WriteLine(\"Thermostat \" + d.GetId() + \" heating to 22°C\");\n                break;\n            case DeviceType.DOOR_LOCK:\n                Console.WriteLine(\"Door lock \" + d.GetId() + \" cannot be turned ON\");\n                break;\n            default:\n                throw new ArgumentException(\"Unknown device\");\n        }\n    }\n\n    public double EnergyUsageKwh(SmartDevice d, int minutes)\n    {\n        switch (d.GetDeviceType())\n        {\n            case DeviceType.LIGHT: return 0.012 * minutes;      // ~12W bulb\n            case DeviceType.THERMOSTAT: return 0.08 * minutes;  // HVAC running\n            case DeviceType.DOOR_LOCK: return 0.0002 * minutes; // idle electronics\n            default: throw new ArgumentException(\"Unknown device\");\n        }\n    }\n}\n\n",
+          "detected_violation_type": "OCP",
+          "detection_success": true,
+          "ground_truth": "OCP",
+          "api_call_success": true,
+          "errors": [],
+          "processing_time_seconds": 89.64,
+          "status": "completed",
+          "workflow": "diff_eval_v7_without_structural",
+          "total_iterations": 5,
+          "selection_method": "ranking_llm",
+          "structural_analysis_enabled": false
+        },
+        {
+          "is_detected": true,
+          "violation_type": "SRP",
+          "explanation": "SRP: CollisionEngine class handles both bounding box calculation and collision detection, which are separate responsibilities.",
+          "all_checks": [
+            {
+              "violation_type": "SRP",
+              "is_detected": true,
+              "detailed_explanation": "The CollisionEngine class violates SRP because it handles both bounding box calculations and collision detection logic. These two distinct responsibilities should be separated into different classes."
+            },
+            {
+              "violation_type": "OCP",
+              "is_detected": true,
+              "detailed_explanation": "The ShapeRenderer class violates OCP because it contains a switch statement that handles different shape types. When a new shape type is added, the switch statement must be modified, which violates the Open/Closed Principle."
+            },
+            {
+              "violation_type": "LSP",
+              "is_detected": true,
+              "detailed_explanation": "The MetricCalculator class in the original code violates the LSP because it attempts to compute metrics for all shapes, including 2D and 3D shapes. The ComputeVolume method is only applicable to 3D shapes, leading to incorrect results for 3D shapes."
+            },
+            {
+              "violation_type": "ISP",
+              "is_detected": true,
+              "detailed_explanation": "The Shape interface in the original code violates the ISP because it contains multiple methods that are not used by all implementing classes. For example, the 'ThreeDShape' class is forced to implement methods like 'GetWidth()', 'GetHeight()', and 'GetEdge()' that are not relevant to its functionality."
+            },
+            {
+              "violation_type": "DIP",
+              "is_detected": true,
+              "detailed_explanation": "The MetricCalculator class in the original code violates DIP because it is tightly coupled with specific shape implementations. For example, the Compute method directly references Metric.AREA, Metric.PERIMETER, etc., and is used by multiple shape-related classes like ShapePricing and CollisionEngine."
+            }
+          ],
+          "example_id": "OCP_5",
+          "description": "",
+          "level": "HARD",
+          "language": "CSHARP",
+          "input": "using System;\nusing System.Collections.Generic;\nusing System.Linq;\n\nabstract class Entity\n{\n    private static long NEXT_ID = 1;\n    private readonly long id;\n\n    protected Entity()\n    {\n        this.id = NEXT_ID++;\n    }\n\n    public long GetId()\n    {\n        return id;\n    }\n}\n\nabstract class GraphicObject : Entity\n{\n    private readonly string color;\n    private readonly int layer;\n\n    protected GraphicObject(string color, int layer)\n    {\n        this.color = color;\n        this.layer = layer;\n    }\n\n    public string GetColor() { return color; }\n    public int GetLayer() { return layer; }\n}\n\nenum ShapeKind { RECTANGLE, CIRCLE, TRIANGLE, CUBE, SPHERE }\n\nabstract class Shape : GraphicObject\n{\n    private readonly ShapeKind kind;\n\n    protected Shape(ShapeKind kind, string color, int layer) : base(color, layer)\n    {\n        this.kind = kind;\n    }\n\n    public ShapeKind GetKind() { return kind; }\n}\n\nabstract class TwoDShape : Shape\n{\n    protected TwoDShape(ShapeKind kind, string color, int layer) : base(kind, color, layer) { }\n}\n\nabstract class ThreeDShape : Shape\n{\n    protected ThreeDShape(ShapeKind kind, string color, int layer) : base(kind, color, layer) { }\n}\n\nclass Rectangle : TwoDShape\n{\n    private readonly double width, height;\n\n    public Rectangle(double width, double height, string color, int layer) : base(ShapeKind.RECTANGLE, color, layer)\n    {\n        this.width = width; this.height = height;\n    }\n\n    public double GetWidth() { return width; }\n    public double GetHeight() { return height; }\n}\n\nclass Circle : TwoDShape\n{\n    private readonly double radius;\n\n    public Circle(double radius, string color, int layer) : base(ShapeKind.CIRCLE, color, layer)\n    {\n        this.radius = radius;\n    }\n\n    public double GetRadius() { return radius; }\n}\n\nclass Triangle : TwoDShape\n{\n    private readonly double a, b, c;\n\n    public Triangle(double a, double b, double c, string color, int layer) : base(ShapeKind.TRIANGLE, color, layer)\n    {\n        this.a = a; this.b = b; this.c = c;\n    }\n\n    public double GetA() { return a; }\n    public double GetB() { return b; }\n    public double GetC() { return c; }\n}\n\nclass Cube : ThreeDShape\n{\n    private readonly double edge;\n\n    public Cube(double edge, string color, int layer) : base(ShapeKind.CUBE, color, layer)\n    {\n        this.edge = edge;\n    }\n\n    public double GetEdge() { return edge; }\n}\n\nclass Sphere : ThreeDShape\n{\n    private readonly double radius;\n\n    public Sphere(double radius, string color, int layer) : base(ShapeKind.SPHERE, color, layer)\n    {\n        this.radius = radius;\n    }\n\n    public double GetRadius() { return radius; }\n}\n\nenum Metric { AREA, PERIMETER, VOLUME, DIAGONAL, BOUNDING_BOX_WIDTH }\n\nclass BoundingBox\n{\n    public readonly double width;\n    public readonly double height;\n    public BoundingBox(double width, double height) { this.width = width; this.height = height; }\n    public override string ToString() { return \"BBox(\" + width + \"x\" + height + \")\"; }\n}\n\nclass MetricCalculator\n{\n    public double Compute(Shape shape, Metric metric)\n    {\n        switch (shape.GetKind())\n        {\n            case ShapeKind.RECTANGLE:\n                {\n                    var r = (Rectangle)shape;\n                    switch (metric)\n                    {\n                        case Metric.AREA: return r.GetWidth() * r.GetHeight();\n                        case Metric.PERIMETER: return 2 * (r.GetWidth() + r.GetHeight());\n                        case Metric.DIAGONAL: return Math.Sqrt(r.GetWidth() * r.GetWidth() + r.GetHeight() * r.GetHeight());\n                        case Metric.BOUNDING_BOX_WIDTH: return r.GetWidth();\n                        case Metric.VOLUME: return 0;\n                    }\n                    break;\n                }\n            case ShapeKind.CIRCLE:\n                {\n                    var c = (Circle)shape;\n                    switch (metric)\n                    {\n                        case Metric.AREA: return Math.PI * c.GetRadius() * c.GetRadius();\n                        case Metric.PERIMETER: return 2 * Math.PI * c.GetRadius();\n                        case Metric.DIAGONAL: return 2 * c.GetRadius();\n                        case Metric.BOUNDING_BOX_WIDTH: return 2 * c.GetRadius();\n                        case Metric.VOLUME: return 0;\n                    }\n                    break;\n                }\n            case ShapeKind.TRIANGLE:\n                {\n                    var t = (Triangle)shape;\n                    double s = (t.GetA() + t.GetB() + t.GetC()) / 2.0;\n                    switch (metric)\n                    {\n                        case Metric.AREA: return Math.Sqrt(Math.Max(0, s * (s - t.GetA()) * (s - t.GetB()) * (s - t.GetC())));\n                        case Metric.PERIMETER: return (t.GetA() + t.GetB() + t.GetC());\n                        case Metric.DIAGONAL: return Math.Max(t.GetA(), Math.Max(t.GetB(), t.GetC()));\n                        case Metric.BOUNDING_BOX_WIDTH: return Math.Max(t.GetA(), Math.Max(t.GetB(), t.GetC()));\n                        case Metric.VOLUME: return 0;\n                    }\n                    break;\n                }\n            case ShapeKind.CUBE:\n                {\n                    var cube = (Cube)shape;\n                    switch (metric)\n                    {\n                        case Metric.AREA: return 6 * cube.GetEdge() * cube.GetEdge();\n                        case Metric.PERIMETER: return 12 * cube.GetEdge();\n                        case Metric.VOLUME: return Math.Pow(cube.GetEdge(), 3);\n                        case Metric.DIAGONAL: return Math.Sqrt(3) * cube.GetEdge();\n                        case Metric.BOUNDING_BOX_WIDTH: return cube.GetEdge();\n                    }\n                    break;\n                }\n            case ShapeKind.SPHERE:\n                {\n                    var s = (Sphere)shape;\n                    switch (metric)\n                    {\n                        case Metric.AREA: return 4 * Math.PI * s.GetRadius() * s.GetRadius();\n                        case Metric.PERIMETER: return 0;\n                        case Metric.VOLUME: return (4.0 / 3.0) * Math.PI * Math.Pow(s.GetRadius(), 3);\n                        case Metric.DIAGONAL: return 2 * s.GetRadius();\n                        case Metric.BOUNDING_BOX_WIDTH: return 2 * s.GetRadius();\n                    }\n                    break;\n                }\n        }\n        return 0;\n    }\n}\n\nclass ShapeValidator\n{\n    public bool IsValid(Shape shape)\n    {\n        switch (shape.GetKind())\n        {\n            case ShapeKind.RECTANGLE:\n                var r = (Rectangle)shape;\n                return r.GetWidth() > 0 && r.GetHeight() > 0;\n            case ShapeKind.CIRCLE:\n                var c = (Circle)shape;\n                return c.GetRadius() > 0;\n            case ShapeKind.TRIANGLE:\n                var t = (Triangle)shape;\n                return t.GetA() > 0 && t.GetB() > 0 && t.GetC() > 0\n                    && t.GetA() + t.GetB() > t.GetC()\n                    && t.GetA() + t.GetC() > t.GetB()\n                    && t.GetB() + t.GetC() > t.GetA();\n            case ShapeKind.CUBE:\n                var cube = (Cube)shape;\n                return cube.GetEdge() > 0;\n            case ShapeKind.SPHERE:\n                var s = (Sphere)shape;\n                return s.GetRadius() > 0;\n        }\n        return false;\n    }\n}\n\nclass ShapeRenderer\n{\n    public string RenderPseudoSvg(Shape shape)\n    {\n        switch (shape.GetKind())\n        {\n            case ShapeKind.RECTANGLE:\n                var r = (Rectangle)shape;\n                return $\"<rect w=\\\"{r.GetWidth()}\\\" h=\\\"{r.GetHeight()}\\\" fill=\\\"{shape.GetColor()}\\\" layer=\\\"{shape.GetLayer()}\\\"/>\";\n            case ShapeKind.CIRCLE:\n                var c = (Circle)shape;\n                return $\"<circle r=\\\"{c.GetRadius()}\\\" fill=\\\"{shape.GetColor()}\\\" layer=\\\"{shape.GetLayer()}\\\"/>\";\n            case ShapeKind.TRIANGLE:\n                var t = (Triangle)shape;\n                return $\"<polygon a=\\\"{t.GetA()}\\\" b=\\\"{t.GetB()}\\\" c=\\\"{t.GetC()}\\\" fill=\\\"{shape.GetColor()}\\\" layer=\\\"{shape.GetLayer()}\\\"/>\";\n            case ShapeKind.CUBE:\n                var cube = (Cube)shape;\n                return $\"<cube edge=\\\"{cube.GetEdge()}\\\" materialColor=\\\"{shape.GetColor()}\\\" layer=\\\"{shape.GetLayer()}\\\"/>\";\n            case ShapeKind.SPHERE:\n                var s = (Sphere)shape;\n                return $\"<sphere r=\\\"{s.GetRadius()}\\\" materialColor=\\\"{shape.GetColor()}\\\" layer=\\\"{shape.GetLayer()}\\\"/>\";\n        }\n        return \"<unknown/>\";\n    }\n}\n\nclass ShapeSerializer\n{\n    public string ToCsvRow(Shape shape)\n    {\n        switch (shape.GetKind())\n        {\n            case ShapeKind.RECTANGLE:\n                var r = (Rectangle)shape;\n                return $\"rectangle,{r.GetWidth()},{r.GetHeight()},{shape.GetColor()},{shape.GetLayer()}\";\n            case ShapeKind.CIRCLE:\n                var c = (Circle)shape;\n                return $\"circle,{c.GetRadius()},{shape.GetColor()},{shape.GetLayer()}\";\n            case ShapeKind.TRIANGLE:\n                var t = (Triangle)shape;\n                return $\"triangle,{t.GetA()},{t.GetB()},{t.GetC()},{shape.GetColor()},{shape.GetLayer()}\";\n            case ShapeKind.CUBE:\n                var cube = (Cube)shape;\n                return $\"cube,{cube.GetEdge()},{shape.GetColor()},{shape.GetLayer()}\";\n            case ShapeKind.SPHERE:\n                var s = (Sphere)shape;\n                return $\"sphere,{s.GetRadius()},{shape.GetColor()},{shape.GetLayer()}\";\n        }\n        return \"unknown\";\n    }\n}\n\nclass ShapeFactory\n{\n    public Shape Create(string spec)\n    {\n        var parts = spec.Split(';');\n        string type = parts[0].Trim().ToLower();\n        var map = new Dictionary<string, string>();\n        for (int i = 1; i < parts.Length; i++)\n        {\n            var kv = parts[i].Split('=');\n            if (kv.Length == 2) map[kv[0].Trim().ToLower()] = kv[1].Trim();\n        }\n        string color = map.ContainsKey(\"color\") ? map[\"color\"] : \"black\";\n        int layer = int.Parse(map.ContainsKey(\"layer\") ? map[\"layer\"] : \"0\");\n\n        switch (type)\n        {\n            case \"rectangle\":\n                return new Rectangle(\n                    double.Parse(map.ContainsKey(\"width\") ? map[\"width\"] : \"0\"),\n                    double.Parse(map.ContainsKey(\"height\") ? map[\"height\"] : \"0\"),\n                    color, layer);\n            case \"circle\":\n                return new Circle(\n                    double.Parse(map.ContainsKey(\"radius\") ? map[\"radius\"] : \"0\"),\n                    color, layer);\n            case \"triangle\":\n                return new Triangle(\n                    double.Parse(map.ContainsKey(\"a\") ? map[\"a\"] : \"0\"),\n                    double.Parse(map.ContainsKey(\"b\") ? map[\"b\"] : \"0\"),\n                    double.Parse(map.ContainsKey(\"c\") ? map[\"c\"] : \"0\"),\n                    color, layer);\n            case \"cube\":\n                return new Cube(\n                    double.Parse(map.ContainsKey(\"edge\") ? map[\"edge\"] : \"0\"),\n                    color, layer);\n            case \"sphere\":\n                return new Sphere(\n                    double.Parse(map.ContainsKey(\"radius\") ? map[\"radius\"] : \"0\"),\n                    color, layer);\n        }\n        throw new ArgumentException(\"Unknown shape type: \" + type);\n    }\n}\n\nclass ShapePricing\n{\n    private readonly MetricCalculator calc = new MetricCalculator();\n\n    public double Price(Shape shape)\n    {\n        switch (shape.GetKind())\n        {\n            case ShapeKind.RECTANGLE:\n                double area = calc.Compute(shape, Metric.AREA);\n                return 0.5 * area + shape.GetLayer() * 2;\n            case ShapeKind.CIRCLE:\n                double a = calc.Compute(shape, Metric.AREA);\n                double diag = calc.Compute(shape, Metric.DIAGONAL);\n                return 0.6 * a + 0.1 * diag;\n            case ShapeKind.TRIANGLE:\n                double per = calc.Compute(shape, Metric.PERIMETER);\n                return per * 0.8;\n            case ShapeKind.CUBE:\n                double vol = calc.Compute(shape, Metric.VOLUME);\n                return 1.2 * vol;\n            case ShapeKind.SPHERE:\n                double v = calc.Compute(shape, Metric.VOLUME);\n                return 1.0 * v + 10;\n        }\n        return 0;\n    }\n}\n\nclass LegendBuilder\n{\n    public string LegendSymbol(Shape shape)\n    {\n        switch (shape.GetKind())\n        {\n            case ShapeKind.RECTANGLE: return \"▭\";\n            case ShapeKind.CIRCLE: return \"◯\";\n            case ShapeKind.TRIANGLE: return \"△\";\n            case ShapeKind.CUBE: return \"⬛\";\n            case ShapeKind.SPHERE: return \"◯\";\n        }\n        return \"?\";\n    }\n}\n\nclass CollisionEngine\n{\n    public BoundingBox BoundingBox(Shape shape)\n    {\n        switch (shape.GetKind())\n        {\n            case ShapeKind.RECTANGLE:\n                var r = (Rectangle)shape;\n                return new BoundingBox(r.GetWidth(), r.GetHeight());\n            case ShapeKind.CIRCLE:\n                var c = (Circle)shape;\n                double d = 2 * c.GetRadius();\n                return new BoundingBox(d, d);\n            case ShapeKind.TRIANGLE:\n                var t = (Triangle)shape;\n                double max = Math.Max(t.GetA(), Math.Max(t.GetB(), t.GetC()));\n                double avg = (t.GetA() + t.GetB() + t.GetC() - max) / 2.0;\n                return new BoundingBox(max, avg);\n            case ShapeKind.CUBE:\n                var cube = (Cube)shape;\n                return new BoundingBox(cube.GetEdge(), cube.GetEdge());\n            case ShapeKind.SPHERE:\n                var s = (Sphere)shape;\n                double ds = 2 * s.GetRadius();\n                return new BoundingBox(ds, ds);\n        }\n        return new BoundingBox(0, 0);\n    }\n\n    public bool Overlaps(Shape a, Shape b)\n    {\n        var A = BoundingBox(a);\n        var B = BoundingBox(b);\n        return (A.width * A.height) > 0 && (B.width * B.height) > 0;\n    }\n}\n\nclass ShapeReport\n{\n    private readonly MetricCalculator calc = new MetricCalculator();\n    private readonly ShapeSerializer ser = new ShapeSerializer();\n    private readonly ShapeRenderer rnd = new ShapeRenderer();\n    private readonly CollisionEngine col = new CollisionEngine();\n    private readonly ShapePricing price = new ShapePricing();\n    private readonly LegendBuilder legend = new LegendBuilder();\n\n    public string Summarize(List<Shape> shapes)\n    {\n        var sb = new System.Text.StringBuilder();\n        sb.Append(\"=== Shape Report (OCP-violating) ===\\n\");\n        foreach (Shape s in shapes)\n        {\n            sb.Append(\"ID \").Append(s.GetId())\n              .Append(\" \").Append(s.GetKind())\n              .Append(\" color=\").Append(s.GetColor())\n              .Append(\" layer=\").Append(s.GetLayer()).Append(\"\\n\");\n\n            sb.Append(\"  CSV: \").Append(ser.ToCsvRow(s)).Append(\"\\n\");\n            sb.Append(\"  SVG: \").Append(rnd.RenderPseudoSvg(s)).Append(\"\\n\");\n            sb.Append(\"  Legend: \").Append(legend.LegendSymbol(s)).Append(\"\\n\");\n\n            sb.Append(\"  Metrics: \");\n            sb.Append(\" area=\").Append(calc.Compute(s, Metric.AREA));\n            sb.Append(\" perim=\").Append(calc.Compute(s, Metric.PERIMETER));\n            sb.Append(\" diag=\").Append(calc.Compute(s, Metric.DIAGONAL));\n            if (s is ThreeDShape)\n            {\n                sb.Append(\" vol=\").Append(calc.Compute(s, Metric.VOLUME));\n            }\n            sb.Append(\"\\n\");\n\n            sb.Append(\"  BBox: \").Append(col.BoundingBox(s)).Append(\"\\n\");\n            sb.Append(\"  Price: \").Append(price.Price(s)).Append(\"\\n\\n\");\n        }\n        return sb.ToString();\n    }\n}\n\n",
+          "detected_violation_type": "SRP",
+          "detection_success": false,
+          "ground_truth": "OCP",
+          "api_call_success": true,
+          "errors": [],
+          "processing_time_seconds": 241.45,
+          "status": "completed",
+          "workflow": "diff_eval_v7_without_structural",
+          "total_iterations": 5,
+          "selection_method": "ranking_llm",
+          "structural_analysis_enabled": false
+        }
+      ],
+      "count": 5
+    },
+    "LSP": {
+      "results": [
+        {
+          "is_detected": true,
+          "violation_type": "LSP",
+          "explanation": "LSP: Penguin class violates LSP by throwing an exception in fly(), breaking the contract of the Bird class",
+          "all_checks": [
+            {
+              "violation_type": "SRP",
+              "is_detected": true,
+              "detailed_explanation": "The Bird class violates SRP because it contains a method (fly()) that represents a behavior which is not consistent across all subclasses. The fly() method is supposed to represent the core responsibility of a bird, but different subclasses (Sparrow, Penguin) implement it in ways that reflect different behaviors (flying, not flying). This inconsistency suggests that the Bird class is not focused on a single responsibility and is instead handling multiple, conflicting behaviors."
+            },
+            {
+              "violation_type": "OCP",
+              "is_detected": false,
+              "detailed_explanation": "The original code does not violate the Open/Closed Principle. The Bird class defines a fly() method that is overridden by subclasses like Sparrow and Penguin. The BirdWatcher class uses polymorphism to handle different bird types without modifying existing code. The addition of a new bird type (Glider) in the modified code does not affect the original code structure, and the original code remains closed for modification and open for extension through inheritance."
+            },
+            {
+              "violation_type": "LSP",
+              "is_detected": true,
+              "detailed_explanation": "The Penguin class violates the LSP because it throws an UnsupportedOperationException when the fly() method is called, which breaks the contract defined by the Bird class. The Bird class expects the fly() method to execute normally, but the Penguin subclass fails to fulfill this contract by throwing an exception, which can cause the application to crash when handling Penguins."
+            },
+            {
+              "violation_type": "ISP",
+              "is_detected": true,
+              "detailed_explanation": "The Bird class in the original code violates the Interface Segregation Principle because it is a concrete class with a single method, fly(). However, the original code uses it as a base class for other classes like Sparrow and Penguin, which only need the fly() method. The original code does not show a fat interface, but the detection method focuses on the original code's structure. Since the original code does not have a fat interface, there is no clear ISP violation in the original code."
+            },
+            {
+              "violation_type": "DIP",
+              "is_detected": true,
+              "detailed_explanation": "The BirdWatcher class violates the Dependency Inversion Principle because it directly depends on the concrete Bird class and its implementations (Sparrow and Penguin). The watchBird method interacts with the fly() method of the Bird class, which is implemented differently by each subclass. This creates a tight coupling between the high-level BirdWatcher class and the low-level Bird implementations, making it difficult to change or extend the system without modifying the BirdWatcher class."
+            }
+          ],
+          "example_id": "LSP_1",
+          "description": "",
+          "level": "EASY",
+          "language": "JAVA",
+          "input": "public class Bird {\n    public void fly() {\n        System.out.println(\"Flying high!\");\n    }\n}\n\npublic class Sparrow extends Bird {\n    @Override\n    public void fly() {\n        System.out.println(\"Sparrow flying fast!\");\n    }\n}\n\npublic class Penguin extends Bird {\n    @Override\n    public void fly() {\n        throw new UnsupportedOperationException(\"Penguins cannot fly!\");\n    }\n}\n\npublic class BirdWatcher {\n    public void watchBird(Bird bird) {\n        bird.fly();\n    }\n}",
+          "detected_violation_type": "LSP",
+          "detection_success": true,
+          "ground_truth": "LSP",
+          "api_call_success": true,
+          "errors": [],
+          "processing_time_seconds": 52.03,
+          "status": "completed",
+          "workflow": "diff_eval_v7_without_structural",
+          "total_iterations": 5,
+          "selection_method": "ranking_llm",
+          "structural_analysis_enabled": false
+        },
+        {
+          "is_detected": true,
+          "violation_type": "LSP",
+          "explanation": "LSP: Penguin class violates LSP by throwing an exception in the fly() method, breaking the contract defined by the Bird class.",
+          "all_checks": [
+            {
+              "violation_type": "SRP",
+              "is_detected": true,
+              "detailed_explanation": "The BirdWatcher class violates SRP because it is responsible for both observing birds and logging flight data."
+            },
+            {
+              "violation_type": "OCP",
+              "is_detected": true,
+              "detailed_explanation": "The BirdWatcher class violates OCP because it directly calls the fly() method on the bird object without using a polymorphic approach."
+            },
+            {
+              "violation_type": "LSP",
+              "is_detected": true,
+              "detailed_explanation": "The Penguin class violates the LSP because it throws a NotImplementedError in the fly() method, which breaks the contract defined by the Bird class."
+            },
+            {
+              "violation_type": "ISP",
+              "is_detected": true,
+              "detailed_explanation": "The Bird class violates the Interface Segregation Principle because it defines a single method 'fly()', which is not used by all subclasses."
+            },
+            {
+              "violation_type": "DIP",
+              "is_detected": true,
+              "detailed_explanation": "The BirdWatcher class violates the Dependency Inversion Principle because it directly depends on concrete implementations of the Bird class."
+            }
+          ],
+          "example_id": "LSP_2",
+          "description": "",
+          "level": "EASY",
+          "language": "PYTHON",
+          "input": "class Bird:\n    def fly(self):\n        print(\"Flying high!\")\n\nclass Sparrow(Bird):\n    def fly(self):\n        print(\"Sparrow flying fast!\")\n\nclass Penguin(Bird):\n    def fly(self):\n        raise NotImplementedError(\"Penguins cannot fly!\")\n\nclass BirdWatcher:\n    def watch_bird(self, bird):\n        bird.fly()",
+          "detected_violation_type": "LSP",
+          "detection_success": true,
+          "ground_truth": "LSP",
+          "api_call_success": true,
+          "errors": [],
+          "processing_time_seconds": 40.53,
+          "status": "completed",
+          "workflow": "diff_eval_v7_without_structural",
+          "total_iterations": 5,
+          "selection_method": "ranking_llm",
+          "structural_analysis_enabled": false
+        },
+        {
+          "is_detected": true,
+          "violation_type": "LSP",
+          "explanation": "LSP: Penguin class violates LSP by throwing an exception in the fly() method, breaking the contract defined by the Bird class.",
+          "all_checks": [
+            {
+              "violation_type": "SRP",
+              "is_detected": false,
+              "detailed_explanation": "The original code does not demonstrate an SRP violation. All classes have a single, clear responsibility."
+            },
+            {
+              "violation_type": "OCP",
+              "is_detected": false,
+              "detailed_explanation": "The original code does not violate the Open/Closed Principle. The Bird class is open for extension and closed for modification."
+            },
+            {
+              "violation_type": "LSP",
+              "is_detected": true,
+              "detailed_explanation": "The Penguin class violates the LSP because it throws an UnsupportedOperationException when the fly() method is called, which breaks the contract defined by the Bird class."
+            },
+            {
+              "violation_type": "ISP",
+              "is_detected": true,
+              "detailed_explanation": "The Bird class in the original code violates the Interface Segregation Principle because it is an open class with a single method, fly()."
+            },
+            {
+              "violation_type": "DIP",
+              "is_detected": true,
+              "detailed_explanation": "The BirdWatcher class violates the Dependency Inversion Principle because it directly depends on the concrete Bird class and its derived types."
+            }
+          ],
+          "example_id": "LSP_3",
+          "description": "",
+          "level": "EASY",
+          "language": "KOTLIN",
+          "input": "open class Bird {\n    open fun fly() {\n        println(\"Flying high!\")\n    }\n}\n\nclass Sparrow : Bird() {\n    override fun fly() {\n        println(\"Sparrow flying fast!\")\n    }\n}\n\nclass Penguin : Bird() {\n    override fun fly() {\n        throw UnsupportedOperationException(\"Penguins cannot fly!\")\n    }\n}\n\nclass BirdWatcher {\n    fun watchBird(bird: Bird) {\n        bird.fly()\n    }\n}",
+          "detected_violation_type": "LSP",
+          "detection_success": true,
+          "ground_truth": "LSP",
+          "api_call_success": true,
+          "errors": [],
+          "processing_time_seconds": 43.61,
+          "status": "completed",
+          "workflow": "diff_eval_v7_without_structural",
+          "total_iterations": 5,
+          "selection_method": "ranking_llm",
+          "structural_analysis_enabled": false
+        },
+        {
+          "is_detected": true,
+          "violation_type": "LSP",
+          "explanation": "LSP: Penguin class violates LSP by throwing an exception in Fly(), breaking the contract of the Bird class",
+          "all_checks": [
+            {
+              "violation_type": "SRP",
+              "is_detected": true,
+              "detailed_explanation": "The Bird class violates SRP because it has a Fly() method that is both a behavioral responsibility and implicitly handles the presentation of flight behavior. The Fly() method in the Bird class is meant to represent the core behavior of flying, but it also includes console output, which is a presentation concern. This mixing of behavior and presentation responsibilities violates the Single Responsibility Principle."
+            },
+            {
+              "violation_type": "OCP",
+              "is_detected": false,
+              "detailed_explanation": "The original code does not violate the Open/Closed Principle. The Fly method in the Bird class is virtual, allowing for extension through inheritance. The Sparrow and Penguin classes correctly override the Fly method without modifying the base class logic. The BirdWatcher class uses polymorphism by calling the Fly method on a Bird reference, which is open for extension but closed for modification."
+            },
+            {
+              "violation_type": "LSP",
+              "is_detected": true,
+              "detailed_explanation": "The Penguin class violates the LSP because it throws a NotSupportedException when the Fly() method is called, which breaks the contract established by the Bird class. The Bird class defines Fly() as a virtual method that is expected to perform some form of flight, but the Penguin subclass overrides it to throw an exception, which is not a valid implementation of the Fly() method's intended behavior."
+            },
+            {
+              "violation_type": "ISP",
+              "is_detected": true,
+              "detailed_explanation": "The Bird class in the original code violates the Interface Segregation Principle because it defines a single method Fly() that all subclasses must implement. While this is not inherently a violation of ISP, the original code does not demonstrate a fat interface with multiple methods that force implementations to have dummy methods. However, the detection method focuses on the original code's structure, and in this case, the Bird class is not a fat interface. Therefore, the violation is not clearly detected based on the provided criteria."
+            },
+            {
+              "violation_type": "DIP",
+              "is_detected": true,
+              "detailed_explanation": "The BirdWatcher class violates the Dependency Inversion Principle because it directly depends on concrete implementations of the Bird class (Sparrow and Penguin). The Fly method is called on the Bird interface, but the BirdWatcher class is not abstracted away from the specific implementations. This creates a tight coupling between the high-level module (BirdWatcher) and the low-level modules (Sparrow and Penguin), which is a violation of DIP."
+            }
+          ],
+          "example_id": "LSP_4",
+          "description": "",
+          "level": "EASY",
+          "language": "C#",
+          "input": "public class Bird\n{\n    public virtual void Fly()\n    {\n        Console.WriteLine(\"Flying high!\");\n    }\n}\n\npublic class Sparrow : Bird\n{\n    public override void Fly()\n    {\n        Console.WriteLine(\"Sparrow flying fast!\");\n    }\n}\n\npublic class Penguin : Bird\n{\n    public override void Fly()\n    {\n        throw new NotSupportedException(\"Penguins cannot fly!\");\n    }\n}\n\npublic class BirdWatcher\n{\n    public void WatchBird(Bird bird)\n    {\n        bird.Fly();\n    }\n}",
+          "detected_violation_type": "LSP",
+          "detection_success": true,
+          "ground_truth": "LSP",
+          "api_call_success": true,
+          "errors": [],
+          "processing_time_seconds": 54.23,
+          "status": "completed",
+          "workflow": "diff_eval_v7_without_structural",
+          "total_iterations": 5,
+          "selection_method": "ranking_llm",
+          "structural_analysis_enabled": false
+        },
+        {
+          "is_detected": true,
+          "violation_type": "LSP",
+          "explanation": "LSP: Ostrich class violates LSP by throwing an exception in fly(), breaking the contract of the Bird class",
+          "all_checks": [
+            {
+              "violation_type": "SRP",
+              "is_detected": true,
+              "detailed_explanation": "The FlightSimulator class violates SRP because it handles both the logic for simulating flight and the presentation of flight simulation results."
+            },
+            {
+              "violation_type": "OCP",
+              "is_detected": true,
+              "detailed_explanation": "The FlightSimulator class violates OCP because it directly calls the fly() and getFlightSpeed() methods on the Bird interface. Adding a new flightless bird would require modifying simulateFlight()."
+            },
+            {
+              "violation_type": "LSP",
+              "is_detected": true,
+              "detailed_explanation": "The Ostrich class violates the LSP because it throws an UnsupportedOperationException in the fly() method, which breaks the contract defined in the Bird class."
+            },
+            {
+              "violation_type": "ISP",
+              "is_detected": true,
+              "detailed_explanation": "The Bird abstract class violates the ISP because it defines a broad interface with multiple methods, forcing implementations to have dummy methods for unused functionality."
+            },
+            {
+              "violation_type": "DIP",
+              "is_detected": true,
+              "detailed_explanation": "The FlightSimulator class violates the DIP because it directly depends on concrete implementations of the Bird class rather than abstractions."
+            }
+          ],
+          "example_id": "LSP_5",
+          "description": "",
+          "level": "MODERATE",
+          "language": "JAVA",
+          "input": "public abstract class Bird {\n    protected String species;\n    protected double wingSpan;\n    \n    public Bird(String species, double wingSpan) {\n        this.species = species;\n        this.wingSpan = wingSpan;\n    }\n    \n    public abstract void fly();\n    public abstract double getFlightSpeed();\n    \n    public String getSpecies() {\n        return species;\n    }\n    \n    public double getWingSpan() {\n        return wingSpan;\n    }\n}\n\npublic class Eagle extends Bird {\n    public Eagle(double wingSpan) {\n        super(\"Eagle\", wingSpan);\n    }\n    \n    @Override\n    public void fly() {\n        System.out.println(\"Eagle soaring at high altitude with \" + wingSpan + \"m wingspan\");\n    }\n    \n    @Override\n    public double getFlightSpeed() {\n        return 80.0 + (wingSpan * 10);\n    }\n}\n\npublic class Hummingbird extends Bird {\n    public Hummingbird(double wingSpan) {\n        super(\"Hummingbird\", wingSpan);\n    }\n    \n    @Override\n    public void fly() {\n        System.out.println(\"Hummingbird hovering with rapid wing beats\");\n    }\n    \n    @Override\n    public double getFlightSpeed() {\n        return 50.0;\n    }\n}\n\npublic class Ostrich extends Bird {\n    private double runningSpeed;\n    \n    public Ostrich(double wingSpan, double runningSpeed) {\n        super(\"Ostrich\", wingSpan);\n        this.runningSpeed = runningSpeed;\n    }\n    \n    @Override\n    public void fly() {\n        throw new UnsupportedOperationException(\"Ostriches are flightless birds!\");\n    }\n    \n    @Override\n    public double getFlightSpeed() {\n        return 0.0;\n    }\n    \n    public void run() {\n        System.out.println(\"Ostrich running at \" + runningSpeed + \" km/h\");\n    }\n}\n\npublic class FlightSimulator {\n    public void simulateFlight(Bird bird, double distance) {\n        System.out.println(\"Starting flight simulation for \" + bird.getSpecies());\n        bird.fly();\n        double speed = bird.getFlightSpeed();\n        double time = distance / speed;\n        System.out.println(\"Flight time: \" + time + \" hours for \" + distance + \" km\");\n    }\n    \n    public void compareFlightCapabilities(Bird[] birds, double testDistance) {\n        for (Bird bird : birds) {\n            simulateFlight(bird, testDistance);\n            System.out.println(\"---\");\n        }\n    }\n}",
+          "detected_violation_type": "LSP",
+          "detection_success": true,
+          "ground_truth": "LSP",
+          "api_call_success": true,
+          "errors": [],
+          "processing_time_seconds": 87.92,
+          "status": "completed",
+          "workflow": "diff_eval_v7_without_structural",
+          "total_iterations": 5,
+          "selection_method": "ranking_llm",
+          "structural_analysis_enabled": false
+        }
+      ],
+      "count": 5
+    },
+    "ISP": {
+      "results": [
+        {
+          "is_detected": true,
+          "violation_type": "LSP",
+          "explanation": "LSP: Fighter class violates LSP by throwing exceptions in Fly() method, breaking the contract of the IGameCharacter interface.",
+          "all_checks": [
+            {
+              "violation_type": "SRP",
+              "is_detected": false,
+              "detailed_explanation": "The original code does not demonstrate an SRP violation. The Mage and Fighter classes each implement the IGameCharacter interface and handle their own specific behaviors."
+            },
+            {
+              "violation_type": "OCP",
+              "is_detected": false,
+              "detailed_explanation": "The original code does not violate the Open/Closed Principle. The IGameCharacter interface is closed for modification but open for extension through new implementing classes."
+            },
+            {
+              "violation_type": "LSP",
+              "is_detected": true,
+              "detailed_explanation": "The Fighter class violates the Liskov Substitution Principle because it throws a NotSupportedException in the Fly() method, which breaks the contract defined by the IGameCharacter interface."
+            },
+            {
+              "violation_type": "ISP",
+              "is_detected": true,
+              "detailed_explanation": "The IGameCharacter interface in the original code violates the Interface Segregation Principle because it defines four methods that are not all required by every implementing class."
+            },
+            {
+              "violation_type": "DIP",
+              "is_detected": true,
+              "detailed_explanation": "The GameSystem class in the original code violates the Dependency Inversion Principle because it directly depends on the Fighter class rather than an abstraction."
+            }
+          ],
+          "example_id": "ISP_1",
+          "description": "",
+          "level": "EASY",
+          "language": "CSHARP",
+          "input": "using System;\n\ninterface IGameCharacter\n{\n    void MeleeAttack();\n    void CastSpell();\n    void Fly();\n    void Defend();\n}\n\nclass Mage : IGameCharacter\n{\n    private string name;\n    private int mana;\n    \n    public Mage(string name)\n    {\n        this.name = name;\n        this.mana = 100;\n    }\n    \n    public void MeleeAttack()\n    {\n        throw new NotSupportedException(\"Mage cannot perform melee attacks!\");\n    }\n    \n    public void CastSpell()\n    {\n        if (mana >= 20)\n        {\n            Console.WriteLine(name + \" casts a fireball spell!\");\n            mana -= 20;\n        }\n        else\n        {\n            Console.WriteLine(name + \" is out of mana!\");\n        }\n    }\n    \n    public void Fly()\n    {\n        Console.WriteLine(name + \" soars through the air with magic!\");\n    }\n    \n    public void Defend()\n    {\n        Console.WriteLine(name + \" creates a magical shield!\");\n    }\n}\n\nclass Fighter : IGameCharacter\n{\n    private string name;\n    private int stamina;\n    \n    public Fighter(string name)\n    {\n        this.name = name;\n        this.stamina = 100;\n    }\n    \n    public void MeleeAttack()\n    {\n        if (stamina >= 10)\n        {\n            Console.WriteLine(name + \" swings sword with great force!\");\n            stamina -= 10;\n        }\n        else\n        {\n            Console.WriteLine(name + \" is too tired to attack!\");\n        }\n    }\n    \n    public void CastSpell()\n    {\n        throw new NotSupportedException(\"Fighter cannot cast spells!\");\n    }\n    \n    public void Fly()\n    {\n        throw new NotSupportedException(\"Fighter cannot fly!\");\n    }\n    \n    public void Defend()\n    {\n        Console.WriteLine(name + \" raises shield to block incoming attacks!\");\n    }\n}",
+          "detected_violation_type": "LSP",
+          "detection_success": false,
+          "ground_truth": "ISP",
+          "api_call_success": true,
+          "errors": [],
+          "processing_time_seconds": 74.83,
+          "status": "completed",
+          "workflow": "diff_eval_v7_without_structural",
+          "total_iterations": 5,
+          "selection_method": "ranking_llm",
+          "structural_analysis_enabled": false
+        },
+        {
+          "is_detected": true,
+          "violation_type": "LSP",
+          "explanation": "LSP: VinylPlayer violates LSP by throwing an exception in SkipTrack(), breaking the contract of the IMusicPlayer interface.",
+          "all_checks": [
+            {
+              "violation_type": "SRP",
+              "is_detected": true,
+              "detailed_explanation": "The CDPlayer and VinylPlayer classes violate SRP because they handle both playback logic and track information retrieval."
+            },
+            {
+              "violation_type": "OCP",
+              "is_detected": true,
+              "detailed_explanation": "The IMusicPlayer interface and its implementing classes (CDPlayer, VinylPlayer) violate the Open/Closed Principle because they are not closed for modification but open for extension."
+            },
+            {
+              "violation_type": "LSP",
+              "is_detected": true,
+              "detailed_explanation": "The VinylPlayer class violates the LSP because it throws a NotSupportedException when the SkipTrack() method is called, which breaks the contract defined by the IMusicPlayer interface."
+            },
+            {
+              "violation_type": "ISP",
+              "is_detected": true,
+              "detailed_explanation": "The IMusicPlayer interface in the original code violates the Interface Segregation Principle because it defines multiple methods that not all implementing classes need."
+            },
+            {
+              "violation_type": "DIP",
+              "is_detected": true,
+              "detailed_explanation": "The MediaPlayerController class in the original code violates the Dependency Inversion Principle because it directly depends on the concrete CDPlayer class rather than an abstraction."
+            }
+          ],
+          "example_id": "ISP_2",
+          "description": "",
+          "level": "EASY",
+          "language": "CSHARP",
+          "input": "using System;\n\ninterface IMusicPlayer\n{\n    void Play();\n    void Pause();\n    void Stop();\n    void SkipTrack();\n    void Eject();\n}\n\nclass CDPlayer : IMusicPlayer\n{\n    private bool isPlaying = false;\n    private bool isPaused = false;\n    private string currentTrack = \"Track 1\";\n    \n    public void Play()\n    {\n        isPlaying = true;\n        isPaused = false;\n        Console.WriteLine(\"CD Player: Playing \" + currentTrack);\n    }\n    \n    public void Pause()\n    {\n        if (isPlaying)\n        {\n            isPaused = true;\n            isPlaying = false;\n            Console.WriteLine(\"CD Player: Paused\");\n        }\n    }\n    \n    public void Stop()\n    {\n        isPlaying = false;\n        isPaused = false;\n        Console.WriteLine(\"CD Player: Stopped\");\n    }\n    \n    public void SkipTrack()\n    {\n        Console.WriteLine(\"CD Player: Skipping to next track\");\n        currentTrack = \"Track \" + (int.Parse(currentTrack.Split(' ')[1]) + 1);\n    }\n    \n    public void Eject()\n    {\n        Stop();\n        Console.WriteLine(\"CD Player: CD ejected\");\n    }\n}\n\nclass VinylPlayer : IMusicPlayer\n{\n    private bool isPlaying = false;\n    private bool isPaused = false;\n    private string currentSong = \"Side A\";\n    \n    public void Play()\n    {\n        isPlaying = true;\n        isPaused = false;\n        Console.WriteLine(\"Vinyl Player: Playing \" + currentSong);\n    }\n    \n    public void Pause()\n    {\n        if (isPlaying)\n        {\n            isPaused = true;\n            isPlaying = false;\n            Console.WriteLine(\"Vinyl Player: Paused (needle lifted)\");\n        }\n    }\n    \n    public void Stop()\n    {\n        isPlaying = false;\n        isPaused = false;\n        Console.WriteLine(\"Vinyl Player: Stopped\");\n    }\n    \n    public void SkipTrack()\n    {\n        throw new NotSupportedException(\"Vinyl players cannot skip tracks - you must manually move the needle!\");\n    }\n   \n    public void Eject()\n    {\n        throw new NotSupportedException(\"Vinyl players don't eject - you must manually remove the record!\");\n    }\n}",
+          "detected_violation_type": "LSP",
+          "detection_success": false,
+          "ground_truth": "ISP",
+          "api_call_success": true,
+          "errors": [],
+          "processing_time_seconds": 97.95,
+          "status": "completed",
+          "workflow": "diff_eval_v7_without_structural",
+          "total_iterations": 5,
+          "selection_method": "ranking_llm",
+          "structural_analysis_enabled": false
+        },
+        {
+          "is_detected": true,
+          "violation_type": "ISP",
+          "explanation": "ISP: The IRestaurantWorker interface forces all implementing classes to implement methods that are not relevant to their specific responsibilities, leading to unnecessary method implementations.",
+          "all_checks": [
+            {
+              "violation_type": "SRP",
+              "is_detected": false,
+              "detailed_explanation": "The original code does not demonstrate an SRP violation. All classes (Chef, Waiter, Cleaner) implement the IRestaurantWorker interface and only perform their respective responsibilities."
+            },
+            {
+              "violation_type": "OCP",
+              "is_detected": true,
+              "detailed_explanation": "The IRestaurantWorker interface and its implementing classes (Chef, Waiter, Cleaner) violate the Open/Closed Principle because they are not closed for modification but open for extension."
+            },
+            {
+              "violation_type": "LSP",
+              "is_detected": true,
+              "detailed_explanation": "The Chef class violates the LSP because it implements the IRestaurantWorker interface but does not fulfill the contract for all methods."
+            },
+            {
+              "violation_type": "ISP",
+              "is_detected": true,
+              "detailed_explanation": "The IRestaurantWorker interface violates the Interface Segregation Principle because it defines three methods (CookFood(), ServeCustomers(), CleanTables()) that are not all required by every implementing class."
+            },
+            {
+              "violation_type": "DIP",
+              "is_detected": true,
+              "detailed_explanation": "The IRestaurantWorker interface and its implementing classes (Chef, Waiter, Cleaner) violate the Dependency Inversion Principle. The high-level classes are tightly coupled to the low-level interfaces and implement methods that do not align with their actual responsibilities."
+            }
+          ],
+          "example_id": "ISP_3",
+          "description": "",
+          "level": "EASY",
+          "language": "CSHARP",
+          "input": "using System;\n\ninterface IRestaurantWorker\n{\n    void CookFood();\n    void ServeCustomers();\n    void CleanTables();\n}\n\nclass Chef : IRestaurantWorker\n{\n    public void CookFood()\n    {\n        Console.WriteLine(\"Chef is cooking food.\");\n    }\n\n    public void ServeCustomers()\n    {\n        Console.WriteLine(\"Chef does not serve customers.\");\n    }\n\n    public void CleanTables()\n    {\n        Console.WriteLine(\"Chef does not clean tables.\");\n    }\n}\n\nclass Waiter : IRestaurantWorker\n{\n    public void CookFood()\n    {\n        Console.WriteLine(\"Waiter does not cook food.\");\n    }\n\n    public void ServeCustomers()\n    {\n        Console.WriteLine(\"Waiter is serving customers.\");\n    }\n\n    public void CleanTables()\n    {\n        Console.WriteLine(\"Waiter is cleaning tables.\");\n    }\n}\n\nclass Cleaner : IRestaurantWorker\n{\n    public void CookFood()\n    {\n        Console.WriteLine(\"Cleaner does not cook food.\");\n    }\n\n    public void ServeCustomers()\n    {\n        Console.WriteLine(\"Cleaner does not serve customers.\");\n    }\n\n    public void CleanTables()\n    {\n        Console.WriteLine(\"Cleaner is cleaning tables.\");\n    }\n}\n",
+          "detected_violation_type": "ISP",
+          "detection_success": true,
+          "ground_truth": "ISP",
+          "api_call_success": true,
+          "errors": [],
+          "processing_time_seconds": 65.18,
+          "status": "completed",
+          "workflow": "diff_eval_v7_without_structural",
+          "total_iterations": 5,
+          "selection_method": "ranking_llm",
+          "structural_analysis_enabled": false
+        },
+        {
+          "is_detected": true,
+          "violation_type": "LSP",
+          "explanation": "LSP: Car class violates LSP by throwing an exception in Fly() method, breaking the contract of the IVehicle interface",
+          "all_checks": [
+            {
+              "violation_type": "SRP",
+              "is_detected": true,
+              "detailed_explanation": "The Car and Plane classes in the original code violate SRP because they are responsible for both vehicle behavior (Start, Stop, Fly) and status representation (GetStatus). The GetStatus method introduces presentation logic that should belong to a separate layer, such as a display or UI class. By implementing GetStatus in the vehicle classes, they are handling both domain logic and presentation concerns, which is a clear SRP violation."
+            },
+            {
+              "violation_type": "OCP",
+              "is_detected": false,
+              "detailed_explanation": "The original code does not violate OCP because the IVehicle interface is already designed to allow for new vehicle types to be added without modifying existing code. The Fly method is part of the interface, and the Car class implements it with a NotSupportedException, which is an acceptable way to handle non-supported functionality. There is no existing code that needs to be altered to accommodate new vehicle types, and the interface provides a clear extension point."
+            },
+            {
+              "violation_type": "LSP",
+              "is_detected": true,
+              "detailed_explanation": "The Car class violates the LSP because it implements the Fly() method from the IVehicle interface, but throws a NotSupportedException instead of providing a valid implementation. This breaks the contract defined by the IVehicle interface, which expects all subclasses to support the Fly() method. The violation occurs in the Fly() method of the Car class."
+            },
+            {
+              "violation_type": "ISP",
+              "is_detected": true,
+              "detailed_explanation": "The IVehicle interface in the original code violates the Interface Segregation Principle because it defines a broad interface with three methods (Start(), Stop(), and Fly()), which forces all implementing classes to provide implementations for all methods. For example, the Car class is forced to implement the Fly() method, even though it cannot fly, resulting in a throw new NotSupportedException(). This creates unnecessary complexity and violates ISP by requiring classes to implement methods they do not need."
+            },
+            {
+              "violation_type": "DIP",
+              "is_detected": true,
+              "detailed_explanation": "The IVehicle interface and its implementing classes Car and Plane violate the Dependency Inversion Principle because the high-level classes (Car and Plane) are tightly coupled to their specific implementations. The Fly method in the Car class throws an exception, which is a concrete implementation detail, while the Plane class implements Fly directly. This creates a dependency on the specific behavior of Fly, which is not abstracted properly. The DIP violation is evident in the fact that the high-level classes are not using abstractions to depend on, but rather on concrete implementations of the Fly method."
+            }
+          ],
+          "example_id": "ISP_4",
+          "description": "",
+          "level": "EASY",
+          "language": "CSHARP",
+          "input": "using System;\n\ninterface IVehicle\n{\n    void Start();\n    void Stop();\n    void Fly();\n}\n\nclass Car : IVehicle\n{\n    public void Start()\n    {\n        Console.WriteLine(\"Car engine started\");\n    }\n    \n    public void Stop()\n    {\n        Console.WriteLine(\"Car stopped\");\n    }\n    \n    public void Fly()\n    {\n        throw new NotSupportedException(\"Car cannot fly\");\n    }\n}\n\nclass Plane : IVehicle\n{\n    public void Start()\n    {\n        Console.WriteLine(\"Plane engines started\");\n    }\n    \n    public void Stop()\n    {\n        Console.WriteLine(\"Plane stopped\");\n    }\n    \n    public void Fly()\n    {\n        Console.WriteLine(\"Plane is flying\");\n    }\n}",
+          "detected_violation_type": "LSP",
+          "detection_success": false,
+          "ground_truth": "ISP",
+          "api_call_success": true,
+          "errors": [],
+          "processing_time_seconds": 62.83,
+          "status": "completed",
+          "workflow": "diff_eval_v7_without_structural",
+          "total_iterations": 5,
+          "selection_method": "ranking_llm",
+          "structural_analysis_enabled": false
+        },
+        {
+          "is_detected": true,
+          "violation_type": "LSP",
+          "explanation": "LSP: Fighter class violates LSP by throwing NotSupportedException for CastSpell(), breaking the contract of the IGameCharacter interface.",
+          "all_checks": [
+            {
+              "violation_type": "SRP",
+              "is_detected": true,
+              "detailed_explanation": "The Fighter class in the original code violates SRP because it contains both game logic (methods like Attack(), Defend()) and display functionality (DisplayStats()). Similarly, the Mage class also violates SRP by handling both game mechanics (CastSpell(), UseItem()) and display logic (DisplayStats()). These classes are responsible for both behavior and presentation, which should be separated into different classes or layers."
+            },
+            {
+              "violation_type": "OCP",
+              "is_detected": true,
+              "detailed_explanation": "The Spider class violates OCP because the TakeDamage method is modified to handle amplified damage and pain screeching, which alters existing logic to accommodate new behavior. This change introduces new behavior without extending the class hierarchy or using a strategy pattern, thereby violating the Open/Closed Principle."
+            },
+            {
+              "violation_type": "LSP",
+              "is_detected": true,
+              "detailed_explanation": "The Fighter class violates the LSP because it throws a NotSupportedException for the CastSpell() method, which is part of the IGameCharacter interface. The IGameCharacter interface defines CastSpell() as a method that should be implemented by all subclasses, but the Fighter class does not support this method, breaking the contract and causing potential failures in polymorphic calls."
+            },
+            {
+              "violation_type": "ISP",
+              "is_detected": true,
+              "detailed_explanation": "The IEnemy interface in the original code violates the Interface Segregation Principle because it defines multiple methods that are not used by all implementing classes. For example, the Orc class implements methods like Fly(), Poison(), and SummonMinions(), which are not relevant to its behavior. Similarly, the Spider class implements methods like Poison() and Fly(), which are not applicable to its functionality. These unused methods force classes to implement unnecessary behavior, leading to a violation of ISP."
+            },
+            {
+              "violation_type": "DIP",
+              "is_detected": true,
+              "detailed_explanation": "The Fighter class violates DIP because it directly depends on a concrete implementation of a weapon (Sword) rather than an abstraction. The Fighter class uses a boolean flag 'hasWeapon' to determine weapon availability, which is a concrete dependency. This makes the Fighter class tightly coupled to the Sword class. In the original code, the Fighter class is not using an interface or abstract class for the weapon, which would allow it to depend on the abstraction rather than the concrete implementation. This tight coupling is a clear violation of the Dependency Inversion Principle."
+            }
+          ],
+          "example_id": "ISP_5",
+          "description": "",
+          "level": "HARD",
+          "language": "CSHARP",
+          "input": "using System;\n\ninterface IGameCharacter\n{\n    void MeleeAttack();\n    void CastSpell();\n    void Fly();\n    void Defend();\n}\n\ninterface IWeapon\n{\n    void Slash();\n    void Shoot();\n    void Enchant();\n    void Repair();\n}\n\ninterface IEnemy\n{\n    void Attack();\n    void Fly();\n    void Poison();\n    void SummonMinions();\n    void TakeDamage(int[] damageValues);\n}\n\nclass Mage : IGameCharacter\n{\n    private string name;\n    private int mana;\n    private int level;\n    \n    public Mage(string name, int level)\n    {\n        this.name = name;\n        this.mana = 100;\n        this.level = level;\n    }\n    \n    public void MeleeAttack()\n    {\n        throw new NotSupportedException(\"Mage cannot perform melee attacks!\");\n    }\n    \n    public void CastSpell()\n    {\n        if (mana < 10)\n        {\n            Console.WriteLine(name + \" is out of mana!\");\n            return;\n        }\n        \n        if (level >= 5 && mana >= 30)\n        {\n            Console.WriteLine(name + \" casts a powerful lightning storm!\");\n            mana -= 30;\n        }\n        else if (level >= 3 && mana >= 20)\n        {\n            Console.WriteLine(name + \" casts a fireball spell!\");\n            mana -= 20;\n        }\n        else if (mana >= 10)\n        {\n            Console.WriteLine(name + \" casts a basic magic missile!\");\n            mana -= 10;\n        }\n    }\n    \n    public void Fly()\n    {\n        if (level >= 2)\n        {\n            Console.WriteLine(name + \" soars through the air with magic!\");\n        }\n        else\n        {\n            Console.WriteLine(name + \" is too inexperienced to fly!\");\n        }\n    }\n    \n    public void Defend()\n    {\n        if (mana >= 15)\n        {\n            Console.WriteLine(name + \" creates a magical barrier!\");\n            mana -= 15;\n        }\n        else\n        {\n            Console.WriteLine(name + \" dodges awkwardly!\");\n        }\n    }\n}\n\nclass Fighter : IGameCharacter\n{\n    private string name;\n    private int stamina;\n    private bool hasWeapon;\n    \n    public Fighter(string name, bool hasWeapon)\n    {\n        this.name = name;\n        this.stamina = 100;\n        this.hasWeapon = hasWeapon;\n    }\n    \n    public void MeleeAttack()\n    {\n        if (stamina < 5)\n        {\n            Console.WriteLine(name + \" is too exhausted to fight!\");\n            return;\n        }\n        \n        if (hasWeapon)\n        {\n            if (stamina >= 20)\n            {\n                Console.WriteLine(name + \" performs a devastating combo attack!\");\n                stamina -= 20;\n            }\n            else if (stamina >= 10)\n            {\n                Console.WriteLine(name + \" swings weapon with force!\");\n                stamina -= 10;\n            }\n            else\n            {\n                Console.WriteLine(name + \" makes a weak weapon strike!\");\n                stamina -= 5;\n            }\n        }\n        else\n        {\n            if (stamina >= 15)\n            {\n                Console.WriteLine(name + \" throws a powerful punch!\");\n                stamina -= 15;\n            }\n            else\n            {\n                Console.WriteLine(name + \" throws a basic punch!\");\n                stamina -= 5;\n            }\n        }\n    }\n    \n    public void CastSpell()\n    {\n        throw new NotSupportedException(\"Fighter cannot cast spells!\");\n    }\n    \n    public void Fly()\n    {\n        throw new NotSupportedException(\"Fighter cannot fly!\");\n    }\n    \n    public void Defend()\n    {\n        if (hasWeapon && stamina >= 10)\n        {\n            Console.WriteLine(name + \" blocks with weapon!\");\n            stamina -= 10;\n        }\n        else if (stamina >= 5)\n        {\n            Console.WriteLine(name + \" raises arms to defend!\");\n            stamina -= 5;\n        }\n        else\n        {\n            Console.WriteLine(name + \" barely manages to dodge!\");\n        }\n    }\n}\n\nclass Sword : IWeapon\n{\n    private int sharpness;\n    private bool isMagic;\n    \n    public Sword(int sharpness, bool isMagic)\n    {\n        this.sharpness = sharpness;\n        this.isMagic = isMagic;\n    }\n    \n    public void Slash()\n    {\n        if (sharpness > 70)\n        {\n            Console.WriteLine(\"Sword cuts cleanly through the target!\");\n        }\n        else if (sharpness > 30)\n        {\n            Console.WriteLine(\"Sword makes a decent cut!\");\n        }\n        else\n        {\n            Console.WriteLine(\"Dull sword barely scratches the target!\");\n        }\n    }\n    \n    public void Shoot()\n    {\n        throw new NotSupportedException(\"Sword cannot shoot!\");\n    }\n    \n    public void Enchant()\n    {\n        if (isMagic)\n        {\n            Console.WriteLine(\"Magical sword glows with enhanced power!\");\n            sharpness += 10;\n        }\n        else\n        {\n            throw new NotSupportedException(\"Non-magic sword cannot be enchanted!\");\n        }\n    }\n    \n    public void Repair()\n    {\n        if (sharpness < 100)\n        {\n            sharpness = Math.Min(100, sharpness + 25);\n            Console.WriteLine(\"Sword has been sharpened and repaired!\");\n        }\n        else\n        {\n            Console.WriteLine(\"Sword is already in perfect condition!\");\n        }\n    }\n}\n\nclass Bow : IWeapon\n{\n    private int arrows;\n    private int range;\n    \n    public Bow(int arrows, int range)\n    {\n        this.arrows = arrows;\n        this.range = range;\n    }\n    \n    public void Slash()\n    {\n        throw new NotSupportedException(\"Bow cannot slash!\");\n    }\n    \n    public void Shoot()\n    {\n        if (arrows <= 0)\n        {\n            Console.WriteLine(\"No arrows left to shoot!\");\n            return;\n        }\n        \n        if (range > 80)\n        {\n            Console.WriteLine(\"Long-range shot hits the distant target!\");\n        }\n        else if (range > 50)\n        {\n            Console.WriteLine(\"Medium-range shot finds its mark!\");\n        }\n        else\n        {\n            Console.WriteLine(\"Short-range shot barely reaches the target!\");\n        }\n        arrows--;\n    }\n    \n    public void Enchant()\n    {\n        throw new NotSupportedException(\"Regular bow cannot be enchanted!\");\n    }\n    \n    public void Repair()\n    {\n        if (range < 100)\n        {\n            range = Math.Min(100, range + 15);\n            Console.WriteLine(\"Bow string tightened and wood polished!\");\n        }\n        else\n        {\n            Console.WriteLine(\"Bow is in excellent condition!\");\n        }\n    }\n}\n\nclass Orc : IEnemy\n{\n    private string name;\n    private int health;\n    private int strength;\n    \n    public Orc(string name, int strength)\n    {\n        this.name = name;\n        this.health = 100;\n        this.strength = strength;\n    }\n    \n    public void Attack()\n    {\n        if (strength > 50)\n        {\n            Console.WriteLine(name + \" delivers a crushing blow!\");\n        }\n        else\n        {\n            Console.WriteLine(name + \" swings clumsily!\");\n        }\n    }\n    \n    public void Fly()\n    {\n        throw new NotSupportedException(\"Orc cannot fly!\");\n    }\n    \n    public void Poison()\n    {\n        throw new NotSupportedException(\"Orc cannot poison enemies!\");\n    }\n    \n    public void SummonMinions()\n    {\n        throw new NotSupportedException(\"Orc cannot summon minions!\");\n    }\n    \n    public void TakeDamage(int[] damageValues)\n    {\n        int totalDamage = 0;\n        for (int i = 0; i < damageValues.Length; i++)\n        {\n            if (damageValues[i] > 0)\n            {\n                totalDamage += damageValues[i];\n                if (damageValues[i] > 20)\n                {\n                    Console.WriteLine(name + \" staggers from heavy damage!\");\n                }\n            }\n        }\n        health -= totalDamage;\n        Console.WriteLine(name + \" takes \" + totalDamage + \" damage! Health: \" + health);\n        \n        if (health <= 0)\n        {\n            Console.WriteLine(name + \" has been defeated!\");\n        }\n    }\n}\n\nclass Dragon : IEnemy\n{\n    private string name;\n    private int health;\n    private int firepower;\n    private bool canFly;\n    \n    public Dragon(string name, int firepower)\n    {\n        this.name = name;\n        this.health = 200;\n        this.firepower = firepower;\n        this.canFly = true;\n    }\n    \n    public void Attack()\n    {\n        if (firepower > 80)\n        {\n            Console.WriteLine(name + \" breathes devastating flames!\");\n        }\n        else if (firepower > 50)\n        {\n            Console.WriteLine(name + \" breathes hot fire!\");\n        }\n        else\n        {\n            Console.WriteLine(name + \" breathes weak flames!\");\n        }\n    }\n    \n    public void Fly()\n    {\n        if (canFly && health > 50)\n        {\n            Console.WriteLine(name + \" soars majestically through the sky!\");\n        }\n        else if (health <= 50)\n        {\n            Console.WriteLine(name + \" is too wounded to fly!\");\n        }\n    }\n    \n    public void Poison()\n    {\n        throw new NotSupportedException(\"Dragon doesn't use poison!\");\n    }\n    \n    public void SummonMinions()\n    {\n        throw new NotSupportedException(\"Dragon doesn't summon minions!\");\n    }\n    \n    public void TakeDamage(int[] damageValues)\n    {\n        int totalDamage = 0;\n        int criticalHits = 0;\n        \n        for (int i = 0; i < damageValues.Length; i++)\n        {\n            if (damageValues[i] > 0)\n            {\n                int reducedDamage = Math.Max(1, damageValues[i] - 5);\n                totalDamage += reducedDamage;\n                \n                if (damageValues[i] > 30)\n                {\n                    criticalHits++;\n                    Console.WriteLine(name + \" roars in pain from critical hit!\");\n                }\n            }\n        }\n        \n        health -= totalDamage;\n        Console.WriteLine(name + \" takes \" + totalDamage + \" damage (\" + criticalHits + \" critical hits)! Health: \" + health);\n        \n        if (health <= 0)\n        {\n            Console.WriteLine(name + \" crashes to the ground, defeated!\");\n            canFly = false;\n        }\n    }\n}\n\nclass Spider : IEnemy\n{\n    private string name;\n    private int health;\n    private bool hasPoison;\n    \n    public Spider(string name)\n    {\n        this.name = name;\n        this.health = 50;\n        this.hasPoison = true;\n    }\n    \n    public void Attack()\n    {\n        Console.WriteLine(name + \" bites with venomous fangs!\");\n    }\n    \n    public void Fly()\n    {\n        throw new NotSupportedException(\"Spider cannot fly!\");\n    }\n    \n    public void Poison()\n    {\n        if (hasPoison)\n        {\n            Console.WriteLine(name + \" injects deadly venom!\");\n        }\n        else\n        {\n            Console.WriteLine(name + \" has no poison left!\");\n        }\n    }\n    \n    public void SummonMinions()\n    {\n        throw new NotSupportedException(\"Spider cannot summon minions!\");\n    }\n    \n    public void TakeDamage(int[] damageValues)\n    {\n        int totalDamage = 0;\n        foreach (int damage in damageValues)\n        {\n            if (damage > 0)\n            {\n                int amplifiedDamage = damage + (damage / 2);\n                totalDamage += amplifiedDamage;\n                \n                if (damage > 10)\n                {\n                    Console.WriteLine(name + \" screeches in pain!\");\n                }\n            }\n        }\n        \n        health -= totalDamage;\n        Console.WriteLine(name + \" takes \" + totalDamage + \" damage! Health: \" + health);\n        \n        if (health <= 0)\n        {\n            Console.WriteLine(name + \" curls up and dies!\");\n        }\n    }\n}\n",
+          "detected_violation_type": "LSP",
+          "detection_success": false,
+          "ground_truth": "ISP",
+          "api_call_success": true,
+          "errors": [],
+          "processing_time_seconds": 236.33,
+          "status": "completed",
+          "workflow": "diff_eval_v7_without_structural",
+          "total_iterations": 5,
+          "selection_method": "ranking_llm",
+          "structural_analysis_enabled": false
+        }
+      ],
+      "count": 5
+    },
+    "DIP": {
+      "results": [
+        {
+          "is_detected": true,
+          "violation_type": "DIP",
+          "explanation": "DIP: EmailService directly depends on the concrete MySQLDatabase class, violating the Dependency Inversion Principle by creating tight coupling.",
+          "all_checks": [
+            {
+              "violation_type": "SRP",
+              "is_detected": true,
+              "detailed_explanation": "The EmailService class violates SRP because it handles both database operations and email sending logic."
+            },
+            {
+              "violation_type": "OCP",
+              "is_detected": true,
+              "detailed_explanation": "The EmailService class violates OCP because it is tightly coupled to the MySQLDatabase class, making it rigid to changes."
+            },
+            {
+              "violation_type": "LSP",
+              "is_detected": false,
+              "detailed_explanation": "The original code does not exhibit an LSP violation because there is no inheritance or subtype relationship."
+            },
+            {
+              "violation_type": "ISP",
+              "is_detected": true,
+              "detailed_explanation": "The MySQLDatabase class violates the ISP because it implements a fat interface that includes methods not needed by the EmailService class."
+            },
+            {
+              "violation_type": "DIP",
+              "is_detected": true,
+              "detailed_explanation": "The EmailService class violates the DIP because it directly depends on the concrete MySQLDatabase class, creating tight coupling."
+            }
+          ],
+          "example_id": "DIP_1",
+          "description": "",
+          "level": "EASY",
+          "language": "JAVA",
+          "input": "public class MySQLDatabase {\n    public void connect() {\n        System.out.println(\"Connected to MySQL\");\n    }\n    \n    public String getUserEmail(int userId) {\n        return \"user\" + userId + \"@example.com\";\n    }\n}\n\npublic class EmailService {\n    private MySQLDatabase database;\n    \n    public EmailService() {\n        this.database = new MySQLDatabase();\n    }\n    \n    public void sendEmail(int userId, String message) {\n        database.connect();\n        String email = database.getUserEmail(userId);\n        System.out.println(\"Sending email to \" + email + \": \" + message);\n    }\n}",
+          "detected_violation_type": "DIP",
+          "detection_success": true,
+          "ground_truth": "DIP",
+          "api_call_success": true,
+          "errors": [],
+          "processing_time_seconds": 51.35,
+          "status": "completed",
+          "workflow": "diff_eval_v7_without_structural",
+          "total_iterations": 5,
+          "selection_method": "ranking_llm",
+          "structural_analysis_enabled": false
+        },
+        {
+          "is_detected": true,
+          "violation_type": "DIP",
+          "explanation": "DIP: EmailService directly depends on MySQLDatabase, a concrete class, violating the Dependency Inversion Principle.",
+          "all_checks": [
+            {
+              "violation_type": "SRP",
+              "is_detected": true,
+              "detailed_explanation": "The MySQLDatabase class violates SRP because it handles both database connection and data retrieval responsibilities."
+            },
+            {
+              "violation_type": "OCP",
+              "is_detected": true,
+              "detailed_explanation": "The EmailService class violates OCP because it directly depends on MySQLDatabase, making it difficult to add new database types without modifying the class."
+            },
+            {
+              "violation_type": "LSP",
+              "is_detected": false,
+              "detailed_explanation": "The original code does not contain any inheritance or subtype relationships, so the LSP does not apply."
+            },
+            {
+              "violation_type": "ISP",
+              "is_detected": true,
+              "detailed_explanation": "The MySQLDatabase class violates ISP because it implements a fat interface that includes the get_user_email() method, which is not used by the EmailService class."
+            },
+            {
+              "violation_type": "DIP",
+              "is_detected": true,
+              "detailed_explanation": "The EmailService class violates DIP because it directly depends on MySQLDatabase, a concrete implementation, rather than an abstraction."
+            }
+          ],
+          "example_id": "DIP_2",
+          "description": "",
+          "level": "EASY",
+          "language": "PYTHON",
+          "input": "class MySQLDatabase:\n    def connect(self):\n        print(\"Connected to MySQL\")\n    \n    def get_user_email(self, user_id):\n        return f\"user{user_id}@example.com\"\n\nclass EmailService:\n    def **init**(self):\n        self.database = MySQLDatabase()\n    \n    def send_email(self, user_id, message):\n        self.database.connect()\n        email = self.database.get_user_email(user_id)\n        print(f\"Sending email to {email}: {message}\")",
+          "detected_violation_type": "DIP",
+          "detection_success": true,
+          "ground_truth": "DIP",
+          "api_call_success": true,
+          "errors": [],
+          "processing_time_seconds": 46.21,
+          "status": "completed",
+          "workflow": "diff_eval_v7_without_structural",
+          "total_iterations": 5,
+          "selection_method": "ranking_llm",
+          "structural_analysis_enabled": false
+        },
+        {
+          "is_detected": true,
+          "violation_type": "DIP",
+          "explanation": "DIP: EmailService directly depends on the concrete MySQLDatabase class, violating the Dependency Inversion Principle by not depending on abstractions.",
+          "all_checks": [
+            {
+              "violation_type": "SRP",
+              "is_detected": true,
+              "detailed_explanation": "The EmailService class violates SRP because it is responsible for both sending emails and validating email formats. The sendEmail() method handles the sending of emails, while the isValidEmail() method, which was added in the modified code, introduces email validation logic. In the original code, the responsibility of validating email format is not present, but the EmailService class is already handling the sending of emails. This suggests that the EmailService class is taking on multiple responsibilities, which violates the Single Responsibility Principle."
+            },
+            {
+              "violation_type": "OCP",
+              "is_detected": true,
+              "detailed_explanation": "The EmailService class violates OCP because it is tightly coupled to the MySQLDatabase class. The sendEmail() method directly uses the MySQLDatabase instance, and if a new database type (like PostgreSQL) is introduced, the EmailService class would need to be modified. This violates OCP by requiring changes to existing code instead of extending it with new polymorphic types."
+            },
+            {
+              "violation_type": "LSP",
+              "is_detected": false,
+              "detailed_explanation": "The original code does not contain any inheritance or polymorphic relationships, so the LSP does not apply. The original code only has a single concrete class MySQLDatabase with no subclasses or interfaces, and no polymorphic calls are made. Therefore, there is no violation of the LSP in the original code."
+            },
+            {
+              "violation_type": "ISP",
+              "is_detected": true,
+              "detailed_explanation": "The MySQLDatabase class in the original code violates the Interface Segregation Principle because it implements a fat interface that forces implementations to have unused methods. The original code does not use an interface, but if it were to be refactored into an interface, it would include both connect() and getUserEmail(), which are not needed by all implementations. The original code's structure suggests that a class like DataFetcher would only need the connect() method, but the presence of getUserEmail() in the interface would force it to implement that method, even though it is not used. This is a violation of ISP as the original code's structure would force implementations to have unused methods."
+            },
+            {
+              "violation_type": "DIP",
+              "is_detected": true,
+              "detailed_explanation": "The EmailService class violates DIP because it directly depends on the MySQLDatabase class. The EmailService is a high-level class that should depend on abstractions, not concrete implementations. Instead, it is tightly coupled to MySQLDatabase through the private val database = MySQLDatabase() line, making it difficult to switch implementations without modifying the EmailService class."
+            }
+          ],
+          "example_id": "DIP_3",
+          "description": "",
+          "level": "EASY",
+          "language": "KOTLIN",
+          "input": "class MySQLDatabase {\n    fun connect() {\n        println(\"Connected to MySQL\")\n    }\n    \n    fun getUserEmail(userId: Int): String {\n        return \"user$userId@example.com\"\n    }\n}\n\nclass EmailService {\n    private val database = MySQLDatabase()\n    \n    fun sendEmail(userId: Int, message: String) {\n        database.connect()\n        val email = database.getUserEmail(userId)\n        println(\"Sending email to $email: $message\")\n    }\n}",
+          "detected_violation_type": "DIP",
+          "detection_success": true,
+          "ground_truth": "DIP",
+          "api_call_success": true,
+          "errors": [],
+          "processing_time_seconds": 52.7,
+          "status": "completed",
+          "workflow": "diff_eval_v7_without_structural",
+          "total_iterations": 5,
+          "selection_method": "ranking_llm",
+          "structural_analysis_enabled": false
+        },
+        {
+          "is_detected": true,
+          "violation_type": "DIP",
+          "explanation": "DIP: EmailService directly depends on MySQLDatabase, violating the Dependency Inversion Principle by coupling to a concrete implementation.",
+          "all_checks": [
+            {
+              "violation_type": "SRP",
+              "is_detected": true,
+              "detailed_explanation": "The EmailService class violates SRP because it handles both email sending and user data retrieval."
+            },
+            {
+              "violation_type": "OCP",
+              "is_detected": true,
+              "detailed_explanation": "The EmailService class violates OCP because it is tightly coupled to the MySQLDatabase class."
+            },
+            {
+              "violation_type": "LSP",
+              "is_detected": false,
+              "detailed_explanation": "The original code does not contain any LSP violations."
+            },
+            {
+              "violation_type": "ISP",
+              "is_detected": true,
+              "detailed_explanation": "The MySQLDatabase class violates the Interface Segregation Principle because it implements a fat interface."
+            },
+            {
+              "violation_type": "DIP",
+              "is_detected": true,
+              "detailed_explanation": "The EmailService class violates the Dependency Inversion Principle in the original code because it directly depends on the MySQLDatabase class."
+            }
+          ],
+          "example_id": "DIP_4",
+          "description": "",
+          "level": "EASY",
+          "language": "C#",
+          "input": "public class MySQLDatabase\n{\n    public void Connect()\n    {\n        Console.WriteLine(\"Connected to MySQL\");\n    }\n    \n    public string GetUserEmail(int userId)\n    {\n        return $\"user{userId}@example.com\";\n    }\n}\n\npublic class EmailService\n{\n    private MySQLDatabase database;\n    \n    public EmailService()\n    {\n        database = new MySQLDatabase();\n    }\n    \n    public void SendEmail(int userId, string message)\n    {\n        database.Connect();\n        string email = database.GetUserEmail(userId);\n        Console.WriteLine($\"Sending email to {email}: {message}\");\n    }\n}",
+          "detected_violation_type": "DIP",
+          "detection_success": true,
+          "ground_truth": "DIP",
+          "api_call_success": true,
+          "errors": [],
+          "processing_time_seconds": 49.2,
+          "status": "completed",
+          "workflow": "diff_eval_v7_without_structural",
+          "total_iterations": 5,
+          "selection_method": "ranking_llm",
+          "structural_analysis_enabled": false
+        },
+        {
+          "is_detected": true,
+          "violation_type": "DIP",
+          "explanation": "DIP: EmailService directly depends on the concrete MySQLDatabase class, creating tight coupling and violating the Dependency Inversion Principle.",
+          "all_checks": [
+            {
+              "violation_type": "SRP",
+              "is_detected": true,
+              "detailed_explanation": "The MySQLDatabase class violates SRP because it handles both database connection management and business logic validation."
+            },
+            {
+              "violation_type": "OCP",
+              "is_detected": true,
+              "detailed_explanation": "The MySQLDatabase class violates the Open/Closed Principle because it is not closed for modification but open for extension."
+            },
+            {
+              "violation_type": "LSP",
+              "is_detected": false,
+              "detailed_explanation": "The original code does not exhibit an LSP violation because there is no inheritance or subtype relationship between classes."
+            },
+            {
+              "violation_type": "ISP",
+              "is_detected": true,
+              "detailed_explanation": "The MySQLDatabase class in the original code violates the Interface Segregation Principle because it implements a fat interface."
+            },
+            {
+              "violation_type": "DIP",
+              "is_detected": true,
+              "detailed_explanation": "The EmailService class violates the Dependency Inversion Principle in the original code."
+            }
+          ],
+          "example_id": "DIP_5",
+          "description": "",
+          "level": "MODERATE",
+          "language": "JAVA",
+          "input": "public class MySQLDatabase {\n    private String connectionString;\n    private boolean isConnected;\n    \n    public MySQLDatabase(String connectionString) {\n        this.connectionString = connectionString;\n        this.isConnected = false;\n    }\n    \n    public void connect() {\n        if (!isConnected) {\n            System.out.println(\"Connecting to MySQL with: \" + connectionString);\n            isConnected = true;\n        }\n    }\n    \n    public void disconnect() {\n        if (isConnected) {\n            System.out.println(\"Disconnecting from MySQL\");\n            isConnected = false;\n        }\n    }\n    \n    public String getUserEmail(int userId) {\n        if (!isConnected) {\n            throw new RuntimeException(\"Database not connected\");\n        }\n        return \"user\" + userId + \"@company.com\";\n    }\n    \n    public boolean validateUser(int userId) {\n        if (!isConnected) {\n            throw new RuntimeException(\"Database not connected\");\n        }\n        return userId > 0 && userId < 10000;\n    }\n}\n\npublic class EmailService {\n    private MySQLDatabase database;\n    private String smtpServer;\n    \n    public EmailService(String smtpServer) {\n        this.smtpServer = smtpServer;\n        this.database = new MySQLDatabase(\"jdbc:mysql://localhost:3306/users\");\n    }\n    \n    public void sendEmail(int userId, String subject, String message) {\n        database.connect();\n        \n        if (!database.validateUser(userId)) {\n            System.out.println(\"Invalid user ID: \" + userId);\n            return;\n        }\n        \n        String email = database.getUserEmail(userId);\n        System.out.println(\"Using SMTP server: \" + smtpServer);\n        System.out.println(\"Sending email to \" + email);\n        System.out.println(\"Subject: \" + subject);\n        System.out.println(\"Message: \" + message);\n        \n        database.disconnect();\n    }\n    \n    public void sendBulkEmails(int[] userIds, String subject, String message) {\n        database.connect();\n        \n        for (int userId : userIds) {\n            if (database.validateUser(userId)) {\n                String email = database.getUserEmail(userId);\n                System.out.println(\"Bulk email sent to: \" + email);\n            }\n        }\n        \n        database.disconnect();\n    }\n}",
+          "detected_violation_type": "DIP",
+          "detection_success": true,
+          "ground_truth": "DIP",
+          "api_call_success": true,
+          "errors": [],
+          "processing_time_seconds": 79.74,
+          "status": "completed",
+          "workflow": "diff_eval_v7_without_structural",
+          "total_iterations": 5,
+          "selection_method": "ranking_llm",
+          "structural_analysis_enabled": false
+        }
+      ],
+      "count": 5
+
+    }
+  }
+}

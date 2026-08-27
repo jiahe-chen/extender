@@ -1,0 +1,1441 @@
+strategy,run,example_id,level,language,actual,pred1,pred2,top1_correct,top2_correct,reciprocal_rank,correct_position,processing_time_s,workflow,detected_violation_type_raw,detection_success,detected_count_raw,loc,chars,tokens,gt_detected_anywhere
+single_agent,run_1,SRP_1,EASY,JAVA,SRP,SRP,OCP,True,True,1.0,1,4.32,single_agent,"SRP, OCP",True,,17.0,409.0,213.0,
+single_agent,run_1,SRP_2,EASY,JAVA,SRP,SRP,OCP,True,True,1.0,1,2.32,single_agent,"SRP, OCP",True,,19.0,534.0,248.0,
+single_agent,run_1,SRP_3,EASY,JAVA,SRP,SRP,OCP,True,True,1.0,1,2.7,single_agent,"SRP, OCP",True,,21.0,569.0,289.0,
+single_agent,run_1,SRP_4,EASY,JAVA,SRP,SRP,OCP,True,True,1.0,1,2.24,single_agent,"SRP, OCP",True,,17.0,416.0,219.0,
+single_agent,run_1,SRP_5,MODERATE,JAVA,SRP,SRP,DIP,True,True,1.0,1,2.76,single_agent,"SRP, DIP",True,,168.0,4688.0,2420.0,
+single_agent,run_1,SRP_6,MODERATE,JAVA,SRP,SRP,OCP,True,True,1.0,1,3.26,single_agent,"SRP, OCP",True,,256.0,7899.0,3817.0,
+single_agent,run_1,SRP_7,MODERATE,JAVA,SRP,SRP,DIP,True,True,1.0,1,3.17,single_agent,"SRP, DIP",True,,185.0,6117.0,3228.0,
+single_agent,run_1,SRP_8,MODERATE,JAVA,SRP,SRP,DIP,True,True,1.0,1,2.83,single_agent,"SRP, DIP",True,,124.0,4615.0,2130.0,
+single_agent,run_1,SRP_9,HARD,JAVA,SRP,SRP,DIP,True,True,1.0,1,3.83,single_agent,"SRP, DIP",True,,370.0,12738.0,6063.0,
+single_agent,run_1,SRP_10,HARD,JAVA,SRP,SRP,DIP,True,True,1.0,1,3.94,single_agent,"SRP, DIP",True,,337.0,13357.0,5797.0,
+single_agent,run_1,SRP_11,HARD,JAVA,SRP,SRP,OCP,True,True,1.0,1,4.31,single_agent,"SRP, OCP",True,,330.0,12494.0,5912.0,
+single_agent,run_1,SRP_12,HARD,JAVA,SRP,SRP,OCP,True,True,1.0,1,4.32,single_agent,"SRP, OCP",True,,388.0,16985.0,7852.0,
+single_agent,run_1,SRP_13,EASY,PYTHON,SRP,SRP,OCP,True,True,1.0,1,2.15,single_agent,"SRP, OCP",True,,10.0,286.0,144.0,
+single_agent,run_1,SRP_14,EASY,PYTHON,SRP,SRP,OCP,True,True,1.0,1,2.03,single_agent,"SRP, OCP",True,,11.0,423.0,186.0,
+single_agent,run_1,SRP_15,EASY,PYTHON,SRP,SRP,OCP,True,True,1.0,1,2.5,single_agent,"SRP, OCP",True,,13.0,390.0,203.0,
+single_agent,run_1,SRP_16,EASY,PYTHON,SRP,SRP,OCP,True,True,1.0,1,2.26,single_agent,"SRP, OCP",True,,10.0,303.0,155.0,
+single_agent,run_1,SRP_17,MODERATE,PYTHON,SRP,SRP,DIP,True,True,1.0,1,2.7,single_agent,"SRP, DIP",True,,120.0,4007.0,1994.0,
+single_agent,run_1,SRP_18,MODERATE,PYTHON,SRP,SRP,OCP,True,True,1.0,1,3.34,single_agent,"SRP, OCP",True,,195.0,7146.0,3315.0,
+single_agent,run_1,SRP_19,MODERATE,PYTHON,SRP,SRP,DIP,True,True,1.0,1,3.04,single_agent,"SRP, DIP",True,,167.0,5735.0,2857.0,
+single_agent,run_1,SRP_20,MODERATE,PYTHON,SRP,SRP,DIP,True,True,1.0,1,2.74,single_agent,"SRP, DIP",True,,89.0,3928.0,1733.0,
+single_agent,run_1,SRP_21,HARD,PYTHON,SRP,SRP,DIP,True,True,1.0,1,3.55,single_agent,"SRP, DIP",True,,254.0,10438.0,4740.0,
+single_agent,run_1,SRP_22,HARD,PYTHON,SRP,SRP,DIP,True,True,1.0,1,3.7,single_agent,"SRP, DIP",True,,300.0,12992.0,5954.0,
+single_agent,run_1,SRP_23,HARD,PYTHON,SRP,SRP,DIP,True,True,1.0,1,3.76,single_agent,"SRP, DIP",True,,248.0,11175.0,4923.0,
+single_agent,run_1,SRP_24,HARD,PYTHON,SRP,SRP,DIP,True,True,1.0,1,4.11,single_agent,"SRP, DIP",True,,329.0,14413.0,6230.0,
+single_agent,run_1,SRP_25,EASY,KOTLIN,SRP,SRP,OCP,True,True,1.0,1,2.06,single_agent,"SRP, OCP",True,,10.0,229.0,117.0,
+single_agent,run_1,SRP_26,EASY,KOTLIN,SRP,SRP,OCP,True,True,1.0,1,2.31,single_agent,"SRP, OCP",True,,10.0,305.0,142.0,
+single_agent,run_1,SRP_27,EASY,KOTLIN,SRP,SRP,OCP,True,True,1.0,1,2.13,single_agent,"SRP, OCP",True,,12.0,330.0,166.0,
+single_agent,run_1,SRP_28,EASY,KOTLIN,SRP,SRP,OCP,True,True,1.0,1,1.88,single_agent,"SRP, OCP",True,,10.0,267.0,135.0,
+single_agent,run_1,SRP_29,MODERATE,KOTLIN,SRP,SRP,DIP,True,True,1.0,1,2.77,single_agent,"SRP, DIP",True,,116.0,3523.0,1779.0,
+single_agent,run_1,SRP_30,MODERATE,KOTLIN,SRP,SRP,OCP,True,True,1.0,1,3.21,single_agent,"SRP, OCP",True,,179.0,6179.0,2878.0,
+single_agent,run_1,SRP_31,MODERATE,KOTLIN,SRP,SRP,OCP,True,True,1.0,1,3.02,single_agent,"SRP, OCP",True,,164.0,5372.0,2786.0,
+single_agent,run_1,SRP_32,MODERATE,KOTLIN,SRP,SRP,DIP,True,True,1.0,1,2.76,single_agent,"SRP, DIP",True,,102.0,3859.0,1732.0,
+single_agent,run_1,SRP_33,HARD,KOTLIN,SRP,SRP,DIP,True,True,1.0,1,3.75,single_agent,"SRP, DIP",True,,286.0,9834.0,4595.0,
+single_agent,run_1,SRP_34,HARD,KOTLIN,SRP,SRP,DIP,True,True,1.0,1,3.62,single_agent,"SRP, DIP",True,,260.0,10479.0,4530.0,
+single_agent,run_1,SRP_35,HARD,KOTLIN,SRP,SRP,DIP,True,True,1.0,1,3.68,single_agent,"SRP, DIP",True,,285.0,10237.0,4679.0,
+single_agent,run_1,SRP_36,HARD,KOTLIN,SRP,SRP,OCP,True,True,1.0,1,4.36,single_agent,"SRP, OCP",True,,361.0,14620.0,6873.0,
+single_agent,run_1,SRP_37,EASY,CSHARP,SRP,SRP,OCP,True,True,1.0,1,2.11,single_agent,"SRP, OCP",True,,21.0,428.0,230.0,
+single_agent,run_1,SRP_38,EASY,CSHARP,SRP,SRP,OCP,True,True,1.0,1,2.36,single_agent,"SRP, OCP",True,,23.0,539.0,252.0,
+single_agent,run_1,SRP_39,EASY,CSHARP,SRP,SRP,OCP,True,True,1.0,1,2.83,single_agent,"SRP, OCP",True,,25.0,577.0,293.0,
+single_agent,run_1,SRP_40,EASY,CSHARP,SRP,SRP,OCP,True,True,1.0,1,2.24,single_agent,"SRP, OCP",True,,21.0,421.0,223.0,
+single_agent,run_1,SRP_41,MODERATE,CSHARP,SRP,SRP,DIP,True,True,1.0,1,2.81,single_agent,"SRP, DIP",True,,184.0,4448.0,2313.0,
+single_agent,run_1,SRP_42,MODERATE,CSHARP,SRP,SRP,OCP,True,True,1.0,1,3.21,single_agent,"SRP, OCP",True,,289.0,7682.0,3840.0,
+single_agent,run_1,SRP_43,MODERATE,CSHARP,SRP,SRP,DIP,True,True,1.0,1,3.23,single_agent,"SRP, DIP",True,,218.0,5972.0,3084.0,
+single_agent,run_1,SRP_44,MODERATE,CSHARP,SRP,SRP,DIP,True,True,1.0,1,2.71,single_agent,"SRP, DIP",True,,149.0,4707.0,2163.0,
+single_agent,run_1,SRP_45,HARD,CSHARP,SRP,SRP,DIP,True,True,1.0,1,3.72,single_agent,"SRP, DIP",True,,395.0,12158.0,5727.0,
+single_agent,run_1,SRP_46,HARD,CSHARP,SRP,SRP,DIP,True,True,1.0,1,3.58,single_agent,"SRP, DIP",True,,384.0,13000.0,5631.0,
+single_agent,run_1,SRP_47,HARD,CSHARP,SRP,SRP,OCP,True,True,1.0,1,4.0,single_agent,"SRP, OCP",True,,387.0,13890.0,7213.0,
+single_agent,run_1,SRP_48,HARD,CSHARP,SRP,SRP,OCP,True,True,1.0,1,4.42,single_agent,"SRP, OCP",True,,465.0,16946.0,7834.0,
+single_agent,run_1,OCP_1,EASY,CSHARP,OCP,OCP,SRP,True,True,1.0,1,3.4,single_agent,"OCP, SRP",True,,72.0,1235.0,658.0,
+single_agent,run_1,OCP_2,EASY,CSHARP,OCP,OCP,SRP,True,True,1.0,1,3.06,single_agent,"OCP, SRP",True,,50.0,1300.0,597.0,
+single_agent,run_1,OCP_3,EASY,CSHARP,OCP,OCP,SRP,True,True,1.0,1,2.35,single_agent,"OCP, SRP",True,,49.0,1004.0,492.0,
+single_agent,run_1,OCP_4,EASY,CSHARP,OCP,OCP,SRP,True,True,1.0,1,3.01,single_agent,"OCP, SRP",True,,53.0,1479.0,777.0,
+single_agent,run_1,OCP_5,HARD,CSHARP,OCP,OCP,SRP,True,True,1.0,1,4.63,single_agent,"OCP, SRP",True,,459.0,15744.0,9227.0,
+single_agent,run_1,OCP_6,HARD,CSHARP,OCP,SRP,OCP,False,True,0.5,2,3.86,single_agent,"SRP, OCP",True,,269.0,8599.0,4781.0,
+single_agent,run_1,OCP_7,HARD,CSHARP,OCP,SRP,OCP,False,True,0.5,2,4.89,single_agent,"SRP, OCP",True,,415.0,16149.0,8664.0,
+single_agent,run_1,OCP_8,HARD,CSHARP,OCP,SRP,OCP,False,True,0.5,2,3.78,single_agent,"SRP, OCP",True,,398.0,15864.0,8381.0,
+single_agent,run_1,OCP_9,MODERATE,CSHARP,OCP,OCP,SRP,True,True,1.0,1,3.65,single_agent,"OCP, SRP",True,,208.0,5450.0,3451.0,
+single_agent,run_1,OCP_10,MODERATE,CSHARP,OCP,SRP,OCP,False,True,0.5,2,2.9,single_agent,"SRP, OCP",True,,112.0,2563.0,1508.0,
+single_agent,run_1,OCP_11,MODERATE,CSHARP,OCP,SRP,OCP,False,True,0.5,2,3.75,single_agent,"SRP, OCP",True,,305.0,9205.0,5469.0,
+single_agent,run_1,OCP_12,MODERATE,CSHARP,OCP,SRP,OCP,False,True,0.5,2,3.51,single_agent,"SRP, OCP",True,,216.0,10058.0,5025.0,
+single_agent,run_1,OCP_13,EASY,JAVA,OCP,OCP,SRP,True,True,1.0,1,3.19,single_agent,"OCP, SRP",True,,57.0,1210.0,640.0,
+single_agent,run_1,OCP_14,EASY,JAVA,OCP,OCP,SRP,True,True,1.0,1,3.11,single_agent,"OCP, SRP",True,,44.0,1316.0,642.0,
+single_agent,run_1,OCP_15,EASY,JAVA,OCP,OCP,SRP,True,True,1.0,1,3.69,single_agent,"OCP, SRP",True,,38.0,901.0,452.0,
+single_agent,run_1,OCP_16,EASY,JAVA,OCP,OCP,SRP,True,True,1.0,1,2.78,single_agent,"OCP, SRP",True,,32.0,1218.0,606.0,
+single_agent,run_1,OCP_17,HARD,JAVA,OCP,OCP,SRP,True,True,1.0,1,4.22,single_agent,"OCP, SRP",True,,433.0,15628.0,9381.0,
+single_agent,run_1,OCP_18,HARD,JAVA,OCP,SRP,OCP,False,True,0.5,2,3.7,single_agent,"SRP, OCP",True,,210.0,7259.0,4132.0,
+single_agent,run_1,OCP_19,HARD,JAVA,OCP,SRP,OCP,False,True,0.5,2,4.55,single_agent,"SRP, OCP",True,,414.0,14950.0,8460.0,
+single_agent,run_1,OCP_20,HARD,JAVA,OCP,SRP,OCP,False,True,0.5,2,4.07,single_agent,"SRP, OCP",True,,359.0,15513.0,8675.0,
+single_agent,run_1,OCP_21,MODERATE,JAVA,OCP,OCP,SRP,True,True,1.0,1,3.59,single_agent,"OCP, SRP",True,,177.0,5124.0,3060.0,
+single_agent,run_1,OCP_22,MODERATE,JAVA,OCP,OCP,SRP,True,True,1.0,1,2.99,single_agent,"OCP, SRP",True,,105.0,2985.0,1659.0,
+single_agent,run_1,OCP_23,MODERATE,JAVA,OCP,SRP,OCP,False,True,0.5,2,4.73,single_agent,"SRP, OCP",True,,281.0,9648.0,5774.0,
+single_agent,run_1,OCP_24,MODERATE,JAVA,OCP,SRP,OCP,False,True,0.5,2,3.48,single_agent,"SRP, OCP",True,,215.0,8998.0,4856.0,
+single_agent,run_1,OCP_25,EASY,KOTLIN,OCP,SRP,OCP,False,True,0.5,2,3.1,single_agent,"SRP, OCP",True,,32.0,715.0,374.0,
+single_agent,run_1,OCP_26,EASY,KOTLIN,OCP,OCP,SRP,True,True,1.0,1,2.83,single_agent,"OCP, SRP",True,,27.0,642.0,308.0,
+single_agent,run_1,OCP_27,EASY,KOTLIN,OCP,OCP,SRP,True,True,1.0,1,2.68,single_agent,"OCP, SRP",True,,29.0,561.0,301.0,
+single_agent,run_1,OCP_28,EASY,KOTLIN,OCP,OCP,SRP,True,True,1.0,1,3.05,single_agent,"OCP, SRP",True,,26.0,722.0,380.0,
+single_agent,run_1,OCP_29,HARD,KOTLIN,OCP,SRP,OCP,False,True,0.5,2,3.89,single_agent,"SRP, OCP",True,,291.0,10683.0,6438.0,
+single_agent,run_1,OCP_30,HARD,KOTLIN,OCP,SRP,OCP,False,True,0.5,2,3.39,single_agent,"SRP, OCP",True,,159.0,5979.0,3282.0,
+single_agent,run_1,OCP_31,HARD,KOTLIN,OCP,SRP,OCP,False,True,0.5,2,4.23,single_agent,"SRP, OCP",True,,320.0,11420.0,6112.0,
+single_agent,run_1,OCP_32,HARD,KOTLIN,OCP,SRP,OCP,False,True,0.5,2,4.18,single_agent,"SRP, OCP",True,,287.0,11644.0,6260.0,
+single_agent,run_1,OCP_33,MODERATE,KOTLIN,OCP,SRP,OCP,False,True,0.5,2,3.03,single_agent,"SRP, OCP",True,,122.0,4047.0,2434.0,
+single_agent,run_1,OCP_34,MODERATE,KOTLIN,OCP,SRP,OCP,False,True,0.5,2,2.85,single_agent,"SRP, OCP",True,,85.0,2208.0,1264.0,
+single_agent,run_1,OCP_35,MODERATE,KOTLIN,OCP,SRP,OCP,False,True,0.5,2,4.54,single_agent,"SRP, OCP",True,,218.0,6916.0,3936.0,
+single_agent,run_1,OCP_36,MODERATE,KOTLIN,OCP,SRP,OCP,False,True,0.5,2,3.69,single_agent,"SRP, OCP",True,,185.0,6791.0,3716.0,
+single_agent,run_1,OCP_37,EASY,PYTHON,OCP,OCP,SRP,True,True,1.0,1,2.43,single_agent,"OCP, SRP",True,,41.0,935.0,467.0,
+single_agent,run_1,OCP_38,EASY,PYTHON,OCP,OCP,SRP,True,True,1.0,1,2.65,single_agent,"OCP, SRP",True,,39.0,1028.0,468.0,
+single_agent,run_1,OCP_39,EASY,PYTHON,OCP,OCP,SRP,True,True,1.0,1,2.37,single_agent,"OCP, SRP",True,,47.0,901.0,494.0,
+single_agent,run_1,OCP_40,EASY,PYTHON,OCP,OCP,SRP,True,True,1.0,1,2.71,single_agent,"OCP, SRP",True,,43.0,1098.0,592.0,
+single_agent,run_1,OCP_41,HARD,PYTHON,OCP,OCP,SRP,True,True,1.0,1,4.11,single_agent,"OCP, SRP",True,,375.0,11987.0,6790.0,
+single_agent,run_1,OCP_42,HARD,PYTHON,OCP,SRP,OCP,False,True,0.5,2,3.6,single_agent,"SRP, OCP",True,,263.0,7531.0,4585.0,
+single_agent,run_1,OCP_43,HARD,PYTHON,OCP,SRP,OCP,False,True,0.5,2,4.16,single_agent,"SRP, OCP",True,,317.0,11169.0,6055.0,
+single_agent,run_1,OCP_44,HARD,PYTHON,OCP,SRP,OCP,False,True,0.5,2,4.17,single_agent,"SRP, OCP",True,,281.0,11552.0,5996.0,
+single_agent,run_1,OCP_45,MODERATE,PYTHON,OCP,OCP,SRP,True,True,1.0,1,3.15,single_agent,"OCP, SRP",True,,155.0,4320.0,2508.0,
+single_agent,run_1,OCP_46,MODERATE,PYTHON,OCP,SRP,OCP,False,True,0.5,2,2.93,single_agent,"SRP, OCP",True,,104.0,2760.0,1515.0,
+single_agent,run_1,OCP_47,MODERATE,PYTHON,OCP,SRP,OCP,False,True,0.5,2,3.99,single_agent,"SRP, OCP",True,,217.0,7648.0,4115.0,
+single_agent,run_1,OCP_48,MODERATE,PYTHON,OCP,SRP,OCP,False,True,0.5,2,3.63,single_agent,"SRP, OCP",True,,184.0,7522.0,3806.0,
+single_agent,run_1,LSP_1,EASY,JAVA,LSP,LSP,OCP,True,True,1.0,1,2.82,single_agent,"LSP, OCP",True,,25.0,481.0,235.0,
+single_agent,run_1,LSP_2,EASY,PYTHON,LSP,LSP,OCP,True,True,1.0,1,2.61,single_agent,"LSP, OCP",True,,15.0,309.0,153.0,
+single_agent,run_1,LSP_3,EASY,KOTLIN,LSP,LSP,OCP,True,True,1.0,1,2.68,single_agent,"LSP, OCP",True,,23.0,384.0,204.0,
+single_agent,run_1,LSP_4,EASY,C#,LSP,LSP,OCP,True,True,1.0,1,2.86,single_agent,"LSP, OCP",True,,31.0,473.0,239.0,
+single_agent,run_1,LSP_5,MODERATE,JAVA,LSP,LSP,OCP,True,True,1.0,1,3.25,single_agent,"LSP, OCP",True,,92.0,2277.0,1119.0,
+single_agent,run_1,LSP_6,MODERATE,PYTHON,LSP,LSP,SRP,True,True,1.0,1,2.77,single_agent,"LSP, SRP",True,,67.0,1841.0,878.0,
+single_agent,run_1,LSP_7,MODERATE,KOTLIN,LSP,LSP,OCP,True,True,1.0,1,3.29,single_agent,"LSP, OCP",True,,58.0,1632.0,785.0,
+single_agent,run_1,LSP_8,MODERATE,C#,LSP,LSP,SRP,True,True,1.0,1,2.84,single_agent,"LSP, SRP",True,,93.0,2189.0,1056.0,
+single_agent,run_1,LSP_9,HARD,JAVA,LSP,SRP,OCP,False,False,0.0,0,3.27,single_agent,"SRP, OCP",False,,233.0,7879.0,3663.0,
+single_agent,run_1,LSP_10,HARD,PYTHON,LSP,SRP,OCP,False,False,0.0,0,3.21,single_agent,"SRP, OCP",False,,230.0,7392.0,3479.0,
+single_agent,run_1,LSP_11,HARD,KOTLIN,LSP,SRP,OCP,False,False,0.0,0,3.09,single_agent,"SRP, OCP",False,,176.0,5663.0,2676.0,
+single_agent,run_1,LSP_12,HARD,C#,LSP,SRP,OCP,False,False,0.0,0,3.26,single_agent,"SRP, OCP",False,,253.0,7497.0,3586.0,
+single_agent,run_1,LSP_13,EASY,JAVA,LSP,LSP,OCP,True,True,1.0,1,2.42,single_agent,"LSP, OCP",True,,22.0,679.0,289.0,
+single_agent,run_1,LSP_14,EASY,PYTHON,LSP,LSP,OCP,True,True,1.0,1,2.84,single_agent,"LSP, OCP",True,,13.0,488.0,203.0,
+single_agent,run_1,LSP_15,EASY,KOTLIN,LSP,LSP,OCP,True,True,1.0,1,2.78,single_agent,"LSP, OCP",True,,20.0,582.0,254.0,
+single_agent,run_1,LSP_16,EASY,C#,LSP,LSP,OCP,True,True,1.0,1,2.57,single_agent,"LSP, OCP",True,,28.0,681.0,301.0,
+single_agent,run_1,LSP_17,MODERATE,JAVA,LSP,SRP,OCP,False,False,0.0,0,2.55,single_agent,"SRP, OCP",False,,111.0,3277.0,1454.0,
+single_agent,run_1,LSP_18,MODERATE,PYTHON,LSP,SRP,OCP,False,False,0.0,0,2.5,single_agent,"SRP, OCP",False,,75.0,2418.0,1033.0,
+single_agent,run_1,LSP_19,MODERATE,KOTLIN,LSP,SRP,OCP,False,False,0.0,0,2.71,single_agent,"SRP, OCP",False,,64.0,2369.0,991.0,
+single_agent,run_1,LSP_20,MODERATE,C#,LSP,SRP,OCP,False,False,0.0,0,2.48,single_agent,"SRP, OCP",False,,126.0,3434.0,1484.0,
+single_agent,run_1,LSP_21,HARD,JAVA,LSP,SRP,OCP,False,False,0.0,0,3.62,single_agent,"SRP, OCP",False,,226.0,8552.0,3655.0,
+single_agent,run_1,LSP_22,HARD,PYTHON,LSP,SRP,OCP,False,False,0.0,0,3.41,single_agent,"SRP, OCP",False,,192.0,7006.0,3128.0,
+single_agent,run_1,LSP_23,HARD,KOTLIN,LSP,SRP,OCP,False,False,0.0,0,3.5,single_agent,"SRP, OCP",False,,249.0,8058.0,3670.0,
+single_agent,run_1,LSP_24,HARD,C#,LSP,SRP,OCP,False,False,0.0,0,3.66,single_agent,"SRP, OCP",False,,324.0,9455.0,4436.0,
+single_agent,run_1,LSP_25,EASY,JAVA,LSP,SRP,OCP,False,False,0.0,0,2.31,single_agent,"SRP, OCP",False,,35.0,952.0,357.0,
+single_agent,run_1,LSP_26,EASY,PYTHON,LSP,SRP,DIP,False,False,0.0,0,2.34,single_agent,"SRP, DIP",False,,24.0,762.0,338.0,
+single_agent,run_1,LSP_27,EASY,KOTLIN,LSP,OCP,SRP,False,False,0.0,0,3.06,single_agent,"OCP, SRP",False,,30.0,890.0,356.0,
+single_agent,run_1,LSP_28,EASY,C#,LSP,SRP,OCP,False,False,0.0,0,2.57,single_agent,"SRP, OCP",False,,42.0,1123.0,437.0,
+single_agent,run_1,LSP_29,MODERATE,JAVA,LSP,SRP,DIP,False,False,0.0,0,2.9,single_agent,"SRP, DIP",False,,114.0,3897.0,1877.0,
+single_agent,run_1,LSP_30,MODERATE,PYTHON,LSP,SRP,OCP,False,False,0.0,0,2.76,single_agent,"SRP, OCP",False,,88.0,3657.0,1616.0,
+single_agent,run_1,LSP_31,MODERATE,KOTLIN,LSP,SRP,OCP,False,False,0.0,0,2.93,single_agent,"SRP, OCP",False,,94.0,3503.0,1587.0,
+single_agent,run_1,LSP_32,MODERATE,C#,LSP,SRP,OCP,False,False,0.0,0,2.85,single_agent,"SRP, OCP",False,,145.0,4433.0,2032.0,
+single_agent,run_1,LSP_33,HARD,JAVA,LSP,SRP,OCP,False,False,0.0,0,3.5,single_agent,"SRP, OCP",False,,277.0,9959.0,4555.0,
+single_agent,run_1,LSP_34,HARD,PYTHON,LSP,SRP,OCP,False,False,0.0,0,3.77,single_agent,"SRP, OCP",False,,317.0,12199.0,6145.0,
+single_agent,run_1,LSP_35,HARD,KOTLIN,LSP,SRP,OCP,False,False,0.0,0,3.47,single_agent,"SRP, OCP",False,,358.0,12785.0,6521.0,
+single_agent,run_1,LSP_36,HARD,C#,LSP,SRP,OCP,False,False,0.0,0,4.34,single_agent,"SRP, OCP",False,,458.0,14758.0,7551.0,
+single_agent,run_1,LSP_37,EASY,JAVA,LSP,LSP,OCP,True,True,1.0,1,2.9,single_agent,"LSP, OCP",True,,38.0,855.0,402.0,
+single_agent,run_1,LSP_38,EASY,PYTHON,LSP,LSP,SRP,True,True,1.0,1,3.17,single_agent,"LSP, SRP",True,,33.0,740.0,352.0,
+single_agent,run_1,LSP_39,EASY,KOTLIN,LSP,LSP,SRP,True,True,1.0,1,2.53,single_agent,"LSP, SRP",True,,24.0,577.0,261.0,
+single_agent,run_1,LSP_40,EASY,C#,LSP,LSP,OCP,True,True,1.0,1,2.76,single_agent,"LSP, OCP",True,,42.0,864.0,402.0,
+single_agent,run_1,LSP_41,MODERATE,JAVA,LSP,SRP,LSP,False,True,0.5,2,2.8,single_agent,"SRP, LSP",True,,91.0,2684.0,1272.0,
+single_agent,run_1,LSP_42,MODERATE,PYTHON,LSP,SRP,OCP,False,False,0.0,0,2.58,single_agent,"SRP, OCP",False,,82.0,2262.0,1091.0,
+single_agent,run_1,LSP_43,MODERATE,KOTLIN,LSP,SRP,LSP,False,True,0.5,2,2.63,single_agent,"SRP, LSP",True,,71.0,2017.0,953.0,
+single_agent,run_1,LSP_44,MODERATE,C#,LSP,SRP,LSP,False,True,0.5,2,2.74,single_agent,"SRP, LSP",True,,112.0,2849.0,1351.0,
+single_agent,run_1,LSP_45,HARD,JAVA,LSP,SRP,LSP,False,True,0.5,2,3.44,single_agent,"SRP, LSP",True,,212.0,8668.0,3460.0,
+single_agent,run_1,LSP_46,HARD,PYTHON,LSP,SRP,OCP,False,False,0.0,0,2.97,single_agent,"SRP, OCP",False,,164.0,6480.0,2762.0,
+single_agent,run_1,LSP_47,HARD,KOTLIN,LSP,SRP,OCP,False,False,0.0,0,3.51,single_agent,"SRP, OCP",False,,202.0,6693.0,2810.0,
+single_agent,run_1,LSP_48,HARD,C#,LSP,SRP,OCP,False,False,0.0,0,3.41,single_agent,"SRP, OCP",False,,272.0,8682.0,3750.0,
+single_agent,run_1,ISP_1,EASY,CSHARP,ISP,LSP,ISP,False,True,0.5,2,2.98,single_agent,"LSP, ISP",True,,89.0,1737.0,992.0,
+single_agent,run_1,ISP_2,EASY,CSHARP,ISP,LSP,OCP,False,False,0.0,0,3.3,single_agent,"LSP, OCP",False,,94.0,2055.0,1103.0,
+single_agent,run_1,ISP_3,EASY,CSHARP,ISP,SRP,ISP,False,True,0.5,2,3.3,single_agent,"SRP, ISP",True,,63.0,1140.0,543.0,
+single_agent,run_1,ISP_4,EASY,CSHARP,ISP,LSP,ISP,False,True,0.5,2,2.83,single_agent,"LSP, ISP",True,,44.0,664.0,366.0,
+single_agent,run_1,ISP_5,HARD,CSHARP,ISP,SRP,OCP,False,False,0.0,0,3.37,single_agent,"SRP, OCP",False,,511.0,11621.0,7097.0,
+single_agent,run_1,ISP_6,HARD,CSHARP,ISP,SRP,OCP,False,False,0.0,0,4.24,single_agent,"SRP, OCP",False,,461.0,10993.0,5406.0,
+single_agent,run_1,ISP_7,HARD,CSHARP,ISP,SRP,OCP,False,False,0.0,0,4.17,single_agent,"SRP, OCP",False,,660.0,17075.0,9827.0,
+single_agent,run_1,ISP_8,HARD,CSHARP,ISP,SRP,OCP,False,False,0.0,0,4.52,single_agent,"SRP, OCP",False,,473.0,10539.0,5699.0,
+single_agent,run_1,ISP_9,MODERATE,CSHARP,ISP,SRP,OCP,False,False,0.0,0,3.21,single_agent,"SRP, OCP",False,,287.0,6316.0,3915.0,
+single_agent,run_1,ISP_10,MODERATE,CSHARP,ISP,SRP,OCP,False,False,0.0,0,4.13,single_agent,"SRP, OCP",False,,259.0,6299.0,3322.0,
+single_agent,run_1,ISP_11,MODERATE,CSHARP,ISP,SRP,ISP,False,True,0.5,2,3.46,single_agent,"SRP, ISP",True,,149.0,2838.0,1436.0,
+single_agent,run_1,ISP_12,MODERATE,CSHARP,ISP,SRP,OCP,False,False,0.0,0,3.64,single_agent,"SRP, OCP",False,,291.0,5721.0,3266.0,
+single_agent,run_1,ISP_13,EASY,JAVA,ISP,LSP,ISP,False,True,0.5,2,3.0,single_agent,"LSP, ISP",True,,77.0,1793.0,969.0,
+single_agent,run_1,ISP_14,EASY,JAVA,ISP,LSP,OCP,False,False,0.0,0,3.03,single_agent,"LSP, OCP",False,,88.0,2183.0,1128.0,
+single_agent,run_1,ISP_15,EASY,JAVA,ISP,ISP,SRP,True,True,1.0,1,2.88,single_agent,"ISP, SRP",True,,48.0,1121.0,519.0,
+single_agent,run_1,ISP_16,EASY,JAVA,ISP,LSP,ISP,False,True,0.5,2,2.89,single_agent,"LSP, ISP",True,,34.0,654.0,347.0,
+single_agent,run_1,ISP_17,HARD,JAVA,ISP,SRP,OCP,False,False,0.0,0,3.58,single_agent,"SRP, OCP",False,,416.0,11445.0,6583.0,
+single_agent,run_1,ISP_18,HARD,JAVA,ISP,SRP,OCP,False,False,0.0,0,3.89,single_agent,"SRP, OCP",False,,436.0,11756.0,5569.0,
+single_agent,run_1,ISP_19,HARD,JAVA,ISP,SRP,OCP,False,False,0.0,0,4.05,single_agent,"SRP, OCP",False,,482.0,15667.0,8472.0,
+single_agent,run_1,ISP_20,HARD,JAVA,ISP,SRP,OCP,False,False,0.0,0,3.79,single_agent,"SRP, OCP",False,,351.0,10063.0,5037.0,
+single_agent,run_1,ISP_21,MODERATE,JAVA,ISP,SRP,OCP,False,False,0.0,0,3.19,single_agent,"SRP, OCP",False,,226.0,6148.0,3575.0,
+single_agent,run_1,ISP_22,MODERATE,JAVA,ISP,SRP,OCP,False,False,0.0,0,3.06,single_agent,"SRP, OCP",False,,246.0,6487.0,3167.0,
+single_agent,run_1,ISP_23,MODERATE,JAVA,ISP,SRP,OCP,False,False,0.0,0,3.12,single_agent,"SRP, OCP",False,,113.0,2744.0,1328.0,
+single_agent,run_1,ISP_24,MODERATE,JAVA,ISP,SRP,OCP,False,False,0.0,0,3.29,single_agent,"SRP, OCP",False,,220.0,5450.0,2911.0,
+single_agent,run_1,ISP_25,EASY,KOTLIN,ISP,LSP,ISP,False,True,0.5,2,2.67,single_agent,"LSP, ISP",True,,57.0,1378.0,739.0,
+single_agent,run_1,ISP_26,EASY,KOTLIN,ISP,LSP,SRP,False,False,0.0,0,2.98,single_agent,"LSP, SRP",False,,79.0,1898.0,995.0,
+single_agent,run_1,ISP_27,EASY,KOTLIN,ISP,SRP,ISP,False,True,0.5,2,2.94,single_agent,"SRP, ISP",True,,47.0,988.0,470.0,
+single_agent,run_1,ISP_28,EASY,KOTLIN,ISP,LSP,ISP,False,True,0.5,2,2.78,single_agent,"LSP, ISP",True,,34.0,571.0,316.0,
+single_agent,run_1,ISP_29,HARD,KOTLIN,ISP,SRP,OCP,False,False,0.0,0,3.31,single_agent,"SRP, OCP",False,,331.0,9289.0,5382.0,
+single_agent,run_1,ISP_30,HARD,KOTLIN,ISP,SRP,LSP,False,False,0.0,0,3.68,single_agent,"SRP, LSP",False,,371.0,9990.0,4704.0,
+single_agent,run_1,ISP_31,HARD,KOTLIN,ISP,SRP,OCP,False,False,0.0,0,4.96,single_agent,"SRP, OCP",False,,482.0,13948.0,7669.0,
+single_agent,run_1,ISP_32,HARD,KOTLIN,ISP,SRP,OCP,False,False,0.0,0,4.37,single_agent,"SRP, OCP",False,,310.0,8522.0,4214.0,
+single_agent,run_1,ISP_33,MODERATE,KOTLIN,ISP,SRP,OCP,False,False,0.0,0,3.07,single_agent,"SRP, OCP",False,,189.0,5219.0,3224.0,
+single_agent,run_1,ISP_34,MODERATE,KOTLIN,ISP,SRP,LSP,False,False,0.0,0,3.35,single_agent,"SRP, LSP",False,,209.0,5799.0,2919.0,
+single_agent,run_1,ISP_35,MODERATE,KOTLIN,ISP,SRP,ISP,False,True,0.5,2,3.05,single_agent,"SRP, ISP",True,,112.0,2448.0,1209.0,
+single_agent,run_1,ISP_36,MODERATE,KOTLIN,ISP,SRP,OCP,False,False,0.0,0,3.56,single_agent,"SRP, OCP",False,,166.0,4233.0,2183.0,
+single_agent,run_1,ISP_37,EASY,PYTHON,ISP,LSP,ISP,False,True,0.5,2,2.99,single_agent,"LSP, ISP",True,,60.0,1516.0,813.0,
+single_agent,run_1,ISP_38,EASY,PYTHON,ISP,LSP,ISP,False,True,0.5,2,3.26,single_agent,"LSP, ISP",True,,81.0,2099.0,1084.0,
+single_agent,run_1,ISP_39,EASY,PYTHON,ISP,SRP,ISP,False,True,0.5,2,2.6,single_agent,"SRP, ISP",True,,44.0,1045.0,489.0,
+single_agent,run_1,ISP_40,EASY,PYTHON,ISP,LSP,ISP,False,True,0.5,2,2.56,single_agent,"LSP, ISP",True,,34.0,629.0,338.0,
+single_agent,run_1,ISP_41,HARD,PYTHON,ISP,SRP,OCP,False,False,0.0,0,3.47,single_agent,"SRP, OCP",False,,328.0,9475.0,5333.0,
+single_agent,run_1,ISP_42,HARD,PYTHON,ISP,SRP,LSP,False,False,0.0,0,3.97,single_agent,"SRP, LSP",False,,357.0,10176.0,4912.0,
+single_agent,run_1,ISP_43,HARD,PYTHON,ISP,SRP,OCP,False,False,0.0,0,4.01,single_agent,"SRP, OCP",False,,425.0,13827.0,7304.0,
+single_agent,run_1,ISP_44,HARD,PYTHON,ISP,SRP,OCP,False,False,0.0,0,3.49,single_agent,"SRP, OCP",False,,295.0,8947.0,4213.0,
+single_agent,run_1,ISP_45,MODERATE,PYTHON,ISP,SRP,OCP,False,False,0.0,0,3.17,single_agent,"SRP, OCP",False,,178.0,5209.0,2982.0,
+single_agent,run_1,ISP_46,MODERATE,PYTHON,ISP,SRP,LSP,False,False,0.0,0,3.3,single_agent,"SRP, LSP",False,,202.0,5849.0,2932.0,
+single_agent,run_1,ISP_47,MODERATE,PYTHON,ISP,SRP,OCP,False,False,0.0,0,3.17,single_agent,"SRP, OCP",False,,108.0,2625.0,1283.0,
+single_agent,run_1,ISP_48,MODERATE,PYTHON,ISP,SRP,OCP,False,False,0.0,0,2.8,single_agent,"SRP, OCP",False,,177.0,4573.0,2372.0,
+single_agent,run_1,DIP_1,EASY,JAVA,DIP,SRP,DIP,False,True,0.5,2,2.26,single_agent,"SRP, DIP",True,,23.0,593.0,285.0,
+single_agent,run_1,DIP_2,EASY,PYTHON,DIP,SRP,DIP,False,True,0.5,2,2.28,single_agent,"SRP, DIP",True,,15.0,441.0,206.0,
+single_agent,run_1,DIP_3,EASY,KOTLIN,DIP,SRP,DIP,False,True,0.5,2,2.24,single_agent,"SRP, DIP",True,,19.0,441.0,213.0,
+single_agent,run_1,DIP_4,EASY,C#,DIP,SRP,DIP,False,True,0.5,2,2.17,single_agent,"SRP, DIP",True,,29.0,591.0,284.0,
+single_agent,run_1,DIP_5,MODERATE,JAVA,DIP,SRP,DIP,False,True,0.5,2,2.48,single_agent,"SRP, DIP",True,,77.0,2288.0,1171.0,
+single_agent,run_1,DIP_6,MODERATE,PYTHON,DIP,SRP,DIP,False,True,0.5,2,2.53,single_agent,"SRP, DIP",True,,54.0,1844.0,909.0,
+single_agent,run_1,DIP_7,MODERATE,KOTLIN,DIP,SRP,DIP,False,True,0.5,2,2.46,single_agent,"SRP, DIP",True,,65.0,1828.0,969.0,
+single_agent,run_1,DIP_8,MODERATE,C#,DIP,SRP,DIP,False,True,0.5,2,2.63,single_agent,"SRP, DIP",True,,94.0,2405.0,1244.0,
+single_agent,run_1,DIP_9,HARD,JAVA,DIP,SRP,OCP,False,False,0.0,0,3.62,single_agent,"SRP, OCP",False,,229.0,8620.0,4693.0,
+single_agent,run_1,DIP_10,HARD,PYTHON,DIP,SRP,DIP,False,True,0.5,2,3.05,single_agent,"SRP, DIP",True,,167.0,6938.0,3394.0,
+single_agent,run_1,DIP_11,HARD,KOTLIN,DIP,SRP,OCP,False,False,0.0,0,4.22,single_agent,"SRP, OCP",False,,191.0,6234.0,3373.0,
+single_agent,run_1,DIP_12,HARD,C#,DIP,SRP,DIP,False,True,0.5,2,3.71,single_agent,"SRP, DIP",True,,267.0,8372.0,4441.0,
+single_agent,run_1,DIP_13,EASY,JAVA,DIP,SRP,DIP,False,True,0.5,2,2.88,single_agent,"SRP, DIP",True,,18.0,465.0,192.0,
+single_agent,run_1,DIP_14,EASY,PYTHON,DIP,SRP,DIP,False,True,0.5,2,2.25,single_agent,"SRP, DIP",True,,11.0,331.0,131.0,
+single_agent,run_1,DIP_15,EASY,KOTLIN,DIP,SRP,DIP,False,True,0.5,2,2.61,single_agent,"SRP, DIP",True,,14.0,344.0,141.0,
+single_agent,run_1,DIP_16,EASY,C#,DIP,SRP,DIP,False,True,0.5,2,2.64,single_agent,"SRP, DIP",True,,23.0,463.0,195.0,
+single_agent,run_1,DIP_17,MODERATE,JAVA,DIP,SRP,OCP,False,False,0.0,0,2.37,single_agent,"SRP, OCP",False,,56.0,1872.0,912.0,
+single_agent,run_1,DIP_18,MODERATE,PYTHON,DIP,SRP,OCP,False,False,0.0,0,2.58,single_agent,"SRP, OCP",False,,41.0,1407.0,684.0,
+single_agent,run_1,DIP_19,MODERATE,KOTLIN,DIP,SRP,OCP,False,False,0.0,0,2.38,single_agent,"SRP, OCP",False,,53.0,1600.0,843.0,
+single_agent,run_1,DIP_20,MODERATE,C#,DIP,SRP,OCP,False,False,0.0,0,2.61,single_agent,"SRP, OCP",False,,76.0,1950.0,974.0,
+single_agent,run_1,DIP_21,HARD,JAVA,DIP,SRP,OCP,False,False,0.0,0,2.77,single_agent,"SRP, OCP",False,,207.0,8107.0,3556.0,
+single_agent,run_1,DIP_22,HARD,PYTHON,DIP,SRP,OCP,False,False,0.0,0,3.33,single_agent,"SRP, OCP",False,,145.0,6645.0,2878.0,
+single_agent,run_1,DIP_23,HARD,KOTLIN,DIP,SRP,OCP,False,False,0.0,0,2.91,single_agent,"SRP, OCP",False,,155.0,6261.0,2625.0,
+single_agent,run_1,DIP_24,HARD,C#,DIP,SRP,OCP,False,False,0.0,0,3.03,single_agent,"SRP, OCP",False,,235.0,8702.0,4296.0,
+single_agent,run_1,DIP_25,EASY,JAVA,DIP,SRP,DIP,False,True,0.5,2,2.37,single_agent,"SRP, DIP",True,,22.0,583.0,307.0,
+single_agent,run_1,DIP_26,EASY,PYTHON,DIP,SRP,DIP,False,True,0.5,2,2.08,single_agent,"SRP, DIP",True,,18.0,496.0,284.0,
+single_agent,run_1,DIP_27,EASY,KOTLIN,DIP,SRP,DIP,False,True,0.5,2,2.35,single_agent,"SRP, DIP",True,,22.0,531.0,290.0,
+single_agent,run_1,DIP_28,EASY,C#,DIP,SRP,DIP,False,True,0.5,2,2.35,single_agent,"SRP, DIP",True,,31.0,595.0,341.0,
+single_agent,run_1,DIP_29,MODERATE,JAVA,DIP,SRP,OCP,False,False,0.0,0,2.77,single_agent,"SRP, OCP",False,,72.0,2198.0,1201.0,
+single_agent,run_1,DIP_30,MODERATE,PYTHON,DIP,SRP,OCP,False,False,0.0,0,2.78,single_agent,"SRP, OCP",False,,58.0,1890.0,1093.0,
+single_agent,run_1,DIP_31,MODERATE,KOTLIN,DIP,SRP,DIP,False,True,0.5,2,2.66,single_agent,"SRP, DIP",True,,63.0,1838.0,1012.0,
+single_agent,run_1,DIP_32,MODERATE,C#,DIP,SRP,OCP,False,False,0.0,0,2.85,single_agent,"SRP, OCP",False,,91.0,2078.0,1203.0,
+single_agent,run_1,DIP_33,HARD,JAVA,DIP,SRP,OCP,False,False,0.0,0,3.23,single_agent,"SRP, OCP",False,,164.0,6576.0,2928.0,
+single_agent,run_1,DIP_34,HARD,PYTHON,DIP,SRP,OCP,False,False,0.0,0,3.04,single_agent,"SRP, OCP",False,,152.0,6056.0,2750.0,
+single_agent,run_1,DIP_35,HARD,KOTLIN,DIP,SRP,OCP,False,False,0.0,0,3.45,single_agent,"SRP, OCP",False,,244.0,8715.0,4214.0,
+single_agent,run_1,DIP_36,HARD,C#,DIP,SRP,OCP,False,False,0.0,0,3.76,single_agent,"SRP, OCP",False,,305.0,10242.0,5016.0,
+single_agent,run_1,DIP_37,EASY,JAVA,DIP,SRP,DIP,False,True,0.5,2,2.28,single_agent,"SRP, DIP",True,,17.0,479.0,199.0,
+single_agent,run_1,DIP_38,EASY,PYTHON,DIP,SRP,DIP,False,True,0.5,2,2.66,single_agent,"SRP, DIP",True,,10.0,344.0,134.0,
+single_agent,run_1,DIP_39,EASY,KOTLIN,DIP,SRP,DIP,False,True,0.5,2,2.73,single_agent,"SRP, DIP",True,,13.0,348.0,141.0,
+single_agent,run_1,DIP_40,EASY,C#,DIP,SRP,DIP,False,True,0.5,2,2.24,single_agent,"SRP, DIP",True,,22.0,479.0,201.0,
+single_agent,run_1,DIP_41,MODERATE,JAVA,DIP,SRP,OCP,False,False,0.0,0,2.63,single_agent,"SRP, OCP",False,,62.0,2021.0,806.0,
+single_agent,run_1,DIP_42,MODERATE,PYTHON,DIP,SRP,OCP,False,False,0.0,0,3.0,single_agent,"SRP, OCP",False,,40.0,1586.0,588.0,
+single_agent,run_1,DIP_43,MODERATE,KOTLIN,DIP,SRP,DIP,False,True,0.5,2,2.66,single_agent,"SRP, DIP",True,,46.0,1576.0,614.0,
+single_agent,run_1,DIP_44,MODERATE,C#,DIP,SRP,OCP,False,False,0.0,0,2.52,single_agent,"SRP, OCP",False,,77.0,2059.0,842.0,
+single_agent,run_1,DIP_45,HARD,JAVA,DIP,SRP,OCP,False,False,0.0,0,3.2,single_agent,"SRP, OCP",False,,138.0,5087.0,2157.0,
+single_agent,run_1,DIP_46,HARD,PYTHON,DIP,SRP,OCP,False,False,0.0,0,2.91,single_agent,"SRP, OCP",False,,106.0,4499.0,1862.0,
+single_agent,run_1,DIP_47,HARD,KOTLIN,DIP,SRP,OCP,False,False,0.0,0,2.72,single_agent,"SRP, OCP",False,,127.0,4464.0,1921.0,
+single_agent,run_1,DIP_48,HARD,C#,DIP,SRP,OCP,False,False,0.0,0,2.91,single_agent,"SRP, OCP",False,,170.0,5347.0,2296.0,
+single_agent,run_2,SRP_1,EASY,JAVA,SRP,SRP,,True,True,1.0,1,3.38,single_agent,SRP,True,,17.0,409.0,213.0,
+single_agent,run_2,SRP_2,EASY,JAVA,SRP,SRP,,True,True,1.0,1,1.31,single_agent,SRP,True,,19.0,534.0,248.0,
+single_agent,run_2,SRP_3,EASY,JAVA,SRP,SRP,,True,True,1.0,1,1.55,single_agent,SRP,True,,21.0,569.0,289.0,
+single_agent,run_2,SRP_4,EASY,JAVA,SRP,SRP,,True,True,1.0,1,1.43,single_agent,SRP,True,,17.0,416.0,219.0,
+single_agent,run_2,SRP_5,MODERATE,JAVA,SRP,SRP,,True,True,1.0,1,1.97,single_agent,SRP,True,,168.0,4688.0,2420.0,
+single_agent,run_2,SRP_6,MODERATE,JAVA,SRP,SRP,,True,True,1.0,1,2.25,single_agent,SRP,True,,256.0,7899.0,3817.0,
+single_agent,run_2,SRP_7,MODERATE,JAVA,SRP,SRP,,True,True,1.0,1,2.28,single_agent,SRP,True,,185.0,6117.0,3228.0,
+single_agent,run_2,SRP_8,MODERATE,JAVA,SRP,SRP,,True,True,1.0,1,1.94,single_agent,SRP,True,,124.0,4615.0,2130.0,
+single_agent,run_2,SRP_9,HARD,JAVA,SRP,SRP,,True,True,1.0,1,2.88,single_agent,SRP,True,,370.0,12738.0,6063.0,
+single_agent,run_2,SRP_10,HARD,JAVA,SRP,SRP,,True,True,1.0,1,2.97,single_agent,SRP,True,,337.0,13357.0,5797.0,
+single_agent,run_2,SRP_11,HARD,JAVA,SRP,SRP,,True,True,1.0,1,2.94,single_agent,SRP,True,,330.0,12494.0,5912.0,
+single_agent,run_2,SRP_12,HARD,JAVA,SRP,SRP,,True,True,1.0,1,3.36,single_agent,SRP,True,,388.0,16985.0,7852.0,
+single_agent,run_2,SRP_13,EASY,PYTHON,SRP,SRP,,True,True,1.0,1,1.15,single_agent,SRP,True,,10.0,286.0,144.0,
+single_agent,run_2,SRP_14,EASY,PYTHON,SRP,SRP,,True,True,1.0,1,1.32,single_agent,SRP,True,,11.0,423.0,186.0,
+single_agent,run_2,SRP_15,EASY,PYTHON,SRP,SRP,,True,True,1.0,1,1.26,single_agent,SRP,True,,13.0,390.0,203.0,
+single_agent,run_2,SRP_16,EASY,PYTHON,SRP,SRP,,True,True,1.0,1,1.5,single_agent,SRP,True,,10.0,303.0,155.0,
+single_agent,run_2,SRP_17,MODERATE,PYTHON,SRP,SRP,,True,True,1.0,1,1.91,single_agent,SRP,True,,120.0,4007.0,1994.0,
+single_agent,run_2,SRP_18,MODERATE,PYTHON,SRP,SRP,,True,True,1.0,1,2.29,single_agent,SRP,True,,195.0,7146.0,3315.0,
+single_agent,run_2,SRP_19,MODERATE,PYTHON,SRP,SRP,,True,True,1.0,1,2.42,single_agent,SRP,True,,167.0,5735.0,2857.0,
+single_agent,run_2,SRP_20,MODERATE,PYTHON,SRP,SRP,,True,True,1.0,1,1.96,single_agent,SRP,True,,89.0,3928.0,1733.0,
+single_agent,run_2,SRP_21,HARD,PYTHON,SRP,SRP,,True,True,1.0,1,2.67,single_agent,SRP,True,,254.0,10438.0,4740.0,
+single_agent,run_2,SRP_22,HARD,PYTHON,SRP,SRP,,True,True,1.0,1,2.95,single_agent,SRP,True,,300.0,12992.0,5954.0,
+single_agent,run_2,SRP_23,HARD,PYTHON,SRP,SRP,,True,True,1.0,1,2.98,single_agent,SRP,True,,248.0,11175.0,4923.0,
+single_agent,run_2,SRP_24,HARD,PYTHON,SRP,SRP,,True,True,1.0,1,3.1,single_agent,SRP,True,,329.0,14413.0,6230.0,
+single_agent,run_2,SRP_25,EASY,KOTLIN,SRP,SRP,,True,True,1.0,1,1.32,single_agent,SRP,True,,10.0,229.0,117.0,
+single_agent,run_2,SRP_26,EASY,KOTLIN,SRP,SRP,,True,True,1.0,1,1.29,single_agent,SRP,True,,10.0,305.0,142.0,
+single_agent,run_2,SRP_27,EASY,KOTLIN,SRP,SRP,,True,True,1.0,1,1.29,single_agent,SRP,True,,12.0,330.0,166.0,
+single_agent,run_2,SRP_28,EASY,KOTLIN,SRP,SRP,,True,True,1.0,1,1.04,single_agent,SRP,True,,10.0,267.0,135.0,
+single_agent,run_2,SRP_29,MODERATE,KOTLIN,SRP,SRP,,True,True,1.0,1,1.89,single_agent,SRP,True,,116.0,3523.0,1779.0,
+single_agent,run_2,SRP_30,MODERATE,KOTLIN,SRP,SRP,,True,True,1.0,1,2.13,single_agent,SRP,True,,179.0,6179.0,2878.0,
+single_agent,run_2,SRP_31,MODERATE,KOTLIN,SRP,SRP,,True,True,1.0,1,2.18,single_agent,SRP,True,,164.0,5372.0,2786.0,
+single_agent,run_2,SRP_32,MODERATE,KOTLIN,SRP,SRP,,True,True,1.0,1,1.95,single_agent,SRP,True,,102.0,3859.0,1732.0,
+single_agent,run_2,SRP_33,HARD,KOTLIN,SRP,SRP,,True,True,1.0,1,2.69,single_agent,SRP,True,,286.0,9834.0,4595.0,
+single_agent,run_2,SRP_34,HARD,KOTLIN,SRP,SRP,,True,True,1.0,1,2.67,single_agent,SRP,True,,260.0,10479.0,4530.0,
+single_agent,run_2,SRP_35,HARD,KOTLIN,SRP,SRP,,True,True,1.0,1,2.78,single_agent,SRP,True,,285.0,10237.0,4679.0,
+single_agent,run_2,SRP_36,HARD,KOTLIN,SRP,SRP,,True,True,1.0,1,3.2,single_agent,SRP,True,,361.0,14620.0,6873.0,
+single_agent,run_2,SRP_37,EASY,CSHARP,SRP,SRP,,True,True,1.0,1,1.29,single_agent,SRP,True,,21.0,428.0,230.0,
+single_agent,run_2,SRP_38,EASY,CSHARP,SRP,SRP,,True,True,1.0,1,1.34,single_agent,SRP,True,,23.0,539.0,252.0,
+single_agent,run_2,SRP_39,EASY,CSHARP,SRP,SRP,,True,True,1.0,1,1.57,single_agent,SRP,True,,25.0,577.0,293.0,
+single_agent,run_2,SRP_40,EASY,CSHARP,SRP,SRP,,True,True,1.0,1,1.44,single_agent,SRP,True,,21.0,421.0,223.0,
+single_agent,run_2,SRP_41,MODERATE,CSHARP,SRP,SRP,,True,True,1.0,1,1.98,single_agent,SRP,True,,184.0,4448.0,2313.0,
+single_agent,run_2,SRP_42,MODERATE,CSHARP,SRP,SRP,,True,True,1.0,1,2.22,single_agent,SRP,True,,289.0,7682.0,3840.0,
+single_agent,run_2,SRP_43,MODERATE,CSHARP,SRP,SRP,,True,True,1.0,1,2.27,single_agent,SRP,True,,218.0,5972.0,3084.0,
+single_agent,run_2,SRP_44,MODERATE,CSHARP,SRP,SRP,,True,True,1.0,1,1.88,single_agent,SRP,True,,149.0,4707.0,2163.0,
+single_agent,run_2,SRP_45,HARD,CSHARP,SRP,SRP,,True,True,1.0,1,2.66,single_agent,SRP,True,,395.0,12158.0,5727.0,
+single_agent,run_2,SRP_46,HARD,CSHARP,SRP,SRP,,True,True,1.0,1,2.89,single_agent,SRP,True,,384.0,13000.0,5631.0,
+single_agent,run_2,SRP_47,HARD,CSHARP,SRP,SRP,,True,True,1.0,1,2.8,single_agent,SRP,True,,387.0,13890.0,7213.0,
+single_agent,run_2,SRP_48,HARD,CSHARP,SRP,SRP,,True,True,1.0,1,3.37,single_agent,SRP,True,,465.0,16946.0,7834.0,
+single_agent,run_2,OCP_1,EASY,CSHARP,OCP,OCP,,True,True,1.0,1,1.69,single_agent,OCP,True,,72.0,1235.0,658.0,
+single_agent,run_2,OCP_2,EASY,CSHARP,OCP,SRP,,False,False,0.0,0,1.62,single_agent,SRP,False,,50.0,1300.0,597.0,
+single_agent,run_2,OCP_3,EASY,CSHARP,OCP,SRP,,False,False,0.0,0,1.86,single_agent,SRP,False,,49.0,1004.0,492.0,
+single_agent,run_2,OCP_4,EASY,CSHARP,OCP,OCP,,True,True,1.0,1,1.94,single_agent,OCP,True,,53.0,1479.0,777.0,
+single_agent,run_2,OCP_5,HARD,CSHARP,OCP,SRP,,False,False,0.0,0,3.33,single_agent,SRP,False,,459.0,15744.0,9227.0,
+single_agent,run_2,OCP_6,HARD,CSHARP,OCP,SRP,,False,False,0.0,0,2.58,single_agent,SRP,False,,269.0,8599.0,4781.0,
+single_agent,run_2,OCP_7,HARD,CSHARP,OCP,SRP,,False,False,0.0,0,3.44,single_agent,SRP,False,,415.0,16149.0,8664.0,
+single_agent,run_2,OCP_8,HARD,CSHARP,OCP,SRP,,False,False,0.0,0,3.01,single_agent,SRP,False,,398.0,15864.0,8381.0,
+single_agent,run_2,OCP_9,MODERATE,CSHARP,OCP,OCP,,True,True,1.0,1,2.14,single_agent,OCP,True,,208.0,5450.0,3451.0,
+single_agent,run_2,OCP_10,MODERATE,CSHARP,OCP,SRP,,False,False,0.0,0,2.04,single_agent,SRP,False,,112.0,2563.0,1508.0,
+single_agent,run_2,OCP_11,MODERATE,CSHARP,OCP,SRP,,False,False,0.0,0,2.55,single_agent,SRP,False,,305.0,9205.0,5469.0,
+single_agent,run_2,OCP_12,MODERATE,CSHARP,OCP,SRP,,False,False,0.0,0,2.52,single_agent,SRP,False,,216.0,10058.0,5025.0,
+single_agent,run_2,OCP_13,EASY,JAVA,OCP,OCP,,True,True,1.0,1,1.68,single_agent,OCP,True,,57.0,1210.0,640.0,
+single_agent,run_2,OCP_14,EASY,JAVA,OCP,OCP,,True,True,1.0,1,2.12,single_agent,OCP,True,,44.0,1316.0,642.0,
+single_agent,run_2,OCP_15,EASY,JAVA,OCP,SRP,,False,False,0.0,0,1.67,single_agent,SRP,False,,38.0,901.0,452.0,
+single_agent,run_2,OCP_16,EASY,JAVA,OCP,OCP,,True,True,1.0,1,1.93,single_agent,OCP,True,,32.0,1218.0,606.0,
+single_agent,run_2,OCP_17,HARD,JAVA,OCP,SRP,,False,False,0.0,0,3.23,single_agent,SRP,False,,433.0,15628.0,9381.0,
+single_agent,run_2,OCP_18,HARD,JAVA,OCP,SRP,,False,False,0.0,0,2.69,single_agent,SRP,False,,210.0,7259.0,4132.0,
+single_agent,run_2,OCP_19,HARD,JAVA,OCP,SRP,,False,False,0.0,0,3.17,single_agent,SRP,False,,414.0,14950.0,8460.0,
+single_agent,run_2,OCP_20,HARD,JAVA,OCP,SRP,,False,False,0.0,0,3.34,single_agent,SRP,False,,359.0,15513.0,8675.0,
+single_agent,run_2,OCP_21,MODERATE,JAVA,OCP,SRP,,False,False,0.0,0,1.97,single_agent,SRP,False,,177.0,5124.0,3060.0,
+single_agent,run_2,OCP_22,MODERATE,JAVA,OCP,SRP,,False,False,0.0,0,1.92,single_agent,SRP,False,,105.0,2985.0,1659.0,
+single_agent,run_2,OCP_23,MODERATE,JAVA,OCP,SRP,,False,False,0.0,0,2.47,single_agent,SRP,False,,281.0,9648.0,5774.0,
+single_agent,run_2,OCP_24,MODERATE,JAVA,OCP,SRP,,False,False,0.0,0,2.53,single_agent,SRP,False,,215.0,8998.0,4856.0,
+single_agent,run_2,OCP_25,EASY,KOTLIN,OCP,SRP,,False,False,0.0,0,1.81,single_agent,SRP,False,,32.0,715.0,374.0,
+single_agent,run_2,OCP_26,EASY,KOTLIN,OCP,SRP,,False,False,0.0,0,1.62,single_agent,SRP,False,,27.0,642.0,308.0,
+single_agent,run_2,OCP_27,EASY,KOTLIN,OCP,SRP,,False,False,0.0,0,1.66,single_agent,SRP,False,,29.0,561.0,301.0,
+single_agent,run_2,OCP_28,EASY,KOTLIN,OCP,SRP,,False,False,0.0,0,1.46,single_agent,SRP,False,,26.0,722.0,380.0,
+single_agent,run_2,OCP_29,HARD,KOTLIN,OCP,SRP,,False,False,0.0,0,2.8,single_agent,SRP,False,,291.0,10683.0,6438.0,
+single_agent,run_2,OCP_30,HARD,KOTLIN,OCP,SRP,,False,False,0.0,0,2.28,single_agent,SRP,False,,159.0,5979.0,3282.0,
+single_agent,run_2,OCP_31,HARD,KOTLIN,OCP,SRP,,False,False,0.0,0,3.27,single_agent,SRP,False,,320.0,11420.0,6112.0,
+single_agent,run_2,OCP_32,HARD,KOTLIN,OCP,SRP,,False,False,0.0,0,2.95,single_agent,SRP,False,,287.0,11644.0,6260.0,
+single_agent,run_2,OCP_33,MODERATE,KOTLIN,OCP,SRP,,False,False,0.0,0,1.96,single_agent,SRP,False,,122.0,4047.0,2434.0,
+single_agent,run_2,OCP_34,MODERATE,KOTLIN,OCP,SRP,,False,False,0.0,0,2.01,single_agent,SRP,False,,85.0,2208.0,1264.0,
+single_agent,run_2,OCP_35,MODERATE,KOTLIN,OCP,SRP,,False,False,0.0,0,2.94,single_agent,SRP,False,,218.0,6916.0,3936.0,
+single_agent,run_2,OCP_36,MODERATE,KOTLIN,OCP,SRP,,False,False,0.0,0,2.23,single_agent,SRP,False,,185.0,6791.0,3716.0,
+single_agent,run_2,OCP_37,EASY,PYTHON,OCP,OCP,,True,True,1.0,1,1.56,single_agent,OCP,True,,41.0,935.0,467.0,
+single_agent,run_2,OCP_38,EASY,PYTHON,OCP,SRP,,False,False,0.0,0,1.65,single_agent,SRP,False,,39.0,1028.0,468.0,
+single_agent,run_2,OCP_39,EASY,PYTHON,OCP,OCP,,True,True,1.0,1,1.65,single_agent,OCP,True,,47.0,901.0,494.0,
+single_agent,run_2,OCP_40,EASY,PYTHON,OCP,OCP,,True,True,1.0,1,1.72,single_agent,OCP,True,,43.0,1098.0,592.0,
+single_agent,run_2,OCP_41,HARD,PYTHON,OCP,SRP,,False,False,0.0,0,2.88,single_agent,SRP,False,,375.0,11987.0,6790.0,
+single_agent,run_2,OCP_42,HARD,PYTHON,OCP,SRP,,False,False,0.0,0,2.47,single_agent,SRP,False,,263.0,7531.0,4585.0,
+single_agent,run_2,OCP_43,HARD,PYTHON,OCP,SRP,,False,False,0.0,0,3.1,single_agent,SRP,False,,317.0,11169.0,6055.0,
+single_agent,run_2,OCP_44,HARD,PYTHON,OCP,SRP,,False,False,0.0,0,3.04,single_agent,SRP,False,,281.0,11552.0,5996.0,
+single_agent,run_2,OCP_45,MODERATE,PYTHON,OCP,SRP,,False,False,0.0,0,1.94,single_agent,SRP,False,,155.0,4320.0,2508.0,
+single_agent,run_2,OCP_46,MODERATE,PYTHON,OCP,SRP,,False,False,0.0,0,1.92,single_agent,SRP,False,,104.0,2760.0,1515.0,
+single_agent,run_2,OCP_47,MODERATE,PYTHON,OCP,SRP,,False,False,0.0,0,3.06,single_agent,SRP,False,,217.0,7648.0,4115.0,
+single_agent,run_2,OCP_48,MODERATE,PYTHON,OCP,SRP,,False,False,0.0,0,2.36,single_agent,SRP,False,,184.0,7522.0,3806.0,
+single_agent,run_2,LSP_1,EASY,JAVA,LSP,LSP,,True,True,1.0,1,1.69,single_agent,LSP,True,,25.0,481.0,235.0,
+single_agent,run_2,LSP_2,EASY,PYTHON,LSP,LSP,,True,True,1.0,1,1.65,single_agent,LSP,True,,15.0,309.0,153.0,
+single_agent,run_2,LSP_3,EASY,KOTLIN,LSP,LSP,,True,True,1.0,1,1.65,single_agent,LSP,True,,23.0,384.0,204.0,
+single_agent,run_2,LSP_4,EASY,C#,LSP,LSP,,True,True,1.0,1,1.67,single_agent,LSP,True,,31.0,473.0,239.0,
+single_agent,run_2,LSP_5,MODERATE,JAVA,LSP,SRP,,False,False,0.0,0,1.64,single_agent,SRP,False,,92.0,2277.0,1119.0,
+single_agent,run_2,LSP_6,MODERATE,PYTHON,LSP,LSP,,True,True,1.0,1,1.91,single_agent,LSP,True,,67.0,1841.0,878.0,
+single_agent,run_2,LSP_7,MODERATE,KOTLIN,LSP,LSP,,True,True,1.0,1,1.88,single_agent,LSP,True,,58.0,1632.0,785.0,
+single_agent,run_2,LSP_8,MODERATE,C#,LSP,LSP,,True,True,1.0,1,1.92,single_agent,LSP,True,,93.0,2189.0,1056.0,
+single_agent,run_2,LSP_9,HARD,JAVA,LSP,SRP,,False,False,0.0,0,2.16,single_agent,SRP,False,,233.0,7879.0,3663.0,
+single_agent,run_2,LSP_10,HARD,PYTHON,LSP,SRP,,False,False,0.0,0,2.49,single_agent,SRP,False,,230.0,7392.0,3479.0,
+single_agent,run_2,LSP_11,HARD,KOTLIN,LSP,SRP,,False,False,0.0,0,1.93,single_agent,SRP,False,,176.0,5663.0,2676.0,
+single_agent,run_2,LSP_12,HARD,C#,LSP,SRP,,False,False,0.0,0,2.14,single_agent,SRP,False,,253.0,7497.0,3586.0,
+single_agent,run_2,LSP_13,EASY,JAVA,LSP,LSP,,True,True,1.0,1,1.55,single_agent,LSP,True,,22.0,679.0,289.0,
+single_agent,run_2,LSP_14,EASY,PYTHON,LSP,LSP,,True,True,1.0,1,1.64,single_agent,LSP,True,,13.0,488.0,203.0,
+single_agent,run_2,LSP_15,EASY,KOTLIN,LSP,LSP,,True,True,1.0,1,1.6,single_agent,LSP,True,,20.0,582.0,254.0,
+single_agent,run_2,LSP_16,EASY,C#,LSP,LSP,,True,True,1.0,1,1.51,single_agent,LSP,True,,28.0,681.0,301.0,
+single_agent,run_2,LSP_17,MODERATE,JAVA,LSP,SRP,,False,False,0.0,0,1.66,single_agent,SRP,False,,111.0,3277.0,1454.0,
+single_agent,run_2,LSP_18,MODERATE,PYTHON,LSP,SRP,,False,False,0.0,0,1.58,single_agent,SRP,False,,75.0,2418.0,1033.0,
+single_agent,run_2,LSP_19,MODERATE,KOTLIN,LSP,SRP,,False,False,0.0,0,1.5,single_agent,SRP,False,,64.0,2369.0,991.0,
+single_agent,run_2,LSP_20,MODERATE,C#,LSP,SRP,,False,False,0.0,0,1.6,single_agent,SRP,False,,126.0,3434.0,1484.0,
+single_agent,run_2,LSP_21,HARD,JAVA,LSP,SRP,,False,False,0.0,0,2.29,single_agent,SRP,False,,226.0,8552.0,3655.0,
+single_agent,run_2,LSP_22,HARD,PYTHON,LSP,SRP,,False,False,0.0,0,2.32,single_agent,SRP,False,,192.0,7006.0,3128.0,
+single_agent,run_2,LSP_23,HARD,KOTLIN,LSP,SRP,,False,False,0.0,0,2.26,single_agent,SRP,False,,249.0,8058.0,3670.0,
+single_agent,run_2,LSP_24,HARD,C#,LSP,SRP,,False,False,0.0,0,2.38,single_agent,SRP,False,,324.0,9455.0,4436.0,
+single_agent,run_2,LSP_25,EASY,JAVA,LSP,SRP,,False,False,0.0,0,1.4,single_agent,SRP,False,,35.0,952.0,357.0,
+single_agent,run_2,LSP_26,EASY,PYTHON,LSP,SRP,,False,False,0.0,0,1.51,single_agent,SRP,False,,24.0,762.0,338.0,
+single_agent,run_2,LSP_27,EASY,KOTLIN,LSP,OCP,,False,False,0.0,0,1.85,single_agent,OCP,False,,30.0,890.0,356.0,
+single_agent,run_2,LSP_28,EASY,C#,LSP,SRP,,False,False,0.0,0,1.42,single_agent,SRP,False,,42.0,1123.0,437.0,
+single_agent,run_2,LSP_29,MODERATE,JAVA,LSP,SRP,,False,False,0.0,0,1.88,single_agent,SRP,False,,114.0,3897.0,1877.0,
+single_agent,run_2,LSP_30,MODERATE,PYTHON,LSP,SRP,,False,False,0.0,0,1.61,single_agent,SRP,False,,88.0,3657.0,1616.0,
+single_agent,run_2,LSP_31,MODERATE,KOTLIN,LSP,SRP,,False,False,0.0,0,2.0,single_agent,SRP,False,,94.0,3503.0,1587.0,
+single_agent,run_2,LSP_32,MODERATE,C#,LSP,SRP,,False,False,0.0,0,1.78,single_agent,SRP,False,,145.0,4433.0,2032.0,
+single_agent,run_2,LSP_33,HARD,JAVA,LSP,SRP,,False,False,0.0,0,2.2,single_agent,SRP,False,,277.0,9959.0,4555.0,
+single_agent,run_2,LSP_34,HARD,PYTHON,LSP,SRP,,False,False,0.0,0,2.43,single_agent,SRP,False,,317.0,12199.0,6145.0,
+single_agent,run_2,LSP_35,HARD,KOTLIN,LSP,SRP,,False,False,0.0,0,2.26,single_agent,SRP,False,,358.0,12785.0,6521.0,
+single_agent,run_2,LSP_36,HARD,C#,LSP,SRP,,False,False,0.0,0,2.79,single_agent,SRP,False,,458.0,14758.0,7551.0,
+single_agent,run_2,LSP_37,EASY,JAVA,LSP,LSP,,True,True,1.0,1,1.83,single_agent,LSP,True,,38.0,855.0,402.0,
+single_agent,run_2,LSP_38,EASY,PYTHON,LSP,LSP,,True,True,1.0,1,1.72,single_agent,LSP,True,,33.0,740.0,352.0,
+single_agent,run_2,LSP_39,EASY,KOTLIN,LSP,LSP,,True,True,1.0,1,1.89,single_agent,LSP,True,,24.0,577.0,261.0,
+single_agent,run_2,LSP_40,EASY,C#,LSP,LSP,,True,True,1.0,1,1.75,single_agent,LSP,True,,42.0,864.0,402.0,
+single_agent,run_2,LSP_41,MODERATE,JAVA,LSP,SRP,,False,False,0.0,0,1.58,single_agent,SRP,False,,91.0,2684.0,1272.0,
+single_agent,run_2,LSP_42,MODERATE,PYTHON,LSP,SRP,,False,False,0.0,0,1.57,single_agent,SRP,False,,82.0,2262.0,1091.0,
+single_agent,run_2,LSP_43,MODERATE,KOTLIN,LSP,SRP,,False,False,0.0,0,1.43,single_agent,SRP,False,,71.0,2017.0,953.0,
+single_agent,run_2,LSP_44,MODERATE,C#,LSP,SRP,,False,False,0.0,0,1.61,single_agent,SRP,False,,112.0,2849.0,1351.0,
+single_agent,run_2,LSP_45,HARD,JAVA,LSP,SRP,,False,False,0.0,0,2.16,single_agent,SRP,False,,212.0,8668.0,3460.0,
+single_agent,run_2,LSP_46,HARD,PYTHON,LSP,SRP,,False,False,0.0,0,1.98,single_agent,SRP,False,,164.0,6480.0,2762.0,
+single_agent,run_2,LSP_47,HARD,KOTLIN,LSP,SRP,,False,False,0.0,0,1.97,single_agent,SRP,False,,202.0,6693.0,2810.0,
+single_agent,run_2,LSP_48,HARD,C#,LSP,SRP,,False,False,0.0,0,2.13,single_agent,SRP,False,,272.0,8682.0,3750.0,
+single_agent,run_2,ISP_1,EASY,CSHARP,ISP,LSP,,False,False,0.0,0,1.74,single_agent,LSP,False,,89.0,1737.0,992.0,
+single_agent,run_2,ISP_2,EASY,CSHARP,ISP,LSP,,False,False,0.0,0,1.93,single_agent,LSP,False,,94.0,2055.0,1103.0,
+single_agent,run_2,ISP_3,EASY,CSHARP,ISP,SRP,,False,False,0.0,0,2.22,single_agent,SRP,False,,63.0,1140.0,543.0,
+single_agent,run_2,ISP_4,EASY,CSHARP,ISP,LSP,,False,False,0.0,0,1.69,single_agent,LSP,False,,44.0,664.0,366.0,
+single_agent,run_2,ISP_5,HARD,CSHARP,ISP,SRP,,False,False,0.0,0,2.55,single_agent,SRP,False,,511.0,11621.0,7097.0,
+single_agent,run_2,ISP_6,HARD,CSHARP,ISP,SRP,,False,False,0.0,0,3.53,single_agent,SRP,False,,461.0,10993.0,5406.0,
+single_agent,run_2,ISP_7,HARD,CSHARP,ISP,SRP,,False,False,0.0,0,3.02,single_agent,SRP,False,,660.0,17075.0,9827.0,
+single_agent,run_2,ISP_8,HARD,CSHARP,ISP,SRP,,False,False,0.0,0,2.71,single_agent,SRP,False,,473.0,10539.0,5699.0,
+single_agent,run_2,ISP_9,MODERATE,CSHARP,ISP,SRP,,False,False,0.0,0,2.0,single_agent,SRP,False,,287.0,6316.0,3915.0,
+single_agent,run_2,ISP_10,MODERATE,CSHARP,ISP,SRP,,False,False,0.0,0,2.57,single_agent,SRP,False,,259.0,6299.0,3322.0,
+single_agent,run_2,ISP_11,MODERATE,CSHARP,ISP,SRP,,False,False,0.0,0,1.69,single_agent,SRP,False,,149.0,2838.0,1436.0,
+single_agent,run_2,ISP_12,MODERATE,CSHARP,ISP,SRP,,False,False,0.0,0,2.68,single_agent,SRP,False,,291.0,5721.0,3266.0,
+single_agent,run_2,ISP_13,EASY,JAVA,ISP,LSP,,False,False,0.0,0,1.7,single_agent,LSP,False,,77.0,1793.0,969.0,
+single_agent,run_2,ISP_14,EASY,JAVA,ISP,SRP,,False,False,0.0,0,1.73,single_agent,SRP,False,,88.0,2183.0,1128.0,
+single_agent,run_2,ISP_15,EASY,JAVA,ISP,SRP,,False,False,0.0,0,1.5,single_agent,SRP,False,,48.0,1121.0,519.0,
+single_agent,run_2,ISP_16,EASY,JAVA,ISP,LSP,,False,False,0.0,0,1.6,single_agent,LSP,False,,34.0,654.0,347.0,
+single_agent,run_2,ISP_17,HARD,JAVA,ISP,SRP,,False,False,0.0,0,2.53,single_agent,SRP,False,,416.0,11445.0,6583.0,
+single_agent,run_2,ISP_18,HARD,JAVA,ISP,SRP,,False,False,0.0,0,2.92,single_agent,SRP,False,,436.0,11756.0,5569.0,
+single_agent,run_2,ISP_19,HARD,JAVA,ISP,SRP,,False,False,0.0,0,3.07,single_agent,SRP,False,,482.0,15667.0,8472.0,
+single_agent,run_2,ISP_20,HARD,JAVA,ISP,SRP,,False,False,0.0,0,2.52,single_agent,SRP,False,,351.0,10063.0,5037.0,
+single_agent,run_2,ISP_21,MODERATE,JAVA,ISP,SRP,,False,False,0.0,0,2.26,single_agent,SRP,False,,226.0,6148.0,3575.0,
+single_agent,run_2,ISP_22,MODERATE,JAVA,ISP,SRP,,False,False,0.0,0,2.14,single_agent,SRP,False,,246.0,6487.0,3167.0,
+single_agent,run_2,ISP_23,MODERATE,JAVA,ISP,SRP,,False,False,0.0,0,1.78,single_agent,SRP,False,,113.0,2744.0,1328.0,
+single_agent,run_2,ISP_24,MODERATE,JAVA,ISP,SRP,,False,False,0.0,0,2.09,single_agent,SRP,False,,220.0,5450.0,2911.0,
+single_agent,run_2,ISP_25,EASY,KOTLIN,ISP,LSP,,False,False,0.0,0,1.69,single_agent,LSP,False,,57.0,1378.0,739.0,
+single_agent,run_2,ISP_26,EASY,KOTLIN,ISP,SRP,,False,False,0.0,0,1.76,single_agent,SRP,False,,79.0,1898.0,995.0,
+single_agent,run_2,ISP_27,EASY,KOTLIN,ISP,SRP,,False,False,0.0,0,1.81,single_agent,SRP,False,,47.0,988.0,470.0,
+single_agent,run_2,ISP_28,EASY,KOTLIN,ISP,LSP,,False,False,0.0,0,1.66,single_agent,LSP,False,,34.0,571.0,316.0,
+single_agent,run_2,ISP_29,HARD,KOTLIN,ISP,SRP,,False,False,0.0,0,2.3,single_agent,SRP,False,,331.0,9289.0,5382.0,
+single_agent,run_2,ISP_30,HARD,KOTLIN,ISP,SRP,,False,False,0.0,0,2.69,single_agent,SRP,False,,371.0,9990.0,4704.0,
+single_agent,run_2,ISP_31,HARD,KOTLIN,ISP,SRP,,False,False,0.0,0,3.36,single_agent,SRP,False,,482.0,13948.0,7669.0,
+single_agent,run_2,ISP_32,HARD,KOTLIN,ISP,SRP,,False,False,0.0,0,2.19,single_agent,SRP,False,,310.0,8522.0,4214.0,
+single_agent,run_2,ISP_33,MODERATE,KOTLIN,ISP,SRP,,False,False,0.0,0,1.8,single_agent,SRP,False,,189.0,5219.0,3224.0,
+single_agent,run_2,ISP_34,MODERATE,KOTLIN,ISP,SRP,,False,False,0.0,0,2.36,single_agent,SRP,False,,209.0,5799.0,2919.0,
+single_agent,run_2,ISP_35,MODERATE,KOTLIN,ISP,SRP,,False,False,0.0,0,1.95,single_agent,SRP,False,,112.0,2448.0,1209.0,
+single_agent,run_2,ISP_36,MODERATE,KOTLIN,ISP,SRP,,False,False,0.0,0,2.09,single_agent,SRP,False,,166.0,4233.0,2183.0,
+single_agent,run_2,ISP_37,EASY,PYTHON,ISP,LSP,,False,False,0.0,0,1.73,single_agent,LSP,False,,60.0,1516.0,813.0,
+single_agent,run_2,ISP_38,EASY,PYTHON,ISP,SRP,,False,False,0.0,0,1.7,single_agent,SRP,False,,81.0,2099.0,1084.0,
+single_agent,run_2,ISP_39,EASY,PYTHON,ISP,SRP,,False,False,0.0,0,1.62,single_agent,SRP,False,,44.0,1045.0,489.0,
+single_agent,run_2,ISP_40,EASY,PYTHON,ISP,LSP,,False,False,0.0,0,1.6,single_agent,LSP,False,,34.0,629.0,338.0,
+single_agent,run_2,ISP_41,HARD,PYTHON,ISP,SRP,,False,False,0.0,0,2.49,single_agent,SRP,False,,328.0,9475.0,5333.0,
+single_agent,run_2,ISP_42,HARD,PYTHON,ISP,SRP,,False,False,0.0,0,2.83,single_agent,SRP,False,,357.0,10176.0,4912.0,
+single_agent,run_2,ISP_43,HARD,PYTHON,ISP,SRP,,False,False,0.0,0,3.08,single_agent,SRP,False,,425.0,13827.0,7304.0,
+single_agent,run_2,ISP_44,HARD,PYTHON,ISP,SRP,,False,False,0.0,0,2.08,single_agent,SRP,False,,295.0,8947.0,4213.0,
+single_agent,run_2,ISP_45,MODERATE,PYTHON,ISP,SRP,,False,False,0.0,0,2.29,single_agent,SRP,False,,178.0,5209.0,2982.0,
+single_agent,run_2,ISP_46,MODERATE,PYTHON,ISP,SRP,,False,False,0.0,0,2.16,single_agent,SRP,False,,202.0,5849.0,2932.0,
+single_agent,run_2,ISP_47,MODERATE,PYTHON,ISP,SRP,,False,False,0.0,0,1.78,single_agent,SRP,False,,108.0,2625.0,1283.0,
+single_agent,run_2,ISP_48,MODERATE,PYTHON,ISP,SRP,,False,False,0.0,0,2.2,single_agent,SRP,False,,177.0,4573.0,2372.0,
+single_agent,run_2,DIP_1,EASY,JAVA,DIP,SRP,,False,False,0.0,0,1.52,single_agent,SRP,False,,23.0,593.0,285.0,
+single_agent,run_2,DIP_2,EASY,PYTHON,DIP,SRP,,False,False,0.0,0,1.41,single_agent,SRP,False,,15.0,441.0,206.0,
+single_agent,run_2,DIP_3,EASY,KOTLIN,DIP,SRP,,False,False,0.0,0,1.5,single_agent,SRP,False,,19.0,441.0,213.0,
+single_agent,run_2,DIP_4,EASY,C#,DIP,SRP,,False,False,0.0,0,1.38,single_agent,SRP,False,,29.0,591.0,284.0,
+single_agent,run_2,DIP_5,MODERATE,JAVA,DIP,SRP,,False,False,0.0,0,1.62,single_agent,SRP,False,,77.0,2288.0,1171.0,
+single_agent,run_2,DIP_6,MODERATE,PYTHON,DIP,SRP,,False,False,0.0,0,1.66,single_agent,SRP,False,,54.0,1844.0,909.0,
+single_agent,run_2,DIP_7,MODERATE,KOTLIN,DIP,SRP,,False,False,0.0,0,1.44,single_agent,SRP,False,,65.0,1828.0,969.0,
+single_agent,run_2,DIP_8,MODERATE,C#,DIP,SRP,,False,False,0.0,0,1.58,single_agent,SRP,False,,94.0,2405.0,1244.0,
+single_agent,run_2,DIP_9,HARD,JAVA,DIP,SRP,,False,False,0.0,0,2.09,single_agent,SRP,False,,229.0,8620.0,4693.0,
+single_agent,run_2,DIP_10,HARD,PYTHON,DIP,SRP,,False,False,0.0,0,2.13,single_agent,SRP,False,,167.0,6938.0,3394.0,
+single_agent,run_2,DIP_11,HARD,KOTLIN,DIP,SRP,,False,False,0.0,0,2.32,single_agent,SRP,False,,191.0,6234.0,3373.0,
+single_agent,run_2,DIP_12,HARD,C#,DIP,SRP,,False,False,0.0,0,2.49,single_agent,SRP,False,,267.0,8372.0,4441.0,
+single_agent,run_2,DIP_13,EASY,JAVA,DIP,SRP,,False,False,0.0,0,1.96,single_agent,SRP,False,,18.0,465.0,192.0,
+single_agent,run_2,DIP_14,EASY,PYTHON,DIP,SRP,,False,False,0.0,0,1.6,single_agent,SRP,False,,11.0,331.0,131.0,
+single_agent,run_2,DIP_15,EASY,KOTLIN,DIP,SRP,,False,False,0.0,0,1.84,single_agent,SRP,False,,14.0,344.0,141.0,
+single_agent,run_2,DIP_16,EASY,C#,DIP,SRP,,False,False,0.0,0,1.88,single_agent,SRP,False,,23.0,463.0,195.0,
+single_agent,run_2,DIP_17,MODERATE,JAVA,DIP,SRP,,False,False,0.0,0,1.54,single_agent,SRP,False,,56.0,1872.0,912.0,
+single_agent,run_2,DIP_18,MODERATE,PYTHON,DIP,SRP,,False,False,0.0,0,1.52,single_agent,SRP,False,,41.0,1407.0,684.0,
+single_agent,run_2,DIP_19,MODERATE,KOTLIN,DIP,SRP,,False,False,0.0,0,1.46,single_agent,SRP,False,,53.0,1600.0,843.0,
+single_agent,run_2,DIP_20,MODERATE,C#,DIP,SRP,,False,False,0.0,0,1.4,single_agent,SRP,False,,76.0,1950.0,974.0,
+single_agent,run_2,DIP_21,HARD,JAVA,DIP,SRP,,False,False,0.0,0,1.9,single_agent,SRP,False,,207.0,8107.0,3556.0,
+single_agent,run_2,DIP_22,HARD,PYTHON,DIP,SRP,,False,False,0.0,0,2.04,single_agent,SRP,False,,145.0,6645.0,2878.0,
+single_agent,run_2,DIP_23,HARD,KOTLIN,DIP,SRP,,False,False,0.0,0,1.78,single_agent,SRP,False,,155.0,6261.0,2625.0,
+single_agent,run_2,DIP_24,HARD,C#,DIP,SRP,,False,False,0.0,0,1.97,single_agent,SRP,False,,235.0,8702.0,4296.0,
+single_agent,run_2,DIP_25,EASY,JAVA,DIP,SRP,,False,False,0.0,0,1.53,single_agent,SRP,False,,22.0,583.0,307.0,
+single_agent,run_2,DIP_26,EASY,PYTHON,DIP,SRP,,False,False,0.0,0,1.4,single_agent,SRP,False,,18.0,496.0,284.0,
+single_agent,run_2,DIP_27,EASY,KOTLIN,DIP,SRP,,False,False,0.0,0,1.43,single_agent,SRP,False,,22.0,531.0,290.0,
+single_agent,run_2,DIP_28,EASY,C#,DIP,SRP,,False,False,0.0,0,1.44,single_agent,SRP,False,,31.0,595.0,341.0,
+single_agent,run_2,DIP_29,MODERATE,JAVA,DIP,SRP,,False,False,0.0,0,1.7,single_agent,SRP,False,,72.0,2198.0,1201.0,
+single_agent,run_2,DIP_30,MODERATE,PYTHON,DIP,SRP,,False,False,0.0,0,1.53,single_agent,SRP,False,,58.0,1890.0,1093.0,
+single_agent,run_2,DIP_31,MODERATE,KOTLIN,DIP,SRP,,False,False,0.0,0,1.63,single_agent,SRP,False,,63.0,1838.0,1012.0,
+single_agent,run_2,DIP_32,MODERATE,C#,DIP,SRP,,False,False,0.0,0,1.77,single_agent,SRP,False,,91.0,2078.0,1203.0,
+single_agent,run_2,DIP_33,HARD,JAVA,DIP,SRP,,False,False,0.0,0,1.95,single_agent,SRP,False,,164.0,6576.0,2928.0,
+single_agent,run_2,DIP_34,HARD,PYTHON,DIP,SRP,,False,False,0.0,0,1.95,single_agent,SRP,False,,152.0,6056.0,2750.0,
+single_agent,run_2,DIP_35,HARD,KOTLIN,DIP,SRP,,False,False,0.0,0,2.06,single_agent,SRP,False,,244.0,8715.0,4214.0,
+single_agent,run_2,DIP_36,HARD,C#,DIP,SRP,,False,False,0.0,0,2.36,single_agent,SRP,False,,305.0,10242.0,5016.0,
+single_agent,run_2,DIP_37,EASY,JAVA,DIP,SRP,,False,False,0.0,0,1.38,single_agent,SRP,False,,17.0,479.0,199.0,
+single_agent,run_2,DIP_38,EASY,PYTHON,DIP,SRP,,False,False,0.0,0,1.64,single_agent,SRP,False,,10.0,344.0,134.0,
+single_agent,run_2,DIP_39,EASY,KOTLIN,DIP,SRP,,False,False,0.0,0,1.54,single_agent,SRP,False,,13.0,348.0,141.0,
+single_agent,run_2,DIP_40,EASY,C#,DIP,SRP,,False,False,0.0,0,1.41,single_agent,SRP,False,,22.0,479.0,201.0,
+single_agent,run_2,DIP_41,MODERATE,JAVA,DIP,SRP,,False,False,0.0,0,1.42,single_agent,SRP,False,,62.0,2021.0,806.0,
+single_agent,run_2,DIP_42,MODERATE,PYTHON,DIP,SRP,,False,False,0.0,0,1.52,single_agent,SRP,False,,40.0,1586.0,588.0,
+single_agent,run_2,DIP_43,MODERATE,KOTLIN,DIP,SRP,,False,False,0.0,0,2.06,single_agent,SRP,False,,46.0,1576.0,614.0,
+single_agent,run_2,DIP_44,MODERATE,C#,DIP,SRP,,False,False,0.0,0,2.13,single_agent,SRP,False,,77.0,2059.0,842.0,
+single_agent,run_2,DIP_45,HARD,JAVA,DIP,SRP,,False,False,0.0,0,1.82,single_agent,SRP,False,,138.0,5087.0,2157.0,
+single_agent,run_2,DIP_46,HARD,PYTHON,DIP,SRP,,False,False,0.0,0,1.83,single_agent,SRP,False,,106.0,4499.0,1862.0,
+single_agent,run_2,DIP_47,HARD,KOTLIN,DIP,SRP,,False,False,0.0,0,1.78,single_agent,SRP,False,,127.0,4464.0,1921.0,
+single_agent,run_2,DIP_48,HARD,C#,DIP,SRP,,False,False,0.0,0,1.85,single_agent,SRP,False,,170.0,5347.0,2296.0,
+two_agent,run_1,SRP_1,EASY,JAVA,SRP,SRP,OCP,True,True,1.0,1,14.68,two_agent,"SRP, OCP",True,,17.0,409.0,213.0,
+two_agent,run_1,SRP_2,EASY,JAVA,SRP,SRP,DIP,True,True,1.0,1,2.76,two_agent,"SRP, DIP",True,,19.0,534.0,248.0,
+two_agent,run_1,SRP_3,EASY,JAVA,SRP,SRP,OCP,True,True,1.0,1,2.52,two_agent,"SRP, OCP",True,,21.0,569.0,289.0,
+two_agent,run_1,SRP_4,EASY,JAVA,SRP,,,False,False,0.0,0,5.41,two_agent,,False,,17.0,416.0,219.0,
+two_agent,run_1,SRP_5,MODERATE,JAVA,SRP,SRP,DIP,True,True,1.0,1,3.23,two_agent,"SRP, DIP",True,,168.0,4688.0,2420.0,
+two_agent,run_1,SRP_6,MODERATE,JAVA,SRP,SRP,OCP,True,True,1.0,1,4.42,two_agent,"SRP, OCP",True,,256.0,7899.0,3817.0,
+two_agent,run_1,SRP_7,MODERATE,JAVA,SRP,SRP,DIP,True,True,1.0,1,3.97,two_agent,"SRP, DIP",True,,185.0,6117.0,3228.0,
+two_agent,run_1,SRP_8,MODERATE,JAVA,SRP,SRP,DIP,True,True,1.0,1,3.71,two_agent,"SRP, DIP",True,,124.0,4615.0,2130.0,
+two_agent,run_1,SRP_9,HARD,JAVA,SRP,SRP,DIP,True,True,1.0,1,5.51,two_agent,"SRP, DIP",True,,370.0,12738.0,6063.0,
+two_agent,run_1,SRP_10,HARD,JAVA,SRP,SRP,OCP,True,True,1.0,1,5.42,two_agent,"SRP, OCP",True,,337.0,13357.0,5797.0,
+two_agent,run_1,SRP_11,HARD,JAVA,SRP,SRP,OCP,True,True,1.0,1,5.82,two_agent,"SRP, OCP",True,,330.0,12494.0,5912.0,
+two_agent,run_1,SRP_12,HARD,JAVA,SRP,,,False,False,0.0,0,15.9,two_agent,,False,,388.0,16985.0,7852.0,
+two_agent,run_1,SRP_13,EASY,PYTHON,SRP,SRP,OCP,True,True,1.0,1,12.18,two_agent,"SRP, OCP",True,,10.0,286.0,144.0,
+two_agent,run_1,SRP_14,EASY,PYTHON,SRP,SRP,OCP,True,True,1.0,1,2.65,two_agent,"SRP, OCP",True,,11.0,423.0,186.0,
+two_agent,run_1,SRP_15,EASY,PYTHON,SRP,SRP,DIP,True,True,1.0,1,2.3,two_agent,"SRP, DIP",True,,13.0,390.0,203.0,
+two_agent,run_1,SRP_16,EASY,PYTHON,SRP,SRP,,True,True,1.0,1,2.02,two_agent,SRP,True,,10.0,303.0,155.0,
+two_agent,run_1,SRP_17,MODERATE,PYTHON,SRP,SRP,DIP,True,True,1.0,1,3.11,two_agent,"SRP, DIP",True,,120.0,4007.0,1994.0,
+two_agent,run_1,SRP_18,MODERATE,PYTHON,SRP,SRP,DIP,True,True,1.0,1,4.13,two_agent,"SRP, DIP",True,,195.0,7146.0,3315.0,
+two_agent,run_1,SRP_19,MODERATE,PYTHON,SRP,SRP,DIP,True,True,1.0,1,4.01,two_agent,"SRP, DIP",True,,167.0,5735.0,2857.0,
+two_agent,run_1,SRP_20,MODERATE,PYTHON,SRP,SRP,DIP,True,True,1.0,1,3.59,two_agent,"SRP, DIP",True,,89.0,3928.0,1733.0,
+two_agent,run_1,SRP_21,HARD,PYTHON,SRP,SRP,DIP,True,True,1.0,1,5.08,two_agent,"SRP, DIP",True,,254.0,10438.0,4740.0,
+two_agent,run_1,SRP_22,HARD,PYTHON,SRP,SRP,DIP,True,True,1.0,1,5.64,two_agent,"SRP, DIP",True,,300.0,12992.0,5954.0,
+two_agent,run_1,SRP_23,HARD,PYTHON,SRP,SRP,DIP,True,True,1.0,1,5.65,two_agent,"SRP, DIP",True,,248.0,11175.0,4923.0,
+two_agent,run_1,SRP_24,HARD,PYTHON,SRP,SRP,DIP,True,True,1.0,1,5.98,two_agent,"SRP, DIP",True,,329.0,14413.0,6230.0,
+two_agent,run_1,SRP_25,EASY,KOTLIN,SRP,SRP,OCP,True,True,1.0,1,6.71,two_agent,"SRP, OCP",True,,10.0,229.0,117.0,
+two_agent,run_1,SRP_26,EASY,KOTLIN,SRP,SRP,OCP,True,True,1.0,1,11.02,two_agent,"SRP, OCP",True,,10.0,305.0,142.0,
+two_agent,run_1,SRP_27,EASY,KOTLIN,SRP,SRP,OCP,True,True,1.0,1,2.49,two_agent,"SRP, OCP",True,,12.0,330.0,166.0,
+two_agent,run_1,SRP_28,EASY,KOTLIN,SRP,SRP,,True,True,1.0,1,2.15,two_agent,SRP,True,,10.0,267.0,135.0,
+two_agent,run_1,SRP_29,MODERATE,KOTLIN,SRP,SRP,DIP,True,True,1.0,1,3.48,two_agent,"SRP, DIP",True,,116.0,3523.0,1779.0,
+two_agent,run_1,SRP_30,MODERATE,KOTLIN,SRP,SRP,DIP,True,True,1.0,1,3.96,two_agent,"SRP, DIP",True,,179.0,6179.0,2878.0,
+two_agent,run_1,SRP_31,MODERATE,KOTLIN,SRP,SRP,OCP,True,True,1.0,1,4.19,two_agent,"SRP, OCP",True,,164.0,5372.0,2786.0,
+two_agent,run_1,SRP_32,MODERATE,KOTLIN,SRP,SRP,DIP,True,True,1.0,1,3.52,two_agent,"SRP, DIP",True,,102.0,3859.0,1732.0,
+two_agent,run_1,SRP_33,HARD,KOTLIN,SRP,SRP,DIP,True,True,1.0,1,4.85,two_agent,"SRP, DIP",True,,286.0,9834.0,4595.0,
+two_agent,run_1,SRP_34,HARD,KOTLIN,SRP,SRP,DIP,True,True,1.0,1,11.94,two_agent,"SRP, DIP",True,,260.0,10479.0,4530.0,
+two_agent,run_1,SRP_35,HARD,KOTLIN,SRP,SRP,OCP,True,True,1.0,1,12.33,two_agent,"SRP, OCP",True,,285.0,10237.0,4679.0,
+two_agent,run_1,SRP_36,HARD,KOTLIN,SRP,SRP,DIP,True,True,1.0,1,5.96,two_agent,"SRP, DIP",True,,361.0,14620.0,6873.0,
+two_agent,run_1,SRP_37,EASY,CSHARP,SRP,SRP,,True,True,1.0,1,6.35,two_agent,SRP,True,,21.0,428.0,230.0,
+two_agent,run_1,SRP_38,EASY,CSHARP,SRP,SRP,OCP,True,True,1.0,1,6.83,two_agent,"SRP, OCP",True,,23.0,539.0,252.0,
+two_agent,run_1,SRP_39,EASY,CSHARP,SRP,SRP,DIP,True,True,1.0,1,2.44,two_agent,"SRP, DIP",True,,25.0,577.0,293.0,
+two_agent,run_1,SRP_40,EASY,CSHARP,SRP,SRP,,True,True,1.0,1,2.04,two_agent,SRP,True,,21.0,421.0,223.0,
+two_agent,run_1,SRP_41,MODERATE,CSHARP,SRP,SRP,DIP,True,True,1.0,1,3.09,two_agent,"SRP, DIP",True,,184.0,4448.0,2313.0,
+two_agent,run_1,SRP_42,MODERATE,CSHARP,SRP,SRP,DIP,True,True,1.0,1,4.21,two_agent,"SRP, DIP",True,,289.0,7682.0,3840.0,
+two_agent,run_1,SRP_43,MODERATE,CSHARP,SRP,SRP,DIP,True,True,1.0,1,3.86,two_agent,"SRP, DIP",True,,218.0,5972.0,3084.0,
+two_agent,run_1,SRP_44,MODERATE,CSHARP,SRP,SRP,DIP,True,True,1.0,1,3.11,two_agent,"SRP, DIP",True,,149.0,4707.0,2163.0,
+two_agent,run_1,SRP_45,HARD,CSHARP,SRP,SRP,DIP,True,True,1.0,1,5.27,two_agent,"SRP, DIP",True,,395.0,12158.0,5727.0,
+two_agent,run_1,SRP_46,HARD,CSHARP,SRP,SRP,OCP,True,True,1.0,1,5.55,two_agent,"SRP, OCP",True,,384.0,13000.0,5631.0,
+two_agent,run_1,SRP_47,HARD,CSHARP,SRP,SRP,DIP,True,True,1.0,1,5.71,two_agent,"SRP, DIP",True,,387.0,13890.0,7213.0,
+two_agent,run_1,SRP_48,HARD,CSHARP,SRP,SRP,OCP,True,True,1.0,1,6.38,two_agent,"SRP, OCP",True,,465.0,16946.0,7834.0,
+two_agent,run_1,OCP_1,EASY,CSHARP,OCP,OCP,SRP,True,True,1.0,1,2.97,two_agent,"OCP, SRP",True,,72.0,1235.0,658.0,
+two_agent,run_1,OCP_2,EASY,CSHARP,OCP,SRP,OCP,False,True,0.5,2,12.4,two_agent,"SRP, OCP",True,,50.0,1300.0,597.0,
+two_agent,run_1,OCP_3,EASY,CSHARP,OCP,OCP,SRP,True,True,1.0,1,13.76,two_agent,"OCP, SRP",True,,49.0,1004.0,492.0,
+two_agent,run_1,OCP_4,EASY,CSHARP,OCP,OCP,SRP,True,True,1.0,1,12.35,two_agent,"OCP, SRP",True,,53.0,1479.0,777.0,
+two_agent,run_1,OCP_5,HARD,CSHARP,OCP,OCP,SRP,True,True,1.0,1,6.36,two_agent,"OCP, SRP",True,,459.0,15744.0,9227.0,
+two_agent,run_1,OCP_6,HARD,CSHARP,OCP,OCP,SRP,True,True,1.0,1,5.27,two_agent,"OCP, SRP",True,,269.0,8599.0,4781.0,
+two_agent,run_1,OCP_7,HARD,CSHARP,OCP,,,False,False,0.0,0,56.94,two_agent,,False,,415.0,16149.0,8664.0,
+two_agent,run_1,OCP_8,HARD,CSHARP,OCP,,,False,False,0.0,0,9.55,two_agent,,False,,398.0,15864.0,8381.0,
+two_agent,run_1,OCP_9,MODERATE,CSHARP,OCP,OCP,SRP,True,True,1.0,1,3.77,two_agent,"OCP, SRP",True,,208.0,5450.0,3451.0,
+two_agent,run_1,OCP_10,MODERATE,CSHARP,OCP,SRP,OCP,False,True,0.5,2,8.85,two_agent,"SRP, OCP",True,,112.0,2563.0,1508.0,
+two_agent,run_1,OCP_11,MODERATE,CSHARP,OCP,OCP,SRP,True,True,1.0,1,5.44,two_agent,"OCP, SRP",True,,305.0,9205.0,5469.0,
+two_agent,run_1,OCP_12,MODERATE,CSHARP,OCP,OCP,SRP,True,True,1.0,1,5.44,two_agent,"OCP, SRP",True,,216.0,10058.0,5025.0,
+two_agent,run_1,OCP_13,EASY,JAVA,OCP,OCP,SRP,True,True,1.0,1,7.35,two_agent,"OCP, SRP",True,,57.0,1210.0,640.0,
+two_agent,run_1,OCP_14,EASY,JAVA,OCP,OCP,SRP,True,True,1.0,1,7.83,two_agent,"OCP, SRP",True,,44.0,1316.0,642.0,
+two_agent,run_1,OCP_15,EASY,JAVA,OCP,OCP,,True,True,1.0,1,11.39,two_agent,OCP,True,,38.0,901.0,452.0,
+two_agent,run_1,OCP_16,EASY,JAVA,OCP,OCP,SRP,True,True,1.0,1,2.55,two_agent,"OCP, SRP",True,,32.0,1218.0,606.0,
+two_agent,run_1,OCP_17,HARD,JAVA,OCP,OCP,SRP,True,True,1.0,1,6.13,two_agent,"OCP, SRP",True,,433.0,15628.0,9381.0,
+two_agent,run_1,OCP_18,HARD,JAVA,OCP,OCP,SRP,True,True,1.0,1,4.91,two_agent,"OCP, SRP",True,,210.0,7259.0,4132.0,
+two_agent,run_1,OCP_19,HARD,JAVA,OCP,,,False,False,0.0,0,15.99,two_agent,,False,,414.0,14950.0,8460.0,
+two_agent,run_1,OCP_20,HARD,JAVA,OCP,OCP,SRP,True,True,1.0,1,6.12,two_agent,"OCP, SRP",True,,359.0,15513.0,8675.0,
+two_agent,run_1,OCP_21,MODERATE,JAVA,OCP,OCP,SRP,True,True,1.0,1,3.96,two_agent,"OCP, SRP",True,,177.0,5124.0,3060.0,
+two_agent,run_1,OCP_22,MODERATE,JAVA,OCP,OCP,,True,True,1.0,1,8.63,two_agent,OCP,True,,105.0,2985.0,1659.0,
+two_agent,run_1,OCP_23,MODERATE,JAVA,OCP,SRP,OCP,False,True,0.5,2,5.04,two_agent,"SRP, OCP",True,,281.0,9648.0,5774.0,
+two_agent,run_1,OCP_24,MODERATE,JAVA,OCP,OCP,SRP,True,True,1.0,1,5.14,two_agent,"OCP, SRP",True,,215.0,8998.0,4856.0,
+two_agent,run_1,OCP_25,EASY,KOTLIN,OCP,OCP,SRP,True,True,1.0,1,12.16,two_agent,"OCP, SRP",True,,32.0,715.0,374.0,
+two_agent,run_1,OCP_26,EASY,KOTLIN,OCP,OCP,SRP,True,True,1.0,1,7.42,two_agent,"OCP, SRP",True,,27.0,642.0,308.0,
+two_agent,run_1,OCP_27,EASY,KOTLIN,OCP,OCP,SRP,True,True,1.0,1,13.03,two_agent,"OCP, SRP",True,,29.0,561.0,301.0,
+two_agent,run_1,OCP_28,EASY,KOTLIN,OCP,OCP,SRP,True,True,1.0,1,7.66,two_agent,"OCP, SRP",True,,26.0,722.0,380.0,
+two_agent,run_1,OCP_29,HARD,KOTLIN,OCP,OCP,SRP,True,True,1.0,1,5.46,two_agent,"OCP, SRP",True,,291.0,10683.0,6438.0,
+two_agent,run_1,OCP_30,HARD,KOTLIN,OCP,SRP,OCP,False,True,0.5,2,4.21,two_agent,"SRP, OCP",True,,159.0,5979.0,3282.0,
+two_agent,run_1,OCP_31,HARD,KOTLIN,OCP,SRP,OCP,False,True,0.5,2,6.07,two_agent,"SRP, OCP",True,,320.0,11420.0,6112.0,
+two_agent,run_1,OCP_32,HARD,KOTLIN,OCP,SRP,OCP,False,True,0.5,2,5.55,two_agent,"SRP, OCP",True,,287.0,11644.0,6260.0,
+two_agent,run_1,OCP_33,MODERATE,KOTLIN,OCP,OCP,SRP,True,True,1.0,1,3.87,two_agent,"OCP, SRP",True,,122.0,4047.0,2434.0,
+two_agent,run_1,OCP_34,MODERATE,KOTLIN,OCP,OCP,,True,True,1.0,1,8.29,two_agent,OCP,True,,85.0,2208.0,1264.0,
+two_agent,run_1,OCP_35,MODERATE,KOTLIN,OCP,SRP,OCP,False,True,0.5,2,4.71,two_agent,"SRP, OCP",True,,218.0,6916.0,3936.0,
+two_agent,run_1,OCP_36,MODERATE,KOTLIN,OCP,SRP,OCP,False,True,0.5,2,4.51,two_agent,"SRP, OCP",True,,185.0,6791.0,3716.0,
+two_agent,run_1,OCP_37,EASY,PYTHON,OCP,OCP,SRP,True,True,1.0,1,12.95,two_agent,"OCP, SRP",True,,41.0,935.0,467.0,
+two_agent,run_1,OCP_38,EASY,PYTHON,OCP,OCP,SRP,True,True,1.0,1,3.56,two_agent,"OCP, SRP",True,,39.0,1028.0,468.0,
+two_agent,run_1,OCP_39,EASY,PYTHON,OCP,OCP,SRP,True,True,1.0,1,2.95,two_agent,"OCP, SRP",True,,47.0,901.0,494.0,
+two_agent,run_1,OCP_40,EASY,PYTHON,OCP,OCP,SRP,True,True,1.0,1,3.04,two_agent,"OCP, SRP",True,,43.0,1098.0,592.0,
+two_agent,run_1,OCP_41,HARD,PYTHON,OCP,OCP,SRP,True,True,1.0,1,5.81,two_agent,"OCP, SRP",True,,375.0,11987.0,6790.0,
+two_agent,run_1,OCP_42,HARD,PYTHON,OCP,OCP,SRP,True,True,1.0,1,4.98,two_agent,"OCP, SRP",True,,263.0,7531.0,4585.0,
+two_agent,run_1,OCP_43,HARD,PYTHON,OCP,SRP,OCP,False,True,0.5,2,6.11,two_agent,"SRP, OCP",True,,317.0,11169.0,6055.0,
+two_agent,run_1,OCP_44,HARD,PYTHON,OCP,OCP,SRP,True,True,1.0,1,6.0,two_agent,"OCP, SRP",True,,281.0,11552.0,5996.0,
+two_agent,run_1,OCP_45,MODERATE,PYTHON,OCP,OCP,SRP,True,True,1.0,1,3.94,two_agent,"OCP, SRP",True,,155.0,4320.0,2508.0,
+two_agent,run_1,OCP_46,MODERATE,PYTHON,OCP,OCP,SRP,True,True,1.0,1,3.68,two_agent,"OCP, SRP",True,,104.0,2760.0,1515.0,
+two_agent,run_1,OCP_47,MODERATE,PYTHON,OCP,OCP,SRP,True,True,1.0,1,5.34,two_agent,"OCP, SRP",True,,217.0,7648.0,4115.0,
+two_agent,run_1,OCP_48,MODERATE,PYTHON,OCP,OCP,SRP,True,True,1.0,1,4.72,two_agent,"OCP, SRP",True,,184.0,7522.0,3806.0,
+two_agent,run_1,LSP_1,EASY,JAVA,LSP,LSP,OCP,True,True,1.0,1,13.33,two_agent,"LSP, OCP",True,,25.0,481.0,235.0,
+two_agent,run_1,LSP_2,EASY,PYTHON,LSP,LSP,SRP,True,True,1.0,1,12.52,two_agent,"LSP, SRP",True,,15.0,309.0,153.0,
+two_agent,run_1,LSP_3,EASY,KOTLIN,LSP,LSP,,True,True,1.0,1,2.52,two_agent,LSP,True,,23.0,384.0,204.0,
+two_agent,run_1,LSP_4,EASY,C#,LSP,LSP,,True,True,1.0,1,2.35,two_agent,LSP,True,,31.0,473.0,239.0,
+two_agent,run_1,LSP_5,MODERATE,JAVA,LSP,SRP,LSP,False,True,0.5,2,3.15,two_agent,"SRP, LSP",True,,92.0,2277.0,1119.0,
+two_agent,run_1,LSP_6,MODERATE,PYTHON,LSP,LSP,SRP,True,True,1.0,1,7.77,two_agent,"LSP, SRP",True,,67.0,1841.0,878.0,
+two_agent,run_1,LSP_7,MODERATE,KOTLIN,LSP,SRP,OCP,False,False,0.0,0,2.8,two_agent,"SRP, OCP",False,,58.0,1632.0,785.0,
+two_agent,run_1,LSP_8,MODERATE,C#,LSP,LSP,DIP,True,True,1.0,1,8.08,two_agent,"LSP, DIP",True,,93.0,2189.0,1056.0,
+two_agent,run_1,LSP_9,HARD,JAVA,LSP,SRP,OCP,False,False,0.0,0,4.44,two_agent,"SRP, OCP",False,,233.0,7879.0,3663.0,
+two_agent,run_1,LSP_10,HARD,PYTHON,LSP,SRP,OCP,False,False,0.0,0,4.4,two_agent,"SRP, OCP",False,,230.0,7392.0,3479.0,
+two_agent,run_1,LSP_11,HARD,KOTLIN,LSP,SRP,LSP,False,True,0.5,2,4.46,two_agent,"SRP, LSP",True,,176.0,5663.0,2676.0,
+two_agent,run_1,LSP_12,HARD,C#,LSP,SRP,OCP,False,False,0.0,0,4.36,two_agent,"SRP, OCP",False,,253.0,7497.0,3586.0,
+two_agent,run_1,LSP_13,EASY,JAVA,LSP,SRP,OCP,False,False,0.0,0,11.27,two_agent,"SRP, OCP",False,,22.0,679.0,289.0,
+two_agent,run_1,LSP_14,EASY,PYTHON,LSP,OCP,DIP,False,False,0.0,0,12.87,two_agent,"OCP, DIP",False,,13.0,488.0,203.0,
+two_agent,run_1,LSP_15,EASY,KOTLIN,LSP,OCP,,False,False,0.0,0,12.06,two_agent,OCP,False,,20.0,582.0,254.0,
+two_agent,run_1,LSP_16,EASY,C#,LSP,OCP,SRP,False,False,0.0,0,14.43,two_agent,"OCP, SRP",False,,28.0,681.0,301.0,
+two_agent,run_1,LSP_17,MODERATE,JAVA,LSP,SRP,OCP,False,False,0.0,0,15.74,two_agent,"SRP, OCP",False,,111.0,3277.0,1454.0,
+two_agent,run_1,LSP_18,MODERATE,PYTHON,LSP,SRP,OCP,False,False,0.0,0,15.23,two_agent,"SRP, OCP",False,,75.0,2418.0,1033.0,
+two_agent,run_1,LSP_19,MODERATE,KOTLIN,LSP,SRP,OCP,False,False,0.0,0,14.98,two_agent,"SRP, OCP",False,,64.0,2369.0,991.0,
+two_agent,run_1,LSP_20,MODERATE,C#,LSP,SRP,OCP,False,False,0.0,0,15.11,two_agent,"SRP, OCP",False,,126.0,3434.0,1484.0,
+two_agent,run_1,LSP_21,HARD,JAVA,LSP,SRP,OCP,False,False,0.0,0,3.79,two_agent,"SRP, OCP",False,,226.0,8552.0,3655.0,
+two_agent,run_1,LSP_22,HARD,PYTHON,LSP,SRP,OCP,False,False,0.0,0,3.76,two_agent,"SRP, OCP",False,,192.0,7006.0,3128.0,
+two_agent,run_1,LSP_23,HARD,KOTLIN,LSP,SRP,OCP,False,False,0.0,0,4.43,two_agent,"SRP, OCP",False,,249.0,8058.0,3670.0,
+two_agent,run_1,LSP_24,HARD,C#,LSP,SRP,OCP,False,False,0.0,0,4.17,two_agent,"SRP, OCP",False,,324.0,9455.0,4436.0,
+two_agent,run_1,LSP_25,EASY,JAVA,LSP,OCP,DIP,False,False,0.0,0,2.65,two_agent,"OCP, DIP",False,,35.0,952.0,357.0,
+two_agent,run_1,LSP_26,EASY,PYTHON,LSP,SRP,DIP,False,False,0.0,0,6.95,two_agent,"SRP, DIP",False,,24.0,762.0,338.0,
+two_agent,run_1,LSP_27,EASY,KOTLIN,LSP,OCP,SRP,False,False,0.0,0,12.2,two_agent,"OCP, SRP",False,,30.0,890.0,356.0,
+two_agent,run_1,LSP_28,EASY,C#,LSP,SRP,DIP,False,False,0.0,0,11.13,two_agent,"SRP, DIP",False,,42.0,1123.0,437.0,
+two_agent,run_1,LSP_29,MODERATE,JAVA,LSP,SRP,OCP,False,False,0.0,0,7.91,two_agent,"SRP, OCP",False,,114.0,3897.0,1877.0,
+two_agent,run_1,LSP_30,MODERATE,PYTHON,LSP,OCP,SRP,False,False,0.0,0,3.55,two_agent,"OCP, SRP",False,,88.0,3657.0,1616.0,
+two_agent,run_1,LSP_31,MODERATE,KOTLIN,LSP,SRP,OCP,False,False,0.0,0,3.36,two_agent,"SRP, OCP",False,,94.0,3503.0,1587.0,
+two_agent,run_1,LSP_32,MODERATE,C#,LSP,SRP,OCP,False,False,0.0,0,14.12,two_agent,"SRP, OCP",False,,145.0,4433.0,2032.0,
+two_agent,run_1,LSP_33,HARD,JAVA,LSP,SRP,OCP,False,False,0.0,0,4.31,two_agent,"SRP, OCP",False,,277.0,9959.0,4555.0,
+two_agent,run_1,LSP_34,HARD,PYTHON,LSP,SRP,OCP,False,False,0.0,0,5.25,two_agent,"SRP, OCP",False,,317.0,12199.0,6145.0,
+two_agent,run_1,LSP_35,HARD,KOTLIN,LSP,SRP,OCP,False,False,0.0,0,4.91,two_agent,"SRP, OCP",False,,358.0,12785.0,6521.0,
+two_agent,run_1,LSP_36,HARD,C#,LSP,SRP,OCP,False,False,0.0,0,5.36,two_agent,"SRP, OCP",False,,458.0,14758.0,7551.0,
+two_agent,run_1,LSP_37,EASY,JAVA,LSP,SRP,OCP,False,False,0.0,0,12.54,two_agent,"SRP, OCP",False,,38.0,855.0,402.0,
+two_agent,run_1,LSP_38,EASY,PYTHON,LSP,SRP,OCP,False,False,0.0,0,3.01,two_agent,"SRP, OCP",False,,33.0,740.0,352.0,
+two_agent,run_1,LSP_39,EASY,KOTLIN,LSP,OCP,SRP,False,False,0.0,0,12.13,two_agent,"OCP, SRP",False,,24.0,577.0,261.0,
+two_agent,run_1,LSP_40,EASY,C#,LSP,SRP,OCP,False,False,0.0,0,12.69,two_agent,"SRP, OCP",False,,42.0,864.0,402.0,
+two_agent,run_1,LSP_41,MODERATE,JAVA,LSP,SRP,DIP,False,False,0.0,0,8.07,two_agent,"SRP, DIP",False,,91.0,2684.0,1272.0,
+two_agent,run_1,LSP_42,MODERATE,PYTHON,LSP,SRP,OCP,False,False,0.0,0,14.21,two_agent,"SRP, OCP",False,,82.0,2262.0,1091.0,
+two_agent,run_1,LSP_43,MODERATE,KOTLIN,LSP,SRP,OCP,False,False,0.0,0,15.18,two_agent,"SRP, OCP",False,,71.0,2017.0,953.0,
+two_agent,run_1,LSP_44,MODERATE,C#,LSP,SRP,OCP,False,False,0.0,0,13.12,two_agent,"SRP, OCP",False,,112.0,2849.0,1351.0,
+two_agent,run_1,LSP_45,HARD,JAVA,LSP,SRP,OCP,False,False,0.0,0,4.63,two_agent,"SRP, OCP",False,,212.0,8668.0,3460.0,
+two_agent,run_1,LSP_46,HARD,PYTHON,LSP,SRP,OCP,False,False,0.0,0,9.01,two_agent,"SRP, OCP",False,,164.0,6480.0,2762.0,
+two_agent,run_1,LSP_47,HARD,KOTLIN,LSP,SRP,DIP,False,False,0.0,0,15.61,two_agent,"SRP, DIP",False,,202.0,6693.0,2810.0,
+two_agent,run_1,LSP_48,HARD,C#,LSP,SRP,OCP,False,False,0.0,0,19.1,two_agent,"SRP, OCP",False,,272.0,8682.0,3750.0,
+two_agent,run_1,ISP_1,EASY,CSHARP,ISP,ISP,OCP,True,True,1.0,1,8.34,two_agent,"ISP, OCP",True,,89.0,1737.0,992.0,
+two_agent,run_1,ISP_2,EASY,CSHARP,ISP,LSP,ISP,False,True,0.5,2,3.57,two_agent,"LSP, ISP",True,,94.0,2055.0,1103.0,
+two_agent,run_1,ISP_3,EASY,CSHARP,ISP,SRP,ISP,False,True,0.5,2,11.92,two_agent,"SRP, ISP",True,,63.0,1140.0,543.0,
+two_agent,run_1,ISP_4,EASY,CSHARP,ISP,LSP,ISP,False,True,0.5,2,3.04,two_agent,"LSP, ISP",True,,44.0,664.0,366.0,
+two_agent,run_1,ISP_5,HARD,CSHARP,ISP,SRP,OCP,False,False,0.0,0,5.25,two_agent,"SRP, OCP",False,,511.0,11621.0,7097.0,
+two_agent,run_1,ISP_6,HARD,CSHARP,ISP,SRP,OCP,False,False,0.0,0,12.81,two_agent,"SRP, OCP",False,,461.0,10993.0,5406.0,
+two_agent,run_1,ISP_7,HARD,CSHARP,ISP,SRP,OCP,False,False,0.0,0,6.78,two_agent,"SRP, OCP",False,,660.0,17075.0,9827.0,
+two_agent,run_1,ISP_8,HARD,CSHARP,ISP,SRP,ISP,False,True,0.5,2,17.02,two_agent,"SRP, ISP",True,,473.0,10539.0,5699.0,
+two_agent,run_1,ISP_9,MODERATE,CSHARP,ISP,SRP,OCP,False,False,0.0,0,9.43,two_agent,"SRP, OCP",False,,287.0,6316.0,3915.0,
+two_agent,run_1,ISP_10,MODERATE,CSHARP,ISP,SRP,OCP,False,False,0.0,0,16.29,two_agent,"SRP, OCP",False,,259.0,6299.0,3322.0,
+two_agent,run_1,ISP_11,MODERATE,CSHARP,ISP,SRP,ISP,False,True,0.5,2,3.55,two_agent,"SRP, ISP",True,,149.0,2838.0,1436.0,
+two_agent,run_1,ISP_12,MODERATE,CSHARP,ISP,SRP,OCP,False,False,0.0,0,15.63,two_agent,"SRP, OCP",False,,291.0,5721.0,3266.0,
+two_agent,run_1,ISP_13,EASY,JAVA,ISP,OCP,ISP,False,True,0.5,2,3.18,two_agent,"OCP, ISP",True,,77.0,1793.0,969.0,
+two_agent,run_1,ISP_14,EASY,JAVA,ISP,OCP,ISP,False,True,0.5,2,2.96,two_agent,"OCP, ISP",True,,88.0,2183.0,1128.0,
+two_agent,run_1,ISP_15,EASY,JAVA,ISP,ISP,LSP,True,True,1.0,1,13.33,two_agent,"ISP, LSP",True,,48.0,1121.0,519.0,
+two_agent,run_1,ISP_16,EASY,JAVA,ISP,ISP,LSP,True,True,1.0,1,7.11,two_agent,"ISP, LSP",True,,34.0,654.0,347.0,
+two_agent,run_1,ISP_17,HARD,JAVA,ISP,SRP,OCP,False,False,0.0,0,5.25,two_agent,"SRP, OCP",False,,416.0,11445.0,6583.0,
+two_agent,run_1,ISP_18,HARD,JAVA,ISP,SRP,OCP,False,False,0.0,0,5.66,two_agent,"SRP, OCP",False,,436.0,11756.0,5569.0,
+two_agent,run_1,ISP_19,HARD,JAVA,ISP,SRP,OCP,False,False,0.0,0,5.83,two_agent,"SRP, OCP",False,,482.0,15667.0,8472.0,
+two_agent,run_1,ISP_20,HARD,JAVA,ISP,SRP,OCP,False,False,0.0,0,4.47,two_agent,"SRP, OCP",False,,351.0,10063.0,5037.0,
+two_agent,run_1,ISP_21,MODERATE,JAVA,ISP,SRP,OCP,False,False,0.0,0,9.09,two_agent,"SRP, OCP",False,,226.0,6148.0,3575.0,
+two_agent,run_1,ISP_22,MODERATE,JAVA,ISP,SRP,OCP,False,False,0.0,0,17.05,two_agent,"SRP, OCP",False,,246.0,6487.0,3167.0,
+two_agent,run_1,ISP_23,MODERATE,JAVA,ISP,SRP,ISP,False,True,0.5,2,12.41,two_agent,"SRP, ISP",True,,113.0,2744.0,1328.0,
+two_agent,run_1,ISP_24,MODERATE,JAVA,ISP,SRP,OCP,False,False,0.0,0,15.58,two_agent,"SRP, OCP",False,,220.0,5450.0,2911.0,
+two_agent,run_1,ISP_25,EASY,KOTLIN,ISP,ISP,OCP,True,True,1.0,1,7.83,two_agent,"ISP, OCP",True,,57.0,1378.0,739.0,
+two_agent,run_1,ISP_26,EASY,KOTLIN,ISP,OCP,LSP,False,False,0.0,0,2.86,two_agent,"OCP, LSP",False,,79.0,1898.0,995.0,
+two_agent,run_1,ISP_27,EASY,KOTLIN,ISP,SRP,ISP,False,True,0.5,2,2.81,two_agent,"SRP, ISP",True,,47.0,988.0,470.0,
+two_agent,run_1,ISP_28,EASY,KOTLIN,ISP,ISP,LSP,True,True,1.0,1,2.97,two_agent,"ISP, LSP",True,,34.0,571.0,316.0,
+two_agent,run_1,ISP_29,HARD,KOTLIN,ISP,SRP,OCP,False,False,0.0,0,4.35,two_agent,"SRP, OCP",False,,331.0,9289.0,5382.0,
+two_agent,run_1,ISP_30,HARD,KOTLIN,ISP,SRP,OCP,False,False,0.0,0,11.91,two_agent,"SRP, OCP",False,,371.0,9990.0,4704.0,
+two_agent,run_1,ISP_31,HARD,KOTLIN,ISP,ISP,DIP,True,True,1.0,1,20.19,two_agent,"ISP, DIP",True,,482.0,13948.0,7669.0,
+two_agent,run_1,ISP_32,HARD,KOTLIN,ISP,SRP,OCP,False,False,0.0,0,9.79,two_agent,"SRP, OCP",False,,310.0,8522.0,4214.0,
+two_agent,run_1,ISP_33,MODERATE,KOTLIN,ISP,SRP,OCP,False,False,0.0,0,3.91,two_agent,"SRP, OCP",False,,189.0,5219.0,3224.0,
+two_agent,run_1,ISP_34,MODERATE,KOTLIN,ISP,SRP,ISP,False,True,0.5,2,15.12,two_agent,"SRP, ISP",True,,209.0,5799.0,2919.0,
+two_agent,run_1,ISP_35,MODERATE,KOTLIN,ISP,SRP,ISP,False,True,0.5,2,3.51,two_agent,"SRP, ISP",True,,112.0,2448.0,1209.0,
+two_agent,run_1,ISP_36,MODERATE,KOTLIN,ISP,ISP,SRP,True,True,1.0,1,15.24,two_agent,"ISP, SRP",True,,166.0,4233.0,2183.0,
+two_agent,run_1,ISP_37,EASY,PYTHON,ISP,SRP,OCP,False,False,0.0,0,13.85,two_agent,"SRP, OCP",False,,60.0,1516.0,813.0,
+two_agent,run_1,ISP_38,EASY,PYTHON,ISP,OCP,ISP,False,True,0.5,2,3.02,two_agent,"OCP, ISP",True,,81.0,2099.0,1084.0,
+two_agent,run_1,ISP_39,EASY,PYTHON,ISP,SRP,ISP,False,True,0.5,2,7.41,two_agent,"SRP, ISP",True,,44.0,1045.0,489.0,
+two_agent,run_1,ISP_40,EASY,PYTHON,ISP,OCP,ISP,False,True,0.5,2,3.15,two_agent,"OCP, ISP",True,,34.0,629.0,338.0,
+two_agent,run_1,ISP_41,HARD,PYTHON,ISP,SRP,OCP,False,False,0.0,0,4.78,two_agent,"SRP, OCP",False,,328.0,9475.0,5333.0,
+two_agent,run_1,ISP_42,HARD,PYTHON,ISP,SRP,OCP,False,False,0.0,0,4.64,two_agent,"SRP, OCP",False,,357.0,10176.0,4912.0,
+two_agent,run_1,ISP_43,HARD,PYTHON,ISP,SRP,OCP,False,False,0.0,0,5.84,two_agent,"SRP, OCP",False,,425.0,13827.0,7304.0,
+two_agent,run_1,ISP_44,HARD,PYTHON,ISP,SRP,OCP,False,False,0.0,0,9.59,two_agent,"SRP, OCP",False,,295.0,8947.0,4213.0,
+two_agent,run_1,ISP_45,MODERATE,PYTHON,ISP,SRP,OCP,False,False,0.0,0,3.86,two_agent,"SRP, OCP",False,,178.0,5209.0,2982.0,
+two_agent,run_1,ISP_46,MODERATE,PYTHON,ISP,SRP,OCP,False,False,0.0,0,15.31,two_agent,"SRP, OCP",False,,202.0,5849.0,2932.0,
+two_agent,run_1,ISP_47,MODERATE,PYTHON,ISP,SRP,ISP,False,True,0.5,2,12.49,two_agent,"SRP, ISP",True,,108.0,2625.0,1283.0,
+two_agent,run_1,ISP_48,MODERATE,PYTHON,ISP,SRP,OCP,False,False,0.0,0,12.85,two_agent,"SRP, OCP",False,,177.0,4573.0,2372.0,
+two_agent,run_1,DIP_1,EASY,JAVA,DIP,SRP,DIP,False,True,0.5,2,2.42,two_agent,"SRP, DIP",True,,23.0,593.0,285.0,
+two_agent,run_1,DIP_2,EASY,PYTHON,DIP,SRP,DIP,False,True,0.5,2,2.78,two_agent,"SRP, DIP",True,,15.0,441.0,206.0,
+two_agent,run_1,DIP_3,EASY,KOTLIN,DIP,SRP,DIP,False,True,0.5,2,2.77,two_agent,"SRP, DIP",True,,19.0,441.0,213.0,
+two_agent,run_1,DIP_4,EASY,C#,DIP,SRP,DIP,False,True,0.5,2,2.58,two_agent,"SRP, DIP",True,,29.0,591.0,284.0,
+two_agent,run_1,DIP_5,MODERATE,JAVA,DIP,SRP,DIP,False,True,0.5,2,2.92,two_agent,"SRP, DIP",True,,77.0,2288.0,1171.0,
+two_agent,run_1,DIP_6,MODERATE,PYTHON,DIP,SRP,DIP,False,True,0.5,2,2.66,two_agent,"SRP, DIP",True,,54.0,1844.0,909.0,
+two_agent,run_1,DIP_7,MODERATE,KOTLIN,DIP,SRP,DIP,False,True,0.5,2,2.77,two_agent,"SRP, DIP",True,,65.0,1828.0,969.0,
+two_agent,run_1,DIP_8,MODERATE,C#,DIP,SRP,DIP,False,True,0.5,2,2.69,two_agent,"SRP, DIP",True,,94.0,2405.0,1244.0,
+two_agent,run_1,DIP_9,HARD,JAVA,DIP,SRP,DIP,False,True,0.5,2,3.53,two_agent,"SRP, DIP",True,,229.0,8620.0,4693.0,
+two_agent,run_1,DIP_10,HARD,PYTHON,DIP,SRP,DIP,False,True,0.5,2,14.98,two_agent,"SRP, DIP",True,,167.0,6938.0,3394.0,
+two_agent,run_1,DIP_11,HARD,KOTLIN,DIP,SRP,DIP,False,True,0.5,2,3.69,two_agent,"SRP, DIP",True,,191.0,6234.0,3373.0,
+two_agent,run_1,DIP_12,HARD,C#,DIP,SRP,DIP,False,True,0.5,2,3.53,two_agent,"SRP, DIP",True,,267.0,8372.0,4441.0,
+two_agent,run_1,DIP_13,EASY,JAVA,DIP,DIP,SRP,True,True,1.0,1,6.65,two_agent,"DIP, SRP",True,,18.0,465.0,192.0,
+two_agent,run_1,DIP_14,EASY,PYTHON,DIP,DIP,SRP,True,True,1.0,1,6.39,two_agent,"DIP, SRP",True,,11.0,331.0,131.0,
+two_agent,run_1,DIP_15,EASY,KOTLIN,DIP,DIP,OCP,True,True,1.0,1,10.82,two_agent,"DIP, OCP",True,,14.0,344.0,141.0,
+two_agent,run_1,DIP_16,EASY,C#,DIP,DIP,,True,True,1.0,1,6.15,two_agent,DIP,True,,23.0,463.0,195.0,
+two_agent,run_1,DIP_17,MODERATE,JAVA,DIP,OCP,SRP,False,False,0.0,0,13.95,two_agent,"OCP, SRP",False,,56.0,1872.0,912.0,
+two_agent,run_1,DIP_18,MODERATE,PYTHON,DIP,OCP,SRP,False,False,0.0,0,7.73,two_agent,"OCP, SRP",False,,41.0,1407.0,684.0,
+two_agent,run_1,DIP_19,MODERATE,KOTLIN,DIP,OCP,SRP,False,False,0.0,0,3.07,two_agent,"OCP, SRP",False,,53.0,1600.0,843.0,
+two_agent,run_1,DIP_20,MODERATE,C#,DIP,OCP,SRP,False,False,0.0,0,13.57,two_agent,"OCP, SRP",False,,76.0,1950.0,974.0,
+two_agent,run_1,DIP_21,HARD,JAVA,DIP,SRP,OCP,False,False,0.0,0,4.08,two_agent,"SRP, OCP",False,,207.0,8107.0,3556.0,
+two_agent,run_1,DIP_22,HARD,PYTHON,DIP,OCP,SRP,False,False,0.0,0,4.01,two_agent,"OCP, SRP",False,,145.0,6645.0,2878.0,
+two_agent,run_1,DIP_23,HARD,KOTLIN,DIP,SRP,OCP,False,False,0.0,0,3.69,two_agent,"SRP, OCP",False,,155.0,6261.0,2625.0,
+two_agent,run_1,DIP_24,HARD,C#,DIP,SRP,OCP,False,False,0.0,0,4.15,two_agent,"SRP, OCP",False,,235.0,8702.0,4296.0,
+two_agent,run_1,DIP_25,EASY,JAVA,DIP,SRP,DIP,False,True,0.5,2,2.82,two_agent,"SRP, DIP",True,,22.0,583.0,307.0,
+two_agent,run_1,DIP_26,EASY,PYTHON,DIP,SRP,DIP,False,True,0.5,2,2.77,two_agent,"SRP, DIP",True,,18.0,496.0,284.0,
+two_agent,run_1,DIP_27,EASY,KOTLIN,DIP,SRP,DIP,False,True,0.5,2,2.49,two_agent,"SRP, DIP",True,,22.0,531.0,290.0,
+two_agent,run_1,DIP_28,EASY,C#,DIP,SRP,DIP,False,True,0.5,2,7.35,two_agent,"SRP, DIP",True,,31.0,595.0,341.0,
+two_agent,run_1,DIP_29,MODERATE,JAVA,DIP,SRP,DIP,False,True,0.5,2,7.9,two_agent,"SRP, DIP",True,,72.0,2198.0,1201.0,
+two_agent,run_1,DIP_30,MODERATE,PYTHON,DIP,SRP,DIP,False,True,0.5,2,7.81,two_agent,"SRP, DIP",True,,58.0,1890.0,1093.0,
+two_agent,run_1,DIP_31,MODERATE,KOTLIN,DIP,SRP,DIP,False,True,0.5,2,3.15,two_agent,"SRP, DIP",True,,63.0,1838.0,1012.0,
+two_agent,run_1,DIP_32,MODERATE,C#,DIP,SRP,OCP,False,False,0.0,0,3.21,two_agent,"SRP, OCP",False,,91.0,2078.0,1203.0,
+two_agent,run_1,DIP_33,HARD,JAVA,DIP,SRP,OCP,False,False,0.0,0,3.98,two_agent,"SRP, OCP",False,,164.0,6576.0,2928.0,
+two_agent,run_1,DIP_34,HARD,PYTHON,DIP,SRP,DIP,False,True,0.5,2,3.94,two_agent,"SRP, DIP",True,,152.0,6056.0,2750.0,
+two_agent,run_1,DIP_35,HARD,KOTLIN,DIP,SRP,OCP,False,False,0.0,0,4.6,two_agent,"SRP, OCP",False,,244.0,8715.0,4214.0,
+two_agent,run_1,DIP_36,HARD,C#,DIP,SRP,OCP,False,False,0.0,0,4.88,two_agent,"SRP, OCP",False,,305.0,10242.0,5016.0,
+two_agent,run_1,DIP_37,EASY,JAVA,DIP,DIP,OCP,True,True,1.0,1,2.75,two_agent,"DIP, OCP",True,,17.0,479.0,199.0,
+two_agent,run_1,DIP_38,EASY,PYTHON,DIP,DIP,SRP,True,True,1.0,1,2.81,two_agent,"DIP, SRP",True,,10.0,344.0,134.0,
+two_agent,run_1,DIP_39,EASY,KOTLIN,DIP,DIP,OCP,True,True,1.0,1,2.92,two_agent,"DIP, OCP",True,,13.0,348.0,141.0,
+two_agent,run_1,DIP_40,EASY,C#,DIP,DIP,SRP,True,True,1.0,1,2.88,two_agent,"DIP, SRP",True,,22.0,479.0,201.0,
+two_agent,run_1,DIP_41,MODERATE,JAVA,DIP,DIP,OCP,True,True,1.0,1,12.25,two_agent,"DIP, OCP",True,,62.0,2021.0,806.0,
+two_agent,run_1,DIP_42,MODERATE,PYTHON,DIP,SRP,DIP,False,True,0.5,2,7.04,two_agent,"SRP, DIP",True,,40.0,1586.0,588.0,
+two_agent,run_1,DIP_43,MODERATE,KOTLIN,DIP,,,False,False,0.0,0,6.07,two_agent,,False,,46.0,1576.0,614.0,
+two_agent,run_1,DIP_44,MODERATE,C#,DIP,SRP,OCP,False,False,0.0,0,3.09,two_agent,"SRP, OCP",False,,77.0,2059.0,842.0,
+two_agent,run_1,DIP_45,HARD,JAVA,DIP,SRP,ISP,False,False,0.0,0,8.35,two_agent,"SRP, ISP",False,,138.0,5087.0,2157.0,
+two_agent,run_1,DIP_46,HARD,PYTHON,DIP,SRP,DIP,False,True,0.5,2,3.24,two_agent,"SRP, DIP",True,,106.0,4499.0,1862.0,
+two_agent,run_1,DIP_47,HARD,KOTLIN,DIP,SRP,DIP,False,True,0.5,2,3.06,two_agent,"SRP, DIP",True,,127.0,4464.0,1921.0,
+two_agent,run_1,DIP_48,HARD,C#,DIP,SRP,DIP,False,True,0.5,2,3.39,two_agent,"SRP, DIP",True,,170.0,5347.0,2296.0,
+two_agent,run_2,SRP_1,EASY,JAVA,SRP,SRP,,True,True,1.0,1,3.97,two_agent,SRP,True,,17.0,409.0,213.0,
+two_agent,run_2,SRP_2,EASY,JAVA,SRP,SRP,,True,True,1.0,1,1.71,two_agent,SRP,True,,19.0,534.0,248.0,
+two_agent,run_2,SRP_3,EASY,JAVA,SRP,SRP,,True,True,1.0,1,1.57,two_agent,SRP,True,,21.0,569.0,289.0,
+two_agent,run_2,SRP_4,EASY,JAVA,SRP,SRP,,True,True,1.0,1,1.62,two_agent,SRP,True,,17.0,416.0,219.0,
+two_agent,run_2,SRP_5,MODERATE,JAVA,SRP,SRP,,True,True,1.0,1,2.62,two_agent,SRP,True,,168.0,4688.0,2420.0,
+two_agent,run_2,SRP_6,MODERATE,JAVA,SRP,SRP,,True,True,1.0,1,3.39,two_agent,SRP,True,,256.0,7899.0,3817.0,
+two_agent,run_2,SRP_7,MODERATE,JAVA,SRP,SRP,,True,True,1.0,1,3.26,two_agent,SRP,True,,185.0,6117.0,3228.0,
+two_agent,run_2,SRP_8,MODERATE,JAVA,SRP,SRP,,True,True,1.0,1,2.84,two_agent,SRP,True,,124.0,4615.0,2130.0,
+two_agent,run_2,SRP_9,HARD,JAVA,SRP,SRP,,True,True,1.0,1,4.35,two_agent,SRP,True,,370.0,12738.0,6063.0,
+two_agent,run_2,SRP_10,HARD,JAVA,SRP,SRP,,True,True,1.0,1,4.37,two_agent,SRP,True,,337.0,13357.0,5797.0,
+two_agent,run_2,SRP_11,HARD,JAVA,SRP,SRP,,True,True,1.0,1,4.47,two_agent,SRP,True,,330.0,12494.0,5912.0,
+two_agent,run_2,SRP_12,HARD,JAVA,SRP,,,False,False,0.0,0,17.17,two_agent,,False,,388.0,16985.0,7852.0,
+two_agent,run_2,SRP_13,EASY,PYTHON,SRP,SRP,,True,True,1.0,1,1.8,two_agent,SRP,True,,10.0,286.0,144.0,
+two_agent,run_2,SRP_14,EASY,PYTHON,SRP,SRP,,True,True,1.0,1,1.66,two_agent,SRP,True,,11.0,423.0,186.0,
+two_agent,run_2,SRP_15,EASY,PYTHON,SRP,SRP,,True,True,1.0,1,1.56,two_agent,SRP,True,,13.0,390.0,203.0,
+two_agent,run_2,SRP_16,EASY,PYTHON,SRP,SRP,,True,True,1.0,1,1.64,two_agent,SRP,True,,10.0,303.0,155.0,
+two_agent,run_2,SRP_17,MODERATE,PYTHON,SRP,SRP,,True,True,1.0,1,2.54,two_agent,SRP,True,,120.0,4007.0,1994.0,
+two_agent,run_2,SRP_18,MODERATE,PYTHON,SRP,SRP,,True,True,1.0,1,3.29,two_agent,SRP,True,,195.0,7146.0,3315.0,
+two_agent,run_2,SRP_19,MODERATE,PYTHON,SRP,SRP,,True,True,1.0,1,3.37,two_agent,SRP,True,,167.0,5735.0,2857.0,
+two_agent,run_2,SRP_20,MODERATE,PYTHON,SRP,SRP,,True,True,1.0,1,2.66,two_agent,SRP,True,,89.0,3928.0,1733.0,
+two_agent,run_2,SRP_21,HARD,PYTHON,SRP,SRP,,True,True,1.0,1,4.02,two_agent,SRP,True,,254.0,10438.0,4740.0,
+two_agent,run_2,SRP_22,HARD,PYTHON,SRP,SRP,,True,True,1.0,1,4.48,two_agent,SRP,True,,300.0,12992.0,5954.0,
+two_agent,run_2,SRP_23,HARD,PYTHON,SRP,SRP,,True,True,1.0,1,4.43,two_agent,SRP,True,,248.0,11175.0,4923.0,
+two_agent,run_2,SRP_24,HARD,PYTHON,SRP,SRP,,True,True,1.0,1,4.98,two_agent,SRP,True,,329.0,14413.0,6230.0,
+two_agent,run_2,SRP_25,EASY,KOTLIN,SRP,SRP,,True,True,1.0,1,1.76,two_agent,SRP,True,,10.0,229.0,117.0,
+two_agent,run_2,SRP_26,EASY,KOTLIN,SRP,SRP,,True,True,1.0,1,1.76,two_agent,SRP,True,,10.0,305.0,142.0,
+two_agent,run_2,SRP_27,EASY,KOTLIN,SRP,SRP,,True,True,1.0,1,1.74,two_agent,SRP,True,,12.0,330.0,166.0,
+two_agent,run_2,SRP_28,EASY,KOTLIN,SRP,SRP,,True,True,1.0,1,1.63,two_agent,SRP,True,,10.0,267.0,135.0,
+two_agent,run_2,SRP_29,MODERATE,KOTLIN,SRP,SRP,,True,True,1.0,1,2.58,two_agent,SRP,True,,116.0,3523.0,1779.0,
+two_agent,run_2,SRP_30,MODERATE,KOTLIN,SRP,SRP,,True,True,1.0,1,3.11,two_agent,SRP,True,,179.0,6179.0,2878.0,
+two_agent,run_2,SRP_31,MODERATE,KOTLIN,SRP,SRP,,True,True,1.0,1,2.86,two_agent,SRP,True,,164.0,5372.0,2786.0,
+two_agent,run_2,SRP_32,MODERATE,KOTLIN,SRP,SRP,,True,True,1.0,1,2.8,two_agent,SRP,True,,102.0,3859.0,1732.0,
+two_agent,run_2,SRP_33,HARD,KOTLIN,SRP,SRP,,True,True,1.0,1,3.95,two_agent,SRP,True,,286.0,9834.0,4595.0,
+two_agent,run_2,SRP_34,HARD,KOTLIN,SRP,SRP,,True,True,1.0,1,4.0,two_agent,SRP,True,,260.0,10479.0,4530.0,
+two_agent,run_2,SRP_35,HARD,KOTLIN,SRP,SRP,,True,True,1.0,1,4.05,two_agent,SRP,True,,285.0,10237.0,4679.0,
+two_agent,run_2,SRP_36,HARD,KOTLIN,SRP,SRP,,True,True,1.0,1,4.94,two_agent,SRP,True,,361.0,14620.0,6873.0,
+two_agent,run_2,SRP_37,EASY,CSHARP,SRP,SRP,,True,True,1.0,1,1.84,two_agent,SRP,True,,21.0,428.0,230.0,
+two_agent,run_2,SRP_38,EASY,CSHARP,SRP,SRP,,True,True,1.0,1,1.96,two_agent,SRP,True,,23.0,539.0,252.0,
+two_agent,run_2,SRP_39,EASY,CSHARP,SRP,SRP,,True,True,1.0,1,1.79,two_agent,SRP,True,,25.0,577.0,293.0,
+two_agent,run_2,SRP_40,EASY,CSHARP,SRP,SRP,,True,True,1.0,1,1.65,two_agent,SRP,True,,21.0,421.0,223.0,
+two_agent,run_2,SRP_41,MODERATE,CSHARP,SRP,SRP,,True,True,1.0,1,2.69,two_agent,SRP,True,,184.0,4448.0,2313.0,
+two_agent,run_2,SRP_42,MODERATE,CSHARP,SRP,SRP,,True,True,1.0,1,3.25,two_agent,SRP,True,,289.0,7682.0,3840.0,
+two_agent,run_2,SRP_43,MODERATE,CSHARP,SRP,SRP,,True,True,1.0,1,3.08,two_agent,SRP,True,,218.0,5972.0,3084.0,
+two_agent,run_2,SRP_44,MODERATE,CSHARP,SRP,SRP,,True,True,1.0,1,2.76,two_agent,SRP,True,,149.0,4707.0,2163.0,
+two_agent,run_2,SRP_45,HARD,CSHARP,SRP,SRP,,True,True,1.0,1,4.13,two_agent,SRP,True,,395.0,12158.0,5727.0,
+two_agent,run_2,SRP_46,HARD,CSHARP,SRP,SRP,,True,True,1.0,1,4.27,two_agent,SRP,True,,384.0,13000.0,5631.0,
+two_agent,run_2,SRP_47,HARD,CSHARP,SRP,SRP,,True,True,1.0,1,4.38,two_agent,SRP,True,,387.0,13890.0,7213.0,
+two_agent,run_2,SRP_48,HARD,CSHARP,SRP,SRP,,True,True,1.0,1,5.24,two_agent,SRP,True,,465.0,16946.0,7834.0,
+two_agent,run_2,OCP_1,EASY,CSHARP,OCP,OCP,,True,True,1.0,1,2.23,two_agent,OCP,True,,72.0,1235.0,658.0,
+two_agent,run_2,OCP_2,EASY,CSHARP,OCP,OCP,,True,True,1.0,1,2.21,two_agent,OCP,True,,50.0,1300.0,597.0,
+two_agent,run_2,OCP_3,EASY,CSHARP,OCP,OCP,,True,True,1.0,1,2.28,two_agent,OCP,True,,49.0,1004.0,492.0,
+two_agent,run_2,OCP_4,EASY,CSHARP,OCP,OCP,,True,True,1.0,1,2.32,two_agent,OCP,True,,53.0,1479.0,777.0,
+two_agent,run_2,OCP_5,HARD,CSHARP,OCP,SRP,,False,False,0.0,0,5.13,two_agent,SRP,False,,459.0,15744.0,9227.0,
+two_agent,run_2,OCP_6,HARD,CSHARP,OCP,SRP,,False,False,0.0,0,3.97,two_agent,SRP,False,,269.0,8599.0,4781.0,
+two_agent,run_2,OCP_7,HARD,CSHARP,OCP,,,False,False,0.0,0,19.36,two_agent,,False,,415.0,16149.0,8664.0,
+two_agent,run_2,OCP_8,HARD,CSHARP,OCP,,,False,False,0.0,0,9.7,two_agent,,False,,398.0,15864.0,8381.0,
+two_agent,run_2,OCP_9,MODERATE,CSHARP,OCP,OCP,,True,True,1.0,1,2.91,two_agent,OCP,True,,208.0,5450.0,3451.0,
+two_agent,run_2,OCP_10,MODERATE,CSHARP,OCP,OCP,,True,True,1.0,1,2.59,two_agent,OCP,True,,112.0,2563.0,1508.0,
+two_agent,run_2,OCP_11,MODERATE,CSHARP,OCP,SRP,,False,False,0.0,0,18.0,two_agent,SRP,False,,305.0,9205.0,5469.0,
+two_agent,run_2,OCP_12,MODERATE,CSHARP,OCP,SRP,,False,False,0.0,0,4.12,two_agent,SRP,False,,216.0,10058.0,5025.0,
+two_agent,run_2,OCP_13,EASY,JAVA,OCP,OCP,,True,True,1.0,1,2.24,two_agent,OCP,True,,57.0,1210.0,640.0,
+two_agent,run_2,OCP_14,EASY,JAVA,OCP,OCP,,True,True,1.0,1,2.5,two_agent,OCP,True,,44.0,1316.0,642.0,
+two_agent,run_2,OCP_15,EASY,JAVA,OCP,OCP,,True,True,1.0,1,2.2,two_agent,OCP,True,,38.0,901.0,452.0,
+two_agent,run_2,OCP_16,EASY,JAVA,OCP,OCP,,True,True,1.0,1,2.41,two_agent,OCP,True,,32.0,1218.0,606.0,
+two_agent,run_2,OCP_17,HARD,JAVA,OCP,SRP,,False,False,0.0,0,4.8,two_agent,SRP,False,,433.0,15628.0,9381.0,
+two_agent,run_2,OCP_18,HARD,JAVA,OCP,SRP,,False,False,0.0,0,3.61,two_agent,SRP,False,,210.0,7259.0,4132.0,
+two_agent,run_2,OCP_19,HARD,JAVA,OCP,OCP,,True,True,1.0,1,11.95,two_agent,OCP,True,,414.0,14950.0,8460.0,
+two_agent,run_2,OCP_20,HARD,JAVA,OCP,SRP,,False,False,0.0,0,5.28,two_agent,SRP,False,,359.0,15513.0,8675.0,
+two_agent,run_2,OCP_21,MODERATE,JAVA,OCP,OCP,,True,True,1.0,1,2.96,two_agent,OCP,True,,177.0,5124.0,3060.0,
+two_agent,run_2,OCP_22,MODERATE,JAVA,OCP,OCP,,True,True,1.0,1,2.66,two_agent,OCP,True,,105.0,2985.0,1659.0,
+two_agent,run_2,OCP_23,MODERATE,JAVA,OCP,OCP,,True,True,1.0,1,10.2,two_agent,OCP,True,,281.0,9648.0,5774.0,
+two_agent,run_2,OCP_24,MODERATE,JAVA,OCP,SRP,,False,False,0.0,0,3.82,two_agent,SRP,False,,215.0,8998.0,4856.0,
+two_agent,run_2,OCP_25,EASY,KOTLIN,OCP,OCP,,True,True,1.0,1,2.39,two_agent,OCP,True,,32.0,715.0,374.0,
+two_agent,run_2,OCP_26,EASY,KOTLIN,OCP,SRP,,False,False,0.0,0,2.06,two_agent,SRP,False,,27.0,642.0,308.0,
+two_agent,run_2,OCP_27,EASY,KOTLIN,OCP,OCP,,True,True,1.0,1,2.69,two_agent,OCP,True,,29.0,561.0,301.0,
+two_agent,run_2,OCP_28,EASY,KOTLIN,OCP,SRP,,False,False,0.0,0,1.89,two_agent,SRP,False,,26.0,722.0,380.0,
+two_agent,run_2,OCP_29,HARD,KOTLIN,OCP,SRP,,False,False,0.0,0,4.25,two_agent,SRP,False,,291.0,10683.0,6438.0,
+two_agent,run_2,OCP_30,HARD,KOTLIN,OCP,SRP,,False,False,0.0,0,3.5,two_agent,SRP,False,,159.0,5979.0,3282.0,
+two_agent,run_2,OCP_31,HARD,KOTLIN,OCP,SRP,,False,False,0.0,0,21.05,two_agent,SRP,False,,320.0,11420.0,6112.0,
+two_agent,run_2,OCP_32,HARD,KOTLIN,OCP,SRP,,False,False,0.0,0,4.71,two_agent,SRP,False,,287.0,11644.0,6260.0,
+two_agent,run_2,OCP_33,MODERATE,KOTLIN,OCP,OCP,,True,True,1.0,1,3.08,two_agent,OCP,True,,122.0,4047.0,2434.0,
+two_agent,run_2,OCP_34,MODERATE,KOTLIN,OCP,OCP,,True,True,1.0,1,2.57,two_agent,OCP,True,,85.0,2208.0,1264.0,
+two_agent,run_2,OCP_35,MODERATE,KOTLIN,OCP,SRP,,False,False,0.0,0,3.84,two_agent,SRP,False,,218.0,6916.0,3936.0,
+two_agent,run_2,OCP_36,MODERATE,KOTLIN,OCP,SRP,,False,False,0.0,0,3.4,two_agent,SRP,False,,185.0,6791.0,3716.0,
+two_agent,run_2,OCP_37,EASY,PYTHON,OCP,OCP,,True,True,1.0,1,2.35,two_agent,OCP,True,,41.0,935.0,467.0,
+two_agent,run_2,OCP_38,EASY,PYTHON,OCP,OCP,,True,True,1.0,1,2.23,two_agent,OCP,True,,39.0,1028.0,468.0,
+two_agent,run_2,OCP_39,EASY,PYTHON,OCP,OCP,,True,True,1.0,1,2.46,two_agent,OCP,True,,47.0,901.0,494.0,
+two_agent,run_2,OCP_40,EASY,PYTHON,OCP,OCP,,True,True,1.0,1,2.27,two_agent,OCP,True,,43.0,1098.0,592.0,
+two_agent,run_2,OCP_41,HARD,PYTHON,OCP,SRP,,False,False,0.0,0,4.51,two_agent,SRP,False,,375.0,11987.0,6790.0,
+two_agent,run_2,OCP_42,HARD,PYTHON,OCP,SRP,,False,False,0.0,0,4.07,two_agent,SRP,False,,263.0,7531.0,4585.0,
+two_agent,run_2,OCP_43,HARD,PYTHON,OCP,SRP,,False,False,0.0,0,5.07,two_agent,SRP,False,,317.0,11169.0,6055.0,
+two_agent,run_2,OCP_44,HARD,PYTHON,OCP,SRP,,False,False,0.0,0,4.78,two_agent,SRP,False,,281.0,11552.0,5996.0,
+two_agent,run_2,OCP_45,MODERATE,PYTHON,OCP,OCP,,True,True,1.0,1,2.98,two_agent,OCP,True,,155.0,4320.0,2508.0,
+two_agent,run_2,OCP_46,MODERATE,PYTHON,OCP,OCP,,True,True,1.0,1,2.78,two_agent,OCP,True,,104.0,2760.0,1515.0,
+two_agent,run_2,OCP_47,MODERATE,PYTHON,OCP,OCP,,True,True,1.0,1,9.8,two_agent,OCP,True,,217.0,7648.0,4115.0,
+two_agent,run_2,OCP_48,MODERATE,PYTHON,OCP,SRP,,False,False,0.0,0,3.73,two_agent,SRP,False,,184.0,7522.0,3806.0,
+two_agent,run_2,LSP_1,EASY,JAVA,LSP,LSP,,True,True,1.0,1,2.01,two_agent,LSP,True,,25.0,481.0,235.0,
+two_agent,run_2,LSP_2,EASY,PYTHON,LSP,LSP,,True,True,1.0,1,5.06,two_agent,LSP,True,,15.0,309.0,153.0,
+two_agent,run_2,LSP_3,EASY,KOTLIN,LSP,LSP,,True,True,1.0,1,2.01,two_agent,LSP,True,,23.0,384.0,204.0,
+two_agent,run_2,LSP_4,EASY,C#,LSP,LSP,,True,True,1.0,1,2.15,two_agent,LSP,True,,31.0,473.0,239.0,
+two_agent,run_2,LSP_5,MODERATE,JAVA,LSP,SRP,,False,False,0.0,0,2.23,two_agent,SRP,False,,92.0,2277.0,1119.0,
+two_agent,run_2,LSP_6,MODERATE,PYTHON,LSP,SRP,,False,False,0.0,0,2.31,two_agent,SRP,False,,67.0,1841.0,878.0,
+two_agent,run_2,LSP_7,MODERATE,KOTLIN,LSP,SRP,,False,False,0.0,0,2.08,two_agent,SRP,False,,58.0,1632.0,785.0,
+two_agent,run_2,LSP_8,MODERATE,C#,LSP,LSP,,True,True,1.0,1,6.43,two_agent,LSP,True,,93.0,2189.0,1056.0,
+two_agent,run_2,LSP_9,HARD,JAVA,LSP,SRP,,False,False,0.0,0,3.35,two_agent,SRP,False,,233.0,7879.0,3663.0,
+two_agent,run_2,LSP_10,HARD,PYTHON,LSP,SRP,,False,False,0.0,0,3.59,two_agent,SRP,False,,230.0,7392.0,3479.0,
+two_agent,run_2,LSP_11,HARD,KOTLIN,LSP,SRP,,False,False,0.0,0,2.79,two_agent,SRP,False,,176.0,5663.0,2676.0,
+two_agent,run_2,LSP_12,HARD,C#,LSP,SRP,,False,False,0.0,0,3.21,two_agent,SRP,False,,253.0,7497.0,3586.0,
+two_agent,run_2,LSP_13,EASY,JAVA,LSP,LSP,,True,True,1.0,1,5.22,two_agent,LSP,True,,22.0,679.0,289.0,
+two_agent,run_2,LSP_14,EASY,PYTHON,LSP,LSP,,True,True,1.0,1,9.0,two_agent,LSP,True,,13.0,488.0,203.0,
+two_agent,run_2,LSP_15,EASY,KOTLIN,LSP,SRP,,False,False,0.0,0,2.1,two_agent,SRP,False,,20.0,582.0,254.0,
+two_agent,run_2,LSP_16,EASY,C#,LSP,LSP,,True,True,1.0,1,5.76,two_agent,LSP,True,,28.0,681.0,301.0,
+two_agent,run_2,LSP_17,MODERATE,JAVA,LSP,SRP,,False,False,0.0,0,2.47,two_agent,SRP,False,,111.0,3277.0,1454.0,
+two_agent,run_2,LSP_18,MODERATE,PYTHON,LSP,SRP,,False,False,0.0,0,2.28,two_agent,SRP,False,,75.0,2418.0,1033.0,
+two_agent,run_2,LSP_19,MODERATE,KOTLIN,LSP,SRP,,False,False,0.0,0,2.41,two_agent,SRP,False,,64.0,2369.0,991.0,
+two_agent,run_2,LSP_20,MODERATE,C#,LSP,SRP,,False,False,0.0,0,2.42,two_agent,SRP,False,,126.0,3434.0,1484.0,
+two_agent,run_2,LSP_21,HARD,JAVA,LSP,SRP,,False,False,0.0,0,3.32,two_agent,SRP,False,,226.0,8552.0,3655.0,
+two_agent,run_2,LSP_22,HARD,PYTHON,LSP,SRP,,False,False,0.0,0,3.19,two_agent,SRP,False,,192.0,7006.0,3128.0,
+two_agent,run_2,LSP_23,HARD,KOTLIN,LSP,SRP,,False,False,0.0,0,3.24,two_agent,SRP,False,,249.0,8058.0,3670.0,
+two_agent,run_2,LSP_24,HARD,C#,LSP,SRP,,False,False,0.0,0,3.58,two_agent,SRP,False,,324.0,9455.0,4436.0,
+two_agent,run_2,LSP_25,EASY,JAVA,LSP,DIP,,False,False,0.0,0,1.9,two_agent,DIP,False,,35.0,952.0,357.0,
+two_agent,run_2,LSP_26,EASY,PYTHON,LSP,SRP,,False,False,0.0,0,1.85,two_agent,SRP,False,,24.0,762.0,338.0,
+two_agent,run_2,LSP_27,EASY,KOTLIN,LSP,OCP,,False,False,0.0,0,2.4,two_agent,OCP,False,,30.0,890.0,356.0,
+two_agent,run_2,LSP_28,EASY,C#,LSP,SRP,,False,False,0.0,0,1.79,two_agent,SRP,False,,42.0,1123.0,437.0,
+two_agent,run_2,LSP_29,MODERATE,JAVA,LSP,SRP,,False,False,0.0,0,2.46,two_agent,SRP,False,,114.0,3897.0,1877.0,
+two_agent,run_2,LSP_30,MODERATE,PYTHON,LSP,SRP,,False,False,0.0,0,2.23,two_agent,SRP,False,,88.0,3657.0,1616.0,
+two_agent,run_2,LSP_31,MODERATE,KOTLIN,LSP,SRP,,False,False,0.0,0,2.14,two_agent,SRP,False,,94.0,3503.0,1587.0,
+two_agent,run_2,LSP_32,MODERATE,C#,LSP,SRP,,False,False,0.0,0,2.47,two_agent,SRP,False,,145.0,4433.0,2032.0,
+two_agent,run_2,LSP_33,HARD,JAVA,LSP,SRP,,False,False,0.0,0,3.3,two_agent,SRP,False,,277.0,9959.0,4555.0,
+two_agent,run_2,LSP_34,HARD,PYTHON,LSP,SRP,,False,False,0.0,0,3.91,two_agent,SRP,False,,317.0,12199.0,6145.0,
+two_agent,run_2,LSP_35,HARD,KOTLIN,LSP,SRP,,False,False,0.0,0,3.71,two_agent,SRP,False,,358.0,12785.0,6521.0,
+two_agent,run_2,LSP_36,HARD,C#,LSP,SRP,,False,False,0.0,0,4.02,two_agent,SRP,False,,458.0,14758.0,7551.0,
+two_agent,run_2,LSP_37,EASY,JAVA,LSP,SRP,,False,False,0.0,0,1.74,two_agent,SRP,False,,38.0,855.0,402.0,
+two_agent,run_2,LSP_38,EASY,PYTHON,LSP,SRP,,False,False,0.0,0,1.8,two_agent,SRP,False,,33.0,740.0,352.0,
+two_agent,run_2,LSP_39,EASY,KOTLIN,LSP,SRP,,False,False,0.0,0,1.71,two_agent,SRP,False,,24.0,577.0,261.0,
+two_agent,run_2,LSP_40,EASY,C#,LSP,SRP,,False,False,0.0,0,1.96,two_agent,SRP,False,,42.0,864.0,402.0,
+two_agent,run_2,LSP_41,MODERATE,JAVA,LSP,SRP,,False,False,0.0,0,2.34,two_agent,SRP,False,,91.0,2684.0,1272.0,
+two_agent,run_2,LSP_42,MODERATE,PYTHON,LSP,SRP,,False,False,0.0,0,2.11,two_agent,SRP,False,,82.0,2262.0,1091.0,
+two_agent,run_2,LSP_43,MODERATE,KOTLIN,LSP,SRP,,False,False,0.0,0,2.05,two_agent,SRP,False,,71.0,2017.0,953.0,
+two_agent,run_2,LSP_44,MODERATE,C#,LSP,SRP,,False,False,0.0,0,2.16,two_agent,SRP,False,,112.0,2849.0,1351.0,
+two_agent,run_2,LSP_45,HARD,JAVA,LSP,SRP,,False,False,0.0,0,3.16,two_agent,SRP,False,,212.0,8668.0,3460.0,
+two_agent,run_2,LSP_46,HARD,PYTHON,LSP,SRP,,False,False,0.0,0,3.03,two_agent,SRP,False,,164.0,6480.0,2762.0,
+two_agent,run_2,LSP_47,HARD,KOTLIN,LSP,SRP,,False,False,0.0,0,2.93,two_agent,SRP,False,,202.0,6693.0,2810.0,
+two_agent,run_2,LSP_48,HARD,C#,LSP,SRP,,False,False,0.0,0,3.23,two_agent,SRP,False,,272.0,8682.0,3750.0,
+two_agent,run_2,ISP_1,EASY,CSHARP,ISP,ISP,,True,True,1.0,1,2.61,two_agent,ISP,True,,89.0,1737.0,992.0,
+two_agent,run_2,ISP_2,EASY,CSHARP,ISP,LSP,,False,False,0.0,0,2.39,two_agent,LSP,False,,94.0,2055.0,1103.0,
+two_agent,run_2,ISP_3,EASY,CSHARP,ISP,ISP,,True,True,1.0,1,1.96,two_agent,ISP,True,,63.0,1140.0,543.0,
+two_agent,run_2,ISP_4,EASY,CSHARP,ISP,ISP,,True,True,1.0,1,2.23,two_agent,ISP,True,,44.0,664.0,366.0,
+two_agent,run_2,ISP_5,HARD,CSHARP,ISP,SRP,,False,False,0.0,0,3.88,two_agent,SRP,False,,511.0,11621.0,7097.0,
+two_agent,run_2,ISP_6,HARD,CSHARP,ISP,SRP,,False,False,0.0,0,4.37,two_agent,SRP,False,,461.0,10993.0,5406.0,
+two_agent,run_2,ISP_7,HARD,CSHARP,ISP,SRP,,False,False,0.0,0,4.83,two_agent,SRP,False,,660.0,17075.0,9827.0,
+two_agent,run_2,ISP_8,HARD,CSHARP,ISP,SRP,,False,False,0.0,0,4.0,two_agent,SRP,False,,473.0,10539.0,5699.0,
+two_agent,run_2,ISP_9,MODERATE,CSHARP,ISP,ISP,,True,True,1.0,1,11.93,two_agent,ISP,True,,287.0,6316.0,3915.0,
+two_agent,run_2,ISP_10,MODERATE,CSHARP,ISP,ISP,,True,True,1.0,1,3.48,two_agent,ISP,True,,259.0,6299.0,3322.0,
+two_agent,run_2,ISP_11,MODERATE,CSHARP,ISP,ISP,,True,True,1.0,1,2.3,two_agent,ISP,True,,149.0,2838.0,1436.0,
+two_agent,run_2,ISP_12,MODERATE,CSHARP,ISP,ISP,,True,True,1.0,1,8.18,two_agent,ISP,True,,291.0,5721.0,3266.0,
+two_agent,run_2,ISP_13,EASY,JAVA,ISP,ISP,,True,True,1.0,1,2.24,two_agent,ISP,True,,77.0,1793.0,969.0,
+two_agent,run_2,ISP_14,EASY,JAVA,ISP,LSP,,False,False,0.0,0,2.59,two_agent,LSP,False,,88.0,2183.0,1128.0,
+two_agent,run_2,ISP_15,EASY,JAVA,ISP,ISP,,True,True,1.0,1,1.99,two_agent,ISP,True,,48.0,1121.0,519.0,
+two_agent,run_2,ISP_16,EASY,JAVA,ISP,ISP,,True,True,1.0,1,2.15,two_agent,ISP,True,,34.0,654.0,347.0,
+two_agent,run_2,ISP_17,HARD,JAVA,ISP,SRP,,False,False,0.0,0,4.24,two_agent,SRP,False,,416.0,11445.0,6583.0,
+two_agent,run_2,ISP_18,HARD,JAVA,ISP,SRP,,False,False,0.0,0,3.99,two_agent,SRP,False,,436.0,11756.0,5569.0,
+two_agent,run_2,ISP_19,HARD,JAVA,ISP,SRP,,False,False,0.0,0,19.28,two_agent,SRP,False,,482.0,15667.0,8472.0,
+two_agent,run_2,ISP_20,HARD,JAVA,ISP,SRP,,False,False,0.0,0,3.49,two_agent,SRP,False,,351.0,10063.0,5037.0,
+two_agent,run_2,ISP_21,MODERATE,JAVA,ISP,SRP,,False,False,0.0,0,3.26,two_agent,SRP,False,,226.0,6148.0,3575.0,
+two_agent,run_2,ISP_22,MODERATE,JAVA,ISP,ISP,,True,True,1.0,1,3.3,two_agent,ISP,True,,246.0,6487.0,3167.0,
+two_agent,run_2,ISP_23,MODERATE,JAVA,ISP,ISP,,True,True,1.0,1,2.23,two_agent,ISP,True,,113.0,2744.0,1328.0,
+two_agent,run_2,ISP_24,MODERATE,JAVA,ISP,ISP,,True,True,1.0,1,8.97,two_agent,ISP,True,,220.0,5450.0,2911.0,
+two_agent,run_2,ISP_25,EASY,KOTLIN,ISP,ISP,,True,True,1.0,1,2.55,two_agent,ISP,True,,57.0,1378.0,739.0,
+two_agent,run_2,ISP_26,EASY,KOTLIN,ISP,LSP,,False,False,0.0,0,2.33,two_agent,LSP,False,,79.0,1898.0,995.0,
+two_agent,run_2,ISP_27,EASY,KOTLIN,ISP,ISP,,True,True,1.0,1,1.86,two_agent,ISP,True,,47.0,988.0,470.0,
+two_agent,run_2,ISP_28,EASY,KOTLIN,ISP,ISP,,True,True,1.0,1,1.75,two_agent,ISP,True,,34.0,571.0,316.0,
+two_agent,run_2,ISP_29,HARD,KOTLIN,ISP,SRP,,False,False,0.0,0,3.44,two_agent,SRP,False,,331.0,9289.0,5382.0,
+two_agent,run_2,ISP_30,HARD,KOTLIN,ISP,SRP,,False,False,0.0,0,3.69,two_agent,SRP,False,,371.0,9990.0,4704.0,
+two_agent,run_2,ISP_31,HARD,KOTLIN,ISP,SRP,,False,False,0.0,0,4.4,two_agent,SRP,False,,482.0,13948.0,7669.0,
+two_agent,run_2,ISP_32,HARD,KOTLIN,ISP,SRP,,False,False,0.0,0,3.48,two_agent,SRP,False,,310.0,8522.0,4214.0,
+two_agent,run_2,ISP_33,MODERATE,KOTLIN,ISP,SRP,,False,False,0.0,0,2.61,two_agent,SRP,False,,189.0,5219.0,3224.0,
+two_agent,run_2,ISP_34,MODERATE,KOTLIN,ISP,SRP,,False,False,0.0,0,3.27,two_agent,SRP,False,,209.0,5799.0,2919.0,
+two_agent,run_2,ISP_35,MODERATE,KOTLIN,ISP,ISP,,True,True,1.0,1,2.19,two_agent,ISP,True,,112.0,2448.0,1209.0,
+two_agent,run_2,ISP_36,MODERATE,KOTLIN,ISP,ISP,,True,True,1.0,1,7.16,two_agent,ISP,True,,166.0,4233.0,2183.0,
+two_agent,run_2,ISP_37,EASY,PYTHON,ISP,SRP,,False,False,0.0,0,2.12,two_agent,SRP,False,,60.0,1516.0,813.0,
+two_agent,run_2,ISP_38,EASY,PYTHON,ISP,ISP,,True,True,1.0,1,2.4,two_agent,ISP,True,,81.0,2099.0,1084.0,
+two_agent,run_2,ISP_39,EASY,PYTHON,ISP,ISP,,True,True,1.0,1,1.82,two_agent,ISP,True,,44.0,1045.0,489.0,
+two_agent,run_2,ISP_40,EASY,PYTHON,ISP,ISP,,True,True,1.0,1,2.04,two_agent,ISP,True,,34.0,629.0,338.0,
+two_agent,run_2,ISP_41,HARD,PYTHON,ISP,SRP,,False,False,0.0,0,3.72,two_agent,SRP,False,,328.0,9475.0,5333.0,
+two_agent,run_2,ISP_42,HARD,PYTHON,ISP,SRP,,False,False,0.0,0,4.01,two_agent,SRP,False,,357.0,10176.0,4912.0,
+two_agent,run_2,ISP_43,HARD,PYTHON,ISP,SRP,,False,False,0.0,0,4.74,two_agent,SRP,False,,425.0,13827.0,7304.0,
+two_agent,run_2,ISP_44,HARD,PYTHON,ISP,SRP,,False,False,0.0,0,3.43,two_agent,SRP,False,,295.0,8947.0,4213.0,
+two_agent,run_2,ISP_45,MODERATE,PYTHON,ISP,SRP,,False,False,0.0,0,2.99,two_agent,SRP,False,,178.0,5209.0,2982.0,
+two_agent,run_2,ISP_46,MODERATE,PYTHON,ISP,SRP,,False,False,0.0,0,3.08,two_agent,SRP,False,,202.0,5849.0,2932.0,
+two_agent,run_2,ISP_47,MODERATE,PYTHON,ISP,SRP,,False,False,0.0,0,2.17,two_agent,SRP,False,,108.0,2625.0,1283.0,
+two_agent,run_2,ISP_48,MODERATE,PYTHON,ISP,SRP,,False,False,0.0,0,2.75,two_agent,SRP,False,,177.0,4573.0,2372.0,
+two_agent,run_2,DIP_1,EASY,JAVA,DIP,SRP,,False,False,0.0,0,1.67,two_agent,SRP,False,,23.0,593.0,285.0,
+two_agent,run_2,DIP_2,EASY,PYTHON,DIP,SRP,,False,False,0.0,0,1.61,two_agent,SRP,False,,15.0,441.0,206.0,
+two_agent,run_2,DIP_3,EASY,KOTLIN,DIP,SRP,,False,False,0.0,0,1.74,two_agent,SRP,False,,19.0,441.0,213.0,
+two_agent,run_2,DIP_4,EASY,C#,DIP,DIP,,True,True,1.0,1,1.97,two_agent,DIP,True,,29.0,591.0,284.0,
+two_agent,run_2,DIP_5,MODERATE,JAVA,DIP,SRP,,False,False,0.0,0,2.07,two_agent,SRP,False,,77.0,2288.0,1171.0,
+two_agent,run_2,DIP_6,MODERATE,PYTHON,DIP,SRP,,False,False,0.0,0,1.99,two_agent,SRP,False,,54.0,1844.0,909.0,
+two_agent,run_2,DIP_7,MODERATE,KOTLIN,DIP,SRP,,False,False,0.0,0,1.99,two_agent,SRP,False,,65.0,1828.0,969.0,
+two_agent,run_2,DIP_8,MODERATE,C#,DIP,SRP,,False,False,0.0,0,2.06,two_agent,SRP,False,,94.0,2405.0,1244.0,
+two_agent,run_2,DIP_9,HARD,JAVA,DIP,SRP,,False,False,0.0,0,2.97,two_agent,SRP,False,,229.0,8620.0,4693.0,
+two_agent,run_2,DIP_10,HARD,PYTHON,DIP,SRP,,False,False,0.0,0,2.97,two_agent,SRP,False,,167.0,6938.0,3394.0,
+two_agent,run_2,DIP_11,HARD,KOTLIN,DIP,SRP,,False,False,0.0,0,2.73,two_agent,SRP,False,,191.0,6234.0,3373.0,
+two_agent,run_2,DIP_12,HARD,C#,DIP,SRP,,False,False,0.0,0,3.04,two_agent,SRP,False,,267.0,8372.0,4441.0,
+two_agent,run_2,DIP_13,EASY,JAVA,DIP,DIP,,True,True,1.0,1,5.41,two_agent,DIP,True,,18.0,465.0,192.0,
+two_agent,run_2,DIP_14,EASY,PYTHON,DIP,DIP,,True,True,1.0,1,1.73,two_agent,DIP,True,,11.0,331.0,131.0,
+two_agent,run_2,DIP_15,EASY,KOTLIN,DIP,,,False,False,0.0,0,4.07,two_agent,,False,,14.0,344.0,141.0,
+two_agent,run_2,DIP_16,EASY,C#,DIP,DIP,,True,True,1.0,1,1.76,two_agent,DIP,True,,23.0,463.0,195.0,
+two_agent,run_2,DIP_17,MODERATE,JAVA,DIP,OCP,,False,False,0.0,0,2.24,two_agent,OCP,False,,56.0,1872.0,912.0,
+two_agent,run_2,DIP_18,MODERATE,PYTHON,DIP,OCP,,False,False,0.0,0,2.21,two_agent,OCP,False,,41.0,1407.0,684.0,
+two_agent,run_2,DIP_19,MODERATE,KOTLIN,DIP,OCP,,False,False,0.0,0,2.19,two_agent,OCP,False,,53.0,1600.0,843.0,
+two_agent,run_2,DIP_20,MODERATE,C#,DIP,OCP,,False,False,0.0,0,2.26,two_agent,OCP,False,,76.0,1950.0,974.0,
+two_agent,run_2,DIP_21,HARD,JAVA,DIP,SRP,,False,False,0.0,0,2.97,two_agent,SRP,False,,207.0,8107.0,3556.0,
+two_agent,run_2,DIP_22,HARD,PYTHON,DIP,OCP,,False,False,0.0,0,3.23,two_agent,OCP,False,,145.0,6645.0,2878.0,
+two_agent,run_2,DIP_23,HARD,KOTLIN,DIP,SRP,,False,False,0.0,0,2.65,two_agent,SRP,False,,155.0,6261.0,2625.0,
+two_agent,run_2,DIP_24,HARD,C#,DIP,SRP,,False,False,0.0,0,2.95,two_agent,SRP,False,,235.0,8702.0,4296.0,
+two_agent,run_2,DIP_25,EASY,JAVA,DIP,SRP,,False,False,0.0,0,1.78,two_agent,SRP,False,,22.0,583.0,307.0,
+two_agent,run_2,DIP_26,EASY,PYTHON,DIP,SRP,,False,False,0.0,0,1.62,two_agent,SRP,False,,18.0,496.0,284.0,
+two_agent,run_2,DIP_27,EASY,KOTLIN,DIP,SRP,,False,False,0.0,0,1.88,two_agent,SRP,False,,22.0,531.0,290.0,
+two_agent,run_2,DIP_28,EASY,C#,DIP,SRP,,False,False,0.0,0,1.91,two_agent,SRP,False,,31.0,595.0,341.0,
+two_agent,run_2,DIP_29,MODERATE,JAVA,DIP,SRP,,False,False,0.0,0,2.22,two_agent,SRP,False,,72.0,2198.0,1201.0,
+two_agent,run_2,DIP_30,MODERATE,PYTHON,DIP,SRP,,False,False,0.0,0,2.22,two_agent,SRP,False,,58.0,1890.0,1093.0,
+two_agent,run_2,DIP_31,MODERATE,KOTLIN,DIP,SRP,,False,False,0.0,0,2.16,two_agent,SRP,False,,63.0,1838.0,1012.0,
+two_agent,run_2,DIP_32,MODERATE,C#,DIP,SRP,,False,False,0.0,0,2.23,two_agent,SRP,False,,91.0,2078.0,1203.0,
+two_agent,run_2,DIP_33,HARD,JAVA,DIP,SRP,,False,False,0.0,0,2.8,two_agent,SRP,False,,164.0,6576.0,2928.0,
+two_agent,run_2,DIP_34,HARD,PYTHON,DIP,SRP,,False,False,0.0,0,2.88,two_agent,SRP,False,,152.0,6056.0,2750.0,
+two_agent,run_2,DIP_35,HARD,KOTLIN,DIP,SRP,,False,False,0.0,0,3.27,two_agent,SRP,False,,244.0,8715.0,4214.0,
+two_agent,run_2,DIP_36,HARD,C#,DIP,SRP,,False,False,0.0,0,3.6,two_agent,SRP,False,,305.0,10242.0,5016.0,
+two_agent,run_2,DIP_37,EASY,JAVA,DIP,SRP,,False,False,0.0,0,1.74,two_agent,SRP,False,,17.0,479.0,199.0,
+two_agent,run_2,DIP_38,EASY,PYTHON,DIP,SRP,,False,False,0.0,0,2.07,two_agent,SRP,False,,10.0,344.0,134.0,
+two_agent,run_2,DIP_39,EASY,KOTLIN,DIP,DIP,,True,True,1.0,1,1.79,two_agent,DIP,True,,13.0,348.0,141.0,
+two_agent,run_2,DIP_40,EASY,C#,DIP,SRP,,False,False,0.0,0,1.75,two_agent,SRP,False,,22.0,479.0,201.0,
+two_agent,run_2,DIP_41,MODERATE,JAVA,DIP,SRP,,False,False,0.0,0,2.04,two_agent,SRP,False,,62.0,2021.0,806.0,
+two_agent,run_2,DIP_42,MODERATE,PYTHON,DIP,SRP,,False,False,0.0,0,1.93,two_agent,SRP,False,,40.0,1586.0,588.0,
+two_agent,run_2,DIP_43,MODERATE,KOTLIN,DIP,SRP,,False,False,0.0,0,2.0,two_agent,SRP,False,,46.0,1576.0,614.0,
+two_agent,run_2,DIP_44,MODERATE,C#,DIP,SRP,,False,False,0.0,0,2.01,two_agent,SRP,False,,77.0,2059.0,842.0,
+two_agent,run_2,DIP_45,HARD,JAVA,DIP,SRP,,False,False,0.0,0,2.5,two_agent,SRP,False,,138.0,5087.0,2157.0,
+two_agent,run_2,DIP_46,HARD,PYTHON,DIP,SRP,,False,False,0.0,0,2.53,two_agent,SRP,False,,106.0,4499.0,1862.0,
+two_agent,run_2,DIP_47,HARD,KOTLIN,DIP,SRP,,False,False,0.0,0,2.38,two_agent,SRP,False,,127.0,4464.0,1921.0,
+two_agent,run_2,DIP_48,HARD,C#,DIP,SRP,,False,False,0.0,0,2.51,two_agent,SRP,False,,170.0,5347.0,2296.0,
+diff_eval,run_1,SRP_1,EASY,JAVA,SRP,OCP,,False,False,0.0,0,36.21,diff_eval_v7_with_structural,OCP,False,1.0,17.0,409.0,213.0,False
+diff_eval,run_1,SRP_2,EASY,JAVA,SRP,SRP,OCP,True,True,1.0,1,38.77,diff_eval_v7_with_structural,"SRP, OCP",True,3.0,19.0,534.0,248.0,True
+diff_eval,run_1,SRP_3,EASY,JAVA,SRP,SRP,OCP,True,True,1.0,1,36.75,diff_eval_v7_with_structural,"SRP, OCP",True,2.0,21.0,569.0,289.0,True
+diff_eval,run_1,SRP_4,EASY,JAVA,SRP,SRP,,True,True,1.0,1,35.71,diff_eval_v7_with_structural,SRP,True,1.0,17.0,416.0,219.0,True
+diff_eval,run_1,SRP_5,MODERATE,JAVA,SRP,DIP,SRP,False,True,0.5,2,111.73,diff_eval_v7_with_structural,"DIP, SRP",True,4.0,168.0,4688.0,2420.0,True
+diff_eval,run_1,SRP_6,MODERATE,JAVA,SRP,DIP,SRP,False,True,0.5,2,185.38,diff_eval_v7_with_structural,"DIP, SRP",True,4.0,256.0,7899.0,3817.0,True
+diff_eval,run_1,SRP_7,MODERATE,JAVA,SRP,DIP,SRP,False,True,0.5,2,213.29,diff_eval_v7_with_structural,"DIP, SRP",True,4.0,185.0,6117.0,3228.0,True
+diff_eval,run_1,SRP_8,MODERATE,JAVA,SRP,DIP,SRP,False,True,0.5,2,155.55,diff_eval_v7_with_structural,"DIP, SRP",True,4.0,124.0,4615.0,2130.0,True
+diff_eval,run_1,SRP_9,HARD,JAVA,SRP,DIP,OCP,False,False,0.0,0,226.94,diff_eval_v7_with_structural,"DIP, OCP",False,4.0,370.0,12738.0,6063.0,True
+diff_eval,run_1,SRP_10,HARD,JAVA,SRP,,,False,False,0.0,0,209.89,diff_eval_v7_with_structural,,False,0.0,337.0,13357.0,5797.0,False
+diff_eval,run_1,SRP_11,HARD,JAVA,SRP,DIP,SRP,False,True,0.5,2,348.74,diff_eval_v7_with_structural,"DIP, SRP",True,4.0,330.0,12494.0,5912.0,True
+diff_eval,run_1,SRP_12,HARD,JAVA,SRP,SRP,DIP,True,True,1.0,1,336.15,diff_eval_v7_with_structural,"SRP, DIP",True,4.0,388.0,16985.0,7852.0,True
+diff_eval,run_1,SRP_13,EASY,PYTHON,SRP,OCP,,False,False,0.0,0,32.76,diff_eval_v7_with_structural,OCP,False,1.0,10.0,286.0,144.0,False
+diff_eval,run_1,SRP_14,EASY,PYTHON,SRP,OCP,,False,False,0.0,0,37.58,diff_eval_v7_with_structural,OCP,False,1.0,11.0,423.0,186.0,False
+diff_eval,run_1,SRP_15,EASY,PYTHON,SRP,OCP,,False,False,0.0,0,35.13,diff_eval_v7_with_structural,OCP,False,1.0,13.0,390.0,203.0,False
+diff_eval,run_1,SRP_16,EASY,PYTHON,SRP,SRP,OCP,True,True,1.0,1,33.14,diff_eval_v7_with_structural,"SRP, OCP",True,2.0,10.0,303.0,155.0,True
+diff_eval,run_1,SRP_17,MODERATE,PYTHON,SRP,DIP,SRP,False,True,0.5,2,131.54,diff_eval_v7_with_structural,"DIP, SRP",True,4.0,120.0,4007.0,1994.0,True
+diff_eval,run_1,SRP_18,MODERATE,PYTHON,SRP,DIP,SRP,False,True,0.5,2,179.1,diff_eval_v7_with_structural,"DIP, SRP",True,4.0,195.0,7146.0,3315.0,True
+diff_eval,run_1,SRP_19,MODERATE,PYTHON,SRP,SRP,DIP,True,True,1.0,1,204.99,diff_eval_v7_with_structural,"SRP, DIP",True,4.0,167.0,5735.0,2857.0,True
+diff_eval,run_1,SRP_20,MODERATE,PYTHON,SRP,DIP,SRP,False,True,0.5,2,133.52,diff_eval_v7_with_structural,"DIP, SRP",True,4.0,89.0,3928.0,1733.0,True
+diff_eval,run_1,SRP_21,HARD,PYTHON,SRP,SRP,DIP,True,True,1.0,1,269.13,diff_eval_v7_with_structural,"SRP, DIP",True,4.0,254.0,10438.0,4740.0,True
+diff_eval,run_1,SRP_22,HARD,PYTHON,SRP,DIP,SRP,False,True,0.5,2,678.46,diff_eval_v7_with_structural,"DIP, SRP",True,4.0,300.0,12992.0,5954.0,True
+diff_eval,run_1,SRP_23,HARD,PYTHON,SRP,,,False,False,0.0,0,236.45,diff_eval_v7_with_structural,,False,0.0,248.0,11175.0,4923.0,False
+diff_eval,run_1,SRP_24,HARD,PYTHON,SRP,SRP,DIP,True,True,1.0,1,535.2,diff_eval_v7_with_structural,"SRP, DIP",True,4.0,329.0,14413.0,6230.0,True
+diff_eval,run_1,SRP_25,EASY,KOTLIN,SRP,SRP,OCP,True,True,1.0,1,31.99,diff_eval_v7_with_structural,"SRP, OCP",True,2.0,10.0,229.0,117.0,True
+diff_eval,run_1,SRP_26,EASY,KOTLIN,SRP,SRP,OCP,True,True,1.0,1,34.75,diff_eval_v7_with_structural,"SRP, OCP",True,2.0,10.0,305.0,142.0,True
+diff_eval,run_1,SRP_27,EASY,KOTLIN,SRP,SRP,ISP,True,True,1.0,1,35.93,diff_eval_v7_with_structural,"SRP, ISP",True,3.0,12.0,330.0,166.0,True
+diff_eval,run_1,SRP_28,EASY,KOTLIN,SRP,SRP,OCP,True,True,1.0,1,35.17,diff_eval_v7_with_structural,"SRP, OCP",True,2.0,10.0,267.0,135.0,True
+diff_eval,run_1,SRP_29,MODERATE,KOTLIN,SRP,SRP,DIP,True,True,1.0,1,725.23,diff_eval_v7_with_structural,"SRP, DIP",True,4.0,116.0,3523.0,1779.0,True
+diff_eval,run_1,SRP_30,MODERATE,KOTLIN,SRP,DIP,SRP,False,True,0.5,2,154.28,diff_eval_v7_with_structural,"DIP, SRP",True,4.0,179.0,6179.0,2878.0,True
+diff_eval,run_1,SRP_31,MODERATE,KOTLIN,SRP,DIP,SRP,False,True,0.5,2,148.61,diff_eval_v7_with_structural,"DIP, SRP",True,4.0,164.0,5372.0,2786.0,True
+diff_eval,run_1,SRP_32,MODERATE,KOTLIN,SRP,DIP,SRP,False,True,0.5,2,128.86,diff_eval_v7_with_structural,"DIP, SRP",True,4.0,102.0,3859.0,1732.0,True
+diff_eval,run_1,SRP_33,HARD,KOTLIN,SRP,SRP,DIP,True,True,1.0,1,189.63,diff_eval_v7_with_structural,"SRP, DIP",True,3.0,286.0,9834.0,4595.0,True
+diff_eval,run_1,SRP_34,HARD,KOTLIN,SRP,DIP,SRP,False,True,0.5,2,223.09,diff_eval_v7_with_structural,"DIP, SRP",True,4.0,260.0,10479.0,4530.0,True
+diff_eval,run_1,SRP_35,HARD,KOTLIN,SRP,SRP,DIP,True,True,1.0,1,205.23,diff_eval_v7_with_structural,"SRP, DIP",True,4.0,285.0,10237.0,4679.0,True
+diff_eval,run_1,SRP_36,HARD,KOTLIN,SRP,DIP,ISP,False,False,0.0,0,263.22,diff_eval_v7_with_structural,"DIP, ISP",False,4.0,361.0,14620.0,6873.0,True
+diff_eval,run_1,SRP_37,EASY,CSHARP,SRP,SRP,OCP,True,True,1.0,1,34.75,diff_eval_v7_with_structural,"SRP, OCP",True,2.0,21.0,428.0,230.0,True
+diff_eval,run_1,SRP_38,EASY,CSHARP,SRP,OCP,,False,False,0.0,0,37.15,diff_eval_v7_with_structural,OCP,False,1.0,23.0,539.0,252.0,False
+diff_eval,run_1,SRP_39,EASY,CSHARP,SRP,SRP,ISP,True,True,1.0,1,34.2,diff_eval_v7_with_structural,"SRP, ISP",True,3.0,25.0,577.0,293.0,True
+diff_eval,run_1,SRP_40,EASY,CSHARP,SRP,SRP,OCP,True,True,1.0,1,34.79,diff_eval_v7_with_structural,"SRP, OCP",True,2.0,21.0,421.0,223.0,True
+diff_eval,run_1,SRP_41,MODERATE,CSHARP,SRP,SRP,DIP,True,True,1.0,1,126.55,diff_eval_v7_with_structural,"SRP, DIP",True,4.0,184.0,4448.0,2313.0,True
+diff_eval,run_1,SRP_42,MODERATE,CSHARP,SRP,DIP,SRP,False,True,0.5,2,166.13,diff_eval_v7_with_structural,"DIP, SRP",True,4.0,289.0,7682.0,3840.0,True
+diff_eval,run_1,SRP_43,MODERATE,CSHARP,SRP,DIP,SRP,False,True,0.5,2,182.38,diff_eval_v7_with_structural,"DIP, SRP",True,4.0,218.0,5972.0,3084.0,True
+diff_eval,run_1,SRP_44,MODERATE,CSHARP,SRP,DIP,SRP,False,True,0.5,2,113.39,diff_eval_v7_with_structural,"DIP, SRP",True,4.0,149.0,4707.0,2163.0,True
+diff_eval,run_1,SRP_45,HARD,CSHARP,SRP,SRP,DIP,True,True,1.0,1,278.65,diff_eval_v7_with_structural,"SRP, DIP",True,4.0,395.0,12158.0,5727.0,True
+diff_eval,run_1,SRP_46,HARD,CSHARP,SRP,DIP,SRP,False,True,0.5,2,269.3,diff_eval_v7_with_structural,"DIP, SRP",True,4.0,384.0,13000.0,5631.0,True
+diff_eval,run_1,SRP_47,HARD,CSHARP,SRP,SRP,DIP,True,True,1.0,1,207.94,diff_eval_v7_with_structural,"SRP, DIP",True,4.0,387.0,13890.0,7213.0,True
+diff_eval,run_1,SRP_48,HARD,CSHARP,SRP,SRP,ISP,True,True,1.0,1,654.45,diff_eval_v7_with_structural,"SRP, ISP",True,3.0,465.0,16946.0,7834.0,True
+diff_eval,run_1,OCP_1,EASY,CSHARP,OCP,OCP,SRP,True,True,1.0,1,69.08,diff_eval_v7_with_structural,"OCP, SRP",True,5.0,72.0,1235.0,658.0,True
+diff_eval,run_1,OCP_2,EASY,CSHARP,OCP,SRP,OCP,False,True,0.5,2,67.63,diff_eval_v7_with_structural,"SRP, OCP",True,4.0,50.0,1300.0,597.0,True
+diff_eval,run_1,OCP_3,EASY,CSHARP,OCP,DIP,OCP,False,True,0.5,2,60.61,diff_eval_v7_with_structural,"DIP, OCP",True,3.0,49.0,1004.0,492.0,True
+diff_eval,run_1,OCP_4,EASY,CSHARP,OCP,OCP,DIP,True,True,1.0,1,63.34,diff_eval_v7_with_structural,"OCP, DIP",True,4.0,53.0,1479.0,777.0,True
+diff_eval,run_1,OCP_5,HARD,CSHARP,OCP,OCP,SRP,True,True,1.0,1,285.05,diff_eval_v7_with_structural,"OCP, SRP",True,5.0,459.0,15744.0,9227.0,True
+diff_eval,run_1,OCP_6,HARD,CSHARP,OCP,DIP,OCP,False,True,0.5,2,280.3,diff_eval_v7_with_structural,"DIP, OCP",True,3.0,269.0,8599.0,4781.0,True
+diff_eval,run_1,OCP_7,HARD,CSHARP,OCP,SRP,DIP,False,False,0.0,0,329.58,diff_eval_v7_with_structural,"SRP, DIP",False,4.0,415.0,16149.0,8664.0,True
+diff_eval,run_1,OCP_8,HARD,CSHARP,OCP,,,False,False,0.0,0,186.24,diff_eval_v7_with_structural,,False,0.0,398.0,15864.0,8381.0,False
+diff_eval,run_1,OCP_9,MODERATE,CSHARP,OCP,DIP,OCP,False,True,0.5,2,170.37,diff_eval_v7_with_structural,"DIP, OCP",True,4.0,208.0,5450.0,3451.0,True
+diff_eval,run_1,OCP_10,MODERATE,CSHARP,OCP,SRP,DIP,False,False,0.0,0,106.36,diff_eval_v7_with_structural,"SRP, DIP",False,3.0,112.0,2563.0,1508.0,True
+diff_eval,run_1,OCP_11,MODERATE,CSHARP,OCP,DIP,SRP,False,False,0.0,0,227.57,diff_eval_v7_with_structural,"DIP, SRP",False,4.0,305.0,9205.0,5469.0,True
+diff_eval,run_1,OCP_12,MODERATE,CSHARP,OCP,SRP,DIP,False,False,0.0,0,176.63,diff_eval_v7_with_structural,"SRP, DIP",False,4.0,216.0,10058.0,5025.0,True
+diff_eval,run_1,OCP_13,EASY,JAVA,OCP,OCP,SRP,True,True,1.0,1,76.96,diff_eval_v7_with_structural,"OCP, SRP",True,5.0,57.0,1210.0,640.0,True
+diff_eval,run_1,OCP_14,EASY,JAVA,OCP,OCP,DIP,True,True,1.0,1,64.23,diff_eval_v7_with_structural,"OCP, DIP",True,4.0,44.0,1316.0,642.0,True
+diff_eval,run_1,OCP_15,EASY,JAVA,OCP,DIP,OCP,False,True,0.5,2,55.7,diff_eval_v7_with_structural,"DIP, OCP",True,2.0,38.0,901.0,452.0,True
+diff_eval,run_1,OCP_16,EASY,JAVA,OCP,OCP,SRP,True,True,1.0,1,82.42,diff_eval_v7_with_structural,"OCP, SRP",True,4.0,32.0,1218.0,606.0,True
+diff_eval,run_1,OCP_17,HARD,JAVA,OCP,OCP,SRP,True,True,1.0,1,153.29,diff_eval_v7_with_structural,"OCP, SRP",True,5.0,433.0,15628.0,9381.0,True
+diff_eval,run_1,OCP_18,HARD,JAVA,OCP,DIP,ISP,False,False,0.0,0,240.18,diff_eval_v7_with_structural,"DIP, ISP",False,4.0,210.0,7259.0,4132.0,True
+diff_eval,run_1,OCP_19,HARD,JAVA,OCP,DIP,SRP,False,False,0.0,0,306.69,diff_eval_v7_with_structural,"DIP, SRP",False,4.0,414.0,14950.0,8460.0,True
+diff_eval,run_1,OCP_20,HARD,JAVA,OCP,OCP,DIP,True,True,1.0,1,257.64,diff_eval_v7_with_structural,"OCP, DIP",True,4.0,359.0,15513.0,8675.0,True
+diff_eval,run_1,OCP_21,MODERATE,JAVA,OCP,OCP,SRP,True,True,1.0,1,131.51,diff_eval_v7_with_structural,"OCP, SRP",True,4.0,177.0,5124.0,3060.0,True
+diff_eval,run_1,OCP_22,MODERATE,JAVA,OCP,DIP,OCP,False,True,0.5,2,103.8,diff_eval_v7_with_structural,"DIP, OCP",True,4.0,105.0,2985.0,1659.0,True
+diff_eval,run_1,OCP_23,MODERATE,JAVA,OCP,DIP,OCP,False,True,0.5,2,226.24,diff_eval_v7_with_structural,"DIP, OCP",True,4.0,281.0,9648.0,5774.0,True
+diff_eval,run_1,OCP_24,MODERATE,JAVA,OCP,DIP,SRP,False,False,0.0,0,217.84,diff_eval_v7_with_structural,"DIP, SRP",False,4.0,215.0,8998.0,4856.0,True
+diff_eval,run_1,OCP_25,EASY,KOTLIN,OCP,DIP,OCP,False,True,0.5,2,51.17,diff_eval_v7_with_structural,"DIP, OCP",True,3.0,32.0,715.0,374.0,True
+diff_eval,run_1,OCP_26,EASY,KOTLIN,OCP,OCP,DIP,True,True,1.0,1,49.55,diff_eval_v7_with_structural,"OCP, DIP",True,3.0,27.0,642.0,308.0,True
+diff_eval,run_1,OCP_27,EASY,KOTLIN,OCP,OCP,DIP,True,True,1.0,1,55.61,diff_eval_v7_with_structural,"OCP, DIP",True,3.0,29.0,561.0,301.0,True
+diff_eval,run_1,OCP_28,EASY,KOTLIN,OCP,OCP,SRP,True,True,1.0,1,61.43,diff_eval_v7_with_structural,"OCP, SRP",True,4.0,26.0,722.0,380.0,True
+diff_eval,run_1,OCP_29,HARD,KOTLIN,OCP,OCP,DIP,True,True,1.0,1,297.38,diff_eval_v7_with_structural,"OCP, DIP",True,5.0,291.0,10683.0,6438.0,True
+diff_eval,run_1,OCP_30,HARD,KOTLIN,OCP,DIP,OCP,False,True,0.5,2,200.78,diff_eval_v7_with_structural,"DIP, OCP",True,4.0,159.0,5979.0,3282.0,True
+diff_eval,run_1,OCP_31,HARD,KOTLIN,OCP,SRP,OCP,False,True,0.5,2,260.23,diff_eval_v7_with_structural,"SRP, OCP",True,4.0,320.0,11420.0,6112.0,True
+diff_eval,run_1,OCP_32,HARD,KOTLIN,OCP,DIP,OCP,False,True,0.5,2,187.27,diff_eval_v7_with_structural,"DIP, OCP",True,4.0,287.0,11644.0,6260.0,True
+diff_eval,run_1,OCP_33,MODERATE,KOTLIN,OCP,OCP,DIP,True,True,1.0,1,155.96,diff_eval_v7_with_structural,"OCP, DIP",True,4.0,122.0,4047.0,2434.0,True
+diff_eval,run_1,OCP_34,MODERATE,KOTLIN,OCP,DIP,OCP,False,True,0.5,2,75.54,diff_eval_v7_with_structural,"DIP, OCP",True,2.0,85.0,2208.0,1264.0,True
+diff_eval,run_1,OCP_35,MODERATE,KOTLIN,OCP,DIP,OCP,False,True,0.5,2,252.52,diff_eval_v7_with_structural,"DIP, OCP",True,3.0,218.0,6916.0,3936.0,True
+diff_eval,run_1,OCP_36,MODERATE,KOTLIN,OCP,OCP,SRP,True,True,1.0,1,184.1,diff_eval_v7_with_structural,"OCP, SRP",True,4.0,185.0,6791.0,3716.0,True
+diff_eval,run_1,OCP_37,EASY,PYTHON,OCP,LSP,OCP,False,True,0.5,2,63.08,diff_eval_v7_with_structural,"LSP, OCP",True,4.0,41.0,935.0,467.0,True
+diff_eval,run_1,OCP_38,EASY,PYTHON,OCP,OCP,DIP,True,True,1.0,1,58.38,diff_eval_v7_with_structural,"OCP, DIP",True,3.0,39.0,1028.0,468.0,True
+diff_eval,run_1,OCP_39,EASY,PYTHON,OCP,OCP,DIP,True,True,1.0,1,55.77,diff_eval_v7_with_structural,"OCP, DIP",True,3.0,47.0,901.0,494.0,True
+diff_eval,run_1,OCP_40,EASY,PYTHON,OCP,DIP,SRP,False,False,0.0,0,61.66,diff_eval_v7_with_structural,"DIP, SRP",False,4.0,43.0,1098.0,592.0,True
+diff_eval,run_1,OCP_41,HARD,PYTHON,OCP,OCP,DIP,True,True,1.0,1,336.22,diff_eval_v7_with_structural,"OCP, DIP",True,5.0,375.0,11987.0,6790.0,True
+diff_eval,run_1,OCP_42,HARD,PYTHON,OCP,DIP,SRP,False,False,0.0,0,274.97,diff_eval_v7_with_structural,"DIP, SRP",False,4.0,263.0,7531.0,4585.0,True
+diff_eval,run_1,OCP_43,HARD,PYTHON,OCP,DIP,OCP,False,True,0.5,2,370.84,diff_eval_v7_with_structural,"DIP, OCP",True,4.0,317.0,11169.0,6055.0,True
+diff_eval,run_1,OCP_44,HARD,PYTHON,OCP,DIP,ISP,False,False,0.0,0,323.6,diff_eval_v7_with_structural,"DIP, ISP",False,4.0,281.0,11552.0,5996.0,True
+diff_eval,run_1,OCP_45,MODERATE,PYTHON,OCP,DIP,OCP,False,True,0.5,2,173.71,diff_eval_v7_with_structural,"DIP, OCP",True,4.0,155.0,4320.0,2508.0,True
+diff_eval,run_1,OCP_46,MODERATE,PYTHON,OCP,DIP,SRP,False,False,0.0,0,115.69,diff_eval_v7_with_structural,"DIP, SRP",False,4.0,104.0,2760.0,1515.0,True
+diff_eval,run_1,OCP_47,MODERATE,PYTHON,OCP,DIP,SRP,False,False,0.0,0,262.61,diff_eval_v7_with_structural,"DIP, SRP",False,4.0,217.0,7648.0,4115.0,True
+diff_eval,run_1,OCP_48,MODERATE,PYTHON,OCP,SRP,DIP,False,False,0.0,0,219.48,diff_eval_v7_with_structural,"SRP, DIP",False,4.0,184.0,7522.0,3806.0,True
+diff_eval,run_1,LSP_1,EASY,JAVA,LSP,LSP,SRP,True,True,1.0,1,53.34,diff_eval_v7_with_structural,"LSP, SRP",True,4.0,25.0,481.0,235.0,True
+diff_eval,run_1,LSP_2,EASY,PYTHON,LSP,LSP,ISP,True,True,1.0,1,41.36,diff_eval_v7_with_structural,"LSP, ISP",True,5.0,15.0,309.0,153.0,True
+diff_eval,run_1,LSP_3,EASY,KOTLIN,LSP,LSP,DIP,True,True,1.0,1,46.77,diff_eval_v7_with_structural,"LSP, DIP",True,3.0,23.0,384.0,204.0,True
+diff_eval,run_1,LSP_4,EASY,C#,LSP,LSP,SRP,True,True,1.0,1,55.41,diff_eval_v7_with_structural,"LSP, SRP",True,4.0,31.0,473.0,239.0,True
+diff_eval,run_1,LSP_5,MODERATE,JAVA,LSP,LSP,DIP,True,True,1.0,1,88.45,diff_eval_v7_with_structural,"LSP, DIP",True,5.0,92.0,2277.0,1119.0,True
+diff_eval,run_1,LSP_6,MODERATE,PYTHON,LSP,LSP,SRP,True,True,1.0,1,101.96,diff_eval_v7_with_structural,"LSP, SRP",True,4.0,67.0,1841.0,878.0,True
+diff_eval,run_1,LSP_7,MODERATE,KOTLIN,LSP,DIP,OCP,False,False,0.0,0,75.86,diff_eval_v7_with_structural,"DIP, OCP",False,3.0,58.0,1632.0,785.0,False
+diff_eval,run_1,LSP_8,MODERATE,C#,LSP,LSP,ISP,True,True,1.0,1,95.78,diff_eval_v7_with_structural,"LSP, ISP",True,4.0,93.0,2189.0,1056.0,True
+diff_eval,run_1,LSP_9,HARD,JAVA,LSP,LSP,ISP,True,True,1.0,1,345.81,diff_eval_v7_with_structural,"LSP, ISP",True,5.0,233.0,7879.0,3663.0,True
+diff_eval,run_1,LSP_10,HARD,PYTHON,LSP,LSP,ISP,True,True,1.0,1,273.99,diff_eval_v7_with_structural,"LSP, ISP",True,5.0,230.0,7392.0,3479.0,True
+diff_eval,run_1,LSP_11,HARD,KOTLIN,LSP,LSP,ISP,True,True,1.0,1,210.97,diff_eval_v7_with_structural,"LSP, ISP",True,5.0,176.0,5663.0,2676.0,True
+diff_eval,run_1,LSP_12,HARD,C#,LSP,LSP,ISP,True,True,1.0,1,260.76,diff_eval_v7_with_structural,"LSP, ISP",True,4.0,253.0,7497.0,3586.0,True
+diff_eval,run_1,LSP_13,EASY,JAVA,LSP,LSP,SRP,True,True,1.0,1,49.37,diff_eval_v7_with_structural,"LSP, SRP",True,3.0,22.0,679.0,289.0,True
+diff_eval,run_1,LSP_14,EASY,PYTHON,LSP,SRP,OCP,False,False,0.0,0,43.69,diff_eval_v7_with_structural,"SRP, OCP",False,2.0,13.0,488.0,203.0,False
+diff_eval,run_1,LSP_15,EASY,KOTLIN,LSP,LSP,OCP,True,True,1.0,1,41.73,diff_eval_v7_with_structural,"LSP, OCP",True,4.0,20.0,582.0,254.0,True
+diff_eval,run_1,LSP_16,EASY,C#,LSP,LSP,SRP,True,True,1.0,1,50.67,diff_eval_v7_with_structural,"LSP, SRP",True,4.0,28.0,681.0,301.0,True
+diff_eval,run_1,LSP_17,MODERATE,JAVA,LSP,LSP,DIP,True,True,1.0,1,126.9,diff_eval_v7_with_structural,"LSP, DIP",True,4.0,111.0,3277.0,1454.0,True
+diff_eval,run_1,LSP_18,MODERATE,PYTHON,LSP,SRP,OCP,False,False,0.0,0,103.35,diff_eval_v7_with_structural,"SRP, OCP",False,5.0,75.0,2418.0,1033.0,True
+diff_eval,run_1,LSP_19,MODERATE,KOTLIN,LSP,LSP,OCP,True,True,1.0,1,91.85,diff_eval_v7_with_structural,"LSP, OCP",True,5.0,64.0,2369.0,991.0,True
+diff_eval,run_1,LSP_20,MODERATE,C#,LSP,LSP,SRP,True,True,1.0,1,132.24,diff_eval_v7_with_structural,"LSP, SRP",True,4.0,126.0,3434.0,1484.0,True
+diff_eval,run_1,LSP_21,HARD,JAVA,LSP,ISP,DIP,False,False,0.0,0,226.8,diff_eval_v7_with_structural,"ISP, DIP",False,5.0,226.0,8552.0,3655.0,True
+diff_eval,run_1,LSP_22,HARD,PYTHON,LSP,LSP,ISP,True,True,1.0,1,209.85,diff_eval_v7_with_structural,"LSP, ISP",True,5.0,192.0,7006.0,3128.0,True
+diff_eval,run_1,LSP_23,HARD,KOTLIN,LSP,ISP,DIP,False,False,0.0,0,211.48,diff_eval_v7_with_structural,"ISP, DIP",False,4.0,249.0,8058.0,3670.0,False
+diff_eval,run_1,LSP_24,HARD,C#,LSP,LSP,SRP,True,True,1.0,1,361.28,diff_eval_v7_with_structural,"LSP, SRP",True,5.0,324.0,9455.0,4436.0,True
+diff_eval,run_1,LSP_25,EASY,JAVA,LSP,DIP,OCP,False,False,0.0,0,52.9,diff_eval_v7_with_structural,"DIP, OCP",False,4.0,35.0,952.0,357.0,False
+diff_eval,run_1,LSP_26,EASY,PYTHON,LSP,DIP,OCP,False,False,0.0,0,44.77,diff_eval_v7_with_structural,"DIP, OCP",False,4.0,24.0,762.0,338.0,False
+diff_eval,run_1,LSP_27,EASY,KOTLIN,LSP,DIP,OCP,False,False,0.0,0,56.07,diff_eval_v7_with_structural,"DIP, OCP",False,3.0,30.0,890.0,356.0,False
+diff_eval,run_1,LSP_28,EASY,C#,LSP,DIP,OCP,False,False,0.0,0,63.09,diff_eval_v7_with_structural,"DIP, OCP",False,3.0,42.0,1123.0,437.0,False
+diff_eval,run_1,LSP_29,MODERATE,JAVA,LSP,DIP,ISP,False,False,0.0,0,109.83,diff_eval_v7_with_structural,"DIP, ISP",False,4.0,114.0,3897.0,1877.0,False
+diff_eval,run_1,LSP_30,MODERATE,PYTHON,LSP,LSP,DIP,True,True,1.0,1,145.47,diff_eval_v7_with_structural,"LSP, DIP",True,4.0,88.0,3657.0,1616.0,True
+diff_eval,run_1,LSP_31,MODERATE,KOTLIN,LSP,LSP,DIP,True,True,1.0,1,135.92,diff_eval_v7_with_structural,"LSP, DIP",True,4.0,94.0,3503.0,1587.0,True
+diff_eval,run_1,LSP_32,MODERATE,C#,LSP,DIP,LSP,False,True,0.5,2,161.04,diff_eval_v7_with_structural,"DIP, LSP",True,5.0,145.0,4433.0,2032.0,True
+diff_eval,run_1,LSP_33,HARD,JAVA,LSP,LSP,DIP,True,True,1.0,1,446.78,diff_eval_v7_with_structural,"LSP, DIP",True,5.0,277.0,9959.0,4555.0,True
+diff_eval,run_1,LSP_34,HARD,PYTHON,LSP,LSP,DIP,True,True,1.0,1,224.22,diff_eval_v7_with_structural,"LSP, DIP",True,5.0,317.0,12199.0,6145.0,True
+diff_eval,run_1,LSP_35,HARD,KOTLIN,LSP,LSP,DIP,True,True,1.0,1,1253.57,diff_eval_v7_with_structural,"LSP, DIP",True,5.0,358.0,12785.0,6521.0,True
+diff_eval,run_1,LSP_36,HARD,C#,LSP,LSP,DIP,True,True,1.0,1,313.31,diff_eval_v7_with_structural,"LSP, DIP",True,5.0,458.0,14758.0,7551.0,True
+diff_eval,run_1,LSP_37,EASY,JAVA,LSP,LSP,SRP,True,True,1.0,1,47.21,diff_eval_v7_with_structural,"LSP, SRP",True,3.0,38.0,855.0,402.0,True
+diff_eval,run_1,LSP_38,EASY,PYTHON,LSP,LSP,ISP,True,True,1.0,1,51.01,diff_eval_v7_with_structural,"LSP, ISP",True,3.0,33.0,740.0,352.0,True
+diff_eval,run_1,LSP_39,EASY,KOTLIN,LSP,LSP,ISP,True,True,1.0,1,46.32,diff_eval_v7_with_structural,"LSP, ISP",True,3.0,24.0,577.0,261.0,True
+diff_eval,run_1,LSP_40,EASY,C#,LSP,LSP,ISP,True,True,1.0,1,56.49,diff_eval_v7_with_structural,"LSP, ISP",True,2.0,42.0,864.0,402.0,True
+diff_eval,run_1,LSP_41,MODERATE,JAVA,LSP,LSP,SRP,True,True,1.0,1,94.82,diff_eval_v7_with_structural,"LSP, SRP",True,5.0,91.0,2684.0,1272.0,True
+diff_eval,run_1,LSP_42,MODERATE,PYTHON,LSP,LSP,SRP,True,True,1.0,1,97.29,diff_eval_v7_with_structural,"LSP, SRP",True,5.0,82.0,2262.0,1091.0,True
+diff_eval,run_1,LSP_43,MODERATE,KOTLIN,LSP,LSP,ISP,True,True,1.0,1,94.27,diff_eval_v7_with_structural,"LSP, ISP",True,5.0,71.0,2017.0,953.0,True
+diff_eval,run_1,LSP_44,MODERATE,C#,LSP,LSP,SRP,True,True,1.0,1,119.32,diff_eval_v7_with_structural,"LSP, SRP",True,5.0,112.0,2849.0,1351.0,True
+diff_eval,run_1,LSP_45,HARD,JAVA,LSP,LSP,ISP,True,True,1.0,1,227.28,diff_eval_v7_with_structural,"LSP, ISP",True,5.0,212.0,8668.0,3460.0,True
+diff_eval,run_1,LSP_46,HARD,PYTHON,LSP,ISP,DIP,False,False,0.0,0,197.01,diff_eval_v7_with_structural,"ISP, DIP",False,5.0,164.0,6480.0,2762.0,True
+diff_eval,run_1,LSP_47,HARD,KOTLIN,LSP,LSP,ISP,True,True,1.0,1,199.5,diff_eval_v7_with_structural,"LSP, ISP",True,5.0,202.0,6693.0,2810.0,True
+diff_eval,run_1,LSP_48,HARD,C#,LSP,LSP,SRP,True,True,1.0,1,252.28,diff_eval_v7_with_structural,"LSP, SRP",True,5.0,272.0,8682.0,3750.0,True
+diff_eval,run_1,ISP_1,EASY,CSHARP,ISP,ISP,LSP,True,True,1.0,1,68.06,diff_eval_v7_with_structural,"ISP, LSP",True,2.0,89.0,1737.0,992.0,True
+diff_eval,run_1,ISP_2,EASY,CSHARP,ISP,LSP,ISP,False,True,0.5,2,85.46,diff_eval_v7_with_structural,"LSP, ISP",True,4.0,94.0,2055.0,1103.0,True
+diff_eval,run_1,ISP_3,EASY,CSHARP,ISP,ISP,OCP,True,True,1.0,1,42.63,diff_eval_v7_with_structural,"ISP, OCP",True,2.0,63.0,1140.0,543.0,True
+diff_eval,run_1,ISP_4,EASY,CSHARP,ISP,LSP,ISP,False,True,0.5,2,53.02,diff_eval_v7_with_structural,"LSP, ISP",True,3.0,44.0,664.0,366.0,True
+diff_eval,run_1,ISP_5,HARD,CSHARP,ISP,ISP,DIP,True,True,1.0,1,210.77,diff_eval_v7_with_structural,"ISP, DIP",True,4.0,511.0,11621.0,7097.0,True
+diff_eval,run_1,ISP_6,HARD,CSHARP,ISP,ISP,DIP,True,True,1.0,1,224.72,diff_eval_v7_with_structural,"ISP, DIP",True,4.0,461.0,10993.0,5406.0,True
+diff_eval,run_1,ISP_7,HARD,CSHARP,ISP,ISP,OCP,True,True,1.0,1,153.8,diff_eval_v7_with_structural,"ISP, OCP",True,3.0,660.0,17075.0,9827.0,True
+diff_eval,run_1,ISP_8,HARD,CSHARP,ISP,ISP,SRP,True,True,1.0,1,253.21,diff_eval_v7_with_structural,"ISP, SRP",True,4.0,473.0,10539.0,5699.0,True
+diff_eval,run_1,ISP_9,MODERATE,CSHARP,ISP,ISP,OCP,True,True,1.0,1,153.09,diff_eval_v7_with_structural,"ISP, OCP",True,3.0,287.0,6316.0,3915.0,True
+diff_eval,run_1,ISP_10,MODERATE,CSHARP,ISP,LSP,ISP,False,True,0.5,2,198.43,diff_eval_v7_with_structural,"LSP, ISP",True,4.0,259.0,6299.0,3322.0,True
+diff_eval,run_1,ISP_11,MODERATE,CSHARP,ISP,ISP,SRP,True,True,1.0,1,79.18,diff_eval_v7_with_structural,"ISP, SRP",True,3.0,149.0,2838.0,1436.0,True
+diff_eval,run_1,ISP_12,MODERATE,CSHARP,ISP,ISP,DIP,True,True,1.0,1,158.68,diff_eval_v7_with_structural,"ISP, DIP",True,4.0,291.0,5721.0,3266.0,True
+diff_eval,run_1,ISP_13,EASY,JAVA,ISP,LSP,ISP,False,True,0.5,2,96.18,diff_eval_v7_with_structural,"LSP, ISP",True,3.0,77.0,1793.0,969.0,True
+diff_eval,run_1,ISP_14,EASY,JAVA,ISP,ISP,OCP,True,True,1.0,1,71.56,diff_eval_v7_with_structural,"ISP, OCP",True,3.0,88.0,2183.0,1128.0,True
+diff_eval,run_1,ISP_15,EASY,JAVA,ISP,ISP,OCP,True,True,1.0,1,45.17,diff_eval_v7_with_structural,"ISP, OCP",True,2.0,48.0,1121.0,519.0,True
+diff_eval,run_1,ISP_16,EASY,JAVA,ISP,ISP,,True,True,1.0,1,35.64,diff_eval_v7_with_structural,ISP,True,1.0,34.0,654.0,347.0,True
+diff_eval,run_1,ISP_17,HARD,JAVA,ISP,ISP,DIP,True,True,1.0,1,211.0,diff_eval_v7_with_structural,"ISP, DIP",True,4.0,416.0,11445.0,6583.0,True
+diff_eval,run_1,ISP_18,HARD,JAVA,ISP,ISP,DIP,True,True,1.0,1,242.85,diff_eval_v7_with_structural,"ISP, DIP",True,4.0,436.0,11756.0,5569.0,True
+diff_eval,run_1,ISP_19,HARD,JAVA,ISP,ISP,OCP,True,True,1.0,1,169.04,diff_eval_v7_with_structural,"ISP, OCP",True,3.0,482.0,15667.0,8472.0,True
+diff_eval,run_1,ISP_20,HARD,JAVA,ISP,SRP,ISP,False,True,0.5,2,261.57,diff_eval_v7_with_structural,"SRP, ISP",True,4.0,351.0,10063.0,5037.0,True
+diff_eval,run_1,ISP_21,MODERATE,JAVA,ISP,ISP,DIP,True,True,1.0,1,175.45,diff_eval_v7_with_structural,"ISP, DIP",True,2.0,226.0,6148.0,3575.0,True
+diff_eval,run_1,ISP_22,MODERATE,JAVA,ISP,ISP,LSP,True,True,1.0,1,211.76,diff_eval_v7_with_structural,"ISP, LSP",True,4.0,246.0,6487.0,3167.0,True
+diff_eval,run_1,ISP_23,MODERATE,JAVA,ISP,ISP,OCP,True,True,1.0,1,69.58,diff_eval_v7_with_structural,"ISP, OCP",True,2.0,113.0,2744.0,1328.0,True
+diff_eval,run_1,ISP_24,MODERATE,JAVA,ISP,ISP,DIP,True,True,1.0,1,129.42,diff_eval_v7_with_structural,"ISP, DIP",True,4.0,220.0,5450.0,2911.0,True
+diff_eval,run_1,ISP_25,EASY,KOTLIN,ISP,LSP,ISP,False,True,0.5,2,76.67,diff_eval_v7_with_structural,"LSP, ISP",True,5.0,57.0,1378.0,739.0,True
+diff_eval,run_1,ISP_26,EASY,KOTLIN,ISP,LSP,ISP,False,True,0.5,2,84.17,diff_eval_v7_with_structural,"LSP, ISP",True,3.0,79.0,1898.0,995.0,True
+diff_eval,run_1,ISP_27,EASY,KOTLIN,ISP,ISP,OCP,True,True,1.0,1,50.31,diff_eval_v7_with_structural,"ISP, OCP",True,2.0,47.0,988.0,470.0,True
+diff_eval,run_1,ISP_28,EASY,KOTLIN,ISP,ISP,LSP,True,True,1.0,1,44.82,diff_eval_v7_with_structural,"ISP, LSP",True,2.0,34.0,571.0,316.0,True
+diff_eval,run_1,ISP_29,HARD,KOTLIN,ISP,ISP,SRP,True,True,1.0,1,264.08,diff_eval_v7_with_structural,"ISP, SRP",True,5.0,331.0,9289.0,5382.0,True
+diff_eval,run_1,ISP_30,HARD,KOTLIN,ISP,ISP,LSP,True,True,1.0,1,173.45,diff_eval_v7_with_structural,"ISP, LSP",True,3.0,371.0,9990.0,4704.0,True
+diff_eval,run_1,ISP_31,HARD,KOTLIN,ISP,ISP,SRP,True,True,1.0,1,262.58,diff_eval_v7_with_structural,"ISP, SRP",True,5.0,482.0,13948.0,7669.0,True
+diff_eval,run_1,ISP_32,HARD,KOTLIN,ISP,LSP,SRP,False,False,0.0,0,274.71,diff_eval_v7_with_structural,"LSP, SRP",False,5.0,310.0,8522.0,4214.0,True
+diff_eval,run_1,ISP_33,MODERATE,KOTLIN,ISP,LSP,ISP,False,True,0.5,2,187.61,diff_eval_v7_with_structural,"LSP, ISP",True,4.0,189.0,5219.0,3224.0,True
+diff_eval,run_1,ISP_34,MODERATE,KOTLIN,ISP,LSP,ISP,False,True,0.5,2,148.57,diff_eval_v7_with_structural,"LSP, ISP",True,3.0,209.0,5799.0,2919.0,True
+diff_eval,run_1,ISP_35,MODERATE,KOTLIN,ISP,ISP,OCP,True,True,1.0,1,77.02,diff_eval_v7_with_structural,"ISP, OCP",True,3.0,112.0,2448.0,1209.0,True
+diff_eval,run_1,ISP_36,MODERATE,KOTLIN,ISP,LSP,ISP,False,True,0.5,2,144.13,diff_eval_v7_with_structural,"LSP, ISP",True,4.0,166.0,4233.0,2183.0,True
+diff_eval,run_1,ISP_37,EASY,PYTHON,ISP,LSP,ISP,False,True,0.5,2,72.44,diff_eval_v7_with_structural,"LSP, ISP",True,4.0,60.0,1516.0,813.0,True
+diff_eval,run_1,ISP_38,EASY,PYTHON,ISP,LSP,ISP,False,True,0.5,2,91.13,diff_eval_v7_with_structural,"LSP, ISP",True,4.0,81.0,2099.0,1084.0,True
+diff_eval,run_1,ISP_39,EASY,PYTHON,ISP,ISP,SRP,True,True,1.0,1,55.62,diff_eval_v7_with_structural,"ISP, SRP",True,3.0,44.0,1045.0,489.0,True
+diff_eval,run_1,ISP_40,EASY,PYTHON,ISP,ISP,LSP,True,True,1.0,1,49.25,diff_eval_v7_with_structural,"ISP, LSP",True,3.0,34.0,629.0,338.0,True
+diff_eval,run_1,ISP_41,HARD,PYTHON,ISP,LSP,ISP,False,True,0.5,2,215.53,diff_eval_v7_with_structural,"LSP, ISP",True,5.0,328.0,9475.0,5333.0,True
+diff_eval,run_1,ISP_42,HARD,PYTHON,ISP,ISP,LSP,True,True,1.0,1,273.04,diff_eval_v7_with_structural,"ISP, LSP",True,4.0,357.0,10176.0,4912.0,True
+diff_eval,run_1,ISP_43,HARD,PYTHON,ISP,,,False,False,0.0,0,137.51,diff_eval_v7_with_structural,,False,0.0,425.0,13827.0,7304.0,False
+diff_eval,run_1,ISP_44,HARD,PYTHON,ISP,LSP,OCP,False,False,0.0,0,275.4,diff_eval_v7_with_structural,"LSP, OCP",False,5.0,295.0,8947.0,4213.0,True
+diff_eval,run_1,ISP_45,MODERATE,PYTHON,ISP,ISP,SRP,True,True,1.0,1,203.15,diff_eval_v7_with_structural,"ISP, SRP",True,4.0,178.0,5209.0,2982.0,True
+diff_eval,run_1,ISP_46,MODERATE,PYTHON,ISP,LSP,ISP,False,True,0.5,2,182.11,diff_eval_v7_with_structural,"LSP, ISP",True,3.0,202.0,5849.0,2932.0,True
+diff_eval,run_1,ISP_47,MODERATE,PYTHON,ISP,ISP,LSP,True,True,1.0,1,81.75,diff_eval_v7_with_structural,"ISP, LSP",True,3.0,108.0,2625.0,1283.0,True
+diff_eval,run_1,ISP_48,MODERATE,PYTHON,ISP,LSP,ISP,False,True,0.5,2,157.82,diff_eval_v7_with_structural,"LSP, ISP",True,5.0,177.0,4573.0,2372.0,True
+diff_eval,run_1,DIP_1,EASY,JAVA,DIP,DIP,SRP,True,True,1.0,1,44.47,diff_eval_v7_with_structural,"DIP, SRP",True,4.0,23.0,593.0,285.0,True
+diff_eval,run_1,DIP_2,EASY,PYTHON,DIP,DIP,SRP,True,True,1.0,1,39.13,diff_eval_v7_with_structural,"DIP, SRP",True,4.0,15.0,441.0,206.0,True
+diff_eval,run_1,DIP_3,EASY,KOTLIN,DIP,DIP,OCP,True,True,1.0,1,37.95,diff_eval_v7_with_structural,"DIP, OCP",True,4.0,19.0,441.0,213.0,True
+diff_eval,run_1,DIP_4,EASY,C#,DIP,DIP,SRP,True,True,1.0,1,46.65,diff_eval_v7_with_structural,"DIP, SRP",True,4.0,29.0,591.0,284.0,True
+diff_eval,run_1,DIP_5,MODERATE,JAVA,DIP,DIP,SRP,True,True,1.0,1,72.22,diff_eval_v7_with_structural,"DIP, SRP",True,4.0,77.0,2288.0,1171.0,True
+diff_eval,run_1,DIP_6,MODERATE,PYTHON,DIP,DIP,SRP,True,True,1.0,1,66.49,diff_eval_v7_with_structural,"DIP, SRP",True,4.0,54.0,1844.0,909.0,True
+diff_eval,run_1,DIP_7,MODERATE,KOTLIN,DIP,DIP,SRP,True,True,1.0,1,79.27,diff_eval_v7_with_structural,"DIP, SRP",True,4.0,65.0,1828.0,969.0,True
+diff_eval,run_1,DIP_8,MODERATE,C#,DIP,DIP,SRP,True,True,1.0,1,68.35,diff_eval_v7_with_structural,"DIP, SRP",True,4.0,94.0,2405.0,1244.0,True
+diff_eval,run_1,DIP_9,HARD,JAVA,DIP,DIP,SRP,True,True,1.0,1,170.98,diff_eval_v7_with_structural,"DIP, SRP",True,4.0,229.0,8620.0,4693.0,True
+diff_eval,run_1,DIP_10,HARD,PYTHON,DIP,DIP,SRP,True,True,1.0,1,167.08,diff_eval_v7_with_structural,"DIP, SRP",True,4.0,167.0,6938.0,3394.0,True
+diff_eval,run_1,DIP_11,HARD,KOTLIN,DIP,DIP,SRP,True,True,1.0,1,145.5,diff_eval_v7_with_structural,"DIP, SRP",True,4.0,191.0,6234.0,3373.0,True
+diff_eval,run_1,DIP_12,HARD,C#,DIP,DIP,SRP,True,True,1.0,1,179.63,diff_eval_v7_with_structural,"DIP, SRP",True,4.0,267.0,8372.0,4441.0,True
+diff_eval,run_1,DIP_13,EASY,JAVA,DIP,DIP,OCP,True,True,1.0,1,39.15,diff_eval_v7_with_structural,"DIP, OCP",True,3.0,18.0,465.0,192.0,True
+diff_eval,run_1,DIP_14,EASY,PYTHON,DIP,DIP,OCP,True,True,1.0,1,41.28,diff_eval_v7_with_structural,"DIP, OCP",True,3.0,11.0,331.0,131.0,True
+diff_eval,run_1,DIP_15,EASY,KOTLIN,DIP,DIP,OCP,True,True,1.0,1,39.63,diff_eval_v7_with_structural,"DIP, OCP",True,2.0,14.0,344.0,141.0,True
+diff_eval,run_1,DIP_16,EASY,C#,DIP,DIP,OCP,True,True,1.0,1,37.73,diff_eval_v7_with_structural,"DIP, OCP",True,3.0,23.0,463.0,195.0,True
+diff_eval,run_1,DIP_17,MODERATE,JAVA,DIP,SRP,OCP,False,False,0.0,0,74.94,diff_eval_v7_with_structural,"SRP, OCP",False,4.0,56.0,1872.0,912.0,True
+diff_eval,run_1,DIP_18,MODERATE,PYTHON,DIP,DIP,OCP,True,True,1.0,1,61.75,diff_eval_v7_with_structural,"DIP, OCP",True,4.0,41.0,1407.0,684.0,True
+diff_eval,run_1,DIP_19,MODERATE,KOTLIN,DIP,DIP,OCP,True,True,1.0,1,70.91,diff_eval_v7_with_structural,"DIP, OCP",True,4.0,53.0,1600.0,843.0,True
+diff_eval,run_1,DIP_20,MODERATE,C#,DIP,OCP,DIP,False,True,0.5,2,67.12,diff_eval_v7_with_structural,"OCP, DIP",True,4.0,76.0,1950.0,974.0,True
+diff_eval,run_1,DIP_21,HARD,JAVA,DIP,DIP,OCP,True,True,1.0,1,198.16,diff_eval_v7_with_structural,"DIP, OCP",True,4.0,207.0,8107.0,3556.0,True
+diff_eval,run_1,DIP_22,HARD,PYTHON,DIP,OCP,DIP,False,True,0.5,2,187.39,diff_eval_v7_with_structural,"OCP, DIP",True,4.0,145.0,6645.0,2878.0,True
+diff_eval,run_1,DIP_23,HARD,KOTLIN,DIP,DIP,SRP,True,True,1.0,1,174.44,diff_eval_v7_with_structural,"DIP, SRP",True,4.0,155.0,6261.0,2625.0,True
+diff_eval,run_1,DIP_24,HARD,C#,DIP,DIP,OCP,True,True,1.0,1,154.24,diff_eval_v7_with_structural,"DIP, OCP",True,4.0,235.0,8702.0,4296.0,True
+diff_eval,run_1,DIP_25,EASY,JAVA,DIP,SRP,DIP,False,True,0.5,2,56.23,diff_eval_v7_with_structural,"SRP, DIP",True,4.0,22.0,583.0,307.0,True
+diff_eval,run_1,DIP_26,EASY,PYTHON,DIP,SRP,ISP,False,False,0.0,0,36.56,diff_eval_v7_with_structural,"SRP, ISP",False,3.0,18.0,496.0,284.0,False
+diff_eval,run_1,DIP_27,EASY,KOTLIN,DIP,DIP,SRP,True,True,1.0,1,43.17,diff_eval_v7_with_structural,"DIP, SRP",True,4.0,22.0,531.0,290.0,True
+diff_eval,run_1,DIP_28,EASY,C#,DIP,DIP,SRP,True,True,1.0,1,55.28,diff_eval_v7_with_structural,"DIP, SRP",True,4.0,31.0,595.0,341.0,True
+diff_eval,run_1,DIP_29,MODERATE,JAVA,DIP,DIP,SRP,True,True,1.0,1,78.71,diff_eval_v7_with_structural,"DIP, SRP",True,4.0,72.0,2198.0,1201.0,True
+diff_eval,run_1,DIP_30,MODERATE,PYTHON,DIP,DIP,SRP,True,True,1.0,1,73.44,diff_eval_v7_with_structural,"DIP, SRP",True,4.0,58.0,1890.0,1093.0,True
+diff_eval,run_1,DIP_31,MODERATE,KOTLIN,DIP,SRP,DIP,False,True,0.5,2,68.75,diff_eval_v7_with_structural,"SRP, DIP",True,4.0,63.0,1838.0,1012.0,True
+diff_eval,run_1,DIP_32,MODERATE,C#,DIP,DIP,ISP,True,True,1.0,1,75.69,diff_eval_v7_with_structural,"DIP, ISP",True,4.0,91.0,2078.0,1203.0,True
+diff_eval,run_1,DIP_33,HARD,JAVA,DIP,SRP,DIP,False,True,0.5,2,144.36,diff_eval_v7_with_structural,"SRP, DIP",True,4.0,164.0,6576.0,2928.0,True
+diff_eval,run_1,DIP_34,HARD,PYTHON,DIP,SRP,DIP,False,True,0.5,2,157.87,diff_eval_v7_with_structural,"SRP, DIP",True,4.0,152.0,6056.0,2750.0,True
+diff_eval,run_1,DIP_35,HARD,KOTLIN,DIP,DIP,SRP,True,True,1.0,1,201.73,diff_eval_v7_with_structural,"DIP, SRP",True,4.0,244.0,8715.0,4214.0,True
+diff_eval,run_1,DIP_36,HARD,C#,DIP,SRP,DIP,False,True,0.5,2,235.26,diff_eval_v7_with_structural,"SRP, DIP",True,4.0,305.0,10242.0,5016.0,True
+diff_eval,run_1,DIP_37,EASY,JAVA,DIP,DIP,OCP,True,True,1.0,1,43.29,diff_eval_v7_with_structural,"DIP, OCP",True,3.0,17.0,479.0,199.0,True
+diff_eval,run_1,DIP_38,EASY,PYTHON,DIP,DIP,OCP,True,True,1.0,1,41.71,diff_eval_v7_with_structural,"DIP, OCP",True,2.0,10.0,344.0,134.0,True
+diff_eval,run_1,DIP_39,EASY,KOTLIN,DIP,DIP,OCP,True,True,1.0,1,42.22,diff_eval_v7_with_structural,"DIP, OCP",True,2.0,13.0,348.0,141.0,True
+diff_eval,run_1,DIP_40,EASY,C#,DIP,DIP,OCP,True,True,1.0,1,44.97,diff_eval_v7_with_structural,"DIP, OCP",True,2.0,22.0,479.0,201.0,True
+diff_eval,run_1,DIP_41,MODERATE,JAVA,DIP,DIP,SRP,True,True,1.0,1,78.44,diff_eval_v7_with_structural,"DIP, SRP",True,4.0,62.0,2021.0,806.0,True
+diff_eval,run_1,DIP_42,MODERATE,PYTHON,DIP,DIP,OCP,True,True,1.0,1,62.05,diff_eval_v7_with_structural,"DIP, OCP",True,4.0,40.0,1586.0,588.0,True
+diff_eval,run_1,DIP_43,MODERATE,KOTLIN,DIP,DIP,SRP,True,True,1.0,1,69.98,diff_eval_v7_with_structural,"DIP, SRP",True,4.0,46.0,1576.0,614.0,True
+diff_eval,run_1,DIP_44,MODERATE,C#,DIP,DIP,SRP,True,True,1.0,1,74.07,diff_eval_v7_with_structural,"DIP, SRP",True,4.0,77.0,2059.0,842.0,True
+diff_eval,run_1,DIP_45,HARD,JAVA,DIP,DIP,SRP,True,True,1.0,1,161.51,diff_eval_v7_with_structural,"DIP, SRP",True,4.0,138.0,5087.0,2157.0,True
+diff_eval,run_1,DIP_46,HARD,PYTHON,DIP,DIP,OCP,True,True,1.0,1,135.21,diff_eval_v7_with_structural,"DIP, OCP",True,4.0,106.0,4499.0,1862.0,True
+diff_eval,run_1,DIP_47,HARD,KOTLIN,DIP,DIP,OCP,True,True,1.0,1,142.12,diff_eval_v7_with_structural,"DIP, OCP",True,4.0,127.0,4464.0,1921.0,True
+diff_eval,run_1,DIP_48,HARD,C#,DIP,DIP,OCP,True,True,1.0,1,151.56,diff_eval_v7_with_structural,"DIP, OCP",True,4.0,170.0,5347.0,2296.0,True
+diff_eval,run_2,SRP_1,EASY,JAVA,SRP,OCP,,False,False,0.0,0,35.1,diff_eval_v7_with_structural,OCP,False,1.0,17.0,409.0,213.0,False
+diff_eval,run_2,SRP_2,EASY,JAVA,SRP,SRP,,True,True,1.0,1,37.1,diff_eval_v7_with_structural,SRP,True,3.0,19.0,534.0,248.0,True
+diff_eval,run_2,SRP_3,EASY,JAVA,SRP,SRP,,True,True,1.0,1,34.86,diff_eval_v7_with_structural,SRP,True,2.0,21.0,569.0,289.0,True
+diff_eval,run_2,SRP_4,EASY,JAVA,SRP,SRP,,True,True,1.0,1,36.16,diff_eval_v7_with_structural,SRP,True,1.0,17.0,416.0,219.0,True
+diff_eval,run_2,SRP_5,MODERATE,JAVA,SRP,DIP,,False,False,0.0,0,107.51,diff_eval_v7_with_structural,DIP,False,4.0,168.0,4688.0,2420.0,True
+diff_eval,run_2,SRP_6,MODERATE,JAVA,SRP,DIP,,False,False,0.0,0,168.48,diff_eval_v7_with_structural,DIP,False,4.0,256.0,7899.0,3817.0,True
+diff_eval,run_2,SRP_7,MODERATE,JAVA,SRP,DIP,,False,False,0.0,0,192.33,diff_eval_v7_with_structural,DIP,False,4.0,185.0,6117.0,3228.0,True
+diff_eval,run_2,SRP_8,MODERATE,JAVA,SRP,DIP,,False,False,0.0,0,136.06,diff_eval_v7_with_structural,DIP,False,4.0,124.0,4615.0,2130.0,True
+diff_eval,run_2,SRP_9,HARD,JAVA,SRP,DIP,,False,False,0.0,0,212.39,diff_eval_v7_with_structural,DIP,False,4.0,370.0,12738.0,6063.0,True
+diff_eval,run_2,SRP_10,HARD,JAVA,SRP,DIP,,False,False,0.0,0,195.89,diff_eval_v7_with_structural,DIP,False,4.0,337.0,13357.0,5797.0,True
+diff_eval,run_2,SRP_11,HARD,JAVA,SRP,,,False,False,0.0,0,202.97,diff_eval_v7_with_structural,,False,0.0,330.0,12494.0,5912.0,False
+diff_eval,run_2,SRP_12,HARD,JAVA,SRP,SRP,,True,True,1.0,1,306.76,diff_eval_v7_with_structural,SRP,True,4.0,388.0,16985.0,7852.0,True
+diff_eval,run_2,SRP_13,EASY,PYTHON,SRP,OCP,,False,False,0.0,0,31.96,diff_eval_v7_with_structural,OCP,False,1.0,10.0,286.0,144.0,False
+diff_eval,run_2,SRP_14,EASY,PYTHON,SRP,OCP,,False,False,0.0,0,35.52,diff_eval_v7_with_structural,OCP,False,1.0,11.0,423.0,186.0,False
+diff_eval,run_2,SRP_15,EASY,PYTHON,SRP,OCP,,False,False,0.0,0,32.73,diff_eval_v7_with_structural,OCP,False,1.0,13.0,390.0,203.0,False
+diff_eval,run_2,SRP_16,EASY,PYTHON,SRP,SRP,,True,True,1.0,1,30.51,diff_eval_v7_with_structural,SRP,True,2.0,10.0,303.0,155.0,True
+diff_eval,run_2,SRP_17,MODERATE,PYTHON,SRP,DIP,,False,False,0.0,0,123.19,diff_eval_v7_with_structural,DIP,False,4.0,120.0,4007.0,1994.0,True
+diff_eval,run_2,SRP_18,MODERATE,PYTHON,SRP,DIP,,False,False,0.0,0,167.16,diff_eval_v7_with_structural,DIP,False,4.0,195.0,7146.0,3315.0,True
+diff_eval,run_2,SRP_19,MODERATE,PYTHON,SRP,SRP,,True,True,1.0,1,192.22,diff_eval_v7_with_structural,SRP,True,4.0,167.0,5735.0,2857.0,True
+diff_eval,run_2,SRP_20,MODERATE,PYTHON,SRP,DIP,,False,False,0.0,0,120.56,diff_eval_v7_with_structural,DIP,False,4.0,89.0,3928.0,1733.0,True
+diff_eval,run_2,SRP_21,HARD,PYTHON,SRP,SRP,,True,True,1.0,1,252.47,diff_eval_v7_with_structural,SRP,True,4.0,254.0,10438.0,4740.0,True
+diff_eval,run_2,SRP_22,HARD,PYTHON,SRP,SRP,,True,True,1.0,1,529.6,diff_eval_v7_with_structural,SRP,True,3.0,300.0,12992.0,5954.0,True
+diff_eval,run_2,SRP_23,HARD,PYTHON,SRP,DIP,,False,False,0.0,0,218.07,diff_eval_v7_with_structural,DIP,False,4.0,248.0,11175.0,4923.0,True
+diff_eval,run_2,SRP_24,HARD,PYTHON,SRP,SRP,,True,True,1.0,1,543.6,diff_eval_v7_with_structural,SRP,True,4.0,329.0,14413.0,6230.0,True
+diff_eval,run_2,SRP_25,EASY,KOTLIN,SRP,SRP,,True,True,1.0,1,31.67,diff_eval_v7_with_structural,SRP,True,2.0,10.0,229.0,117.0,True
+diff_eval,run_2,SRP_26,EASY,KOTLIN,SRP,SRP,,True,True,1.0,1,32.79,diff_eval_v7_with_structural,SRP,True,2.0,10.0,305.0,142.0,True
+diff_eval,run_2,SRP_27,EASY,KOTLIN,SRP,SRP,,True,True,1.0,1,35.98,diff_eval_v7_with_structural,SRP,True,3.0,12.0,330.0,166.0,True
+diff_eval,run_2,SRP_28,EASY,KOTLIN,SRP,SRP,,True,True,1.0,1,34.97,diff_eval_v7_with_structural,SRP,True,2.0,10.0,267.0,135.0,True
+diff_eval,run_2,SRP_29,MODERATE,KOTLIN,SRP,SRP,,True,True,1.0,1,640.19,diff_eval_v7_with_structural,SRP,True,4.0,116.0,3523.0,1779.0,True
+diff_eval,run_2,SRP_30,MODERATE,KOTLIN,SRP,SRP,,True,True,1.0,1,154.02,diff_eval_v7_with_structural,SRP,True,4.0,179.0,6179.0,2878.0,True
+diff_eval,run_2,SRP_31,MODERATE,KOTLIN,SRP,DIP,,False,False,0.0,0,148.19,diff_eval_v7_with_structural,DIP,False,4.0,164.0,5372.0,2786.0,True
+diff_eval,run_2,SRP_32,MODERATE,KOTLIN,SRP,DIP,,False,False,0.0,0,128.53,diff_eval_v7_with_structural,DIP,False,4.0,102.0,3859.0,1732.0,True
+diff_eval,run_2,SRP_33,HARD,KOTLIN,SRP,SRP,,True,True,1.0,1,192.71,diff_eval_v7_with_structural,SRP,True,4.0,286.0,9834.0,4595.0,True
+diff_eval,run_2,SRP_34,HARD,KOTLIN,SRP,DIP,,False,False,0.0,0,222.78,diff_eval_v7_with_structural,DIP,False,4.0,260.0,10479.0,4530.0,True
+diff_eval,run_2,SRP_35,HARD,KOTLIN,SRP,,,False,False,0.0,0,219.88,diff_eval_v7_with_structural,,False,0.0,285.0,10237.0,4679.0,False
+diff_eval,run_2,SRP_36,HARD,KOTLIN,SRP,DIP,,False,False,0.0,0,358.03,diff_eval_v7_with_structural,DIP,False,4.0,361.0,14620.0,6873.0,True
+diff_eval,run_2,SRP_37,EASY,CSHARP,SRP,SRP,,True,True,1.0,1,33.91,diff_eval_v7_with_structural,SRP,True,2.0,21.0,428.0,230.0,True
+diff_eval,run_2,SRP_38,EASY,CSHARP,SRP,OCP,,False,False,0.0,0,36.69,diff_eval_v7_with_structural,OCP,False,1.0,23.0,539.0,252.0,False
+diff_eval,run_2,SRP_39,EASY,CSHARP,SRP,SRP,,True,True,1.0,1,33.84,diff_eval_v7_with_structural,SRP,True,3.0,25.0,577.0,293.0,True
+diff_eval,run_2,SRP_40,EASY,CSHARP,SRP,SRP,,True,True,1.0,1,33.98,diff_eval_v7_with_structural,SRP,True,2.0,21.0,421.0,223.0,True
+diff_eval,run_2,SRP_41,MODERATE,CSHARP,SRP,SRP,,True,True,1.0,1,126.24,diff_eval_v7_with_structural,SRP,True,4.0,184.0,4448.0,2313.0,True
+diff_eval,run_2,SRP_42,MODERATE,CSHARP,SRP,DIP,,False,False,0.0,0,165.67,diff_eval_v7_with_structural,DIP,False,4.0,289.0,7682.0,3840.0,True
+diff_eval,run_2,SRP_43,MODERATE,CSHARP,SRP,DIP,,False,False,0.0,0,179.04,diff_eval_v7_with_structural,DIP,False,4.0,218.0,5972.0,3084.0,True
+diff_eval,run_2,SRP_44,MODERATE,CSHARP,SRP,DIP,,False,False,0.0,0,113.4,diff_eval_v7_with_structural,DIP,False,4.0,149.0,4707.0,2163.0,True
+diff_eval,run_2,SRP_45,HARD,CSHARP,SRP,DIP,,False,False,0.0,0,277.8,diff_eval_v7_with_structural,DIP,False,4.0,395.0,12158.0,5727.0,True
+diff_eval,run_2,SRP_46,HARD,CSHARP,SRP,,,False,False,0.0,0,268.28,diff_eval_v7_with_structural,,False,0.0,384.0,13000.0,5631.0,False
+diff_eval,run_2,SRP_47,HARD,CSHARP,SRP,SRP,,True,True,1.0,1,209.22,diff_eval_v7_with_structural,SRP,True,4.0,387.0,13890.0,7213.0,True
+diff_eval,run_2,SRP_48,HARD,CSHARP,SRP,SRP,,True,True,1.0,1,251.96,diff_eval_v7_with_structural,SRP,True,4.0,465.0,16946.0,7834.0,True
+diff_eval,run_2,OCP_1,EASY,CSHARP,OCP,OCP,,True,True,1.0,1,68.93,diff_eval_v7_with_structural,OCP,True,5.0,72.0,1235.0,658.0,True
+diff_eval,run_2,OCP_2,EASY,CSHARP,OCP,SRP,,False,False,0.0,0,69.0,diff_eval_v7_with_structural,SRP,False,4.0,50.0,1300.0,597.0,True
+diff_eval,run_2,OCP_3,EASY,CSHARP,OCP,DIP,,False,False,0.0,0,58.94,diff_eval_v7_with_structural,DIP,False,3.0,49.0,1004.0,492.0,True
+diff_eval,run_2,OCP_4,EASY,CSHARP,OCP,OCP,,True,True,1.0,1,69.12,diff_eval_v7_with_structural,OCP,True,4.0,53.0,1479.0,777.0,True
+diff_eval,run_2,OCP_5,HARD,CSHARP,OCP,OCP,,True,True,1.0,1,282.84,diff_eval_v7_with_structural,OCP,True,5.0,459.0,15744.0,9227.0,True
+diff_eval,run_2,OCP_6,HARD,CSHARP,OCP,ISP,,False,False,0.0,0,270.05,diff_eval_v7_with_structural,ISP,False,4.0,269.0,8599.0,4781.0,True
+diff_eval,run_2,OCP_7,HARD,CSHARP,OCP,SRP,,False,False,0.0,0,441.82,diff_eval_v7_with_structural,SRP,False,4.0,415.0,16149.0,8664.0,True
+diff_eval,run_2,OCP_8,HARD,CSHARP,OCP,,,False,False,0.0,0,656.24,diff_eval_v7_with_structural,,False,0.0,398.0,15864.0,8381.0,False
+diff_eval,run_2,OCP_9,MODERATE,CSHARP,OCP,DIP,,False,False,0.0,0,173.83,diff_eval_v7_with_structural,DIP,False,4.0,208.0,5450.0,3451.0,True
+diff_eval,run_2,OCP_10,MODERATE,CSHARP,OCP,SRP,,False,False,0.0,0,106.22,diff_eval_v7_with_structural,SRP,False,3.0,112.0,2563.0,1508.0,True
+diff_eval,run_2,OCP_11,MODERATE,CSHARP,OCP,DIP,,False,False,0.0,0,227.24,diff_eval_v7_with_structural,DIP,False,4.0,305.0,9205.0,5469.0,True
+diff_eval,run_2,OCP_12,MODERATE,CSHARP,OCP,SRP,,False,False,0.0,0,176.18,diff_eval_v7_with_structural,SRP,False,4.0,216.0,10058.0,5025.0,True
+diff_eval,run_2,OCP_13,EASY,JAVA,OCP,SRP,,False,False,0.0,0,76.23,diff_eval_v7_with_structural,SRP,False,5.0,57.0,1210.0,640.0,True
+diff_eval,run_2,OCP_14,EASY,JAVA,OCP,OCP,,True,True,1.0,1,66.8,diff_eval_v7_with_structural,OCP,True,4.0,44.0,1316.0,642.0,True
+diff_eval,run_2,OCP_15,EASY,JAVA,OCP,DIP,,False,False,0.0,0,54.64,diff_eval_v7_with_structural,DIP,False,2.0,38.0,901.0,452.0,True
+diff_eval,run_2,OCP_16,EASY,JAVA,OCP,OCP,,True,True,1.0,1,81.9,diff_eval_v7_with_structural,OCP,True,4.0,32.0,1218.0,606.0,True
+diff_eval,run_2,OCP_17,HARD,JAVA,OCP,OCP,,True,True,1.0,1,177.61,diff_eval_v7_with_structural,OCP,True,5.0,433.0,15628.0,9381.0,True
+diff_eval,run_2,OCP_18,HARD,JAVA,OCP,OCP,,True,True,1.0,1,235.91,diff_eval_v7_with_structural,OCP,True,4.0,210.0,7259.0,4132.0,True
+diff_eval,run_2,OCP_19,HARD,JAVA,OCP,DIP,,False,False,0.0,0,308.8,diff_eval_v7_with_structural,DIP,False,4.0,414.0,14950.0,8460.0,True
+diff_eval,run_2,OCP_20,HARD,JAVA,OCP,SRP,,False,False,0.0,0,184.15,diff_eval_v7_with_structural,SRP,False,4.0,359.0,15513.0,8675.0,True
+diff_eval,run_2,OCP_21,MODERATE,JAVA,OCP,OCP,,True,True,1.0,1,130.54,diff_eval_v7_with_structural,OCP,True,4.0,177.0,5124.0,3060.0,True
+diff_eval,run_2,OCP_22,MODERATE,JAVA,OCP,OCP,,True,True,1.0,1,103.34,diff_eval_v7_with_structural,OCP,True,4.0,105.0,2985.0,1659.0,True
+diff_eval,run_2,OCP_23,MODERATE,JAVA,OCP,DIP,,False,False,0.0,0,798.96,diff_eval_v7_with_structural,DIP,False,4.0,281.0,9648.0,5774.0,True
+diff_eval,run_2,OCP_24,MODERATE,JAVA,OCP,SRP,,False,False,0.0,0,227.88,diff_eval_v7_with_structural,SRP,False,4.0,215.0,8998.0,4856.0,True
+diff_eval,run_2,OCP_25,EASY,KOTLIN,OCP,DIP,,False,False,0.0,0,50.65,diff_eval_v7_with_structural,DIP,False,3.0,32.0,715.0,374.0,True
+diff_eval,run_2,OCP_26,EASY,KOTLIN,OCP,OCP,,True,True,1.0,1,49.16,diff_eval_v7_with_structural,OCP,True,3.0,27.0,642.0,308.0,True
+diff_eval,run_2,OCP_27,EASY,KOTLIN,OCP,OCP,,True,True,1.0,1,55.34,diff_eval_v7_with_structural,OCP,True,3.0,29.0,561.0,301.0,True
+diff_eval,run_2,OCP_28,EASY,KOTLIN,OCP,OCP,,True,True,1.0,1,59.9,diff_eval_v7_with_structural,OCP,True,4.0,26.0,722.0,380.0,True
+diff_eval,run_2,OCP_29,HARD,KOTLIN,OCP,OCP,,True,True,1.0,1,281.99,diff_eval_v7_with_structural,OCP,True,5.0,291.0,10683.0,6438.0,True
+diff_eval,run_2,OCP_30,HARD,KOTLIN,OCP,DIP,,False,False,0.0,0,204.89,diff_eval_v7_with_structural,DIP,False,4.0,159.0,5979.0,3282.0,True
+diff_eval,run_2,OCP_31,HARD,KOTLIN,OCP,SRP,,False,False,0.0,0,260.14,diff_eval_v7_with_structural,SRP,False,4.0,320.0,11420.0,6112.0,True
+diff_eval,run_2,OCP_32,HARD,KOTLIN,OCP,DIP,,False,False,0.0,0,187.02,diff_eval_v7_with_structural,DIP,False,4.0,287.0,11644.0,6260.0,True
+diff_eval,run_2,OCP_33,MODERATE,KOTLIN,OCP,DIP,,False,False,0.0,0,156.43,diff_eval_v7_with_structural,DIP,False,4.0,122.0,4047.0,2434.0,True
+diff_eval,run_2,OCP_34,MODERATE,KOTLIN,OCP,DIP,,False,False,0.0,0,75.11,diff_eval_v7_with_structural,DIP,False,2.0,85.0,2208.0,1264.0,True
+diff_eval,run_2,OCP_35,MODERATE,KOTLIN,OCP,DIP,,False,False,0.0,0,210.96,diff_eval_v7_with_structural,DIP,False,3.0,218.0,6916.0,3936.0,True
+diff_eval,run_2,OCP_36,MODERATE,KOTLIN,OCP,OCP,,True,True,1.0,1,180.26,diff_eval_v7_with_structural,OCP,True,4.0,185.0,6791.0,3716.0,True
+diff_eval,run_2,OCP_37,EASY,PYTHON,OCP,LSP,,False,False,0.0,0,68.71,diff_eval_v7_with_structural,LSP,False,4.0,41.0,935.0,467.0,True
+diff_eval,run_2,OCP_38,EASY,PYTHON,OCP,OCP,,True,True,1.0,1,61.95,diff_eval_v7_with_structural,OCP,True,3.0,39.0,1028.0,468.0,True
+diff_eval,run_2,OCP_39,EASY,PYTHON,OCP,OCP,,True,True,1.0,1,57.96,diff_eval_v7_with_structural,OCP,True,3.0,47.0,901.0,494.0,True
+diff_eval,run_2,OCP_40,EASY,PYTHON,OCP,DIP,,False,False,0.0,0,61.28,diff_eval_v7_with_structural,DIP,False,4.0,43.0,1098.0,592.0,True
+diff_eval,run_2,OCP_41,HARD,PYTHON,OCP,OCP,,True,True,1.0,1,326.36,diff_eval_v7_with_structural,OCP,True,5.0,375.0,11987.0,6790.0,True
+diff_eval,run_2,OCP_42,HARD,PYTHON,OCP,DIP,,False,False,0.0,0,256.75,diff_eval_v7_with_structural,DIP,False,4.0,263.0,7531.0,4585.0,True
+diff_eval,run_2,OCP_43,HARD,PYTHON,OCP,DIP,,False,False,0.0,0,960.32,diff_eval_v7_with_structural,DIP,False,4.0,317.0,11169.0,6055.0,True
+diff_eval,run_2,OCP_44,HARD,PYTHON,OCP,SRP,,False,False,0.0,0,373.11,diff_eval_v7_with_structural,SRP,False,4.0,281.0,11552.0,5996.0,True
+diff_eval,run_2,OCP_45,MODERATE,PYTHON,OCP,DIP,,False,False,0.0,0,174.34,diff_eval_v7_with_structural,DIP,False,4.0,155.0,4320.0,2508.0,True
+diff_eval,run_2,OCP_46,MODERATE,PYTHON,OCP,DIP,,False,False,0.0,0,115.51,diff_eval_v7_with_structural,DIP,False,4.0,104.0,2760.0,1515.0,True
+diff_eval,run_2,OCP_47,MODERATE,PYTHON,OCP,DIP,,False,False,0.0,0,266.86,diff_eval_v7_with_structural,DIP,False,4.0,217.0,7648.0,4115.0,True
+diff_eval,run_2,OCP_48,MODERATE,PYTHON,OCP,SRP,,False,False,0.0,0,218.97,diff_eval_v7_with_structural,SRP,False,4.0,184.0,7522.0,3806.0,True
+diff_eval,run_2,LSP_1,EASY,JAVA,LSP,LSP,,True,True,1.0,1,52.76,diff_eval_v7_with_structural,LSP,True,4.0,25.0,481.0,235.0,True
+diff_eval,run_2,LSP_2,EASY,PYTHON,LSP,LSP,,True,True,1.0,1,41.38,diff_eval_v7_with_structural,LSP,True,5.0,15.0,309.0,153.0,True
+diff_eval,run_2,LSP_3,EASY,KOTLIN,LSP,LSP,,True,True,1.0,1,51.35,diff_eval_v7_with_structural,LSP,True,3.0,23.0,384.0,204.0,True
+diff_eval,run_2,LSP_4,EASY,C#,LSP,LSP,,True,True,1.0,1,54.9,diff_eval_v7_with_structural,LSP,True,4.0,31.0,473.0,239.0,True
+diff_eval,run_2,LSP_5,MODERATE,JAVA,LSP,LSP,,True,True,1.0,1,88.54,diff_eval_v7_with_structural,LSP,True,5.0,92.0,2277.0,1119.0,True
+diff_eval,run_2,LSP_6,MODERATE,PYTHON,LSP,LSP,,True,True,1.0,1,93.84,diff_eval_v7_with_structural,LSP,True,4.0,67.0,1841.0,878.0,True
+diff_eval,run_2,LSP_7,MODERATE,KOTLIN,LSP,DIP,,False,False,0.0,0,75.44,diff_eval_v7_with_structural,DIP,False,3.0,58.0,1632.0,785.0,False
+diff_eval,run_2,LSP_8,MODERATE,C#,LSP,LSP,,True,True,1.0,1,95.38,diff_eval_v7_with_structural,LSP,True,4.0,93.0,2189.0,1056.0,True
+diff_eval,run_2,LSP_9,HARD,JAVA,LSP,LSP,,True,True,1.0,1,346.2,diff_eval_v7_with_structural,LSP,True,5.0,233.0,7879.0,3663.0,True
+diff_eval,run_2,LSP_10,HARD,PYTHON,LSP,LSP,,True,True,1.0,1,274.19,diff_eval_v7_with_structural,LSP,True,5.0,230.0,7392.0,3479.0,True
+diff_eval,run_2,LSP_11,HARD,KOTLIN,LSP,LSP,,True,True,1.0,1,217.36,diff_eval_v7_with_structural,LSP,True,5.0,176.0,5663.0,2676.0,True
+diff_eval,run_2,LSP_12,HARD,C#,LSP,LSP,,True,True,1.0,1,260.7,diff_eval_v7_with_structural,LSP,True,4.0,253.0,7497.0,3586.0,True
+diff_eval,run_2,LSP_13,EASY,JAVA,LSP,LSP,,True,True,1.0,1,49.59,diff_eval_v7_with_structural,LSP,True,3.0,22.0,679.0,289.0,True
+diff_eval,run_2,LSP_14,EASY,PYTHON,LSP,SRP,,False,False,0.0,0,42.95,diff_eval_v7_with_structural,SRP,False,2.0,13.0,488.0,203.0,False
+diff_eval,run_2,LSP_15,EASY,KOTLIN,LSP,LSP,,True,True,1.0,1,47.02,diff_eval_v7_with_structural,LSP,True,4.0,20.0,582.0,254.0,True
+diff_eval,run_2,LSP_16,EASY,C#,LSP,LSP,,True,True,1.0,1,43.99,diff_eval_v7_with_structural,LSP,True,4.0,28.0,681.0,301.0,True
+diff_eval,run_2,LSP_17,MODERATE,JAVA,LSP,LSP,,True,True,1.0,1,126.78,diff_eval_v7_with_structural,LSP,True,4.0,111.0,3277.0,1454.0,True
+diff_eval,run_2,LSP_18,MODERATE,PYTHON,LSP,SRP,,False,False,0.0,0,102.95,diff_eval_v7_with_structural,SRP,False,5.0,75.0,2418.0,1033.0,True
+diff_eval,run_2,LSP_19,MODERATE,KOTLIN,LSP,LSP,,True,True,1.0,1,91.47,diff_eval_v7_with_structural,LSP,True,5.0,64.0,2369.0,991.0,True
+diff_eval,run_2,LSP_20,MODERATE,C#,LSP,LSP,,True,True,1.0,1,125.5,diff_eval_v7_with_structural,LSP,True,4.0,126.0,3434.0,1484.0,True
+diff_eval,run_2,LSP_21,HARD,JAVA,LSP,ISP,,False,False,0.0,0,228.04,diff_eval_v7_with_structural,ISP,False,5.0,226.0,8552.0,3655.0,True
+diff_eval,run_2,LSP_22,HARD,PYTHON,LSP,LSP,,True,True,1.0,1,217.2,diff_eval_v7_with_structural,LSP,True,5.0,192.0,7006.0,3128.0,True
+diff_eval,run_2,LSP_23,HARD,KOTLIN,LSP,ISP,,False,False,0.0,0,211.48,diff_eval_v7_with_structural,ISP,False,4.0,249.0,8058.0,3670.0,False
+diff_eval,run_2,LSP_24,HARD,C#,LSP,LSP,,True,True,1.0,1,320.74,diff_eval_v7_with_structural,LSP,True,5.0,324.0,9455.0,4436.0,True
+diff_eval,run_2,LSP_25,EASY,JAVA,LSP,DIP,,False,False,0.0,0,56.94,diff_eval_v7_with_structural,DIP,False,4.0,35.0,952.0,357.0,False
+diff_eval,run_2,LSP_26,EASY,PYTHON,LSP,DIP,,False,False,0.0,0,44.37,diff_eval_v7_with_structural,DIP,False,4.0,24.0,762.0,338.0,False
+diff_eval,run_2,LSP_27,EASY,KOTLIN,LSP,DIP,,False,False,0.0,0,59.69,diff_eval_v7_with_structural,DIP,False,3.0,30.0,890.0,356.0,False
+diff_eval,run_2,LSP_28,EASY,C#,LSP,DIP,,False,False,0.0,0,62.87,diff_eval_v7_with_structural,DIP,False,3.0,42.0,1123.0,437.0,False
+diff_eval,run_2,LSP_29,MODERATE,JAVA,LSP,DIP,,False,False,0.0,0,109.43,diff_eval_v7_with_structural,DIP,False,4.0,114.0,3897.0,1877.0,False
+diff_eval,run_2,LSP_30,MODERATE,PYTHON,LSP,LSP,,True,True,1.0,1,145.08,diff_eval_v7_with_structural,LSP,True,4.0,88.0,3657.0,1616.0,True
+diff_eval,run_2,LSP_31,MODERATE,KOTLIN,LSP,LSP,,True,True,1.0,1,142.67,diff_eval_v7_with_structural,LSP,True,4.0,94.0,3503.0,1587.0,True
+diff_eval,run_2,LSP_32,MODERATE,C#,LSP,DIP,,False,False,0.0,0,159.87,diff_eval_v7_with_structural,DIP,False,5.0,145.0,4433.0,2032.0,True
+diff_eval,run_2,LSP_33,HARD,JAVA,LSP,LSP,,True,True,1.0,1,708.56,diff_eval_v7_with_structural,LSP,True,5.0,277.0,9959.0,4555.0,True
+diff_eval,run_2,LSP_34,HARD,PYTHON,LSP,LSP,,True,True,1.0,1,224.04,diff_eval_v7_with_structural,LSP,True,5.0,317.0,12199.0,6145.0,True
+diff_eval,run_2,LSP_35,HARD,KOTLIN,LSP,LSP,,True,True,1.0,1,551.21,diff_eval_v7_with_structural,LSP,True,5.0,358.0,12785.0,6521.0,True
+diff_eval,run_2,LSP_36,HARD,C#,LSP,LSP,,True,True,1.0,1,313.62,diff_eval_v7_with_structural,LSP,True,5.0,458.0,14758.0,7551.0,True
+diff_eval,run_2,LSP_37,EASY,JAVA,LSP,LSP,,True,True,1.0,1,46.68,diff_eval_v7_with_structural,LSP,True,3.0,38.0,855.0,402.0,True
+diff_eval,run_2,LSP_38,EASY,PYTHON,LSP,LSP,,True,True,1.0,1,50.45,diff_eval_v7_with_structural,LSP,True,3.0,33.0,740.0,352.0,True
+diff_eval,run_2,LSP_39,EASY,KOTLIN,LSP,LSP,,True,True,1.0,1,42.59,diff_eval_v7_with_structural,LSP,True,3.0,24.0,577.0,261.0,True
+diff_eval,run_2,LSP_40,EASY,C#,LSP,LSP,,True,True,1.0,1,55.98,diff_eval_v7_with_structural,LSP,True,2.0,42.0,864.0,402.0,True
+diff_eval,run_2,LSP_41,MODERATE,JAVA,LSP,LSP,,True,True,1.0,1,94.38,diff_eval_v7_with_structural,LSP,True,5.0,91.0,2684.0,1272.0,True
+diff_eval,run_2,LSP_42,MODERATE,PYTHON,LSP,LSP,,True,True,1.0,1,89.52,diff_eval_v7_with_structural,LSP,True,5.0,82.0,2262.0,1091.0,True
+diff_eval,run_2,LSP_43,MODERATE,KOTLIN,LSP,LSP,,True,True,1.0,1,103.16,diff_eval_v7_with_structural,LSP,True,5.0,71.0,2017.0,953.0,True
+diff_eval,run_2,LSP_44,MODERATE,C#,LSP,LSP,,True,True,1.0,1,118.91,diff_eval_v7_with_structural,LSP,True,5.0,112.0,2849.0,1351.0,True
+diff_eval,run_2,LSP_45,HARD,JAVA,LSP,LSP,,True,True,1.0,1,227.87,diff_eval_v7_with_structural,LSP,True,5.0,212.0,8668.0,3460.0,True
+diff_eval,run_2,LSP_46,HARD,PYTHON,LSP,ISP,,False,False,0.0,0,196.72,diff_eval_v7_with_structural,ISP,False,5.0,164.0,6480.0,2762.0,True
+diff_eval,run_2,LSP_47,HARD,KOTLIN,LSP,LSP,,True,True,1.0,1,199.49,diff_eval_v7_with_structural,LSP,True,5.0,202.0,6693.0,2810.0,True
+diff_eval,run_2,LSP_48,HARD,C#,LSP,LSP,,True,True,1.0,1,255.73,diff_eval_v7_with_structural,LSP,True,5.0,272.0,8682.0,3750.0,True
+diff_eval,run_2,ISP_1,EASY,CSHARP,ISP,ISP,,True,True,1.0,1,67.98,diff_eval_v7_with_structural,ISP,True,2.0,89.0,1737.0,992.0,True
+diff_eval,run_2,ISP_2,EASY,CSHARP,ISP,LSP,,False,False,0.0,0,85.12,diff_eval_v7_with_structural,LSP,False,4.0,94.0,2055.0,1103.0,True
+diff_eval,run_2,ISP_3,EASY,CSHARP,ISP,ISP,,True,True,1.0,1,42.22,diff_eval_v7_with_structural,ISP,True,2.0,63.0,1140.0,543.0,True
+diff_eval,run_2,ISP_4,EASY,CSHARP,ISP,LSP,,False,False,0.0,0,52.48,diff_eval_v7_with_structural,LSP,False,3.0,44.0,664.0,366.0,True
+diff_eval,run_2,ISP_5,HARD,CSHARP,ISP,ISP,,True,True,1.0,1,212.15,diff_eval_v7_with_structural,ISP,True,4.0,511.0,11621.0,7097.0,True
+diff_eval,run_2,ISP_6,HARD,CSHARP,ISP,ISP,,True,True,1.0,1,226.73,diff_eval_v7_with_structural,ISP,True,4.0,461.0,10993.0,5406.0,True
+diff_eval,run_2,ISP_7,HARD,CSHARP,ISP,ISP,,True,True,1.0,1,170.95,diff_eval_v7_with_structural,ISP,True,3.0,660.0,17075.0,9827.0,True
+diff_eval,run_2,ISP_8,HARD,CSHARP,ISP,ISP,,True,True,1.0,1,263.02,diff_eval_v7_with_structural,ISP,True,4.0,473.0,10539.0,5699.0,True
+diff_eval,run_2,ISP_9,MODERATE,CSHARP,ISP,ISP,,True,True,1.0,1,152.72,diff_eval_v7_with_structural,ISP,True,3.0,287.0,6316.0,3915.0,True
+diff_eval,run_2,ISP_10,MODERATE,CSHARP,ISP,ISP,,True,True,1.0,1,198.01,diff_eval_v7_with_structural,ISP,True,4.0,259.0,6299.0,3322.0,True
+diff_eval,run_2,ISP_11,MODERATE,CSHARP,ISP,ISP,,True,True,1.0,1,79.69,diff_eval_v7_with_structural,ISP,True,3.0,149.0,2838.0,1436.0,True
+diff_eval,run_2,ISP_12,MODERATE,CSHARP,ISP,ISP,,True,True,1.0,1,158.32,diff_eval_v7_with_structural,ISP,True,4.0,291.0,5721.0,3266.0,True
+diff_eval,run_2,ISP_13,EASY,JAVA,ISP,LSP,,False,False,0.0,0,94.23,diff_eval_v7_with_structural,LSP,False,3.0,77.0,1793.0,969.0,True
+diff_eval,run_2,ISP_14,EASY,JAVA,ISP,ISP,,True,True,1.0,1,70.0,diff_eval_v7_with_structural,ISP,True,3.0,88.0,2183.0,1128.0,True
+diff_eval,run_2,ISP_15,EASY,JAVA,ISP,ISP,,True,True,1.0,1,44.38,diff_eval_v7_with_structural,ISP,True,2.0,48.0,1121.0,519.0,True
+diff_eval,run_2,ISP_16,EASY,JAVA,ISP,ISP,,True,True,1.0,1,35.23,diff_eval_v7_with_structural,ISP,True,1.0,34.0,654.0,347.0,True
+diff_eval,run_2,ISP_17,HARD,JAVA,ISP,ISP,,True,True,1.0,1,213.15,diff_eval_v7_with_structural,ISP,True,4.0,416.0,11445.0,6583.0,True
+diff_eval,run_2,ISP_18,HARD,JAVA,ISP,ISP,,True,True,1.0,1,242.83,diff_eval_v7_with_structural,ISP,True,4.0,436.0,11756.0,5569.0,True
+diff_eval,run_2,ISP_19,HARD,JAVA,ISP,ISP,,True,True,1.0,1,124.33,diff_eval_v7_with_structural,ISP,True,3.0,482.0,15667.0,8472.0,True
+diff_eval,run_2,ISP_20,HARD,JAVA,ISP,SRP,,False,False,0.0,0,258.61,diff_eval_v7_with_structural,SRP,False,4.0,351.0,10063.0,5037.0,True
+diff_eval,run_2,ISP_21,MODERATE,JAVA,ISP,ISP,,True,True,1.0,1,175.84,diff_eval_v7_with_structural,ISP,True,2.0,226.0,6148.0,3575.0,True
+diff_eval,run_2,ISP_22,MODERATE,JAVA,ISP,ISP,,True,True,1.0,1,211.46,diff_eval_v7_with_structural,ISP,True,4.0,246.0,6487.0,3167.0,True
+diff_eval,run_2,ISP_23,MODERATE,JAVA,ISP,ISP,,True,True,1.0,1,69.44,diff_eval_v7_with_structural,ISP,True,2.0,113.0,2744.0,1328.0,True
+diff_eval,run_2,ISP_24,MODERATE,JAVA,ISP,ISP,,True,True,1.0,1,129.35,diff_eval_v7_with_structural,ISP,True,4.0,220.0,5450.0,2911.0,True
+diff_eval,run_2,ISP_25,EASY,KOTLIN,ISP,LSP,,False,False,0.0,0,76.27,diff_eval_v7_with_structural,LSP,False,5.0,57.0,1378.0,739.0,True
+diff_eval,run_2,ISP_26,EASY,KOTLIN,ISP,LSP,,False,False,0.0,0,83.96,diff_eval_v7_with_structural,LSP,False,3.0,79.0,1898.0,995.0,True
+diff_eval,run_2,ISP_27,EASY,KOTLIN,ISP,ISP,,True,True,1.0,1,54.27,diff_eval_v7_with_structural,ISP,True,2.0,47.0,988.0,470.0,True
+diff_eval,run_2,ISP_28,EASY,KOTLIN,ISP,ISP,,True,True,1.0,1,43.73,diff_eval_v7_with_structural,ISP,True,2.0,34.0,571.0,316.0,True
+diff_eval,run_2,ISP_29,HARD,KOTLIN,ISP,ISP,,True,True,1.0,1,264.25,diff_eval_v7_with_structural,ISP,True,5.0,331.0,9289.0,5382.0,True
+diff_eval,run_2,ISP_30,HARD,KOTLIN,ISP,ISP,,True,True,1.0,1,179.1,diff_eval_v7_with_structural,ISP,True,3.0,371.0,9990.0,4704.0,True
+diff_eval,run_2,ISP_31,HARD,KOTLIN,ISP,ISP,,True,True,1.0,1,266.96,diff_eval_v7_with_structural,ISP,True,5.0,482.0,13948.0,7669.0,True
+diff_eval,run_2,ISP_32,HARD,KOTLIN,ISP,LSP,,False,False,0.0,0,274.38,diff_eval_v7_with_structural,LSP,False,5.0,310.0,8522.0,4214.0,True
+diff_eval,run_2,ISP_33,MODERATE,KOTLIN,ISP,LSP,,False,False,0.0,0,187.47,diff_eval_v7_with_structural,LSP,False,4.0,189.0,5219.0,3224.0,True
+diff_eval,run_2,ISP_34,MODERATE,KOTLIN,ISP,LSP,,False,False,0.0,0,148.26,diff_eval_v7_with_structural,LSP,False,3.0,209.0,5799.0,2919.0,True
+diff_eval,run_2,ISP_35,MODERATE,KOTLIN,ISP,ISP,,True,True,1.0,1,76.5,diff_eval_v7_with_structural,ISP,True,3.0,112.0,2448.0,1209.0,True
+diff_eval,run_2,ISP_36,MODERATE,KOTLIN,ISP,LSP,,False,False,0.0,0,144.05,diff_eval_v7_with_structural,LSP,False,4.0,166.0,4233.0,2183.0,True
+diff_eval,run_2,ISP_37,EASY,PYTHON,ISP,LSP,,False,False,0.0,0,71.82,diff_eval_v7_with_structural,LSP,False,4.0,60.0,1516.0,813.0,True
+diff_eval,run_2,ISP_38,EASY,PYTHON,ISP,LSP,,False,False,0.0,0,90.7,diff_eval_v7_with_structural,LSP,False,4.0,81.0,2099.0,1084.0,True
+diff_eval,run_2,ISP_39,EASY,PYTHON,ISP,ISP,,True,True,1.0,1,54.88,diff_eval_v7_with_structural,ISP,True,3.0,44.0,1045.0,489.0,True
+diff_eval,run_2,ISP_40,EASY,PYTHON,ISP,ISP,,True,True,1.0,1,48.56,diff_eval_v7_with_structural,ISP,True,3.0,34.0,629.0,338.0,True
+diff_eval,run_2,ISP_41,HARD,PYTHON,ISP,LSP,,False,False,0.0,0,216.78,diff_eval_v7_with_structural,LSP,False,5.0,328.0,9475.0,5333.0,True
+diff_eval,run_2,ISP_42,HARD,PYTHON,ISP,ISP,,True,True,1.0,1,272.89,diff_eval_v7_with_structural,ISP,True,4.0,357.0,10176.0,4912.0,True
+diff_eval,run_2,ISP_43,HARD,PYTHON,ISP,ISP,,True,True,1.0,1,134.57,diff_eval_v7_with_structural,ISP,True,4.0,425.0,13827.0,7304.0,True
+diff_eval,run_2,ISP_44,HARD,PYTHON,ISP,LSP,,False,False,0.0,0,275.75,diff_eval_v7_with_structural,LSP,False,5.0,295.0,8947.0,4213.0,True
+diff_eval,run_2,ISP_45,MODERATE,PYTHON,ISP,SRP,,False,False,0.0,0,203.3,diff_eval_v7_with_structural,SRP,False,4.0,178.0,5209.0,2982.0,True
+diff_eval,run_2,ISP_46,MODERATE,PYTHON,ISP,ISP,,True,True,1.0,1,183.16,diff_eval_v7_with_structural,ISP,True,3.0,202.0,5849.0,2932.0,True
+diff_eval,run_2,ISP_47,MODERATE,PYTHON,ISP,ISP,,True,True,1.0,1,81.29,diff_eval_v7_with_structural,ISP,True,3.0,108.0,2625.0,1283.0,True
+diff_eval,run_2,ISP_48,MODERATE,PYTHON,ISP,LSP,,False,False,0.0,0,162.42,diff_eval_v7_with_structural,LSP,False,5.0,177.0,4573.0,2372.0,True
+diff_eval,run_2,DIP_1,EASY,JAVA,DIP,DIP,,True,True,1.0,1,44.19,diff_eval_v7_with_structural,DIP,True,4.0,23.0,593.0,285.0,True
+diff_eval,run_2,DIP_2,EASY,PYTHON,DIP,DIP,,True,True,1.0,1,39.06,diff_eval_v7_with_structural,DIP,True,4.0,15.0,441.0,206.0,True
+diff_eval,run_2,DIP_3,EASY,KOTLIN,DIP,DIP,,True,True,1.0,1,44.16,diff_eval_v7_with_structural,DIP,True,4.0,19.0,441.0,213.0,True
+diff_eval,run_2,DIP_4,EASY,C#,DIP,DIP,,True,True,1.0,1,41.5,diff_eval_v7_with_structural,DIP,True,4.0,29.0,591.0,284.0,True
+diff_eval,run_2,DIP_5,MODERATE,JAVA,DIP,DIP,,True,True,1.0,1,71.35,diff_eval_v7_with_structural,DIP,True,4.0,77.0,2288.0,1171.0,True
+diff_eval,run_2,DIP_6,MODERATE,PYTHON,DIP,DIP,,True,True,1.0,1,60.22,diff_eval_v7_with_structural,DIP,True,4.0,54.0,1844.0,909.0,True
+diff_eval,run_2,DIP_7,MODERATE,KOTLIN,DIP,DIP,,True,True,1.0,1,78.87,diff_eval_v7_with_structural,DIP,True,4.0,65.0,1828.0,969.0,True
+diff_eval,run_2,DIP_8,MODERATE,C#,DIP,DIP,,True,True,1.0,1,67.84,diff_eval_v7_with_structural,DIP,True,4.0,94.0,2405.0,1244.0,True
+diff_eval,run_2,DIP_9,HARD,JAVA,DIP,DIP,,True,True,1.0,1,171.02,diff_eval_v7_with_structural,DIP,True,4.0,229.0,8620.0,4693.0,True
+diff_eval,run_2,DIP_10,HARD,PYTHON,DIP,DIP,,True,True,1.0,1,162.52,diff_eval_v7_with_structural,DIP,True,4.0,167.0,6938.0,3394.0,True
+diff_eval,run_2,DIP_11,HARD,KOTLIN,DIP,DIP,,True,True,1.0,1,140.62,diff_eval_v7_with_structural,DIP,True,4.0,191.0,6234.0,3373.0,True
+diff_eval,run_2,DIP_12,HARD,C#,DIP,DIP,,True,True,1.0,1,172.82,diff_eval_v7_with_structural,DIP,True,4.0,267.0,8372.0,4441.0,True
+diff_eval,run_2,DIP_13,EASY,JAVA,DIP,DIP,,True,True,1.0,1,42.81,diff_eval_v7_with_structural,DIP,True,3.0,18.0,465.0,192.0,True
+diff_eval,run_2,DIP_14,EASY,PYTHON,DIP,DIP,,True,True,1.0,1,40.66,diff_eval_v7_with_structural,DIP,True,3.0,11.0,331.0,131.0,True
+diff_eval,run_2,DIP_15,EASY,KOTLIN,DIP,DIP,,True,True,1.0,1,40.69,diff_eval_v7_with_structural,DIP,True,2.0,14.0,344.0,141.0,True
+diff_eval,run_2,DIP_16,EASY,C#,DIP,DIP,,True,True,1.0,1,41.86,diff_eval_v7_with_structural,DIP,True,3.0,23.0,463.0,195.0,True
+diff_eval,run_2,DIP_17,MODERATE,JAVA,DIP,OCP,,False,False,0.0,0,73.28,diff_eval_v7_with_structural,OCP,False,4.0,56.0,1872.0,912.0,True
+diff_eval,run_2,DIP_18,MODERATE,PYTHON,DIP,DIP,,True,True,1.0,1,60.76,diff_eval_v7_with_structural,DIP,True,4.0,41.0,1407.0,684.0,True
+diff_eval,run_2,DIP_19,MODERATE,KOTLIN,DIP,DIP,,True,True,1.0,1,70.57,diff_eval_v7_with_structural,DIP,True,4.0,53.0,1600.0,843.0,True
+diff_eval,run_2,DIP_20,MODERATE,C#,DIP,OCP,,False,False,0.0,0,70.84,diff_eval_v7_with_structural,OCP,False,4.0,76.0,1950.0,974.0,True
+diff_eval,run_2,DIP_21,HARD,JAVA,DIP,DIP,,True,True,1.0,1,196.55,diff_eval_v7_with_structural,DIP,True,4.0,207.0,8107.0,3556.0,True
+diff_eval,run_2,DIP_22,HARD,PYTHON,DIP,OCP,,False,False,0.0,0,187.8,diff_eval_v7_with_structural,OCP,False,4.0,145.0,6645.0,2878.0,True
+diff_eval,run_2,DIP_23,HARD,KOTLIN,DIP,DIP,,True,True,1.0,1,174.38,diff_eval_v7_with_structural,DIP,True,4.0,155.0,6261.0,2625.0,True
+diff_eval,run_2,DIP_24,HARD,C#,DIP,DIP,,True,True,1.0,1,155.9,diff_eval_v7_with_structural,DIP,True,3.0,235.0,8702.0,4296.0,True
+diff_eval,run_2,DIP_25,EASY,JAVA,DIP,SRP,,False,False,0.0,0,55.77,diff_eval_v7_with_structural,SRP,False,4.0,22.0,583.0,307.0,True
+diff_eval,run_2,DIP_26,EASY,PYTHON,DIP,SRP,,False,False,0.0,0,36.1,diff_eval_v7_with_structural,SRP,False,3.0,18.0,496.0,284.0,False
+diff_eval,run_2,DIP_27,EASY,KOTLIN,DIP,DIP,,True,True,1.0,1,42.66,diff_eval_v7_with_structural,DIP,True,4.0,22.0,531.0,290.0,True
+diff_eval,run_2,DIP_28,EASY,C#,DIP,DIP,,True,True,1.0,1,48.28,diff_eval_v7_with_structural,DIP,True,4.0,31.0,595.0,341.0,True
+diff_eval,run_2,DIP_29,MODERATE,JAVA,DIP,DIP,,True,True,1.0,1,78.24,diff_eval_v7_with_structural,DIP,True,4.0,72.0,2198.0,1201.0,True
+diff_eval,run_2,DIP_30,MODERATE,PYTHON,DIP,DIP,,True,True,1.0,1,67.54,diff_eval_v7_with_structural,DIP,True,4.0,58.0,1890.0,1093.0,True
+diff_eval,run_2,DIP_31,MODERATE,KOTLIN,DIP,DIP,,True,True,1.0,1,71.79,diff_eval_v7_with_structural,DIP,True,4.0,63.0,1838.0,1012.0,True
+diff_eval,run_2,DIP_32,MODERATE,C#,DIP,DIP,,True,True,1.0,1,74.67,diff_eval_v7_with_structural,DIP,True,4.0,91.0,2078.0,1203.0,True
+diff_eval,run_2,DIP_33,HARD,JAVA,DIP,SRP,,False,False,0.0,0,144.4,diff_eval_v7_with_structural,SRP,False,4.0,164.0,6576.0,2928.0,True
+diff_eval,run_2,DIP_34,HARD,PYTHON,DIP,SRP,,False,False,0.0,0,157.23,diff_eval_v7_with_structural,SRP,False,4.0,152.0,6056.0,2750.0,True
+diff_eval,run_2,DIP_35,HARD,KOTLIN,DIP,DIP,,True,True,1.0,1,193.85,diff_eval_v7_with_structural,DIP,True,4.0,244.0,8715.0,4214.0,True
+diff_eval,run_2,DIP_36,HARD,C#,DIP,SRP,,False,False,0.0,0,224.95,diff_eval_v7_with_structural,SRP,False,4.0,305.0,10242.0,5016.0,True
+diff_eval,run_2,DIP_37,EASY,JAVA,DIP,DIP,,True,True,1.0,1,36.79,diff_eval_v7_with_structural,DIP,True,3.0,17.0,479.0,199.0,True
+diff_eval,run_2,DIP_38,EASY,PYTHON,DIP,DIP,,True,True,1.0,1,39.27,diff_eval_v7_with_structural,DIP,True,2.0,10.0,344.0,134.0,True
+diff_eval,run_2,DIP_39,EASY,KOTLIN,DIP,DIP,,True,True,1.0,1,39.65,diff_eval_v7_with_structural,DIP,True,2.0,13.0,348.0,141.0,True
+diff_eval,run_2,DIP_40,EASY,C#,DIP,DIP,,True,True,1.0,1,42.43,diff_eval_v7_with_structural,DIP,True,2.0,22.0,479.0,201.0,True
+diff_eval,run_2,DIP_41,MODERATE,JAVA,DIP,DIP,,True,True,1.0,1,69.86,diff_eval_v7_with_structural,DIP,True,4.0,62.0,2021.0,806.0,True
+diff_eval,run_2,DIP_42,MODERATE,PYTHON,DIP,DIP,,True,True,1.0,1,64.84,diff_eval_v7_with_structural,DIP,True,4.0,40.0,1586.0,588.0,True
+diff_eval,run_2,DIP_43,MODERATE,KOTLIN,DIP,DIP,,True,True,1.0,1,67.04,diff_eval_v7_with_structural,DIP,True,4.0,46.0,1576.0,614.0,True
+diff_eval,run_2,DIP_44,MODERATE,C#,DIP,DIP,,True,True,1.0,1,71.02,diff_eval_v7_with_structural,DIP,True,4.0,77.0,2059.0,842.0,True
+diff_eval,run_2,DIP_45,HARD,JAVA,DIP,DIP,,True,True,1.0,1,150.45,diff_eval_v7_with_structural,DIP,True,4.0,138.0,5087.0,2157.0,True
+diff_eval,run_2,DIP_46,HARD,PYTHON,DIP,DIP,,True,True,1.0,1,138.08,diff_eval_v7_with_structural,DIP,True,4.0,106.0,4499.0,1862.0,True
+diff_eval,run_2,DIP_47,HARD,KOTLIN,DIP,DIP,,True,True,1.0,1,139.63,diff_eval_v7_with_structural,DIP,True,4.0,127.0,4464.0,1921.0,True
+diff_eval,run_2,DIP_48,HARD,C#,DIP,DIP,,True,True,1.0,1,148.1,diff_eval_v7_with_structural,DIP,True,4.0,170.0,5347.0,2296.0,True

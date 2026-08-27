@@ -1,0 +1,34 @@
+{
+  "configuration": {
+    "model": "qwen3.5-397b",
+    "workflow": "single_agent",
+    "temperature": 0.0,
+    "max_examples_per_violation": null
+  },
+  "total_examples": 1,
+  "by_violation_type": {
+    "SRP": {
+      "results": [
+        {
+          "example_id": "SRP_1",
+          "violation_type": "SRP",
+          "description": "User database email operations",
+          "level": "EASY",
+          "language": "JAVA",
+          "input": "public class User {\n    private String name;\n    private String email;\n    \n    public User(String name, String email) {\n        this.name = name;\n        this.email = email;\n    }\n    \n    public void saveToDatabase() {\n        System.out.println(\"Saving user \" + name + \" to database\");\n    }\n    \n    public void sendWelcomeEmail() {\n        System.out.println(\"Sending welcome email to \" + email);\n    }\n}",
+          "output": "public class User {\n    private String name;\n    private String email;\n    \n    public User(String name, String email) {\n        this.name = name;\n        this.email = email;\n    }\n    \n    public String getName() {\n        return name;\n    }\n    \n    public String getEmail() {\n        return email;\n    }\n}\n\nclass UserRepository {\n    public void save(User user) {\n        System.out.println(\"Saving user \" + user.getName() + \" to database\");\n    }\n}\n\nclass EmailService {\n    public void sendWelcomeEmail(User user) {\n        System.out.println(\"Sending welcome email to \" + user.getEmail());\n    }\n}",
+          "model_response": "{\n  \"violations\": [\n    {\n      \"violation_type\": \"SRP\",\n      \"explanation\": \"The User class combines data modeling, database persistence, and email notification logic, giving it multiple unrelated reasons to change.\"\n    },\n    {\n      \"violation_type\": \"DIP\",\n      \"explanation\": \"The class directly implements low-level infrastructure details like database saving and email sending instead of depending on abstractions.\"\n    }\n  ]\n}",
+          "detected_violation_type": "SRP, DIP",
+          "explanation": "SRP: The User class combines data modeling, database persistence, and email notification logic, giving it multiple unrelated reasons to change. | DIP: The class directly implements low-level infrastructure details like database saving and email sending instead of depending on abstractions.",
+          "detection_success": true,
+          "api_call_success": true,
+          "errors": [],
+          "processing_time_seconds": 35.32,
+          "status": "new",
+          "workflow": "single_agent"
+        }
+      ],
+      "count": 1
+    }
+  }
+}

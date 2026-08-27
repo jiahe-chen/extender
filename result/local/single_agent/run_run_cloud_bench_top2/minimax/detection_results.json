@@ -1,0 +1,70 @@
+{
+  "configuration": {
+    "model": "minimax",
+    "workflow": "single_agent",
+    "temperature": 0.0,
+    "max_examples_per_violation": null
+  },
+  "total_examples": 3,
+  "by_violation_type": {
+    "SRP": {
+      "results": [
+        {
+          "example_id": "SRP_1",
+          "violation_type": "SRP",
+          "description": "User database email operations",
+          "level": "EASY",
+          "language": "JAVA",
+          "input": "public class User {\n    private String name;\n    private String email;\n    \n    public User(String name, String email) {\n        this.name = name;\n        this.email = email;\n    }\n    \n    public void saveToDatabase() {\n        System.out.println(\"Saving user \" + name + \" to database\");\n    }\n    \n    public void sendWelcomeEmail() {\n        System.out.println(\"Sending welcome email to \" + email);\n    }\n}",
+          "output": "public class User {\n    private String name;\n    private String email;\n    \n    public User(String name, String email) {\n        this.name = name;\n        this.email = email;\n    }\n    \n    public String getName() {\n        return name;\n    }\n    \n    public String getEmail() {\n        return email;\n    }\n}\n\nclass UserRepository {\n    public void save(User user) {\n        System.out.println(\"Saving user \" + user.getName() + \" to database\");\n    }\n}\n\nclass EmailService {\n    public void sendWelcomeEmail(User user) {\n        System.out.println(\"Sending welcome email to \" + user.getEmail());\n    }\n}",
+          "model_response": "{\"violations\": [{\"violation_type\": \"SRP\", \"explanation\": \"The User class violates SRP by handling three different responsibilities: managing user data (name, email), persisting to database, and sending welcome emails. These are unrelated tasks that should be separated into different classes.\"}, {\"violation_type\": \"DIP\", \"explanation\": \"The User class directly depends on low-level implementations (database saving and email sending) instead of depending on abstractions. These operations should be injected via interfaces to allow flexibility and testability.\"}]}",
+          "detected_violation_type": "SRP, DIP",
+          "explanation": "SRP: The User class violates SRP by handling three different responsibilities: managing user data (name, email), persisting to database, and sending welcome emails. These are unrelated tasks that should be separated into different classes. | DIP: The User class directly depends on low-level implementations (database saving and email sending) instead of depending on abstractions. These operations should be injected via interfaces to allow flexibility and testability.",
+          "detection_success": true,
+          "api_call_success": true,
+          "errors": [],
+          "processing_time_seconds": 9.28,
+          "status": "new",
+          "workflow": "single_agent"
+        },
+        {
+          "example_id": "SRP_2",
+          "violation_type": "SRP",
+          "description": "Employee salary payslip system",
+          "level": "EASY",
+          "language": "JAVA",
+          "input": "public class Employee {\n    private String name;\n    private double baseSalary;\n    private int yearsOfService;\n    \n    public Employee(String name, double baseSalary, int yearsOfService) {\n        this.name = name;\n        this.baseSalary = baseSalary;\n        this.yearsOfService = yearsOfService;\n    }\n    \n    public double calculateSalary() {\n        return baseSalary + (yearsOfService * 1000);\n    }\n    \n    public void printPaySlip() {\n        System.out.println(\"Pay slip for \" + name + \": $\" + calculateSalary());\n    }\n}",
+          "output": "public class Employee {\n    private String name;\n    private double baseSalary;\n    private int yearsOfService;\n    \n    public Employee(String name, double baseSalary, int yearsOfService) {\n        this.name = name;\n        this.baseSalary = baseSalary;\n        this.yearsOfService = yearsOfService;\n    }\n    \n    public String getName() {\n        return name;\n    }\n    \n    public double getBaseSalary() {\n        return baseSalary;\n    }\n    \n    public int getYearsOfService() {\n        return yearsOfService;\n    }\n}\n\nclass SalaryCalculator {\n    public double calculate(Employee employee) {\n        return employee.getBaseSalary() + (employee.getYearsOfService() * 1000);\n    }\n}\n\nclass PaySlipPrinter {\n    private SalaryCalculator calculator;\n    \n    public PaySlipPrinter(SalaryCalculator calculator) {\n        this.calculator = calculator;\n    }\n    \n    public void print(Employee employee) {\n        System.out.println(\"Pay slip for \" + employee.getName() + \": $\" + calculator.calculate(employee));\n    }\n}",
+          "model_response": "{\"violations\": [{\"violation_type\": \"SRP\", \"explanation\": \"The Employee class violates SRP by handling two distinct responsibilities: (1) managing employee data and calculating salary (business logic), and (2) printing pay slips to the console (presentation/UI). The printPaySlip() method should be extracted into a separate class responsible for output formatting.\"}, {\"violation_type\": \"NONE\", \"explanation\": \"No other SOLID violations are obvious in this code. There is no inheritance hierarchy (so LSP doesn't apply), no interfaces (so ISP doesn't apply), no polymorphic logic requiring OCP extension, and no direct dependencies on concrete classes (so DIP doesn't apply).\"}]}",
+          "detected_violation_type": "SRP",
+          "explanation": "SRP: The Employee class violates SRP by handling two distinct responsibilities: (1) managing employee data and calculating salary (business logic), and (2) printing pay slips to the console (presentation/UI). The printPaySlip() method should be extracted into a separate class responsible for output formatting.",
+          "detection_success": true,
+          "api_call_success": true,
+          "errors": [],
+          "processing_time_seconds": 9.57,
+          "status": "new",
+          "workflow": "single_agent"
+        },
+        {
+          "example_id": "SRP_3",
+          "violation_type": "SRP",
+          "description": "Book printing file saving",
+          "level": "EASY",
+          "language": "JAVA",
+          "input": "public class Book {\n    private String title;\n    private String author;\n    private String content;\n    \n    public Book(String title, String author, String content) {\n        this.title = title;\n        this.author = author;\n        this.content = content;\n    }\n    \n    public void printBook() {\n        System.out.println(\"Title: \" + title);\n        System.out.println(\"Author: \" + author);\n        System.out.println(\"Content: \" + content);\n    }\n    \n    public void saveToFile(String filename) {\n        System.out.println(\"Saving book to \" + filename);\n    }\n}",
+          "output": "public class Book {\n    private String title;\n    private String author;\n    private String content;\n    \n    public Book(String title, String author, String content) {\n        this.title = title;\n        this.author = author;\n        this.content = content;\n    }\n    \n    public String getTitle() {\n        return title;\n    }\n    \n    public String getAuthor() {\n        return author;\n    }\n    \n    public String getContent() {\n        return content;\n    }\n}\n\nclass BookPrinter {\n    public void print(Book book) {\n        System.out.println(\"Title: \" + book.getTitle());\n        System.out.println(\"Author: \" + book.getAuthor());\n        System.out.println(\"Content: \" + book.getContent());\n    }\n}\n\nclass BookFileSaver {\n    public void saveToFile(Book book, String filename) {\n        System.out.println(\"Saving book to \" + filename);\n    }\n}",
+          "model_response": "{\"violations\":[{\"violation_type\":\"SRP\",\"explanation\":\"The Book class has multiple responsibilities: managing book data (title, author, content), printing book details to console, and saving to file. These are three distinct reasons why the class might need to change, violating the Single Responsibility Principle.\"},{\"violation_type\":\"DIP\",\"explanation\":\"The class directly uses concrete implementations (System.out for printing, and would use FileWriter for saving) instead of depending on abstractions. This creates tight coupling to low-level details, violating the Dependency Inversion Principle.\"}]}",
+          "detected_violation_type": "SRP, DIP",
+          "explanation": "SRP: The Book class has multiple responsibilities: managing book data (title, author, content), printing book details to console, and saving to file. These are three distinct reasons why the class might need to change, violating the Single Responsibility Principle. | DIP: The class directly uses concrete implementations (System.out for printing, and would use FileWriter for saving) instead of depending on abstractions. This creates tight coupling to low-level details, violating the Dependency Inversion Principle.",
+          "detection_success": true,
+          "api_call_success": true,
+          "errors": [],
+          "processing_time_seconds": 20.81,
+          "status": "new",
+          "workflow": "single_agent"
+        }
+      ],
+      "count": 3
+    }
+  }
+}

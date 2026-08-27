@@ -1,0 +1,103 @@
+================================================================================
+LITERATURE DETAILED_RESULTS_V5 ANALYSIS REPORT
+Detection Accuracy Analysis (violation_match: true)
+================================================================================
+
+## OVERALL STATISTICS
+--------------------------------------------------------------------------------
+Total Examples: 960
+Correct Detections: 369
+Overall Accuracy: 38.44%
+Total Errors: 591
+Error Rate: 61.56%
+
+## ACCURACY BY MODEL
+--------------------------------------------------------------------------------
+
+gpt-4o-mini:
+  Total: 240
+  Correct: 166
+  Accuracy: 69.17%
+
+qwen2.5-coder32b:
+  Total: 240
+  Correct: 129
+  Accuracy: 53.75%
+
+deepseek33b:
+  Total: 240
+  Correct: 38
+  Accuracy: 15.83%
+
+codellama70b:
+  Total: 240
+  Correct: 36
+  Accuracy: 15.00%
+
+## ACCURACY BY VIOLATION TYPE
+--------------------------------------------------------------------------------
+
+SRP:
+  Total: 192
+  Correct: 130
+  Accuracy: 67.71%
+
+OCP:
+  Total: 192
+  Correct: 96
+  Accuracy: 50.00%
+
+LSP:
+  Total: 192
+  Correct: 68
+  Accuracy: 35.42%
+
+ISP:
+  Total: 192
+  Correct: 63
+  Accuracy: 32.81%
+
+DIP:
+  Total: 192
+  Correct: 12
+  Accuracy: 6.25%
+
+## ERROR ANALYSIS
+--------------------------------------------------------------------------------
+
+Total Errors: 591
+
+Failure Reasons:
+  EXTRACTION_FAILED: 322 (54.5%)
+  WRONG_VIOLATION: 269 (45.5%)
+
+Top 10 Misclassifications:
+  ISP -> : 84
+  OCP -> : 65
+  DIP -> OCP: 61
+  DIP -> : 60
+  SRP -> : 59
+  LSP -> : 54
+  DIP -> SRP: 51
+  LSP -> SRP: 37
+  OCP -> SRP: 31
+  LSP -> OCP: 26
+
+## BEST AND WORST PERFORMERS
+--------------------------------------------------------------------------------
+
+Best Model: gpt-4o-mini
+  Accuracy: 69.17%
+
+Worst Model: codellama70b
+  Accuracy: 15.00%
+
+Easiest Violation to Detect: SRP
+  Accuracy: 67.71%
+
+Hardest Violation to Detect: DIP
+  Accuracy: 6.25%
+
+================================================================================
+END OF REPORT
+================================================================================

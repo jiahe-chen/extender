@@ -1,0 +1,474 @@
+====================================================================================================
+FALSE NEGATIVE (FN) AND FALSE POSITIVE (FP) ANALYSIS
+====================================================================================================
+
+
+====================================================================================================
+DIFF_EVAL - DETAILED FN/FP ANALYSIS
+====================================================================================================
+
+Overall Statistics:
+  Total Examples: 240
+  Correct: 112 (46.67%)
+  Incorrect: 128 (53.33%)
+
+FALSE NEGATIVES (FN) BY VIOLATION TYPE:
+----------------------------------------------------------------------------------------------------
+
+DIP:
+  Total Examples: 48
+  False Negatives: 25 (52.08%)
+  Misclassified as:
+    ISP: 13
+    SRP: 8
+    OCP: 4
+  FN by Difficulty:
+    EASY: 4
+    MODERATE: 8
+    HARD: 13
+
+ISP:
+  Total Examples: 48
+  False Negatives: 11 (22.92%)
+  Misclassified as:
+    DIP: 9
+  FN by Difficulty:
+    EASY: 2
+    HARD: 9
+
+LSP:
+  Total Examples: 48
+  False Negatives: 45 (93.75%)
+  Misclassified as:
+    ISP: 34
+    DIP: 6
+    OCP: 3
+  FN by Difficulty:
+    EASY: 13
+    MODERATE: 16
+    HARD: 16
+
+OCP:
+  Total Examples: 48
+  False Negatives: 22 (45.83%)
+  Misclassified as:
+    DIP: 12
+    SRP: 5
+    ISP: 5
+  FN by Difficulty:
+    MODERATE: 8
+    HARD: 14
+
+SRP:
+  Total Examples: 48
+  False Negatives: 25 (52.08%)
+  Misclassified as:
+    DIP: 16
+    ISP: 6
+    OCP: 1
+  FN by Difficulty:
+    EASY: 2
+    MODERATE: 10
+    HARD: 13
+
+
+FALSE POSITIVES (FP) BY VIOLATION TYPE:
+----------------------------------------------------------------------------------------------------
+
+DIP (incorrectly detected):
+  Total False Positives: 43
+  Actually was:
+    SRP: 16
+    OCP: 12
+    ISP: 9
+    LSP: 6
+
+ISP (incorrectly detected):
+  Total False Positives: 58
+  Actually was:
+    LSP: 34
+    DIP: 13
+    SRP: 6
+    OCP: 5
+
+OCP (incorrectly detected):
+  Total False Positives: 8
+  Actually was:
+    DIP: 4
+    LSP: 3
+    SRP: 1
+
+SRP (incorrectly detected):
+  Total False Positives: 13
+  Actually was:
+    DIP: 8
+    OCP: 5
+
+
+MOST COMMON MISCLASSIFICATIONS:
+----------------------------------------------------------------------------------------------------
+  LSP → ISP: 34 times
+  SRP → DIP: 16 times
+  DIP → ISP: 13 times
+  OCP → DIP: 12 times
+  ISP → DIP: 9 times
+  DIP → SRP: 8 times
+  LSP → DIP: 6 times
+  SRP → ISP: 6 times
+  OCP → ISP: 5 times
+  OCP → SRP: 5 times
+
+
+FN/FP BY DIFFICULTY LEVEL:
+----------------------------------------------------------------------------------------------------
+
+EASY:
+  Total Examples: 80
+  False Negatives: 21 (26.25%)
+
+MODERATE:
+  Total Examples: 80
+  False Negatives: 42 (52.50%)
+
+HARD:
+  Total Examples: 80
+  False Negatives: 65 (81.25%)
+
+====================================================================================================
+LANGGRAPH - DETAILED FN/FP ANALYSIS
+====================================================================================================
+
+Overall Statistics:
+  Total Examples: 1200
+  Correct: 661 (55.08%)
+  Incorrect: 539 (44.92%)
+
+FALSE NEGATIVES (FN) BY VIOLATION TYPE:
+----------------------------------------------------------------------------------------------------
+
+DIP:
+  Total Examples: 240
+  False Negatives: 168 (70.00%)
+  Misclassified as:
+    SRP: 120
+    OCP: 43
+    ISP: 2
+    Not Detected: 1
+    Not Detected: 1
+  FN by Difficulty:
+    EASY: 40
+    MODERATE: 60
+    HARD: 68
+
+ISP:
+  Total Examples: 240
+  False Negatives: 125 (52.08%)
+  Misclassified as:
+    OCP: 79
+    SRP: 22
+    LSP: 20
+    Not Detected: 1
+    DIP: 1
+    Not Detected: 1
+  FN by Difficulty:
+    EASY: 37
+    MODERATE: 44
+    HARD: 44
+
+LSP:
+  Total Examples: 240
+  False Negatives: 165 (68.75%)
+  Misclassified as:
+    OCP: 84
+    SRP: 55
+    ISP: 12
+    DIP: 12
+    Not Detected: 1
+    Not Detected: 1
+  FN by Difficulty:
+    EASY: 37
+    MODERATE: 56
+    HARD: 72
+
+OCP:
+  Total Examples: 240
+  False Negatives: 15 (6.25%)
+  Misclassified as:
+    SRP: 9
+    Not Detected: 3
+    Not Detected: 2
+  FN by Difficulty:
+    MODERATE: 5
+    HARD: 10
+
+SRP:
+  Total Examples: 240
+  False Negatives: 66 (27.50%)
+  Misclassified as:
+    OCP: 24
+    DIP: 24
+    Not Detected: 2
+    Not Detected: 1
+    Not Detected: 1
+  FN by Difficulty:
+    EASY: 19
+    MODERATE: 26
+    HARD: 21
+
+
+FALSE POSITIVES (FP) BY VIOLATION TYPE:
+----------------------------------------------------------------------------------------------------
+
+DIP (incorrectly detected):
+  Total False Positives: 37
+  Actually was:
+    SRP: 24
+    LSP: 12
+    ISP: 1
+
+ISP (incorrectly detected):
+  Total False Positives: 14
+  Actually was:
+    LSP: 12
+    DIP: 2
+
+LSP (incorrectly detected):
+  Total False Positives: 20
+  Actually was:
+    ISP: 20
+
+OCP (incorrectly detected):
+  Total False Positives: 230
+  Actually was:
+    LSP: 84
+    ISP: 79
+    DIP: 43
+    SRP: 24
+
+SRP (incorrectly detected):
+  Total False Positives: 206
+  Actually was:
+    DIP: 120
+    LSP: 55
+    ISP: 22
+    OCP: 9
+
+
+MOST COMMON MISCLASSIFICATIONS:
+----------------------------------------------------------------------------------------------------
+  DIP → SRP: 120 times
+  LSP → OCP: 84 times
+  ISP → OCP: 79 times
+  LSP → SRP: 55 times
+  DIP → OCP: 43 times
+  SRP → OCP: 24 times
+  SRP → DIP: 24 times
+  ISP → SRP: 22 times
+  ISP → LSP: 20 times
+  LSP → ISP: 12 times
+
+
+FN/FP BY DIFFICULTY LEVEL:
+----------------------------------------------------------------------------------------------------
+
+EASY:
+  Total Examples: 400
+  False Negatives: 133 (33.25%)
+
+MODERATE:
+  Total Examples: 400
+  False Negatives: 191 (47.75%)
+
+HARD:
+  Total Examples: 400
+  False Negatives: 215 (53.75%)
+
+====================================================================================================
+TWO_AGENT - DETAILED FN/FP ANALYSIS
+====================================================================================================
+
+Overall Statistics:
+  Total Examples: 1200
+  Correct: 595 (49.58%)
+  Incorrect: 605 (50.42%)
+
+FALSE NEGATIVES (FN) BY VIOLATION TYPE:
+----------------------------------------------------------------------------------------------------
+
+DIP:
+  Total Examples: 240
+  False Negatives: 140 (58.33%)
+  Misclassified as:
+    SRP: 118
+    OCP: 16
+    Not Detected: 1
+    ISP: 1
+  FN by Difficulty:
+    EASY: 45
+    MODERATE: 46
+    HARD: 49
+
+ISP:
+  Total Examples: 240
+  False Negatives: 147 (61.25%)
+  Misclassified as:
+    SRP: 47
+    Not Detected: 27
+    LSP: 24
+    OCP: 22
+    Not Detected: 9
+    Not Detected: 6
+    DIP: 4
+    Not Detected: 2
+    Not Detected: 1
+    Not Detected: 1
+    Not Detected: 1
+  FN by Difficulty:
+    EASY: 51
+    MODERATE: 43
+    HARD: 53
+
+LSP:
+  Total Examples: 240
+  False Negatives: 195 (81.25%)
+  Misclassified as:
+    SRP: 76
+    OCP: 33
+    Not Detected: 23
+    DIP: 22
+    Not Detected: 10
+    Not Detected: 9
+    Not Detected: 7
+    ISP: 4
+    Not Detected: 1
+    Not Detected: 1
+    Not Detected: 1
+  FN by Difficulty:
+    EASY: 50
+    MODERATE: 70
+    HARD: 75
+
+OCP:
+  Total Examples: 240
+  False Negatives: 97 (40.42%)
+  Misclassified as:
+    SRP: 30
+    Not Detected: 23
+    DIP: 20
+    ISP: 3
+    Not Detected: 2
+    Not Detected: 1
+    Not Detected: 1
+    Not Detected: 1
+  FN by Difficulty:
+    EASY: 30
+    MODERATE: 33
+    HARD: 34
+
+SRP:
+  Total Examples: 240
+  False Negatives: 26 (10.83%)
+  Misclassified as:
+    DIP: 13
+    ISP: 3
+    OCP: 1
+  FN by Difficulty:
+    EASY: 4
+    MODERATE: 10
+    HARD: 12
+
+
+FALSE POSITIVES (FP) BY VIOLATION TYPE:
+----------------------------------------------------------------------------------------------------
+
+DIP (incorrectly detected):
+  Total False Positives: 59
+  Actually was:
+    LSP: 22
+    OCP: 20
+    SRP: 13
+    ISP: 4
+
+ISP (incorrectly detected):
+  Total False Positives: 11
+  Actually was:
+    LSP: 4
+    SRP: 3
+    OCP: 3
+    DIP: 1
+
+LSP (incorrectly detected):
+  Total False Positives: 24
+  Actually was:
+    ISP: 24
+
+OCP (incorrectly detected):
+  Total False Positives: 72
+  Actually was:
+    LSP: 33
+    ISP: 22
+    DIP: 16
+    SRP: 1
+
+SRP (incorrectly detected):
+  Total False Positives: 271
+  Actually was:
+    DIP: 118
+    LSP: 76
+    ISP: 47
+    OCP: 30
+
+
+MOST COMMON MISCLASSIFICATIONS:
+----------------------------------------------------------------------------------------------------
+  DIP → SRP: 118 times
+  LSP → SRP: 76 times
+  ISP → SRP: 47 times
+  LSP → OCP: 33 times
+  OCP → SRP: 30 times
+  ISP → Not Detected: 27 times
+  ISP → LSP: 24 times
+  OCP → Not Detected: 23 times
+  LSP → Not Detected: 23 times
+  ISP → OCP: 22 times
+
+
+FN/FP BY DIFFICULTY LEVEL:
+----------------------------------------------------------------------------------------------------
+
+EASY:
+  Total Examples: 400
+  False Negatives: 180 (45.00%)
+
+MODERATE:
+  Total Examples: 400
+  False Negatives: 202 (50.50%)
+
+HARD:
+  Total Examples: 400
+  False Negatives: 223 (55.75%)
+
+
+====================================================================================================
+COMPARATIVE SUMMARY
+====================================================================================================
+
+FALSE NEGATIVE RATE BY AGENT:
+----------------------------------------------------------------------------------------------------
+  diff_eval: 53.33%
+  langgraph: 44.92%
+  two_agent: 50.42%
+
+
+FALSE NEGATIVES BY VIOLATION TYPE (COMPARISON):
+----------------------------------------------------------------------------------------------------
+Violation   diff_eval           langgraph           two_agent           
+DIP         25/48 (52.1%)       168/240 (70.0%)     140/240 (58.3%)     
+ISP         11/48 (22.9%)       125/240 (52.1%)     147/240 (61.3%)     
+LSP         45/48 (93.8%)       165/240 (68.8%)     195/240 (81.2%)     
+OCP         22/48 (45.8%)       15/240 (6.2%)       97/240 (40.4%)      
+SRP         25/48 (52.1%)       66/240 (27.5%)      26/240 (10.8%)      
+
+====================================================================================================
+END OF FN/FP ANALYSIS
+====================================================================================================

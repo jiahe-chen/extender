@@ -1,0 +1,706 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global/global}
+    \entry{AlOmar2023}{article}{}{}
+      \name{author}{7}{}{%
+        {{hash=23d9055b8779f71f49c3144df4d4e671}{%
+           family={AlOmar},
+           familyi={A\bibinitperiod},
+           given={Eman\bibnamedelima Abdullah},
+           giveni={E\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=2256ce593c7a60eec17bbd5dd0871d2d}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Jiaqian},
+           giveni={J\bibinitperiod}}}%
+        {{hash=842cad4cddc15b33b5d1cc2dba3f63bd}{%
+           family={Addo},
+           familyi={A\bibinitperiod},
+           given={Kenneth},
+           giveni={K\bibinitperiod}}}%
+        {{hash=f5bdb337e646f4d206603ae7dbc66eb2}{%
+           family={Mkaouer},
+           familyi={M\bibinitperiod},
+           given={Mohamed\bibnamedelima Wiem},
+           giveni={M\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=6d540b8dacc7ebb9a41de44570ae6e0a}{%
+           family={Newman},
+           familyi={N\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod}}}%
+        {{hash=d5e038ab5b739b52966db4d9998f760b}{%
+           family={Ouni},
+           familyi={O\bibinitperiod},
+           given={Ali},
+           giveni={A\bibinitperiod}}}%
+        {{hash=576953f444c7e94103a617fbaf0bd7a2}{%
+           family={Yu},
+           familyi={Y\bibinitperiod},
+           given={Zhe},
+           giveni={Z\bibinitperiod}}}%
+      }
+      \strng{namehash}{fa2ff2f81cd8c114d17af2bb7f96fba6}
+      \strng{fullhash}{9fa62443569de0223337f66c4093f24a}
+      \strng{fullhashraw}{9fa62443569de0223337f66c4093f24a}
+      \strng{bibnamehash}{fa2ff2f81cd8c114d17af2bb7f96fba6}
+      \strng{authorbibnamehash}{fa2ff2f81cd8c114d17af2bb7f96fba6}
+      \strng{authornamehash}{fa2ff2f81cd8c114d17af2bb7f96fba6}
+      \strng{authorfullhash}{9fa62443569de0223337f66c4093f24a}
+      \strng{authorfullhashraw}{9fa62443569de0223337f66c4093f24a}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Software Engineering}
+      \field{number}{4}
+      \field{title}{Behind the Intent of Extract Method Refactoring: A Systematic Literature Review}
+      \field{volume}{49}
+      \field{year}{2023}
+      \field{pages}{2709\bibrangedash 2727}
+      \range{pages}{19}
+      \verb{doi}
+      \verb 10.1109/TSE.2022.3221736
+      \endverb
+    \endentry
+    \entry{EUAIAct2024}{report}{}{}
+      \name{author}{1}{}{%
+        {{hash=d0baa957acb6522d22e3251a428fe067}{%
+           family={{European Parliament and Council of the European Union}},
+           familyi={E\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Official Journal of the European Union}%
+      }
+      \strng{namehash}{d0baa957acb6522d22e3251a428fe067}
+      \strng{fullhash}{d0baa957acb6522d22e3251a428fe067}
+      \strng{fullhashraw}{d0baa957acb6522d22e3251a428fe067}
+      \strng{bibnamehash}{d0baa957acb6522d22e3251a428fe067}
+      \strng{authorbibnamehash}{d0baa957acb6522d22e3251a428fe067}
+      \strng{authornamehash}{d0baa957acb6522d22e3251a428fe067}
+      \strng{authorfullhash}{d0baa957acb6522d22e3251a428fe067}
+      \strng{authorfullhashraw}{d0baa957acb6522d22e3251a428fe067}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Entered into force 1 August 2024}
+      \field{number}{L 2024/1689}
+      \field{title}{Regulation ({EU}) 2024/1689 of the European Parliament and of the Council Laying Down Harmonised Rules on Artificial Intelligence (Artificial Intelligence Act)}
+      \field{type}{techreport}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng
+      \endverb
+      \verb{url}
+      \verb https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng
+      \endverb
+    \endentry
+    \entry{Fan2023}{article}{}{}
+      \name{author}{7}{}{%
+        {{hash=277117db6b938bd36379979ac719cc02}{%
+           family={Fan},
+           familyi={F\bibinitperiod},
+           given={Angela},
+           giveni={A\bibinitperiod}}}%
+        {{hash=f0392cbdf1b1bff405191e646a751b3d}{%
+           family={Gokkaya},
+           familyi={G\bibinitperiod},
+           given={Beliz},
+           giveni={B\bibinitperiod}}}%
+        {{hash=1a97225992fa23f818d9b1269df83035}{%
+           family={Harman},
+           familyi={H\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod}}}%
+        {{hash=235456cf6e755be1e5bda0e0d4e96168}{%
+           family={Lytvynets},
+           familyi={L\bibinitperiod},
+           given={Mitesh},
+           giveni={M\bibinitperiod}}}%
+        {{hash=e0c47e078d4625980ee5ad6f1f735fbd}{%
+           family={Sengupta},
+           familyi={S\bibinitperiod},
+           given={Shubho},
+           giveni={S\bibinitperiod}}}%
+        {{hash=c6e3219567063628b0aa746e69b26412}{%
+           family={Yoo},
+           familyi={Y\bibinitperiod},
+           given={Shin},
+           giveni={S\bibinitperiod}}}%
+        {{hash=f951ea0b08899e03de984bbf9739763f}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Jie\bibnamedelima M.},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{767b98621bcdbbf4ab796a25a3c32748}
+      \strng{fullhash}{6923d32124c3d097cce31c7909974084}
+      \strng{fullhashraw}{6923d32124c3d097cce31c7909974084}
+      \strng{bibnamehash}{767b98621bcdbbf4ab796a25a3c32748}
+      \strng{authorbibnamehash}{767b98621bcdbbf4ab796a25a3c32748}
+      \strng{authornamehash}{767b98621bcdbbf4ab796a25a3c32748}
+      \strng{authorfullhash}{6923d32124c3d097cce31c7909974084}
+      \strng{authorfullhashraw}{6923d32124c3d097cce31c7909974084}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:2310.03533}
+      \field{title}{Large Language Models for Software Engineering: Survey and Open Problems}
+      \field{year}{2023}
+    \endentry
+    \entry{Ghorbel2017}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=c2d8c5336cc0a53a66c837bb2a2a644c}{%
+           family={Ghorbel},
+           familyi={G\bibinitperiod},
+           given={Ahlem},
+           giveni={A\bibinitperiod}}}%
+        {{hash=3b1b0299c37363c019005884247cd922}{%
+           family={Ghorbel},
+           familyi={G\bibinitperiod},
+           given={Mahmoud},
+           giveni={M\bibinitperiod}}}%
+        {{hash=73382d5530fe60e56cdaef20ff5f88ee}{%
+           family={Jmaiel},
+           familyi={J\bibinitperiod},
+           given={Mohamed},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{2d9ce99c98d8d017fd2d9a8f8d8387bc}
+      \strng{fullhash}{2d9ce99c98d8d017fd2d9a8f8d8387bc}
+      \strng{fullhashraw}{2d9ce99c98d8d017fd2d9a8f8d8387bc}
+      \strng{bibnamehash}{2d9ce99c98d8d017fd2d9a8f8d8387bc}
+      \strng{authorbibnamehash}{2d9ce99c98d8d017fd2d9a8f8d8387bc}
+      \strng{authornamehash}{2d9ce99c98d8d017fd2d9a8f8d8387bc}
+      \strng{authorfullhash}{2d9ce99c98d8d017fd2d9a8f8d8387bc}
+      \strng{authorfullhashraw}{2d9ce99c98d8d017fd2d9a8f8d8387bc}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Journal of Supercomputing}
+      \field{number}{6}
+      \field{title}{Privacy in Cloud Computing Environments: A Survey and Research Challenges}
+      \field{volume}{73}
+      \field{year}{2017}
+      \field{pages}{2763\bibrangedash 2800}
+      \range{pages}{38}
+      \verb{doi}
+      \verb 10.1007/s11227-016-1953-y
+      \endverb
+    \endentry
+    \entry{LangGraph2024}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=64224c3b5b51af191bc7bcdbc9b17882}{%
+           family={{LangChain Team}},
+           familyi={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{64224c3b5b51af191bc7bcdbc9b17882}
+      \strng{fullhash}{64224c3b5b51af191bc7bcdbc9b17882}
+      \strng{fullhashraw}{64224c3b5b51af191bc7bcdbc9b17882}
+      \strng{bibnamehash}{64224c3b5b51af191bc7bcdbc9b17882}
+      \strng{authorbibnamehash}{64224c3b5b51af191bc7bcdbc9b17882}
+      \strng{authornamehash}{64224c3b5b51af191bc7bcdbc9b17882}
+      \strng{authorfullhash}{64224c3b5b51af191bc7bcdbc9b17882}
+      \strng{authorfullhashraw}{64224c3b5b51af191bc7bcdbc9b17882}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://github.com/langchain-ai/langgraph}}
+      \field{note}{Accessed: 2025}
+      \field{title}{{LangGraph}: Building Stateful, Multi-Actor Applications with {LLMs}}
+      \field{year}{2024}
+    \endentry
+    \entry{Martin2017}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=6f41df64eb0dc4855be70172368604c2}{%
+           family={Martin},
+           familyi={M\bibinitperiod},
+           given={Robert\bibnamedelima C.},
+           giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Prentice Hall}%
+      }
+      \strng{namehash}{6f41df64eb0dc4855be70172368604c2}
+      \strng{fullhash}{6f41df64eb0dc4855be70172368604c2}
+      \strng{fullhashraw}{6f41df64eb0dc4855be70172368604c2}
+      \strng{bibnamehash}{6f41df64eb0dc4855be70172368604c2}
+      \strng{authorbibnamehash}{6f41df64eb0dc4855be70172368604c2}
+      \strng{authornamehash}{6f41df64eb0dc4855be70172368604c2}
+      \strng{authorfullhash}{6f41df64eb0dc4855be70172368604c2}
+      \strng{authorfullhashraw}{6f41df64eb0dc4855be70172368604c2}
+      \field{extraname}{1}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Clean Architecture: A Craftsman's Guide to Software Structure and Design}
+      \field{year}{2017}
+    \endentry
+    \entry{Martin2000}{inproceedings}{}{}
+      \name{author}{1}{}{%
+        {{hash=6f41df64eb0dc4855be70172368604c2}{%
+           family={Martin},
+           familyi={M\bibinitperiod},
+           given={Robert\bibnamedelima C.},
+           giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \strng{namehash}{6f41df64eb0dc4855be70172368604c2}
+      \strng{fullhash}{6f41df64eb0dc4855be70172368604c2}
+      \strng{fullhashraw}{6f41df64eb0dc4855be70172368604c2}
+      \strng{bibnamehash}{6f41df64eb0dc4855be70172368604c2}
+      \strng{authorbibnamehash}{6f41df64eb0dc4855be70172368604c2}
+      \strng{authornamehash}{6f41df64eb0dc4855be70172368604c2}
+      \strng{authorfullhash}{6f41df64eb0dc4855be70172368604c2}
+      \strng{authorfullhashraw}{6f41df64eb0dc4855be70172368604c2}
+      \field{extraname}{2}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Object Mentor Technical Report}
+      \field{title}{Design Principles and Design Patterns}
+      \field{year}{2000}
+    \endentry
+    \entry{Melo2025}{misc}{}{}
+      \name{author}{8}{}{%
+        {{hash=c0e4f9f43d2d263ef8256ba5b087ca61}{%
+           family={Melo},
+           familyi={M\bibinitperiod},
+           given={Rian},
+           giveni={R\bibinitperiod}}}%
+        {{hash=8c048632a201825c76ee3e32146ba75b}{%
+           family={Simões},
+           familyi={S\bibinitperiod},
+           given={Pedro},
+           giveni={P\bibinitperiod}}}%
+        {{hash=97563880443592de1bb8b6c3e423e1fc}{%
+           family={Gheyi},
+           familyi={G\bibinitperiod},
+           given={Rohit},
+           giveni={R\bibinitperiod}}}%
+        {{hash=f55d308fe4ed8e6ed614f6c7e30b6fab}{%
+           family={d'Amorim},
+           familyi={d\bibinitperiod},
+           given={Marcelo},
+           giveni={M\bibinitperiod}}}%
+        {{hash=02ae5510e6f778c87c74637976cac7f5}{%
+           family={Ribeiro},
+           familyi={R\bibinitperiod},
+           given={Márcio},
+           giveni={M\bibinitperiod}}}%
+        {{hash=49df375084c6881b55147f66d960e278}{%
+           family={Soares},
+           familyi={S\bibinitperiod},
+           given={Gustavo},
+           giveni={G\bibinitperiod}}}%
+        {{hash=46b0e75747befe7fc22a67ef2af9217f}{%
+           family={Almeida},
+           familyi={A\bibinitperiod},
+           given={Eduardo},
+           giveni={E\bibinitperiod}}}%
+        {{hash=688630d4818f0e3721a2b46b1e538507}{%
+           family={Soares},
+           familyi={S\bibinitperiod},
+           given={Elvys},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{0a9c6df7afafbf92587d486180fff56e}
+      \strng{fullhash}{78d4bf03d2889d05014f44b7b8605896}
+      \strng{fullhashraw}{78d4bf03d2889d05014f44b7b8605896}
+      \strng{bibnamehash}{0a9c6df7afafbf92587d486180fff56e}
+      \strng{authorbibnamehash}{0a9c6df7afafbf92587d486180fff56e}
+      \strng{authornamehash}{0a9c6df7afafbf92587d486180fff56e}
+      \strng{authorfullhash}{78d4bf03d2889d05014f44b7b8605896}
+      \strng{authorfullhashraw}{78d4bf03d2889d05014f44b7b8605896}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.SE}
+      \field{eprinttype}{arXiv}
+      \field{title}{Agentic {LMs}: Hunting Down Test Smells}
+      \field{year}{2025}
+      \verb{eprint}
+      \verb 2504.07277
+      \endverb
+    \endentry
+    \entry{Katakri2020}{report}{}{}
+      \name{author}{1}{}{%
+        {{hash=e9484794bc02a144d3959ad74ac1deb4}{%
+           family={{Ministry for Foreign Affairs of Finland}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {National Security Authority of Finland}%
+      }
+      \strng{namehash}{e9484794bc02a144d3959ad74ac1deb4}
+      \strng{fullhash}{e9484794bc02a144d3959ad74ac1deb4}
+      \strng{fullhashraw}{e9484794bc02a144d3959ad74ac1deb4}
+      \strng{bibnamehash}{e9484794bc02a144d3959ad74ac1deb4}
+      \strng{authorbibnamehash}{e9484794bc02a144d3959ad74ac1deb4}
+      \strng{authornamehash}{e9484794bc02a144d3959ad74ac1deb4}
+      \strng{authorfullhash}{e9484794bc02a144d3959ad74ac1deb4}
+      \strng{authorfullhashraw}{e9484794bc02a144d3959ad74ac1deb4}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Information Security Auditing Tool for Authorities --- {Katakri} 2020}
+      \field{type}{techreport}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb https://um.fi/information-security-auditing-tool-for-authorities-katakri
+      \endverb
+      \verb{url}
+      \verb https://um.fi/information-security-auditing-tool-for-authorities-katakri
+      \endverb
+    \endentry
+    \entry{Ollama2024}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=567602858fa5c17f5ef764a00a47bd8d}{%
+           family={{Ollama Team}},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{567602858fa5c17f5ef764a00a47bd8d}
+      \strng{fullhash}{567602858fa5c17f5ef764a00a47bd8d}
+      \strng{fullhashraw}{567602858fa5c17f5ef764a00a47bd8d}
+      \strng{bibnamehash}{567602858fa5c17f5ef764a00a47bd8d}
+      \strng{authorbibnamehash}{567602858fa5c17f5ef764a00a47bd8d}
+      \strng{authornamehash}{567602858fa5c17f5ef764a00a47bd8d}
+      \strng{authorfullhash}{567602858fa5c17f5ef764a00a47bd8d}
+      \strng{authorfullhashraw}{567602858fa5c17f5ef764a00a47bd8d}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://ollama.com}}
+      \field{note}{Accessed: 2025}
+      \field{title}{Ollama: Run Large Language Models Locally}
+      \field{year}{2024}
+    \endentry
+    \entry{Palomba2015}{inproceedings}{}{}
+      \name{author}{6}{}{%
+        {{hash=b55e247c53ee6ca1acadfe03ce3549c1}{%
+           family={Palomba},
+           familyi={P\bibinitperiod},
+           given={Fabio},
+           giveni={F\bibinitperiod}}}%
+        {{hash=0d2cf4bc3dbc5d09d9d74296b8f60d57}{%
+           family={Bavota},
+           familyi={B\bibinitperiod},
+           given={Gabriele},
+           giveni={G\bibinitperiod}}}%
+        {{hash=f7902c5519639d99094812eb84454466}{%
+           family={Penta},
+           familyi={P\bibinitperiod},
+           given={Massimiliano\bibnamedelima Di},
+           giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=6c74770c9beea9b0f0aeee69957a96f1}{%
+           family={Ferrucci},
+           familyi={F\bibinitperiod},
+           given={Fausto},
+           giveni={F\bibinitperiod}}}%
+        {{hash=ebbd5f36c9d746916bb6b816286162d1}{%
+           family={Oliveto},
+           familyi={O\bibinitperiod},
+           given={Rocco},
+           giveni={R\bibinitperiod}}}%
+        {{hash=7bbc919ccb6480a4b07be88668eb4d6b}{%
+           family={Lucia},
+           familyi={L\bibinitperiod},
+           given={Andrea\bibnamedelima De},
+           giveni={A\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \strng{namehash}{bb68299459d361763027b5138e863eea}
+      \strng{fullhash}{33b983e2bbe0fe63a02b2312c46833f7}
+      \strng{fullhashraw}{33b983e2bbe0fe63a02b2312c46833f7}
+      \strng{bibnamehash}{bb68299459d361763027b5138e863eea}
+      \strng{authorbibnamehash}{bb68299459d361763027b5138e863eea}
+      \strng{authornamehash}{bb68299459d361763027b5138e863eea}
+      \strng{authorfullhash}{33b983e2bbe0fe63a02b2312c46833f7}
+      \strng{authorfullhashraw}{33b983e2bbe0fe63a02b2312c46833f7}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 40th International Conference on Software Engineering (ICSE)}
+      \field{title}{On the diffuseness and the impact on maintainability of code smells: a large scale empirical investigation}
+      \field{year}{2018}
+      \field{pages}{1188\bibrangedash 1198}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1145/3180155.3180220
+      \endverb
+    \endentry
+    \entry{Pehlivan2025}{inproceedings}{}{}
+      \name{author}{5}{}{%
+        {{hash=c745c54fce908d684c8ae9e14b57db23}{%
+           family={Pehlivan},
+           familyi={P\bibinitperiod},
+           given={Fatih},
+           giveni={F\bibinitperiod}}}%
+        {{hash=b6189cd06d095a18477d5aa846a2c57e}{%
+           family={Ergüzen},
+           familyi={E\bibinitperiod},
+           given={Arc{ı}n\bibnamedelima Ülkü},
+           giveni={A\bibinitperiod\bibinitdelim Ü\bibinitperiod}}}%
+        {{hash=102495beba8334d955df26b428f4e896}{%
+           family={Yengejeh},
+           familyi={Y\bibinitperiod},
+           given={Sahand\bibnamedelima Moslemi},
+           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=ecabe57a5289b132a4053046aca1cf6d}{%
+           family={Lami},
+           familyi={L\bibinitperiod},
+           given={Mayasah},
+           giveni={M\bibinitperiod}}}%
+        {{hash=c98c6eae52076e3aa0a19d985c10abb8}{%
+           family={Koyuncu},
+           familyi={K\bibinitperiod},
+           given={Anil},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{c447660ae67507d651ed4f215322a3a8}
+      \strng{fullhash}{c68e30f1a9957a2253dd448e447182ee}
+      \strng{fullhashraw}{c68e30f1a9957a2253dd448e447182ee}
+      \strng{bibnamehash}{c447660ae67507d651ed4f215322a3a8}
+      \strng{authorbibnamehash}{c447660ae67507d651ed4f215322a3a8}
+      \strng{authornamehash}{c447660ae67507d651ed4f215322a3a8}
+      \strng{authorfullhash}{c68e30f1a9957a2253dd448e447182ee}
+      \strng{authorfullhashraw}{c68e30f1a9957a2253dd448e447182ee}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the IEEE/ACM International Conference on Software Engineering (ICSE)}
+      \field{note}{Bilkent University, Turkey}
+      \field{title}{Are We {SOLID} Yet? An Empirical Study on Prompting {LLMs} to Detect Design Principle Violations}
+      \field{year}{2025}
+    \endentry
+    \entry{Qwen2025}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=4622c4bb7444dadba22813c2addff5e7}{%
+           family={{Qwen Team}},
+           familyi={Q\bibinitperiod}}}%
+      }
+      \strng{namehash}{4622c4bb7444dadba22813c2addff5e7}
+      \strng{fullhash}{4622c4bb7444dadba22813c2addff5e7}
+      \strng{fullhashraw}{4622c4bb7444dadba22813c2addff5e7}
+      \strng{bibnamehash}{4622c4bb7444dadba22813c2addff5e7}
+      \strng{authorbibnamehash}{4622c4bb7444dadba22813c2addff5e7}
+      \strng{authornamehash}{4622c4bb7444dadba22813c2addff5e7}
+      \strng{authorfullhash}{4622c4bb7444dadba22813c2addff5e7}
+      \strng{authorfullhashraw}{4622c4bb7444dadba22813c2addff5e7}
+      \field{sortinit}{Q}
+      \field{sortinithash}{ce69a400a872ddd02ee7fdb3b38c6abd}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://qwen.ai/blog?id=qwen3.5}}
+      \field{month}{2}
+      \field{title}{{Qwen3.5}: Accelerating Productivity with Native Multimodal Agents}
+      \field{year}{2026}
+    \endentry
+    \entry{Sharma2018}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=be5448e80e0e1a8b1646c7287a044c68}{%
+           family={Sharma},
+           familyi={S\bibinitperiod},
+           given={Tushar},
+           giveni={T\bibinitperiod}}}%
+        {{hash=84b8e5364aab5f32e81e2aefc1cdb30a}{%
+           family={Spinellis},
+           familyi={S\bibinitperiod},
+           given={Diomidis},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{669330c0c4b9d0b9f425219dee22ccae}
+      \strng{fullhash}{669330c0c4b9d0b9f425219dee22ccae}
+      \strng{fullhashraw}{669330c0c4b9d0b9f425219dee22ccae}
+      \strng{bibnamehash}{669330c0c4b9d0b9f425219dee22ccae}
+      \strng{authorbibnamehash}{669330c0c4b9d0b9f425219dee22ccae}
+      \strng{authornamehash}{669330c0c4b9d0b9f425219dee22ccae}
+      \strng{authorfullhash}{669330c0c4b9d0b9f425219dee22ccae}
+      \strng{authorfullhashraw}{669330c0c4b9d0b9f425219dee22ccae}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Systems and Software}
+      \field{title}{A survey on software smells}
+      \field{volume}{138}
+      \field{year}{2018}
+      \field{pages}{158\bibrangedash 173}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1016/j.jss.2017.12.034
+      \endverb
+    \endentry
+    \entry{Wang2024}{article}{}{}
+      \name{author}{13}{}{%
+        {{hash=1f647bb6da8304b7be380ec58eb6373a}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Lei},
+           giveni={L\bibinitperiod}}}%
+        {{hash=0b13d29cc629ce6345c4d0376393515f}{%
+           family={Ma},
+           familyi={M\bibinitperiod},
+           given={Chen},
+           giveni={C\bibinitperiod}}}%
+        {{hash=cb0567e0086199a1bf82bfb31ab309b9}{%
+           family={Feng},
+           familyi={F\bibinitperiod},
+           given={Xueyang},
+           giveni={X\bibinitperiod}}}%
+        {{hash=d57f37a2329e84dd83135d60ac91a7e7}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Zeyu},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=ffc6e98cdb5fcaae9b79cd4ce7d15efa}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Hao},
+           giveni={H\bibinitperiod}}}%
+        {{hash=fae408610645f341cff586d4ecbc6e2d}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Jingsen},
+           giveni={J\bibinitperiod}}}%
+        {{hash=d376ecd15da60042b75c35acc608cc86}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Zhiyuan},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=25b94cc0aeaeddf37e136d7c71abb11c}{%
+           family={Tang},
+           familyi={T\bibinitperiod},
+           given={Jiakai},
+           giveni={J\bibinitperiod}}}%
+        {{hash=4f4900cae2c11cda82284d85107e92ae}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Xu},
+           giveni={X\bibinitperiod}}}%
+        {{hash=e2994df0daa7033ced5356a51eed0321}{%
+           family={Lin},
+           familyi={L\bibinitperiod},
+           given={Yankai},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=64942cca497eff6cd6c5b264afdc5dd6}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Wayne\bibnamedelima Xin},
+           giveni={W\bibinitperiod\bibinitdelim X\bibinitperiod}}}%
+        {{hash=c8507e98bfc2b242813618d7878f51a0}{%
+           family={Wei},
+           familyi={W\bibinitperiod},
+           given={Zhewei},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=5ff29ba5ea8e6fdd73a84f998eec45f2}{%
+           family={Wen},
+           familyi={W\bibinitperiod},
+           given={Ji-Rong},
+           giveni={J\bibinithyphendelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{10814f16ce9673476ec6de14dc6cea6e}
+      \strng{fullhash}{62ec457dcdcac80349ab298afc5ebcf6}
+      \strng{fullhashraw}{62ec457dcdcac80349ab298afc5ebcf6}
+      \strng{bibnamehash}{10814f16ce9673476ec6de14dc6cea6e}
+      \strng{authorbibnamehash}{10814f16ce9673476ec6de14dc6cea6e}
+      \strng{authornamehash}{10814f16ce9673476ec6de14dc6cea6e}
+      \strng{authorfullhash}{62ec457dcdcac80349ab298afc5ebcf6}
+      \strng{authorfullhashraw}{62ec457dcdcac80349ab298afc5ebcf6}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Frontiers of Computer Science}
+      \field{number}{6}
+      \field{title}{A Survey on Large Language Model based Autonomous Agents}
+      \field{volume}{18}
+      \field{year}{2024}
+      \verb{doi}
+      \verb 10.1007/s11704-024-40231-1
+      \endverb
+    \endentry
+    \entry{Yao2023}{article}{}{}
+      \name{author}{7}{}{%
+        {{hash=5c1b62cbd4e181d818b927549813cf73}{%
+           family={Yao},
+           familyi={Y\bibinitperiod},
+           given={Shunyu},
+           giveni={S\bibinitperiod}}}%
+        {{hash=4fc64f0dbaf7cb8f21c7c85d580cdb15}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Jeffrey},
+           giveni={J\bibinitperiod}}}%
+        {{hash=2cb7d2d6e42d109fa2c5086d6c8f6a63}{%
+           family={Yu},
+           familyi={Y\bibinitperiod},
+           given={Dian},
+           giveni={D\bibinitperiod}}}%
+        {{hash=a926c34a0eebdaaa30da36b46bd2192c}{%
+           family={Du},
+           familyi={D\bibinitperiod},
+           given={Nan},
+           giveni={N\bibinitperiod}}}%
+        {{hash=20b3779bbd037bbfdd1ffd3967624997}{%
+           family={Shafran},
+           familyi={S\bibinitperiod},
+           given={Izhak},
+           giveni={I\bibinitperiod}}}%
+        {{hash=997c3143c2e5d593e816d2ff704fbf98}{%
+           family={Narasimhan},
+           familyi={N\bibinitperiod},
+           given={Karthik},
+           giveni={K\bibinitperiod}}}%
+        {{hash=2923de2da7f9b32b957552e414b6bc16}{%
+           family={Cao},
+           familyi={C\bibinitperiod},
+           given={Yuan},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{4ae4be538df04cfc1571685175562cad}
+      \strng{fullhash}{6f22c9f891fbcfb7465b1c3157b57023}
+      \strng{fullhashraw}{6f22c9f891fbcfb7465b1c3157b57023}
+      \strng{bibnamehash}{4ae4be538df04cfc1571685175562cad}
+      \strng{authorbibnamehash}{4ae4be538df04cfc1571685175562cad}
+      \strng{authornamehash}{4ae4be538df04cfc1571685175562cad}
+      \strng{authorfullhash}{6f22c9f891fbcfb7465b1c3157b57023}
+      \strng{authorfullhashraw}{6f22c9f891fbcfb7465b1c3157b57023}
+      \field{sortinit}{Y}
+      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:2210.03629}
+      \field{title}{{ReAct}: Synergizing Reasoning and Acting in Language Models}
+      \field{year}{2023}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

@@ -1,0 +1,13 @@
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Results from Pehlivan et al.~\blx@tocontentsinit {0}\cite {Pehlivan2025} on the 240-example SOLID benchmark.}}{5}{figure.caption.8}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces One-, two-, and four-agent workflow configurations for test smell detection from Melo et al.~\blx@tocontentsinit {0}\cite {Melo2025}. The Detector--Evaluator pattern informs our Two-Agent baseline.}}{6}{figure.caption.9}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Diff Eval system architecture: five parallel SOLID-principle channels (Scenario Generation $\to $ Code Modification $\to $ Diff Analysis $\to $ Pre-Verification) aggregated by Unified Ranking.}}{8}{figure.caption.10}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Overall accuracy comparison across the three workflow methods.}}{14}{figure.caption.13}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Accuracy comparison by SOLID principle across the three methods.}}{14}{figure.caption.15}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Top-2 accuracy comparison by difficulty level across the three methods.}}{15}{figure.caption.17}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Top-2 resolved confusion matrix for Diff Eval. Dominant error: SRP over-prediction (19 off-diagonal cases).}}{18}{figure.caption.19}%
+\addvspace {10\p@ }

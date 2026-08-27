@@ -1,0 +1,148 @@
+================================================================================
+DIFF_EVAL DETECTION RESULTS - COMPREHENSIVE ANALYSIS
+================================================================================
+
+OVERALL STATISTICS
+--------------------------------------------------------------------------------
+Total Examples: 480
+Number of Models: 2
+Violation Types: DIP, ISP, LSP, OCP, SRP
+Languages: C#, CSHARP, JAVA, KOTLIN, PYTHON
+Difficulty Levels: EASY, HARD, MODERATE
+
+MODEL PERFORMANCE SUMMARY
+--------------------------------------------------------------------------------
+
+deepseek-r1-8b:
+  Overall Accuracy: 27.08%
+  Correct Detections: 65/240
+  Avg Processing Time: 147.21s (median: 136.61s)
+
+qwen3-8b:
+  Overall Accuracy: 23.75%
+  Correct Detections: 57/240
+  Avg Processing Time: 135.97s (median: 133.01s)
+
+================================================================================
+RANKING
+--------------------------------------------------------------------------------
+
+Best Performing Models:
+  1. deepseek-r1-8b: 27.08%
+  2. qwen3-8b: 23.75%
+
+Lowest Performing Models:
+  1. deepseek-r1-8b: 27.08%
+  2. qwen3-8b: 23.75%
+
+================================================================================
+VIOLATION TYPE ANALYSIS
+--------------------------------------------------------------------------------
+
+Easiest to Detect:
+  ISP: 76.04%
+  DIP: 41.67%
+  LSP: 5.21%
+
+Hardest to Detect:
+  LSP: 5.21%
+  OCP: 3.12%
+  SRP: 1.04%
+
+================================================================================
+DIFFICULTY LEVEL ANALYSIS
+--------------------------------------------------------------------------------
+
+EASY:
+  Accuracy: 28.12%
+  Examples: 160
+  Correct: 45
+
+MODERATE:
+  Accuracy: 27.50%
+  Examples: 160
+  Correct: 44
+
+HARD:
+  Accuracy: 20.62%
+  Examples: 160
+  Correct: 33
+
+================================================================================
+PROGRAMMING LANGUAGE ANALYSIS
+--------------------------------------------------------------------------------
+
+C#:
+  Accuracy: 16.67%
+  Examples: 48
+  Correct: 8
+
+CSHARP:
+  Accuracy: 25.00%
+  Examples: 72
+  Correct: 18
+
+JAVA:
+  Accuracy: 21.67%
+  Examples: 120
+  Correct: 26
+
+KOTLIN:
+  Accuracy: 30.00%
+  Examples: 120
+  Correct: 36
+
+PYTHON:
+  Accuracy: 28.33%
+  Examples: 120
+  Correct: 34
+
+================================================================================
+DETAILED MODEL BREAKDOWN
+--------------------------------------------------------------------------------
+
+deepseek-r1-8b
+----------------------------------------
+  By Violation Type:
+    DIP: 35.42% (17/48)
+    ISP: 87.50% (42/48)
+    LSP: 4.17% (2/48)
+    OCP: 6.25% (3/48)
+    SRP: 2.08% (1/48)
+
+  By Difficulty Level:
+    EASY: 27.50% (22/80)
+    HARD: 30.00% (24/80)
+    MODERATE: 23.75% (19/80)
+
+  By Language:
+    C#: 12.50% (3/24)
+    CSHARP: 33.33% (12/36)
+    JAVA: 23.33% (14/60)
+    KOTLIN: 31.67% (19/60)
+    PYTHON: 28.33% (17/60)
+
+qwen3-8b
+----------------------------------------
+  By Violation Type:
+    DIP: 47.92% (23/48)
+    ISP: 64.58% (31/48)
+    LSP: 6.25% (3/48)
+    OCP: 0.00% (0/48)
+    SRP: 0.00% (0/48)
+
+  By Difficulty Level:
+    EASY: 28.75% (23/80)
+    HARD: 11.25% (9/80)
+    MODERATE: 31.25% (25/80)
+
+  By Language:
+    C#: 20.83% (5/24)
+    CSHARP: 16.67% (6/36)
+    JAVA: 20.00% (12/60)
+    KOTLIN: 28.33% (17/60)
+    PYTHON: 28.33% (17/60)
+
+================================================================================
+END OF REPORT
+================================================================================

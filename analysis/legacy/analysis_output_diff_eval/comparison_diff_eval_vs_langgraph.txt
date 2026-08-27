@@ -1,0 +1,115 @@
+================================================================================
+COMPREHENSIVE COMPARISON: DIFF_EVAL vs LANGGRAPH
+================================================================================
+
+OVERALL STATISTICS
+--------------------------------------------------------------------------------
+Diff_Eval:
+  Total Examples: 480
+  Overall Accuracy: 25.42%
+  Avg Processing Time: 141.59s
+  Median Processing Time: 133.69s
+
+Langgraph:
+  Total Examples: 1200
+  Overall Accuracy: 55.08%
+  Avg Processing Time: 1.54s
+  Median Processing Time: 1.44s
+
+PERFORMANCE GAP
+--------------------------------------------------------------------------------
+Accuracy Difference: +29.67% (Langgraph better)
+Speed Difference: +140.05s (Langgraph faster)
+
+MODEL-BY-MODEL COMPARISON
+--------------------------------------------------------------------------------
+
+deepseek-r1-8b:
+  Diff_Eval: 27.08% accuracy, 147.21s avg time
+  Langgraph: 67.92% accuracy, 1.67s avg time
+  Gap: +40.83% accuracy, +145.54s time
+
+qwen3-8b:
+  Diff_Eval: 23.75% accuracy, 135.97s avg time
+  Langgraph: 73.33% accuracy, 1.79s avg time
+  Gap: +49.58% accuracy, +134.18s time
+
+================================================================================
+VIOLATION TYPE COMPARISON
+--------------------------------------------------------------------------------
+
+DIP:
+  Diff_Eval: 41.67%
+  Langgraph: 30.00%
+  Gap: -11.67%
+
+ISP:
+  Diff_Eval: 76.04%
+  Langgraph: 47.92%
+  Gap: -28.12%
+
+LSP:
+  Diff_Eval: 5.21%
+  Langgraph: 31.25%
+  Gap: +26.04%
+
+OCP:
+  Diff_Eval: 3.12%
+  Langgraph: 93.75%
+  Gap: +90.62%
+
+SRP:
+  Diff_Eval: 1.04%
+  Langgraph: 72.50%
+  Gap: +71.46%
+
+================================================================================
+DIFFICULTY LEVEL ANALYSIS
+--------------------------------------------------------------------------------
+
+EASY:
+  Diff_Eval: 28.12% accuracy, 48.83s avg time
+  Langgraph: 66.75% accuracy, 1.12s avg time
+  Gap: +38.62% accuracy, +47.71s time
+
+MODERATE:
+  Diff_Eval: 27.50% accuracy, 146.04s avg time
+  Langgraph: 52.25% accuracy, 1.45s avg time
+  Gap: +24.75% accuracy, +144.59s time
+
+HARD:
+  Diff_Eval: 20.62% accuracy, 229.91s avg time
+  Langgraph: 46.25% accuracy, 2.05s avg time
+  Gap: +25.63% accuracy, +227.86s time
+
+================================================================================
+RUNTIME vs DIFFICULTY CORRELATION
+--------------------------------------------------------------------------------
+
+Diff_Eval - Processing Time by Difficulty:
+  EASY: Mean=48.83s, Median=42.84s, Std=17.57s
+  MODERATE: Mean=146.04s, Median=137.92s, Std=66.00s
+  HARD: Mean=229.91s, Median=241.16s, Std=41.08s
+
+Langgraph - Processing Time by Difficulty:
+  EASY: Mean=1.12s, Median=1.15s, Std=0.49s
+  MODERATE: Mean=1.45s, Median=1.46s, Std=0.42s
+  HARD: Mean=2.05s, Median=1.99s, Std=0.61s
+
+================================================================================
+KEY INSIGHTS
+--------------------------------------------------------------------------------
+
+1. ACCURACY:
+   - Langgraph significantly outperforms diff_eval (+29.67%)
+
+2. PROCESSING SPEED:
+   - Langgraph is much faster (140.05s faster on average)
+
+3. DIFFICULTY IMPACT:
+   - Diff_eval: HARD takes 181.07s more than EASY
+   - Langgraph: HARD takes 0.93s more than EASY
+
+================================================================================
+END OF COMPARISON REPORT
+================================================================================

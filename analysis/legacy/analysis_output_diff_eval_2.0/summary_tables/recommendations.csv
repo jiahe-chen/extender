@@ -1,0 +1,7 @@
+Violation Type,Recommended System,Accuracy,Reason,Alternative
+DIP,Context-Managed Diff,89.58%,"Best DIP detection, 64.6% better than LLM-Only",None - Context-Managed is clearly superior
+ISP,LLM-Only,100.00%,"Perfect accuracy, 33.3% better than Context-Managed",None - LLM-Only is perfect
+LSP,Context-Managed Diff,79.17%,"Best LSP detection, 18.8% better than LLM-Only",LLM-Only (60.4%) if speed is critical
+OCP,LLM-Only,97.92%,"Context-Managed is broken (37.5%), LLM-Only is excellent",None - Context-Managed should not be used for OCP
+SRP,LLM-Only,83.33%,"Better accuracy, 22.9% better than Context-Managed",Context-Managed (60.4%) if using hybrid approach
+General Purpose,LLM-Only,73.33%,"Best overall accuracy, 74x faster, most consistent",Hybrid approach for maximum accuracy (~85%)

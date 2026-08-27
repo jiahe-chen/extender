@@ -1,0 +1,197 @@
+================================================================================
+SOLID PRINCIPLES BENCHMARK ANALYSIS REPORT
+================================================================================
+
+## EXECUTIVE SUMMARY
+----------------------------------------
+Total Examples: 1440
+Models Evaluated: 6
+Violation Types: 5
+Overall Accuracy: 40.56%
+Mean Processing Time: 1.63s
+
+## ACCURACY BY MODEL
+----------------------------------------
+  deepseek-r1-8b: 48.75% (117/240)
+  gemma3-4b: 13.75% (33/240)
+  llama3-1-8b: 46.67% (112/240)
+  llama3-2-3b: 33.33% (80/240)
+  qwen3-4b: 47.50% (114/240)
+  qwen3-8b: 53.33% (128/240)
+
+Best Model: qwen3-8b (53.33%)
+Worst Model: gemma3-4b (13.75%)
+
+## ACCURACY BY VIOLATION TYPE
+----------------------------------------
+  DIP: 12.85% (37/288)
+  ISP: 45.49% (131/288)
+  LSP: 39.24% (113/288)
+  OCP: 36.46% (105/288)
+  SRP: 68.75% (198/288)
+
+Easiest to Detect: SRP (68.75%)
+Hardest to Detect: DIP (12.85%)
+
+## RUNTIME ANALYSIS
+----------------------------------------
+  deepseek-r1-8b: mean=1.93s, median=1.87s, std=0.73s
+  gemma3-4b: mean=1.49s, median=1.50s, std=0.48s
+  llama3-1-8b: mean=1.90s, median=1.67s, std=0.77s
+  llama3-2-3b: mean=0.99s, median=0.86s, std=0.58s
+  qwen3-4b: mean=1.56s, median=1.48s, std=0.51s
+  qwen3-8b: mean=1.87s, median=1.79s, std=0.71s
+
+## MISCLASSIFICATION ANALYSIS
+----------------------------------------
+Total Detected: 1281
+Correctly Classified: 584
+Misclassified: 697
+False Negatives (Undetected): 159
+
+Top Misclassification Patterns:
+  DIP -> SRP: 156 cases
+  OCP -> SRP: 96 cases
+  ISP -> LSP: 92 cases
+  LSP -> SRP: 69 cases
+  ISP -> SRP: 54 cases
+
+False Negatives by Violation Type:
+  DIP: 30 cases
+  ISP: 8 cases
+  LSP: 53 cases
+  OCP: 15 cases
+  SRP: 53 cases
+
+## COMPARISON WITH COZE AUTO DETECTION
+----------------------------------------
+  Coze (deepseek_V3): 80.00%
+  Coze (doubao_1.5_pro): 85.00%
+  Local Single-Agent Average: 40.56%
+
+## MODEL x VIOLATION TYPE ACCURACY (%)
+----------------------------------------
+violation_type   DIP   ISP   LSP   OCP    SRP
+model                                        
+deepseek-r1-8b  27.1  43.8  43.8  89.6   39.6
+gemma3-4b        4.2   2.1   0.0   0.0   62.5
+llama3-1-8b      8.3  72.9  25.0  27.1  100.0
+llama3-2-3b      0.0  43.8  60.4   4.2   58.3
+qwen3-4b        29.2  14.6  68.8  45.8   79.2
+qwen3-8b         8.3  95.8  37.5  52.1   72.9
+
+================================================================================
+## TWO-AGENT WORKFLOW ANALYSIS
+================================================================================
+
+We selected two models with relatively lower single-agent accuracy to evaluate
+whether the agentic workflow (Detector + Evaluator with feedback loop) can
+improve detection performance.
+
+Models Selected:
+  - gemma3-4b (Single-Agent baseline: 13.75%)
+  - llama3-2-3b (Single-Agent baseline: 33.33%)
+
+### Overall Accuracy Comparison
+----------------------------------------
++------------------+----------------+----------------+-------------+
+| Model            | Single-Agent   | Two-Agent      | Improvement |
++------------------+----------------+----------------+-------------+
+| gemma3-4b        | 13.8% (33/240) | 34.2% (82/240) | +20.4%      |
+| llama3-2-3b      | 33.3% (80/240) | 40.0% (96/240) | +6.7%       |
++------------------+----------------+----------------+-------------+
+
+Key Finding: Two-Agent workflow shows significant improvement for both models,
+with gemma3-4b showing a 2.5x improvement (13.8% -> 34.2%).
+
+### gemma3-4b: Detailed Comparison
+----------------------------------------
++----------+----------------+----------------+-------------+
+| Type     | Single-Agent   | Two-Agent      | Change      |
++----------+----------------+----------------+-------------+
+| SRP      | 62.5% (30/48)  | 70.8% (34/48)  | +8.3%       |
+| OCP      | 0.0% (0/48)    | 18.8% (9/48)   | +18.8%      |
+| LSP      | 0.0% (0/48)    | 0.0% (0/48)    | 0.0%        |
+| ISP      | 2.1% (1/48)    | 4.2% (2/48)    | +2.1%       |
+| DIP      | 4.2% (2/48)    | 77.1% (37/48)  | +72.9%  *** |
++----------+----------------+----------------+-------------+
+
+### llama3-2-3b: Detailed Comparison
+----------------------------------------
++----------+----------------+----------------+-------------+
+| Type     | Single-Agent   | Two-Agent      | Change      |
++----------+----------------+----------------+-------------+
+| SRP      | 58.3% (28/48)  | 89.6% (43/48)  | +31.3%  *** |
+| OCP      | 4.2% (2/48)    | 8.3% (4/48)    | +4.1%       |
+| LSP      | 60.4% (29/48)  | 2.1% (1/48)    | -58.3%  !!! |
+| ISP      | 43.8% (21/48)  | 52.1% (25/48)  | +8.3%       |
+| DIP      | 0.0% (0/48)    | 47.9% (23/48)  | +47.9%  *** |
++----------+----------------+----------------+-------------+
+
+### Key Insights
+----------------------------------------
+
+1. OVERALL EFFECTIVENESS
+   - gemma3-4b: +148% relative improvement (13.8% -> 34.2%)
+   - llama3-2-3b: +20% relative improvement (33.3% -> 40.0%)
+
+2. PRINCIPLE-SPECIFIC FINDINGS
+
+   Improved Significantly:
+   - DIP: +60.4% avg (feedback loop helps identify concrete dependencies)
+   - SRP: +19.8% avg (evaluator catches missed multiple responsibilities)
+
+   Remained Challenging:
+   - LSP: ~1% avg (requires behavioral subtyping understanding)
+   - OCP: ~13% avg (abstract concept difficult for small models)
+
+3. REGRESSION WARNING
+   llama3-2-3b LSP dropped from 60.4% to 2.1% (-58.3%)
+   Possible causes:
+   - Evaluator incorrectly disagreeing with valid LSP detections
+   - Feedback loop causing detector to second-guess correct answers
+
+### Workflow Effectiveness Metrics
+----------------------------------------
++------------------------------------+------------+
+| Category                           | Count      |
++------------------------------------+------------+
+| Principles that improved           | 7/10 (70%) |
+| Principles that stayed same        | 1/10 (10%) |
+| Principles that regressed          | 2/10 (20%) |
++------------------------------------+------------+
+
+Average Improvement (excluding regressions): +27.8%
+Average Regression: -29.2%
+Net Improvement: +13.5%
+
+### Conclusions
+----------------------------------------
+
+1. TWO-AGENT WORKFLOW IS EFFECTIVE
+   The Detector-Evaluator feedback loop improves overall accuracy by an
+   average of +13.5% across both models.
+
+2. DIP DETECTION BENEFITS MOST
+   DIP shows the largest gains (+60.4% avg), suggesting feedback is
+   particularly effective for identifying concrete dependency issues.
+
+3. LSP REMAINS CHALLENGING
+   LSP detection stays near 0% for gemma3-4b and regresses in llama3-2-3b,
+   indicating this principle requires larger models or different strategies.
+
+4. FEEDBACK LOOP CAN CAUSE REGRESSION
+   The llama3-2-3b LSP regression shows that iterative feedback can
+   sometimes hurt performance when evaluator incorrectly rejects valid results.
+
+### Recommendations
+----------------------------------------
+
+1. Use Two-Agent workflow for SRP, OCP, ISP, DIP detection
+2. Consider Single-Agent or specialized prompts for LSP detection
+3. If baseline accuracy < 20%, Two-Agent can provide 2-3x improvement
+4. Test with larger models (8B+) for better LSP/OCP detection
+
+================================================================================
+END OF REPORT
+================================================================================

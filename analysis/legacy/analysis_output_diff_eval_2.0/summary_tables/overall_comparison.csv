@@ -1,0 +1,12 @@
+Metric,Context-Managed Diff,Diff v10,LLM-Only
+Total Examples,240,240,240
+Overall Accuracy (%),66.67,46.67,73.33
+Total Correct,160,112,176
+Total Errors,80,128,64
+Error Rate (%),33.33,53.33,26.67
+Avg Processing Time (s),132.55,135.95,1.79
+Median Processing Time (s),103.50,112.00,1.66
+Min Processing Time (s),23.30,21.69,0.69
+Max Processing Time (s),1015.84,667.27,4.62
+Std Dev Time (s),119.46,104.13,0.57
+P95 Processing Time (s),278.16,298.23,2.81
