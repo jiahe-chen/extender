@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex main"] 1787727783.05009 "main.aux" "main.bbl" "main" 1787727785.01104 0
-  "./main.bib" 1787405985.23819 20236 cbf237a6483b4a959e76b5678eb9f289 ""
+["bibtex main"] 1787881080.85181 "main.aux" "main.bbl" "main" 1787881082.57003 0
+  "./main.bib" 1787812530.79943 20236 cbf237a6483b4a959e76b5678eb9f289 ""
   "/usr/local/texlive/2025/texmf-dist/bibtex/bst/acmart/ACM-Reference-Format.bst" 1735764768 90749 48abc1cbed6fafc6fc31528e3aa606ca ""
-  "main.aux" 1787727784.58922 8586 0dfec66c43f406a03b404e40f0dba6f0 "pdflatex"
+  "main.aux" 1787881082.12949 8542 9cafd2cfd317b70a189bbab6299e0b67 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1787727783.23733 "/Users/he/jcSOLID/deliverables/ase2026/main.tex" "main.pdf" "main" 1787727785.0112 0
-  "/Users/he/jcSOLID/deliverables/ase2026/main.tex" 1787727780.85035 34884 db406cbf5a530188cb91b09a3b7026f5 ""
+["pdflatex"] 1787881080.9832 "/Users/he/extender/deliverables/ase2026/main.tex" "main.pdf" "main" 1787881082.57018 0
+  "/Users/he/extender/deliverables/ase2026/main.tex" 1787881078.80138 34051 fc43a48133bbbf81dc4b738303c0b1c9 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-4.enc" 1558214095 7693 0f2dce6d313c82989ec3a67fc24df2a0 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/libertine/lbtn_25tcsq.enc" 1490131464 2921 8ca0eb0831f9bc5da080d3697cfe67bf ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/libertine/lbtn_76gpa5.enc" 1490131464 2933 9ad527ce78d7c5fa0a642dead095f172 ""
@@ -235,6 +235,7 @@
   "/usr/local/texlive/2025/texmf-dist/tex/latex/graphics-cfg/color.cfg" 1459978653 1213 620bba36b25224fa9b7e1ccb4ecb76fd ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/graphics-cfg/graphics.cfg" 1465944070 1224 978390e9c2234eab29404bc21b268d1e ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/graphics-def/pdftex.def" 1713382759 19440 9da9dcbb27470349a580fca7372d454b ""
+  "/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/color.sty" 1730496337 7245 57f7defed4fb41562dc4b6ca13958ca9 ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/graphics.sty" 1730496337 18363 dee506cb8d56825d8a4d020f5d5f8704 ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/graphicx.sty" 1717359999 8010 6f2ad8c2b2ffbd607af6475441c7b5e4 ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/keyval.sty" 1717359999 2671 70891d50dac933918b827d326687c6e8 ""
@@ -308,14 +309,14 @@
   "/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1746705506 5467155 19efa205003f9ecad95fbbaa6ff24da1 ""
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1746705413 3345741 4b7df85df55b9858b3269f26790b6390 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
-  "figures/extender_workflow.pdf" 1783954561.08609 137203 35805c5539044f145bd9cb291b25a099 ""
-  "figures/paper_fig_difficulty.pdf" 1783954175.88633 43730 7da207ad6e69c578130ff8d39c22e65d ""
-  "figures/paper_fig_overall.pdf" 1783954175.77143 42481 70f16ef887097036bdd05e068d7b237d ""
-  "figures/paper_fig_violation.pdf" 1783954175.83281 45185 786e4c9b1768c57506657252bdb53f96 ""
-  "main.aux" 1787727784.58922 8586 0dfec66c43f406a03b404e40f0dba6f0 "pdflatex"
-  "main.bbl" 1787727783.23256 23040 4db62b11340f8a81eabfee2de72738b3 "bibtex main"
-  "main.out" 1787727784.59025 3131 849411d73271e24c0e3db68cfeb06603 "pdflatex"
-  "main.tex" 1787727780.85035 34884 db406cbf5a530188cb91b09a3b7026f5 ""
+  "figures/extender_workflow.pdf" 1787812530.7888 137203 35805c5539044f145bd9cb291b25a099 ""
+  "figures/paper_fig_difficulty.pdf" 1787812530.79563 43730 7da207ad6e69c578130ff8d39c22e65d ""
+  "figures/paper_fig_overall.pdf" 1787812530.7966 42481 70f16ef887097036bdd05e068d7b237d ""
+  "figures/paper_fig_violation.pdf" 1787812530.79799 45185 786e4c9b1768c57506657252bdb53f96 ""
+  "main.aux" 1787881082.12949 8542 9cafd2cfd317b70a189bbab6299e0b67 "pdflatex"
+  "main.bbl" 1787881080.97881 23040 4db62b11340f8a81eabfee2de72738b3 "bibtex main"
+  "main.out" 1787881082.1307 3131 849411d73271e24c0e3db68cfeb06603 "pdflatex"
+  "main.tex" 1787881078.80138 34051 fc43a48133bbbf81dc4b738303c0b1c9 ""
   (generated)
   "main.aux"
   "main.log"

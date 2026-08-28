@@ -1,7 +1,11 @@
 % ASE anonymous review submission layout.
-\documentclass[sigconf,review]{acmart}
+\documentclass[sigconf,screen]{acmart}
 
-\settopmatter{printacmref=false,printccs=true,printfolios=true}
+\settopmatter{
+  printacmref=true,
+  printccs=true,
+  printfolios=false
+}
 
 \copyrightyear{2026}
 \acmYear{2026}
@@ -112,11 +116,11 @@ Specifically, existing approaches fall into two categories, \ie code-analysis-ba
 The former apply static analysis to extract structural information and code metrics, and detect violations with predefined rules or thresholds over these syntactic proxies~\cite{Sharma2018,Palomba2015,Oktafiani2018, Chebanyuk2016,Roy2024}.
 The latter instead rely on the semantic code understanding and reasoning capability of large language models (LLMs) to judge whether the code conforms to each principle~\cite{Martins2024, Pehlivan2025}.
 
-However, existing approaches still suffer from poor accuracy in detecting SOLID violations~\cite{Martins2024,Pehlivan2025}.
-We argue that the root cause lies in the fact that all existing approaches detect SOLID principle violations purely based on the current state of the code.
+However, existing approaches suffer from poor accuracy in detecting SOLID violations~\cite{Martins2024,Pehlivan2025}.
+The root cause lies in the fact that they detect SOLID principle violations purely based on the current state of the code.
 In contrast, violations of SOLID principles depend on the cost of a future change.
-A design can look acceptable before it is challenged, and its defect becomes visible only when a new variant, client, or dependency is introduced.
-Since existing approaches reason only over the current version of the code, they cannot truly measure the cost that is paid only when the code is extended.
+A design can look acceptable before it is challenged, and its defect becomes visible only when a new variant or dependency is introduced.
+Since existing approaches reason only over the current version of the code, they cannot measure the cost to be is paid when the code is extended.
 
 
 In this paper, we propose \tool, a multi-agent system that detects SOLID violations by explicitly extending the code under review.
@@ -134,7 +138,7 @@ These results validate that explicitly extending the code exposes latent design 
 This paper makes three contributions:
 \begin{itemize}
   \item We are the first to propose adopting agent-based code extension to expose latent design flaws in code for detecting SOLID principle violations. 
-  \item We implement and open-source \tool, a multi-agent system for code extensibility review\footnote{We will make our code repository publicly available after the paper is accepted.}. 
+  \item We implement and open-source \tool, a multi-agent system for code extensibility review\footnote{https://github.com/jiahe-chen/extender}. 
   \item We evaluate \tool on real-world SOLID violation detection datasets and show that \tool can effectively improve detection accuracy by up to 32.1\% compared with the state-of-the-art one-agent and two-agent baselines.
 \end{itemize}
 
@@ -151,7 +155,7 @@ This section defines the design principles studied in this work and distinguishe
   \vspace{-0.1in}
 \end{figure*}
 
-\subsection{SOLID Principles}[!t]
+\subsection{SOLID Principles}
 SOLID principles are widely adopted in industry to improve code modularity and maintainability~\cite{Ampatzoglou2019,Turan2018,Yanakiev2025}.
 They comprise five object-oriented design principles~\cite{Martin2000,Martin2017}.
 Specifically, the \textbf{Single Responsibility Principle (SRP)} limits a module to implement only one responsibility.
@@ -208,15 +212,14 @@ The agents in \tool instead cooperate to conduct a controlled extension experime
     \textbf{Principles} & \textbf{High-Level Requirement Generation Instructions} & \textbf{Principle Violation Patterns} \\
     \midrule
     SRP & Change one architectural layer. & The diff crosses independent layers,
-    such as controller, service, repository, or view. \\
+    such as controller or view. \\
     OCP & Add a type, variant, or case. & The extension edits an existing
-    \texttt{if-else} or \texttt{switch} branch instead of adding an extension. \\
+    \texttt{if-else} or \texttt{switch} branch. \\
     LSP & Exercise parent and subtype behavior polymorphically. & A subtype throws
     or breaks the contract expected from the parent. \\
     ISP & Implement only a needed subset of an interface. & The implementation is
-    forced to add unused methods or \texttt{NotImplementedError} stubs. \\
-    DIP & Replace one concrete dependency. & The high-level module must edit
-    several concrete references because no useful abstraction is present. \\
+    forced to add unused methods. \\
+    DIP & Replace one concrete dependency. & The high-level module must edit several concrete references. \\
     \bottomrule
   \end{tabular}
   \vspace{-0.1in}
@@ -287,16 +290,16 @@ Developers can trace every reported violation back to the request and the modifi
 
 Listing~\ref{lst:ocp25} shows an example from an actual run of \tool on the benchmark code \texttt{OCP\_25}.
 The original code calculates the area of various shapes, \ie the \texttt{AreaCalculator} class dispatches on concrete shape types with a \texttt{when} expression.
-
 \begin{lstlisting}[
   style=trace,
   float=t,
-  caption={An working example of \tool on benchmark sample \texttt{OCP\_25}.},
+  captionpos=b,
+  belowskip=-5pt,
+  caption={\tool on benchmark sample \texttt{OCP\_25}.},
   label={lst:ocp25}
 ]
 |\textbf{Manager}| -> requirement |$r_{\mathrm{OCP}}$|:
-  "Add support for a Triangle shape to the area
-   calculation system."
+  "Add support for a Triangle shape to the area calculation system."
    
 |\textbf{Engineer}| -> diff |$d_{\mathrm{OCP}}$| (abridged):
 + class Triangle(private val base: Double,
@@ -310,22 +313,12 @@ The original code calculates the area of various shapes, \ie the \texttt{AreaCal
         else -> 0.0}}}
         
 |\textbf{Analyst}| -> verdict |$v_{\mathrm{OCP}}$|: violation detected
-  "The AreaCalculator class violates the Open/Closed
-   Principle because its calculateArea() method contains
-   a conditional block (when expression) that directly
-   handles specific shape types. ... This structure
-   requires modifying the existing decision logic ...
-   rather than extending the system through new
-   polymorphic types or dedicated handlers."
+  "The AreaCalculator class violates the Open/Closed Principle because its calculateArea() method contains a conditional block (when expression) that directly handles specific shape types. ... This structure requires modifying the existing decision logic ... rather than extending the system through new polymorphic types or dedicated handlers."
    
 |\textbf{Ranker}| -> top-2: [OCP, DIP]
-  "OCP: adding a new shape requires modifying this
-   existing method ... DIP: depending on concrete
-   implementations ... rather than an abstraction."
-  (ground truth: OCP, reported at rank 1)
+  "OCP: adding a new shape requires modifying this existing method ... DIP: depending on concrete implementations ... rather than an abstraction." (ground truth: OCP, reported at rank 1)
 
 \end{lstlisting}
-
 
 The trace shows how the four agents cooperate on a concrete input. 
 Given the high-level OCP instruction, the \textit{manager} instantiates it into a code-specific requirement, \ie adding support for a \texttt{Triangle} shape to the area calculation system.
@@ -335,7 +328,6 @@ The \textit{ranker} finally arbitrates among the channels.
 In this example, the SRP, ISP, and DIP channels also return positive verdicts, and the \textit{ranker} places OCP first and DIP second because their explanations identify the most clearly located evidence.
 
 % This example illustrates what the extension experiment adds beyond directly pointing at a visible conditional: the generated diff demonstrates the exact edit required by a realistic new variant, and the reported violation remains traceable to the requirement, the modified lines, and the \textit{analyst} explanation that produced it.
-\vspace{-8pt}
 \subsection{Implementation}
 \tool is implemented as a LangGraph state machine~\cite{LangGraph2024}.
 The backbone LLM can be integrated either through a local Ollama server~\cite{Ollama2024} or any cloud provider.
@@ -345,8 +337,6 @@ In our implementation, we use five channels, each responsible for one SOLID prin
 For each channel, we record the output for each agent in the entire workflow.
 Because the channels are mutually independent, \textit{engineer} execution can be parallelized in deployment, and a failed or malformed extension is retained as an inconclusive artifact without blocking the remaining channels.
 The full system and analysis scripts are packaged for release.
-The public link is withheld from this anonymous version.
-
 
 \section{Evaluation}\label{sec:evaluation}
 \subsection{Experimental Setup}
@@ -386,9 +376,9 @@ Otherwise, the first valid prediction is used.
 
 \begin{figure}[t]
   \includegraphics[width=0.9\columnwidth]{paper_fig_overall.pdf}
-  \vspace{-0.15in}
+  \vspace{-0.1in}
   \caption{Overall accuracy on 240 examples.}\label{fig:overall}
-  \vspace{-0.15in}
+  \vspace{-0.1in}
 \end{figure}
 
 
@@ -417,9 +407,8 @@ The Macro-F1 score confirms that its improvement is not limited to one principle
 
 \begin{table}[t]
   \centering\small
-  \vspace{0.05in}
   \caption{Performance of different workflows.}\label{tab:overall}
-  \vspace{-0.1in}
+  \vspace{-0.05in}
   \begin{tabular}{lccc}
     \toprule
     \textbf{System} & \textbf{Accuracy} & \textbf{MRR@2} & \textbf{Macro-F1} \\
@@ -435,9 +424,9 @@ The Macro-F1 score confirms that its improvement is not limited to one principle
 \begin{figure}[t]
   \centering
   \includegraphics[width=0.97\columnwidth]{paper_fig_violation.pdf}
-  \vspace{-0.15in}
+  \vspace{-0.1in}
   \caption{Accuracy by different principles.}\label{fig:principles}
-  \vspace{-0.15in}
+  \vspace{-0.1in}
 \end{figure}
 
 \noindent
@@ -485,17 +474,14 @@ This result shows that \tool is a strong lever for independent developers to dep
 \textbf{\textit{Generality.}}
 We argue that \tool is a general paradigm for code extensibility review rather than a tool for detecting SOLID principle violations.
 The key idea is to adopt the extend-then-detect paradigm to detect code extensibility issues.
-We instantiate the paradigm on SOLID detection by designing \tool.
-Since individual principles in SOLID enter the workflow only as a pair of natural-language artifacts, any design rule whose defect manifests as resistance to change can be plugged in by defining a new pair.
-
-However, one limitation is that the paradigm is best suited to scenarios where an extension is genuinely needed to expose a latent design flaw.
-This is confirmed by the fact that \tool underperforms the direct prompt on OCP, whose violations often carry a visible syntactic symptom such as an explicit dispatch branch.
+Since individual principles in SOLID enter the workflow only as a pair of natural-language artifacts, any design rule whose defect manifests as resistance to change can be plugged in by defining a new pair. However, one limitation is that the paradigm is best suited to scenarios where an extension is genuinely needed to expose a latent design flaw.
+This is confirmed by the fact that \tool underperforms the direct prompt on OCP, whose violations often carry a visible syntactic symptom.
 In the future, we plan to add a lightweight \textit{router} in front of the workflow that predicts whether a violation is already detectable from the current state of the code.
 
 \begin{table}[t]
   \centering\small
   \caption{\tool (Local) against a cloud baseline.}\label{tab:cloud}
-  \vspace{-0.05in}
+  % \vspace{-0.05in}
   \begin{tabular}{lccc}
     \toprule
     \textbf{System} & \textbf{Accuracy} & \textbf{MRR@2} & \textbf{Macro-F1} \\
@@ -505,16 +491,15 @@ In the future, we plan to add a lightweight \textit{router} in front of the work
     \tool (Local 9B) & 87.92\% & 0.792 & 0.888 \\
     \bottomrule
   \end{tabular}
-  % \vspace{-0.1in}
 \end{table}
 
 
 \begin{figure}[t]
   \centering
   \includegraphics[width=0.97\columnwidth]{paper_fig_difficulty.pdf}
-  \vspace{-0.15in}
+  \vspace{-0.1in}
   \caption{Accuracy by difficulty.}\label{fig:difficulty}
-  \vspace{-0.15in}
+  \vspace{-0.1in}
 
 \end{figure}
 
@@ -523,9 +508,7 @@ In the future, we plan to add a lightweight \textit{router} in front of the work
 \tool is designed for strong explainability.
 The \textit{manager} request, the \textit{engineer} extension, the executed $\operatorname{diff}$, the \textit{analyst} verdict, and the final rationale from the \textit{ranker} are all recorded.
 Developers can trace a finding to the exact changed lines and accept or reject it on evidence.
-The same trace also separates planning, generation, and analysis errors, which turns a wrong finding into a diagnosable event instead of an opaque failure.
-
-In the future, we plan to close the loop with reviewer feedback to evolve the performance of \tool.
+The same trace also separates planning, generation, and analysis errors, which turns a wrong finding into a diagnosable event instead of an opaque failure. In the future, we plan to close the loop with reviewer feedback to evolve the performance of \tool.
 Specifically, when a developer rejects a finding, the recorded trace identifies the responsible stage, so the corresponding instruction or violation pattern can be refined automatically rather than by global prompt tuning.
 
 \noindent
@@ -538,17 +521,17 @@ In the future, we plan to extend \tool to repository-level datasets to evaluate 
 
 \noindent
 \textbf{\textit{Computational cost and request realism.}}
-All experiments were conducted locally on a desktop equipped with a consumer-grade GPU. The current implementation executes the five principle-specific channels sequentially and is therefore intended for asynchronous code review rather than real-time editor feedback. Since the channels are independent, higher-throughput or multi-GPU hardware can execute them concurrently and reduce the overall latency. All generated extensions are applied only to isolated copies of the input code and are never propagated to the original project. They therefore introduce only time and computational overhead.
-
-The generated requests are intended as controlled extensibility probes rather than predictions of actual future requirements. They are tailored to the input code and represent common maintenance operations, while their similarity to requests from real projects remains to be evaluated.
+All experiments were conducted locally on a desktop equipped with a consumer-grade GPU. 
+Our implementation executes the five principle-specific channels sequentially and is therefore intended for asynchronous code review rather than real-time editor feedback. 
+In the future, we will extend our code to support parallel code extension to improve computational efficiency.
+% The generated requests are intended as controlled extensibility probes rather than predictions of actual future requirements. 
+% They are tailored to the input code and represent common maintenance operations, while their similarity to requests from real projects remains to be evaluated.
 
 \section{Conclusion}
 In this paper, we identify that the key limitation of existing SOLID violation detection approaches lies in that they reason only over the current state of the code, while many violations are latent design flaws that surface only when the code must be extended.
 We propose an extend-then-detect paradigm, which leverages the code understanding and software development capabilities of LLMs to actually extend the code under review before judging it.
 Based on this idea, we design \tool, a multi-agent system for code extensibility review, in which four agents cooperate to turn each SOLID principle into a concrete extension experiment and detect violations via differences in code.
 Experimental results show that \tool can effectively outperform the one-agent and two-agent baselines by 17.9 and 32.1 points, respectively.
-In the future, we will extend \tool to repository-level datasets to evaluate the extend-then-detect paradigm in realistic development settings.
-
 
 \clearpage
 \bibliographystyle{ACM-Reference-Format}
